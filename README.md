@@ -21,6 +21,16 @@ The data is read from the "cards" section using the INFILE statement with a spec
 
 The resulting dataset provides a structured representation of employees' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
+## SAS Data Processing Example: "guardians" Dataset
+
+This SAS code snippet demonstrates the creation of a dataset named "guardians" containing information about guardians. The dataset has three variables:
+
+1. **first_name**: Represents the first name of the guardian.
+2. **last_name**: Indicates the last name of the guardian.
+3. **height**: Represents the height of the guardian.
+
+The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). The `dsd` option is also used, which stands for "Delimiter-Sensitive Data". This option treats consecutive delimiters as separate, empty fields. In this case, it allows the code to properly handle the data where the delimiter is a comma, and there are no missing values for some variables.
+
 ## Usage
 
 Clone the repository to your local machine.
