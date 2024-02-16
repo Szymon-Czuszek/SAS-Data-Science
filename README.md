@@ -6,7 +6,16 @@ This repository contains SAS code snippets for data science tasks and analyses. 
 
 ## Contents
 
-CharactersData.sas: This file contains SAS code for creating a dataset named "characters" with manually entered data. The dataset includes information about fictional characters such as their name, gender, height, and weight.
+## SAS Data Processing Example: "characters" Dataset
+
+This SAS code snippet demonstrates the creation of a dataset named "characters" containing information about fictional characters. The dataset has four variables:
+
+1. **name**: Represents the name of the character.
+2. **gender**: Indicates the gender of the character (M for male, F for female).
+3. **height**: Represents the height of the character.
+4. **weight**: Indicates the weight of the character.
+
+The data is manually entered using the `cards` section, where each line represents information about a character, including their name, gender, height, and weight.
 
 ## SAS Data Processing Example: "employees" Dataset
 
