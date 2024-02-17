@@ -45,6 +45,7 @@ This SAS code snippet demonstrates the creation of a dataset named "guardians" c
 3. **height**: Represents the height of the guardian.
 
 The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). The `dsd` option is also used, which stands for "Delimiter-Sensitive Data". This option treats consecutive delimiters as separate, empty fields. In this case, it allows the code to properly handle the data where the delimiter is a comma, and there are no missing values for some variables.
+
 ## SAS Data Processing Example: "custom_dataset" Dataset
 
 This SAS code snippet demonstrates the creation of a dataset named "custom_dataset" containing information about individuals. The dataset has six variables:
@@ -64,7 +65,24 @@ The @ symbol in the input statement indicates that SAS should hold the input poi
 The data is manually entered using the input statement followed by the cards section, where each line represents information about an individual.
 A conditional statement is used to delete observations where the region is 'Midwest', demonstrating data manipulation capabilities in SAS.
 This example serves as a template for creating datasets to manage information about individuals, which can be valuable for various analytical and reporting purposes in SAS.
-This code snippet provides a straightforward way to create and manipulate a dataset containing information about individuals, enabling further analysis or visualization tasks in SAS.
+
+## SAS Data Processing Example: "individuals" Dataset
+
+This SAS code snippet demonstrates the creation of a dataset named "individuals" containing information about individuals. The dataset has six variables:
+
+1. **first**: Indicates the first name of the individual.
+2. **last**: Represents the last name of the individual.
+3. **sex**: Indicates the sex of the individual (M for male, F for female).
+4. **years**: Represents the age of the individual.
+5. **mass**: Indicates the mass of the individual.
+
+The data is entered using the `cards` section, where each line represents information about an individual, including their first name, last name, gender, age, and mass.
+
+Explanation:
+The individuals dataset is structured to store information about individuals, including their first name, last name, gender, age, and mass.
+The @@ symbols in the input statement indicate that SAS should hold the input pointer at the current line after reading the values. This allows for reading multiple observations from the same line of data without advancing to the next line.
+The data is manually entered using the input statement followed by the cards section, where each line represents information about an individual.
+This example serves as a template for creating datasets to manage information about individuals, which can be valuable for various analytical and reporting purposes in SAS.
 
 ## Usage
 
