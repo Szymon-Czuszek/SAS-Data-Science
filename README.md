@@ -17,7 +17,7 @@ This SAS code snippet demonstrates the creation of a dataset named "characters" 
 
 The data is manually entered using the `cards` section, where each line represents information about a character, including their name, gender, height, and weight.
 
-Explanation:
+### Explanation:
 The characters dataset is structured to store information about fictional characters, including their name, gender, height, and weight.
 Each observation in the dataset corresponds to a single character and includes their respective information.
 The data is manually entered into the code using the input statement followed by the cards section.
@@ -36,6 +36,12 @@ The data is read from the "cards" section using the INFILE statement with a spec
 
 The resulting dataset provides a structured representation of employees' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
+### Explanation:
+The employees dataset is structured to store information about employees, including their first name, last name, gender, age, and weight.
+The data is read from the "cards" section using the INFILE statement with a specified delimiter (,). The dsd option is used to handle consecutive delimiters as separate, empty fields.
+Each line in the "cards" section represents information about an employee, including their first name, last name, gender, age, and weight.
+The resulting dataset provides a structured representation of employees' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
+
 ## SAS Data Processing Example: "guardians" Dataset
 
 This SAS code snippet demonstrates the creation of a dataset named "guardians" containing information about guardians. The dataset has three variables:
@@ -46,7 +52,7 @@ This SAS code snippet demonstrates the creation of a dataset named "guardians" c
 
 The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). The `dsd` option is also used, which stands for "Delimiter-Sensitive Data". This option treats consecutive delimiters as separate, empty fields. In this case, it allows the code to properly handle the data where the delimiter is a comma, and there are no missing values for some variables.
 
-Explanation:
+### Explanation:
 The guardians dataset is structured to store information about guardians, including their first and last names, and height.
 Each observation in the dataset corresponds to a single guardian and includes their respective information.
 The dataset can be further analyzed or used for statistical modeling and visualization tasks in SAS.
@@ -64,7 +70,7 @@ This SAS code snippet demonstrates the creation of a dataset named "custom_datas
 
 The data is entered using the `cards` section, where each line represents information about an individual, including their region, first name, last name, sex, age, and mass. Additionally, there is a conditional statement that deletes observations where the region is 'Midwest'.
 
-Explanation:
+### Explanation:
 The custom_dataset dataset is structured to store information about individuals, including their region of residence, name, sex, age, and mass.
 The @ symbol in the input statement indicates that SAS should hold the input pointer at the current line after reading the value. This allows for reading multiple variables from the same line of data without advancing to the next line.
 The data is manually entered using the input statement followed by the cards section, where each line represents information about an individual.
@@ -83,7 +89,7 @@ This SAS code snippet demonstrates the creation of a dataset named "individuals"
 
 The data is entered using the `cards` section, where each line represents information about an individual, including their first name, last name, gender, age, and mass.
 
-Explanation:
+### Explanation:
 The individuals dataset is structured to store information about individuals, including their first name, last name, gender, age, and mass.
 The @@ symbols in the input statement indicate that SAS should hold the input pointer at the current line after reading the values. This allows for reading multiple observations from the same line of data without advancing to the next line.
 The data is manually entered using the input statement followed by the cards section, where each line represents information about an individual.
