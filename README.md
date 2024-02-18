@@ -95,6 +95,22 @@ The @@ symbols in the input statement indicate that SAS should hold the input po
 The data is manually entered using the input statement followed by the cards section, where each line represents information about an individual.
 This example serves as a template for creating datasets to manage information about individuals, which can be valuable for various analytical and reporting purposes in SAS.
 
+## SAS Data Processing Example: "personnel" Dataset
+
+This SAS code snippet demonstrates the creation of a dataset named "personnel" containing information about individuals. The dataset has four variables:
+
+1. **identifier**: Represents the unique identifier of the individual.
+2. **years**: Indicates the age of the individual.
+3. **sex**: Indicates the gender of the individual (M for male, F for female).
+4. **mass**: Indicates the weight of the individual.
+
+The data is read from the "cards" section using the INPUT statement with specified column positions. Each line in the "cards" section represents information about an individual, including their unique identifier, age, gender, and weight.
+
+### Explanation:
+The personnel dataset is structured to store information about individuals, including their unique identifier, age, gender, and weight.
+The data is read from the "cards" section using the INPUT statement with specified column positions. Each line in the "cards" section represents information about an individual, including their unique identifier, age, gender, and weight.
+The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
+
 ## Usage
 
 Clone the repository to your local machine.
