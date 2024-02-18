@@ -111,6 +111,24 @@ The personnel dataset is structured to store information about individuals, incl
 The data is read from the "cards" section using the INPUT statement with specified column positions. Each line in the "cards" section represents information about an individual, including their unique identifier, age, gender, and weight.
 The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
+## SAS Data Processing Example: "individual_info" Dataset
+
+This SAS code snippet demonstrates the creation of a dataset named "individual_info" containing information about individuals. The dataset has four variables:
+
+1. **forename**: Represents the forename of the individual.
+2. **surname**: Represents the surname of the individual.
+3. **sex**: Indicates the gender of the individual (M for male, F for female).
+4. **years**: Represents the age of the individual.
+5. **mass**: Indicates the weight of the individual.
+
+The data is read from the "cards" section using the INPUT statement with specified column positions. The `#` symbol is used to skip a specified number of columns before reading the next variable. Each line in the "cards" section represents information about an individual, including their forename, surname, gender, age, and weight.
+
+### Explanation:
+The individual_info dataset is structured to store information about individuals, including their forename, surname, gender, age, and weight.
+The data is read from the "cards" section using the INPUT statement with specified column positions. The # symbol is used to skip a specified number of columns before reading the next variable. This allows for reading variables that are not in contiguous columns.
+Each line in the "cards" section represents information about an individual, including their forename, surname, gender, age, and weight.
+The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
+
 ## Usage
 
 Clone the repository to your local machine.
