@@ -147,6 +147,21 @@ The data is read from the "cards" section using the INPUT statement with specifi
 Each line in the "cards" section represents information about an individual, including their first name, last name, gender, age, and weight.
 The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
+## SAS Data Import Example: "employee_data" Dataset
+
+This SAS code snippet demonstrates the import of data from an Excel file named "employee_data.xlsx" into a dataset named "employee_data". 
+
+The PROC IMPORT procedure is used to import data from the specified Excel file. The FILENAME statement assigns a fileref "inputfile" to the Excel file path. The PROC IMPORT statement specifies the input data file as "inputfile", the DBMS (Database Management System) as "xlsx" to indicate that the input file is an Excel file, and the OUT option specifies the name of the output SAS dataset as "employee_data". The GETNAMES option is set to "yes" to indicate that the first row of the Excel file contains variable names.
+
+### Explanation:
+- The FILENAME statement assigns a fileref "inputfile" to the Excel file located at '/home/x62422869/The Simplest Guide to SAS/employee_data.xlsx'.
+- The PROC IMPORT procedure reads the data from the Excel file specified by the FILENAME statement.
+- The DBMS option is set to "xlsx" to indicate that the input file format is Excel.
+- The OUT option specifies the name of the output SAS dataset as "employee_data".
+- The GETNAMES option is set to "yes" to indicate that variable names should be taken from the first row of the Excel file.
+- The resulting dataset "employee_data" contains the imported data from the Excel file, which can be further analyzed or used for various tasks in SAS.
+- This code snippet demonstrates the process of importing data from an Excel file into a SAS dataset using PROC IMPORT, providing a way to access and analyze external data within the SAS environment.
+
 ## Usage
 
 Clone the repository to your local machine.
