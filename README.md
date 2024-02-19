@@ -129,6 +129,24 @@ The data is read from the "cards" section using the INPUT statement with specifi
 Each line in the "cards" section represents information about an individual, including their forename, surname, gender, age, and weight.
 The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
+## SAS Data Processing Example: "personal_data" Dataset
+
+This SAS code snippet demonstrates the creation of a dataset named "personal_data" containing information about individuals. The dataset has four variables:
+
+1. **first_name**: Represents the first name of the individual.
+2. **last_name**: Represents the last name of the individual.
+3. **sex**: Indicates the gender of the individual (M for male, F for female).
+4. **years**: Represents the age of the individual.
+5. **mass**: Indicates the weight of the individual.
+
+The data is read from the "cards" section using the INPUT statement with specified column positions. The `/` symbol is used to indicate a continuation of input data from the previous line. Each line in the "cards" section represents information about an individual, including their first name, last name, gender, age, and weight.
+
+### Explanation:
+The personal_data dataset is structured to store information about individuals, including their first name, last name, gender, age, and weight.
+The data is read from the "cards" section using the INPUT statement with specified column positions. The / symbol is used to indicate a continuation of input data from the previous line. This allows for splitting the input data over multiple lines for better readability.
+Each line in the "cards" section represents information about an individual, including their first name, last name, gender, age, and weight.
+The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
+
 ## Usage
 
 Clone the repository to your local machine.
