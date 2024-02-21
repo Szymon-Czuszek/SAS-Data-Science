@@ -209,6 +209,24 @@ The DATA step is used to process data and create the "modified_student_info" dat
 - The RUN statement marks the end of the DATA step.
 - This code snippet creates a new dataset named "modified_student_info" by processing data from the "student_info" dataset. It applies various transformations to the first_name and last_name variables, creating new variables with modified values. The resulting dataset can be further analyzed or used for various tasks in SAS.
 
+## SAS Data Processing Example: "modified_student_records" Dataset
+
+This SAS code snippet demonstrates the processing of data from the "student_records" dataset to create a new dataset named "modified_student_records" with modified variables.
+
+The DATA step is used to process data and create the "modified_student_records" dataset. Various transformations are applied to the variables first_name, last_name, and course.
+
+### Explanation:
+
+- The DATA statement begins the DATA step and specifies the name of the output dataset as "modified_student_records".
+- The SET statement reads data from the existing dataset "student_records".
+- Various DATA step statements are used to manipulate the data:
+    - The SUBSTR function is used to extract substrings from the course variable to create course_name and course_number variables.
+    - The CAT function is used to concatenate the first_name and last_name variables to create the full_name variable.
+    - The TRIM and LEFT functions are used to remove leading spaces from the first_name variable before concatenating it with last_name to create the full_name variable.
+    - The STRIP function is used to remove leading and trailing spaces from the first_name variable before concatenating it with last_name to create the full_name1 variable.
+- The RUN statement marks the end of the DATA step.
+- This code snippet creates a new dataset named "modified_student_records" by processing data from the "student_records" dataset. It applies various transformations to the first_name, last_name, and course variables, creating new variables with modified values. The resulting dataset can be further analyzed or used for various tasks in SAS.
+
 ## Usage
 
 Clone the repository to your local machine.
