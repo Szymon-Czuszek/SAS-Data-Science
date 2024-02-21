@@ -188,8 +188,26 @@ The PROC PRINT procedure is used to print data from the specified dataset. The D
 - The DATA option indicates the dataset from which data will be printed, in this case, "sashelp.class".
 - The WHERE statement filters observations based on the conditions specified (sex = "F" and age = 12), selecting only females aged 12.
 - The RUN statement marks the end of the PROC PRINT procedure.
+- This code snippet prints data from the "sashelp.class" dataset for selected females aged 12, demonstrating the use of PROC PRINT for data reporting and filtering. Unlike a DATA step, PROC PRINT does not involve the creation or modification of datasets; instead, it operates on existing datasets for reporting purposes.
 
-This code snippet prints data from the "sashelp.class" dataset for selected females aged 12, demonstrating the use of PROC PRINT for data reporting and filtering. Unlike a DATA step, PROC PRINT does not involve the creation or modification of datasets; instead, it operates on existing datasets for reporting purposes.
+## SAS Data Processing Example: "modified_student_info" Dataset
+
+This SAS code snippet demonstrates the processing of data from the "student_info" dataset to create a new dataset named "modified_student_info" with modified variables.
+
+The DATA step is used to process data and create the "modified_student_info" dataset. Several transformations are applied to the variables first_name and last_name.
+
+### Explanation:
+
+- The DATA statement begins the DATA step and specifies the name of the output dataset as "modified_student_info".
+- The SET statement reads data from the existing dataset "student_info".
+- Various DATA step statements are used to manipulate the data:
+    - The UPCASE function is used to convert the last_name variable to uppercase and store the result in the ufname variable.
+    - The PROPCASE function is used to convert the first_name variable to proper case (capitalize the first letter of each word) and store the result in the plname variable.
+    - The LENGTH function is used to calculate the length of the first_name variable and store the result in the lenlname variable.
+    - The CAT function is used to concatenate the first_name and last_name variables and store the result in the fullname variable.
+    - The LOWCASE function is used to convert the last_name variable to lowercase and store the result in the lfname variable.
+- The RUN statement marks the end of the DATA step.
+- This code snippet creates a new dataset named "modified_student_info" by processing data from the "student_info" dataset. It applies various transformations to the first_name and last_name variables, creating new variables with modified values. The resulting dataset can be further analyzed or used for various tasks in SAS.
 
 ## Usage
 
