@@ -242,6 +242,28 @@ The DATA step is used to create the "text_processing" dataset and perform text p
 - The RUN statement marks the end of the DATA step.
 - This code snippet demonstrates the usage of text processing functions COMPRESS and COMPBL to manipulate character strings in SAS, providing flexibility in data cleansing and formatting tasks.
 
+## SAS Data Processing Example: "student_data" Dataset
+
+This SAS code snippet demonstrates the processing of data from the "sashelp.class" dataset to calculate Body Mass Index (BMI) and determine the weight status of students.
+
+The DATA step is used to process data and create the "student_data" dataset. BMI and weight status are calculated based on the Weight and Height variables.
+
+### Explanation:
+
+- The DATA statement begins the DATA step and specifies the name of the output dataset as "student_data".
+- The SET statement reads data from the existing dataset "sashelp.class".
+- Various DATA step statements are used to calculate BMI and determine weight status:
+    - Weight_kg variable is calculated by converting Weight from pounds to kilograms.
+    - Height_m variable is calculated by converting Height from inches to meters.
+    - BMI is calculated using the BMI formula: weight (kg) / (height (m) ** 2).
+    - IF-THEN statements are used to assign weight status based on BMI values:
+        - If BMI is less than or equal to 18.5, the student is classified as "Underweight".
+        - If BMI is between 18.5 and 24.9, the student is classified as "Healthy Weight".
+        - If BMI is between 24.9 and 29.9, the student is classified as "Overweight".
+        - If BMI is greater than 29.9, the student is classified as "Obese".
+- The RUN statement marks the end of the DATA step.
+- This code snippet creates a new dataset named "student_data" by processing data from the "sashelp.class" dataset. It calculates BMI and determines weight status for each student based on BMI values. The resulting dataset can be further analyzed or used for various tasks in SAS.
+
 ## Usage
 
 Clone the repository to your local machine.
