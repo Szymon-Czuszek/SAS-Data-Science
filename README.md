@@ -278,6 +278,25 @@ The DATA step is used to create the "date_comparison" dataset and perform date c
 - The RUN statement marks the end of the DATA step.
 - This code snippet demonstrates the comparison of dates in SAS, including the calculation of date differences. SAS represents dates as the number of days since January 1, 1960, with January 1, 1960, being represented as 0. The resulting dataset "date_comparison" can be further analyzed or used for various tasks in SAS.
 
+## SAS Student Health Information Processing
+
+This SAS code snippet processes student health information from the "sashelp.class" dataset to calculate Body Mass Index (BMI) and modify variable names.
+
+### Explanation:
+
+- The DATA statement initiates the DATA step to create a new dataset named "class" by processing data from the existing dataset "sashelp.class".
+- The SET statement reads data from the "sashelp.class" dataset.
+- Several calculations are performed:
+    - WeightKg: Calculates the weight in kilograms by multiplying the Weight variable by 0.454 (conversion factor from pounds to kilograms).
+    - HeightM: Calculates the height in meters by multiplying the Height variable by 2.54/100 (conversion factor from inches to meters).
+    - BMI: Calculates the Body Mass Index using the formula: weight (kg) / (height (m) ** 2).
+- The RENAME statement changes the variable name Sex to Gender.
+- The DROP statement removes the Weight variable from the dataset.
+- The KEEP statement selects and retains specific variables in the dataset: Name, Sex, Age, BMI, WeightKg, and HeightM.
+- The RUN statement marks the end of the DATA step.
+- Although the variable Sex is renamed to Gender, it must still be referenced by its original name in subsequent processing steps. This is a limitation of SAS where the RENAME statement only changes the label of the variable, not its internal name.
+- This code snippet showcases data processing techniques in SAS, including variable renaming, calculation of derived variables (BMI), and selecting specific variables for analysis or reporting purposes.
+
 ## Usage
 
 Clone the repository to your local machine.
