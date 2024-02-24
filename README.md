@@ -314,6 +314,15 @@ In the "testdata2" DATA step, the SUM function is used to calculate the net sala
 This demonstrates a difference in behavior between the "+" operator and the SUM function when handling missing values in SAS.
 These SAS code snippets illustrate how different methods of calculation can produce different results when dealing with missing values in SAS datasets.
 
+## SAS Numeric Functions Example
+
+Explanation:
+Three separate DATA steps, each starting with DATA NULL, are used to demonstrate different numeric functions in SAS.
+In the first DATA step, variables a and b are assigned values, and the ABS function is used to calculate the absolute value of variable b. The PUT statement is then used to display the values of variables a and c.
+In the second DATA step, variable a is assigned a value, and the CEIL, FLOOR, and INT functions are used to calculate the ceiling, floor, and integer parts of variable a, respectively. The PUT statement is used to display the values of variables a, b, c, and d.
+In the third DATA step, variables a, b, and c are assigned values. The MIN and MAX functions are used to determine the minimum and maximum values among these variables, respectively. The PUT statement is used to display the values of variables d and e.
+These SAS code snippets showcase the usage of numeric functions such as ABS, CEIL, FLOOR, INT, MIN, and MAX, demonstrating their functionality and how they can be utilized in SAS programming for numerical calculations and comparisons.
+
 ## Usage
 
 Clone the repository to your local machine.
