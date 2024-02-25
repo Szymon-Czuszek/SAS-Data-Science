@@ -323,6 +323,18 @@ The SET statement reads data from the "employee_compensation" dataset.
 - In the third DATA step, variables a, b, and c are assigned values. The MIN and MAX functions are used to determine the minimum and maximum values among these variables, respectively. The PUT statement is used to display the values of variables d and e.
 - These SAS code snippets showcase the usage of numeric functions such as ABS, CEIL, FLOOR, INT, MIN, and MAX, demonstrating their functionality and how they can be utilized in SAS programming for numerical calculations and comparisons.
 
+## SAS String Manipulation Example: Extracting Country Name
+
+This SAS code snippet demonstrates how to use the SCAN function to extract specific words or tokens from a string in SAS. In this example, the fourth word from the given string representing the name of a country is extracted and stored in a new variable for further analysis or processing.
+
+### Explanation:
+
+- The DATA step creates a dataset named "country_data".
+- A character variable 'a' is assigned the string '     United     Kingdom   of    Great    Britain   '.
+- The SCAN function is used to extract the fourth word from the string stored in variable 'a'.
+- The result, representing the country name "Great", is stored in a new variable named "country".
+- The RUN statement marks the end of the DATA step.
+
 ## Usage
 
 Clone the repository to your local machine.
