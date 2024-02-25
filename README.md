@@ -297,9 +297,8 @@ This SAS code snippet processes student health information from the "sashelp.cla
 - Although the variable Sex is renamed to Gender, it must still be referenced by its original name in subsequent processing steps. This is a limitation of SAS where the RENAME statement only changes the label of the variable, not its internal name.
 - This code snippet showcases data processing techniques in SAS, including variable renaming, calculation of derived variables (BMI), and selecting specific variables for analysis or reporting purposes.
 
-## Processing Employee Compensation Data
+## Processing Employee Compensation Data with "employee_compensation" Dataset
 
-Dataset: employee_compensation
 The DATA step creates a dataset named "employee_compensation" with variables name, salary, and bonus.
 Four observations are provided with corresponding values for each variable.
 Calculation of Net Salary Using "+" Operator
@@ -308,20 +307,21 @@ The SET statement reads data from the "employee_compensation" dataset.
 Calculation of Net Salary Using SUM Function
 The DATA step "testdata2" calculates the net salary using the SUM function.
 The SET statement reads data from the "employee_compensation" dataset.
-Explanation:
-In the "testdata1" DATA step, the "+" operator is used to calculate the net salary. However, when a missing value (.) is encountered in the "bonus" variable, SAS treats it as a missing value and sets the result of the addition to missing.
-In the "testdata2" DATA step, the SUM function is used to calculate the net salary. The SUM function treats missing values as zeros and continues the addition. Therefore, even when a missing value (.) is present in the "bonus" variable, the SUM function still calculates the sum of salary and bonus correctly.
-This demonstrates a difference in behavior between the "+" operator and the SUM function when handling missing values in SAS.
-These SAS code snippets illustrate how different methods of calculation can produce different results when dealing with missing values in SAS datasets.
 
-## SAS Numeric Functions Example
+### Explanation:
+- In the "testdata1" DATA step, the "+" operator is used to calculate the net salary. However, when a missing value (.) is encountered in the "bonus" variable, SAS treats it as a missing value and sets the result of the addition to missing.
+- In the "testdata2" DATA step, the SUM function is used to calculate the net salary. The SUM function treats missing values as zeros and continues the addition. Therefore, even when a missing value (.) is present in the "bonus" variable, the SUM function still calculates the sum of salary and bonus correctly.
+- This demonstrates a difference in behavior between the "+" operator and the SUM function when handling missing values in SAS.
+- These SAS code snippets illustrate how different methods of calculation can produce different results when dealing with missing values in SAS datasets.
 
-Explanation:
-Three separate DATA steps, each starting with DATA NULL, are used to demonstrate different numeric functions in SAS.
-In the first DATA step, variables a and b are assigned values, and the ABS function is used to calculate the absolute value of variable b. The PUT statement is then used to display the values of variables a and c.
-In the second DATA step, variable a is assigned a value, and the CEIL, FLOOR, and INT functions are used to calculate the ceiling, floor, and integer parts of variable a, respectively. The PUT statement is used to display the values of variables a, b, c, and d.
-In the third DATA step, variables a, b, and c are assigned values. The MIN and MAX functions are used to determine the minimum and maximum values among these variables, respectively. The PUT statement is used to display the values of variables d and e.
-These SAS code snippets showcase the usage of numeric functions such as ABS, CEIL, FLOOR, INT, MIN, and MAX, demonstrating their functionality and how they can be utilized in SAS programming for numerical calculations and comparisons.
+## SAS Numeric Functions Example with _NULL_ Dataset
+
+### Explanation:
+- Three separate DATA steps, each starting with DATA NULL, are used to demonstrate different numeric functions in SAS.
+- In the first DATA step, variables a and b are assigned values, and the ABS function is used to calculate the absolute value of variable b. The PUT statement is then used to display the values of variables a and c.
+- In the second DATA step, variable a is assigned a value, and the CEIL, FLOOR, and INT functions are used to calculate the ceiling, floor, and integer parts of variable a, respectively. The PUT statement is used to display the values of variables a, b, c, and d.
+- In the third DATA step, variables a, b, and c are assigned values. The MIN and MAX functions are used to determine the minimum and maximum values among these variables, respectively. The PUT statement is used to display the values of variables d and e.
+- These SAS code snippets showcase the usage of numeric functions such as ABS, CEIL, FLOOR, INT, MIN, and MAX, demonstrating their functionality and how they can be utilized in SAS programming for numerical calculations and comparisons.
 
 ## Usage
 
