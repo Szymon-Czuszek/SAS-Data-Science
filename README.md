@@ -335,6 +335,20 @@ This SAS code snippet demonstrates how to use the SCAN function to extract speci
 - The result, representing the country name "Great", is stored in a new variable named "country".
 - The RUN statement marks the end of the DATA step.
 
+## SAS String Manipulation Example: Finding Substrings using the "country_info" Dataset
+
+### Explanation:
+
+- The DATA step creates a dataset named "country_info".
+- A character variable 'a' is assigned the string '     United     Arab   Emirates   '.
+- The COMPRESS function removes extra spaces from the string stored in variable 'a'.
+- The INDEXC function is used to find the position of the character "A" in the compressed string. The result is stored in variable 'b'.
+- The INDEXW function is used to find the position of the word "Emirates" in the original string. The result is stored in variable 'c'.
+- The RUN statement marks the end of the DATA step.
+
+This SAS code snippet demonstrates how to use the INDEXC and INDEXW functions to find substrings within a string in SAS. In this example, the position of the character "A" and the word "Emirates" within the given string representing a country name is determined for further analysis or processing.
+
+
 ## Usage
 
 Clone the repository to your local machine.
