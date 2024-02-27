@@ -337,6 +337,8 @@ This SAS code snippet demonstrates how to use the SCAN function to extract speci
 
 ## SAS String Manipulation Example: Finding Substrings using the "country_info" Dataset
 
+This SAS code snippet demonstrates how to use the INDEXC and INDEXW functions to find substrings within a string in SAS. In this example, the position of the character "A" and the word "Emirates" within the given string representing a country name is determined for further analysis or processing.
+
 ### Explanation:
 
 - The DATA step creates a dataset named "country_info".
@@ -346,9 +348,9 @@ This SAS code snippet demonstrates how to use the SCAN function to extract speci
 - The INDEXW function is used to find the position of the word "Emirates" in the original string. The result is stored in variable 'c'.
 - The RUN statement marks the end of the DATA step.
 
-This SAS code snippet demonstrates how to use the INDEXC and INDEXW functions to find substrings within a string in SAS. In this example, the position of the character "A" and the word "Emirates" within the given string representing a country name is determined for further analysis or processing.
-
 ## SAS Data Generation Example: Generating Numeric Data with "numeric_data" Dataset
+
+This SAS code snippet demonstrates how to generate numeric data using a DO loop in SAS. In this example, variables x_value and y_value are assigned values from 1 to 10 iteratively, resulting in a dataset containing numeric data pairs for further analysis or processing.
 
 ### Explanation:
 
@@ -358,7 +360,19 @@ This SAS code snippet demonstrates how to use the INDEXC and INDEXW functions to
 - The DROP statement removes the loop index variable 'index' from the dataset.
 - The RUN statement marks the end of the DATA step.
 
-This SAS code snippet demonstrates how to generate numeric data using a DO loop in SAS. In this example, variables x_value and y_value are assigned values from 1 to 10 iteratively, resulting in a dataset containing numeric data pairs for further analysis or processing.
+## SAS Data Processing Example: Calculating BMI
+
+This SAS code snippet demonstrates how to calculate Body Mass Index (BMI) using data from the "sashelp.class" dataset. It calculates BMI values both in metric and imperial units and writes them to a new dataset for further analysis or reporting purposes.
+
+### Explanation:
+
+- The DATA step creates a dataset named "student_health_data".
+- The SET statement reads data from the "sashelp.class" dataset.
+- Two calculations are performed:
+    - Calculation of BMI in metric units: The weight in kilograms (weight_kg) is calculated by multiplying the weight variable by 0.454, and the height in meters (height_m) is calculated by multiplying the height variable by 2.54 and dividing by 100. The BMI is then calculated by dividing the weight in kilograms by the square of the height in meters (height_m * height_m).
+    - Calculation of BMI in imperial units: The BMI is calculated directly using the weight and height variables, assuming weight is in pounds and height is in inches.
+- The OUTPUT statement writes the calculated BMI values to the dataset.
+- The RUN statement marks the end of the DATA step.
 
 ## Usage
 
