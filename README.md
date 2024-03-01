@@ -374,6 +374,18 @@ This SAS code snippet demonstrates how to calculate Body Mass Index (BMI) using 
 - The OUTPUT statement writes the calculated BMI values to the dataset.
 - The RUN statement marks the end of the DATA step.
 
+## SAS Data Entry Example: Recording Employee Bonuses
+
+This SAS code snippet demonstrates how to record employee bonuses in a dataset using manual data entry. It defines variables for employee name, bonus amount, and date of birth, assigns appropriate formats to the variables, and then manually enters the data for each employee into the dataset for further analysis or reporting.
+
+### Explanation:
+
+- The DATA step creates a dataset named "employee_bonuses".
+- The INPUT statement defines three variables: employee_name, bonus_amount, and date_of_birth.
+- The INFORMAT statement specifies the format of the bonus_amount variable as a dollar amount and the date_of_birth variable as a date in the format DDMMMYY.
+- Four observations are entered manually using the CARDS statement, providing values for each variable.
+- The RUN statement marks the end of the DATA step.
+
 ## Usage
 
 Clone the repository to your local machine.
