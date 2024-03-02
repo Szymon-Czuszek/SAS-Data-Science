@@ -71,10 +71,10 @@ This SAS code snippet demonstrates the creation of a dataset named "custom_datas
 The data is entered using the `cards` section, where each line represents information about an individual, including their region, first name, last name, sex, age, and mass. Additionally, there is a conditional statement that deletes observations where the region is 'Midwest'.
 
 ### Explanation:
-The custom_dataset dataset is structured to store information about individuals, including their region of residence, name, sex, age, and mass.
-The @ symbol in the input statement indicates that SAS should hold the input pointer at the current line after reading the value. This allows for reading multiple variables from the same line of data without advancing to the next line.
-The data is manually entered using the input statement followed by the cards section, where each line represents information about an individual.
-A conditional statement is used to delete observations where the region is 'Midwest', demonstrating data manipulation capabilities in SAS.
+- The custom_dataset dataset is structured to store information about individuals, including their region of residence, name, sex, age, and mass.
+- The @ symbol in the input statement indicates that SAS should hold the input pointer at the current line after reading the value. This allows for reading multiple variables from the same line of data without advancing to the next line.
+- The data is manually entered using the input statement followed by the cards section, where each line represents information about an individual.
+- A conditional statement is used to delete observations where the region is 'Midwest', demonstrating data manipulation capabilities in SAS.
 This example serves as a template for creating datasets to manage information about individuals, which can be valuable for various analytical and reporting purposes in SAS.
 
 ## SAS Data Processing Example: "individuals" Dataset
@@ -107,9 +107,9 @@ This SAS code snippet demonstrates the creation of a dataset named "personnel" c
 The data is read from the "cards" section using the INPUT statement with specified column positions. Each line in the "cards" section represents information about an individual, including their unique identifier, age, gender, and weight.
 
 ### Explanation:
-The personnel dataset is structured to store information about individuals, including their unique identifier, age, gender, and weight.
-The data is read from the "cards" section using the INPUT statement with specified column positions. Each line in the "cards" section represents information about an individual, including their unique identifier, age, gender, and weight.
-The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
+- The personnel dataset is structured to store information about individuals, including their unique identifier, age, gender, and weight.
+- The data is read from the "cards" section using the INPUT statement with specified column positions. Each line in the "cards" section represents information about an individual, including their unique identifier, age, gender, and weight.
+- The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
 ## SAS Data Processing Example: "individual_info" Dataset
 
@@ -124,10 +124,10 @@ This SAS code snippet demonstrates the creation of a dataset named "individual_i
 The data is read from the "cards" section using the INPUT statement with specified column positions. The `#` symbol is used to skip a specified number of columns before reading the next variable. Each line in the "cards" section represents information about an individual, including their forename, surname, gender, age, and weight.
 
 ### Explanation:
-The individual_info dataset is structured to store information about individuals, including their forename, surname, gender, age, and weight.
-The data is read from the "cards" section using the INPUT statement with specified column positions. The # symbol is used to skip a specified number of columns before reading the next variable. This allows for reading variables that are not in contiguous columns.
-Each line in the "cards" section represents information about an individual, including their forename, surname, gender, age, and weight.
-The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
+- The individual_info dataset is structured to store information about individuals, including their forename, surname, gender, age, and weight.
+- The data is read from the "cards" section using the INPUT statement with specified column positions. The # symbol is used to skip a specified number of columns before reading the next variable. This allows for reading variables that are not in contiguous columns.
+- Each line in the "cards" section represents information about an individual, including their forename, surname, gender, age, and weight.
+- The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
 ## SAS Data Processing Example: "personal_data" Dataset
 
@@ -142,10 +142,10 @@ This SAS code snippet demonstrates the creation of a dataset named "personal_dat
 The data is read from the "cards" section using the INPUT statement with specified column positions. The `/` symbol is used to indicate a continuation of input data from the previous line. Each line in the "cards" section represents information about an individual, including their first name, last name, gender, age, and weight.
 
 ### Explanation:
-The personal_data dataset is structured to store information about individuals, including their first name, last name, gender, age, and weight.
-The data is read from the "cards" section using the INPUT statement with specified column positions. The / symbol is used to indicate a continuation of input data from the previous line. This allows for splitting the input data over multiple lines for better readability.
-Each line in the "cards" section represents information about an individual, including their first name, last name, gender, age, and weight.
-The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
+- The personal_data dataset is structured to store information about individuals, including their first name, last name, gender, age, and weight.
+- The data is read from the "cards" section using the INPUT statement with specified column positions. The / symbol is used to indicate a continuation of input data from the previous line. This allows for splitting the input data over multiple lines for better readability.
+- Each line in the "cards" section represents information about an individual, including their first name, last name, gender, age, and weight.
+- The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
 ## SAS Data Import Example: "employee_data" Dataset
 
