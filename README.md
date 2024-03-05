@@ -415,6 +415,27 @@ This SAS script, named "CarsProject.SAS", performs data import, manipulation, an
 
 This SAS script demonstrates the process of importing, formatting, and analyzing car data from different regions, providing insights into high-value cars in both European and Asian markets.
 
+## SAS Data Import Example: Student Data
+
+This SAS script imports student data from an external data file named "my_data_file.dat" located at '/home/u62422869/The Simplest Guide to SAS/'.
+
+### Explanation:
+
+1. **File Location Specification:**
+   - The FILENAME statement assigns a fileref "my_data" to the external data file "my_data_file.dat".
+
+2. **Data Import:**
+   - The DATA step "student_data" is initiated to create a dataset named "student_data".
+   - The INFILE statement specifies the source file as "my_data".
+   - The INPUT statement defines the variables and their positions within the input data lines.
+     - Variable "Name" is read from columns 1 to 5.
+     - Variable "Age" is read from columns 6 to 7.
+     - Variable "Gender" is read from column 18.
+     - Variable "Weight" is read from the current position (@18) in the input line.
+   - The RUN statement marks the end of the DATA step.
+
+This SAS script demonstrates the process of importing student data from an external file into a SAS dataset. It specifies the file location, defines the variables and their positions within the input data lines, and then reads the data accordingly to create the "student_data" dataset for further analysis or processing.
+
 ## Usage
 
 Clone the repository to your local machine.
