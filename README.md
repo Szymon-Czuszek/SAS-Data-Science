@@ -386,6 +386,35 @@ This SAS code snippet demonstrates how to record employee bonuses in a dataset u
 - Four observations are entered manually using the CARDS statement, providing values for each variable.
 - The RUN statement marks the end of the DATA step.
 
+## Cars Project SAS Script Explanation
+
+This SAS script, named "CarsProject.SAS", performs data import, manipulation, and analysis tasks related to car data from different regions.
+
+1. **Importing European Car Data:**
+   - The PROC IMPORT procedure imports data from an Excel file named "carseu.xlsx" located at '/home/u62422869/The Simplest Guide to SAS/'.
+   - The OUT option specifies the output dataset as "cars_eu" and replaces it if it already exists.
+   - The GETNAMES option is set to "yes" to indicate that variable names are included in the first row of the Excel file.
+
+2. **Data Formatting for European Cars:**
+   - The DATA step "cars_eu" formats the MSRP variable as a dollar amount.
+
+3. **Importing Asian Car Data:**
+   - The FILENAME statement assigns a fileref "carsasia" to a text file named "carsasiapipedelimited.txt" located at '/home/u62422869/The Simplest Guide to SAS/'.
+   - The PROC IMPORT procedure imports data from the text file, specifying it as a delimited file with "|" as the delimiter.
+   - The OUT option specifies the output dataset as "cars_asia" and replaces it if it already exists.
+   - The GETNAMES option is set to "no" to indicate that variable names are not included in the data file.
+
+4. **Data Manipulation for Asian Cars:**
+   - The DATA step "cars_asia" formats the VAR5 variable as a dollar amount and renames the variables to meaningful names (Make, Model, Type, Origin, MSRP).
+
+5. **Printing European Cars with MSRP over $150,000:**
+   - The PROC PRINT procedure prints the dataset "cars_eu", showing only records where MSRP is greater than $150,000.
+
+6. **Printing Asian Cars with MSRP over $150,000:**
+   - The PROC PRINT procedure prints the dataset "cars_asia", showing only records where MSRP is greater than $150,000.
+
+This SAS script demonstrates the process of importing, formatting, and analyzing car data from different regions, providing insights into high-value cars in both European and Asian markets.
+
 ## Usage
 
 Clone the repository to your local machine.
