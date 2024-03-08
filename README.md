@@ -461,6 +461,33 @@ This SAS script combines data from two datasets "student_data_1" and "student_da
 
 This SAS script demonstrates how to combine data from multiple datasets into a single dataset in SAS. It imports and defines variables for student data in two separate datasets, and then combines them into a unified dataset for further analysis or processing.
 
+## SAS Data Append Example: Appending Student Information
+
+This SAS script appends data from two datasets "student_info_1" and "student_info_2" into a single dataset named "combined_student_info".
+
+### Explanation:
+
+1. **Data Import and Definition (Dataset A):**
+   - The DATA step "student_info_1" creates a dataset to store student information.
+   - The INPUT statement defines the variables and their types: student_name, gender, student_age, and student_weight.
+   - The CARDS statement specifies the data values for each variable.
+   - The RUN statement marks the end of the DATA step.
+
+2. **Data Import and Definition (Dataset B):**
+   - The DATA step "student_info_2" creates another dataset to store additional student information.
+   - Similar to Dataset A, it defines the variables and their types: student_name, gender, student_age, and student_weight.
+   - The CARDS statement specifies the data values for each variable.
+   - The RUN statement marks the end of the DATA step.
+
+3. **Appending Data to Combined Dataset (Dataset C):**
+   - The PROC APPEND procedure appends data from datasets A and B into a single dataset named "combined_student_info".
+   - Two PROC APPEND statements are used to append data from datasets A and B separately.
+   - The BASE option specifies the base dataset where the new observations will be added.
+   - The DATA option specifies the dataset from which data will be appended.
+   - The RUN statement marks the end of each PROC APPEND procedure.
+
+This SAS script demonstrates how to append data from multiple datasets into a single dataset in SAS. It imports and defines variables for student data in two separate datasets, and then appends them into a unified dataset for further analysis or processing. Note that running the code multiple times may result in duplicated appended records.
+
 ## Usage
 
 Clone the repository to your local machine.
