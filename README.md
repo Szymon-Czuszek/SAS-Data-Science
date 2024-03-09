@@ -488,6 +488,27 @@ This SAS script appends data from two datasets "student_info_1" and "student_inf
 
 This SAS script demonstrates how to append data from multiple datasets into a single dataset in SAS. It imports and defines variables for student data in two separate datasets, and then appends them into a unified dataset for further analysis or processing. Note that running the code multiple times may result in duplicated appended records.
 
+## SAS Data Deduplication Example: Removing Duplicate Student Records
+
+This SAS script processes student records from the "student_records" dataset to remove duplicate entries and create a sorted dataset named "sorted_student_records".
+
+### Explanation:
+
+1. **Data Import and Definition (Dataset A):**
+   - The DATA step "student_records" creates a dataset to store student information.
+   - The INPUT statement defines the variables and their types: student_name, student_gender, student_age, and student_weight.
+   - The CARDS statement specifies the data values for each variable.
+   - The RUN statement marks the end of the DATA step.
+
+2. **Sorting and Deduplicating Data:**
+   - The PROC SORT procedure sorts the "student_records" dataset by student_name.
+   - The OUT option specifies the output dataset as "sorted_student_records".
+   - The NODUPKEY option removes duplicate observations based on the sorted key variable (student_name).
+   - The BY statement in PROC SORT specifies the variable by which the dataset should be sorted.
+   - The RUN statement marks the end of the PROC SORT procedure.
+
+This SAS script demonstrates how to remove duplicate records from a dataset in SAS using the PROC SORT procedure with the NODUPKEY option. It sorts the dataset by student name and removes duplicate entries, resulting in a sorted dataset with unique student records.
+
 ## Usage
 
 Clone the repository to your local machine.
