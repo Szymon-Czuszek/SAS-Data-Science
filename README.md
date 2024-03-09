@@ -509,6 +509,27 @@ This SAS script processes student records from the "student_records" dataset to 
 
 This SAS script demonstrates how to remove duplicate records from a dataset in SAS using the PROC SORT procedure with the NODUPKEY option. It sorts the dataset by student name and removes duplicate entries, resulting in a sorted dataset with unique student records.
 
+## SAS Data Deduplication Example: Removing Duplicate Employee Records
+
+This SAS script processes employee records from the "employee_data" dataset to remove duplicate entries and create a sorted dataset named "sorted_employee_data".
+
+### Explanation:
+
+1. **Data Import and Definition (Dataset A):**
+   - The DATA step "employee_data" creates a dataset to store employee information.
+   - The INPUT statement defines the variables and their types: employee_name, employee_gender, employee_age, and employee_weight.
+   - The CARDS statement specifies the data values for each variable.
+   - The RUN statement marks the end of the DATA step.
+
+2. **Sorting and Deduplicating Data:**
+   - The PROC SORT procedure sorts the "employee_data" dataset by employee_name.
+   - The OUT option specifies the output dataset as "sorted_employee_data".
+   - The NODUP option removes duplicate observations based on all variables.
+   - The BY statement in PROC SORT specifies the variable by which the dataset should be sorted.
+   - The RUN statement marks the end of the PROC SORT procedure.
+
+This SAS script demonstrates how to remove duplicate records from a dataset in SAS using the PROC SORT procedure with the NODUP option. It sorts the dataset by employee name and removes duplicate entries, resulting in a sorted dataset with unique employee records.
+
 ## Usage
 
 Clone the repository to your local machine.
