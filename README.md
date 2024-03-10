@@ -530,6 +530,31 @@ This SAS script processes employee records from the "employee_data" dataset to r
 
 This SAS script demonstrates how to remove duplicate records from a dataset in SAS using the PROC SORT procedure with the NODUP option. It sorts the dataset by employee name and removes duplicate entries, resulting in a sorted dataset with unique employee records.
 
+## SAS Data Merge Example: Combining Employee Information
+
+This SAS script merges two datasets, "employee_info" and "employee_height", based on the common variable "employee_name" to create a combined dataset named "combined_employee_data".
+
+### Explanation:
+
+1. **Data Import and Definition (Datasets A and B):**
+   - Two DATA steps, "employee_info" and "employee_height", create datasets to store employee information and height data, respectively.
+   - The INPUT statements define the variables and their types: employee_name, employee_gender, employee_age, employee_weight in "employee_info", and employee_name, employee_height in "employee_height".
+   - The CARDS statements specify the data values for each variable.
+   - The RUN statements mark the end of the DATA steps.
+
+2. **Sorting Data (Datasets A and B):**
+   - Two PROC SORT procedures sort datasets "employee_info" and "employee_height" by the variable "employee_name".
+   - The BY statement in PROC SORT specifies the variable by which the datasets should be sorted.
+   - The RUN statements mark the end of the PROC SORT procedures.
+
+3. **Merging Datasets (Dataset C):**
+   - The DATA step "combined_employee_data" merges datasets "employee_info" and "employee_height" based on the common variable "employee_name".
+   - The MERGE statement combines the observations from both datasets into a single dataset.
+   - The BY statement specifies the variable by which the datasets should be merged.
+   - The RUN statement marks the end of the DATA step.
+
+This SAS script demonstrates how to merge two datasets based on a common variable using the MERGE statement. It combines employee information and height data into a single dataset for comprehensive analysis or reporting.
+
 ## Usage
 
 Clone the repository to your local machine.
