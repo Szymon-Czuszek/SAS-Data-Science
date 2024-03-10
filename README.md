@@ -555,6 +555,32 @@ This SAS script merges two datasets, "employee_info" and "employee_height", base
 
 This SAS script demonstrates how to merge two datasets based on a common variable using the MERGE statement. It combines employee information and height data into a single dataset for comprehensive analysis or reporting.
 
+## SAS Data Merge Example: Combining Height and Weight Information
+
+This SAS script merges two datasets, "class_weight" and "class_height", based on the common variable "name" to create a combined dataset named "class_merged".
+
+### Explanation:
+
+1. **Data Import and Definition (Datasets A and B):**
+   - Two DATA steps, "class_weight" and "class_height", create datasets to store weight and height information, respectively.
+   - The INPUT statements define the variables and their types: name, gender, age, and weight in "class_weight", and name and height in "class_height".
+   - The CARDS statements specify the data values for each variable.
+   - The RUN statements mark the end of the DATA steps.
+
+2. **Sorting Data (Datasets A and B):**
+   - Two PROC SORT procedures sort datasets "class_weight" and "class_height" by the variable "name".
+   - The BY statement in PROC SORT specifies the variable by which the datasets should be sorted.
+   - The RUN statements mark the end of the PROC SORT procedures.
+
+3. **Merging Datasets (Dataset C):**
+   - The DATA step "class_merged" merges datasets "class_weight" and "class_height" based on the common variable "name".
+   - The MERGE statement combines the observations from both datasets into a single dataset.
+   - The BY statement specifies the variable by which the datasets should be merged.
+   - The IF statement ensures that only observations present in both datasets are included in the merged dataset.
+   - The RUN statement marks the end of the DATA step.
+
+This SAS script demonstrates how to merge two datasets based on a common variable using the MERGE statement. It combines weight and height information into a single dataset for comprehensive analysis or reporting.
+
 ## Usage
 
 Clone the repository to your local machine.
