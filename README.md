@@ -581,6 +581,30 @@ This SAS script merges two datasets, "class_weight" and "class_height", based on
 
 This SAS script demonstrates how to merge two datasets based on a common variable using the MERGE statement. It combines weight and height information into a single dataset for comprehensive analysis or reporting.
 
+## SAS SQL Example: Creating a New Table from an Existing Dataset
+
+This SAS SQL query creates a new table named "student_info" by selecting all records from the existing dataset "sashelp.class".
+
+### Explanation:
+
+1. **PROC SQL Statement:**
+   - The PROC SQL statement initiates the SQL procedure.
+
+2. **CREATE TABLE Statement:**
+   - The CREATE TABLE statement is used to define and create a new table named "student_info".
+   - The AS keyword specifies that the new table will be created based on the result of a query.
+
+3. **SELECT Statement:**
+   - The SELECT statement retrieves all columns (represented by '*') from the existing dataset "sashelp.class".
+
+4. **FROM Clause:**
+   - The FROM clause specifies the source dataset "sashelp.class" from which data will be selected.
+
+5. **QUIT Statement:**
+   - The QUIT statement ends the SQL procedure.
+
+This SAS SQL query demonstrates how to create a new table by selecting all records from an existing dataset using the PROC SQL procedure. It provides a way to store and manipulate data for further analysis or reporting purposes.
+
 ## Usage
 
 Clone the repository to your local machine.
