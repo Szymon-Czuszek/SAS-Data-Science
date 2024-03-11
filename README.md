@@ -605,6 +605,33 @@ This SAS SQL query creates a new table named "student_info" by selecting all rec
 
 This SAS SQL query demonstrates how to create a new table by selecting all records from an existing dataset using the PROC SQL procedure. It provides a way to store and manipulate data for further analysis or reporting purposes.
 
+## SAS SQL Example: Creating a New Table with Filtered Data
+
+This SAS SQL query creates a new table named "male_students" by selecting all records from the existing dataset "sashelp.class" where the sex is 'M'.
+
+### Explanation:
+
+1. **PROC SQL Statement:**
+   - The PROC SQL statement initiates the SQL procedure.
+
+2. **CREATE TABLE Statement:**
+   - The CREATE TABLE statement is used to define and create a new table named "male_students".
+   - The AS keyword specifies that the new table will be created based on the result of a query.
+
+3. **SELECT Statement:**
+   - The SELECT statement retrieves all columns (represented by '*') from the existing dataset "sashelp.class".
+
+4. **FROM Clause:**
+   - The FROM clause specifies the source dataset "sashelp.class" from which data will be selected.
+
+5. **WHERE Clause:**
+   - The WHERE clause filters the records based on the condition that sex is 'M'.
+
+6. **QUIT Statement:**
+   - The QUIT statement ends the SQL procedure.
+
+This SAS SQL query demonstrates how to create a new table by selecting specific records from an existing dataset based on certain criteria using the PROC SQL procedure. It allows for the creation of targeted subsets of data for further analysis or reporting purposes.
+
 ## Usage
 
 Clone the repository to your local machine.
