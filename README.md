@@ -632,6 +632,34 @@ This SAS SQL query creates a new table named "male_students" by selecting all re
 
 This SAS SQL query demonstrates how to create a new table by selecting specific records from an existing dataset based on certain criteria using the PROC SQL procedure. It allows for the creation of targeted subsets of data for further analysis or reporting purposes.
 
+## SAS SQL Example: Creating a Summary Table with Grouping + AVG.
+
+This SAS SQL query creates a new table named "average_age_by_sex" by calculating the average age and grouping the data by sex from the 'sashelp.class' dataset.
+
+### Explanation:
+
+1. **PROC SQL Statement:**
+   - The PROC SQL statement initiates the SQL procedure.
+
+2. **CREATE TABLE Statement:**
+   - The CREATE TABLE statement is used to define and create a new table named "average_age_by_sex".
+   - The AS keyword specifies that the new table will be created based on the result of a query.
+
+3. **SELECT Statement:**
+   - The SELECT statement calculates the average age using the AVG() function and renames the result column as "average_age".
+   - It also selects the 'sex' column from the 'sashelp.class' dataset.
+   
+4. **FROM Clause:**
+   - The FROM clause specifies the source dataset "sashelp.class" from which data will be selected.
+
+5. **GROUP BY Clause:**
+   - The GROUP BY clause groups the data by the 'sex' column.
+
+6. **QUIT Statement:**
+   - The QUIT statement ends the SQL procedure.
+
+This SAS SQL query demonstrates how to create a summary table by calculating aggregates and grouping data based on specific criteria from an existing dataset using the PROC SQL procedure. It provides insights into the distribution of average ages by sex.
+
 ## Usage
 
 Clone the repository to your local machine.
