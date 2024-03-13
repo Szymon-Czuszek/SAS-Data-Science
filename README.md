@@ -716,6 +716,26 @@ This SAS SQL query creates a new table named "unique_gender_age" by selecting di
 
 This SAS SQL query demonstrates how to create a new table with unique combinations of gender and age from an existing dataset using the PROC SQL procedure. It provides a way to analyze and explore the distribution of gender-age combinations in the dataset.
 
+## SAS Data Processing Example: Transposing Student Information
+
+This SAS snippet demonstrates data processing steps involving the creation of a dataset named STUDENT_INFO and its subsequent transposition using the PROC TRANSPOSE procedure.
+
+### Explanation:
+
+1. **DATA Step (Creating Dataset):**
+   - The DATA statement initiates the creation of a dataset named STUDENT_INFO.
+   - Variables STUDENT_NAME, STUDENT_GENDER, STUDENT_AGE, and STUDENT_WEIGHT are defined to store information about students.
+   - The INPUT statement specifies the format for reading data values.
+   - The CARDS statement provides the actual data values for the variables.
+
+2. **PROC TRANSPOSE Step:**
+   - The PROC TRANSPOSE procedure is used to transpose the dataset STUDENT_INFO.
+   - It transposes the variables STUDENT_GENDER, STUDENT_AGE, and STUDENT_WEIGHT.
+   - The ID statement specifies STUDENT_NAME as the identifier variable.
+   - The resulting transposed dataset is named T_STUDENT_INFO.
+
+This SAS code snippet illustrates how to organize and manipulate student information, demonstrating the creation of a dataset and its transformation through transposition for further analysis or reporting purposes.
+
 ## Usage
 
 Clone the repository to your local machine.
