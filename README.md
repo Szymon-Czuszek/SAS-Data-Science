@@ -688,6 +688,34 @@ This SAS SQL query creates a new table named "minimum_msrp_by_origin" by calcula
 
 This SAS SQL query demonstrates how to create a summary table by calculating aggregates and grouping data based on specific criteria from an existing dataset using the PROC SQL procedure. It provides insights into the distribution of minimum MSRP values by origin.
 
+## SAS SQL Example: Creating a Table with Unique Gender-Age Combinations
+
+This SAS SQL query creates a new table named "unique_gender_age" by selecting distinct combinations of gender and age from the 'sashelp.class' dataset. The resulting table is ordered by gender and age.
+
+### Explanation:
+
+1. **PROC SQL Statement:**
+   - The PROC SQL statement initiates the SQL procedure.
+
+2. **CREATE TABLE Statement:**
+   - The CREATE TABLE statement is used to define and create a new table named "unique_gender_age".
+   - The AS keyword specifies that the new table will be created based on the result of a query.
+
+3. **SELECT Statement:**
+   - The SELECT statement retrieves distinct combinations of gender and age from the 'sashelp.class' dataset.
+   - The DISTINCT keyword ensures that only unique combinations are selected.
+
+4. **FROM Clause:**
+   - The FROM clause specifies the source dataset "sashelp.class" from which data will be selected.
+
+5. **ORDER BY Clause:**
+   - The ORDER BY clause orders the result set by gender and age.
+
+6. **QUIT Statement:**
+   - The QUIT statement ends the SQL procedure.
+
+This SAS SQL query demonstrates how to create a new table with unique combinations of gender and age from an existing dataset using the PROC SQL procedure. It provides a way to analyze and explore the distribution of gender-age combinations in the dataset.
+
 ## Usage
 
 Clone the repository to your local machine.
