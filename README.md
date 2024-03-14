@@ -736,6 +736,31 @@ This SAS snippet demonstrates data processing steps involving the creation of a 
 
 This SAS code snippet illustrates how to organize and manipulate student information, demonstrating the creation of a dataset and its transformation through transposition for further analysis or reporting purposes.
 
+## SAS Data Processing Example: Transposing Patient Vitals
+
+This SAS snippet demonstrates data processing steps involving the creation of a dataset named PATIENT_VITALS and its subsequent transposition using the PROC TRANSPOSE procedure.
+
+### Explanation:
+
+1. **DATA Step (Creating Dataset):**
+   - The DATA statement initiates the creation of a dataset named PATIENT_VITALS.
+   - Variables PATIENT_ID, PATIENT_NAME, TEST_TYPE, and TEST_VALUE are defined to store patient vital information.
+   - The INPUT statement specifies the format for reading data values.
+   - The CARDS statement provides the actual data values for the variables.
+
+2. **PROC SORT Step:**
+   - The PROC SORT procedure is used to sort the dataset PATIENT_VITALS.
+   - It sorts the data by PATIENT_ID and PATIENT_NAME.
+
+3. **PROC TRANSPOSE Step:**
+   - The PROC TRANSPOSE procedure transposes the dataset PATIENT_VITALS.
+   - It transposes the variable TEST_VALUE.
+   - The ID statement specifies TEST_TYPE as the identifier variable.
+   - The BY statement specifies PATIENT_ID and PATIENT_NAME for grouping.
+   - The resulting transposed dataset is named T_PATIENT_VITALS.
+
+This SAS code snippet illustrates how to organize and manipulate patient vital information, demonstrating the creation of a dataset and its transformation through transposition for further analysis or reporting purposes.
+
 ## Usage
 
 Clone the repository to your local machine.
