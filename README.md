@@ -761,6 +761,31 @@ This SAS snippet demonstrates data processing steps involving the creation of a 
 
 This SAS code snippet illustrates how to organize and manipulate patient vital information, demonstrating the creation of a dataset and its transformation through transposition for further analysis or reporting purposes.
 
+## SAS Data Processing Example: Employee Total Pay Calculation
+
+This SAS snippet demonstrates data processing steps involving the calculation of total pay for each employee from the dataset EMPLOYEE_PAY.
+
+### Explanation:
+
+1. **DATA Step (Creating Dataset):**
+   - The DATA statement initiates the creation of a dataset named EMPLOYEE_PAY.
+   - Variables EMPLOYEE_NAME, PAY_PERIOD, and PAY_AMOUNT are defined to store employee pay information.
+   - The INPUT statement specifies the format for reading data values.
+   - The CARDS statement provides the actual data values for the variables.
+
+2. **PROC SORT Step:**
+   - The PROC SORT procedure is used to sort the dataset EMPLOYEE_PAY.
+   - It sorts the data by EMPLOYEE_NAME.
+
+3. **DATA Step (Calculating Total Pay):**
+   - The DATA statement creates a new dataset named EMPLOYEE_TOTAL_PAY.
+   - It reads data from the existing dataset EMPLOYEE_PAY.
+   - The BY statement is used for grouping by EMPLOYEE_NAME.
+   - The RETAIN statement initializes and retains the value of the variable TOTAL_PAY.
+   - The IF statement conditionally assigns the value of TOTAL_PAY based on whether it is the first observation for a given EMPLOYEE_NAME.
+
+This SAS code snippet illustrates how to calculate total pay for each employee across different pay periods, providing insights into overall compensation patterns.
+
 ## Usage
 
 Clone the repository to your local machine.
