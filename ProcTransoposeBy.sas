@@ -1,12 +1,12 @@
 /*
-This SAS snippet creates a dataset named VITALS using the DATA statement.
-It defines variables: SID, NAME, TEST, and VALUE.
+This SAS snippet creates a dataset named PATIENT_VITALS using the DATA statement.
+It defines variables: PATIENT_ID, PATIENT_NAME, TEST_TYPE, and TEST_VALUE.
 The INPUT statement specifies the format of the data to be read.
 The CARDS statement provides the data values.
 */
 
-DATA VITALS;
-INPUT SID NAME $ TEST $ VALUE;
+DATA PATIENT_VITALS;
+INPUT PATIENT_ID PATIENT_NAME $ TEST_TYPE $ TEST_VALUE;
 CARDS;
 101 John SBP 120
 101 John DBP 90
@@ -19,29 +19,24 @@ CARDS;
 RUN;
 
 /*
-This SAS snippet sorts the dataset VITALS using the PROC SORT procedure.
-It sorts the data by SID and NAME.
+This SAS snippet sorts the dataset PATIENT_VITALS using the PROC SORT procedure.
+It sorts the data by PATIENT_ID and PATIENT_NAME.
 */
 
-PROC SORT DATA=VITALS;
-BY SID NAME;
+PROC SORT DATA=PATIENT_VITALS;
+BY PATIENT_ID PATIENT_NAME;
 RUN;
 
 /*
-This SAS snippet uses the PROC TRANSPOSE procedure to transpose the dataset VITALS.
-It transposes the variable VALUE.
-The ID statement specifies the variable TEST as the identifier.
-The BY statement specifies the variables SID and NAME for grouping.
-The resulting transposed dataset is named T_VITALS.
+This SAS snippet uses the PROC TRANSPOSE procedure to transpose the dataset PATIENT_VITALS.
+It transposes the variable TEST_VALUE.
+The ID statement specifies the variable TEST_TYPE as the identifier.
+The BY statement specifies the variables PATIENT_ID and PATIENT_NAME for grouping.
+The resulting transposed dataset is named T_PATIENT_VITALS.
 */
 
-PROC TRANSPOSE DATA=VITALS OUT=T_VITALS;
-VAR VALUE;
-ID TEST;
-BY SID NAME;
+PROC TRANSPOSE DATA=PATIENT_VITALS OUT=T_PATIENT_VITALS;
+VAR TEST_VALUE;
+ID TEST_TYPE;
+BY PATIENT_ID PATIENT_NAME;
 RUN;
-
-
-
-
-
