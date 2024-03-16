@@ -786,6 +786,25 @@ This SAS snippet demonstrates data processing steps involving the calculation of
 
 This SAS code snippet illustrates how to calculate total pay for each employee across different pay periods, providing insights into overall compensation patterns.
 
+## SAS Data Processing Example: Employee Salary Details
+
+This SAS code snippet demonstrates the processing of employee salary data to convert numeric values to character values with specific formats.
+
+### Explanation:
+
+1. **Creating Dataset and Defining Variables:**
+   - The DATA statement creates a dataset named EMPLOYEE_SALARY with variables WORKER, PAY, and WORKER_ID.
+   - The INPUT statement specifies the format of the data to be read, including dollar and SSN formats for PAY and WORKER_ID, respectively.
+   - The CARDS statement provides the data values for WORKER, PAY, and WORKER_ID.
+
+2. **Converting Numeric Values to Character Values:**
+   - The DATA statement creates a new dataset named SALARY_DETAILS by reading data from the existing EMPLOYEE_SALARY dataset.
+   - The SET statement specifies the dataset to read from.
+   - The PUT function is used to convert numeric values to character values for PAY and WORKER_ID.
+   - The PUT function formats the variables with appropriate dollar and SSN formats, specified by dollar10.2 and ssn11. formats, respectively.
+
+This SAS code snippet demonstrates the conversion of numeric employee salary and ID values to character values with specific formats for reporting or display purposes.
+
 ## Usage
 
 Clone the repository to your local machine.
