@@ -805,6 +805,23 @@ This SAS code snippet demonstrates the processing of employee salary data to con
 
 This SAS code snippet demonstrates the conversion of numeric employee salary and ID values to character values with specific formats for reporting or display purposes.
 
+## SAS Data Import Example: Employee Bonus Information
+
+This SAS code snippet demonstrates the import of employee bonus information into two datasets: EMPLOYEE_BONUS and EMPLOYEE_BONUS1.
+
+### Explanation:
+
+1. **Creating Dataset and Defining Variables:**
+   - The DATA statement creates a dataset named EMPLOYEE_BONUS with variables EMPLOYEE_NAME, BONUS_AMOUNT, and DATE_OF_BIRTH.
+   - The INPUT statement specifies the format of the data to be read, including dollar and date formats for BONUS_AMOUNT and DATE_OF_BIRTH, respectively.
+   - The CARDS statement provides the data values for EMPLOYEE_NAME, BONUS_AMOUNT, and DATE_OF_BIRTH.
+
+2. **Duplicate Dataset Creation:**
+   - Another dataset named EMPLOYEE_BONUS1 is created as a duplicate of EMPLOYEE_BONUS using the same DATA statement, INPUT statement, and CARDS statement.
+   - Both datasets contain the same bonus information for different employees.
+
+This SAS code snippet demonstrates the process of importing employee bonus information into SAS datasets for further analysis or processing.
+
 ## Usage
 
 Clone the repository to your local machine.
