@@ -822,6 +822,25 @@ This SAS code snippet demonstrates the import of employee bonus information into
 
 This SAS code snippet demonstrates the process of importing employee bonus information into SAS datasets for further analysis or processing.
 
+## SAS Data Visualization: Employee Gender Distribution
+
+This SAS code snippet processes employee data and visualizes the gender distribution using various charts.
+
+### Explanation:
+
+1. **Creating Dataset:**
+   - The DATA statement creates a dataset named EMPLOYEES_INFO, which contains information about employees, including their name, gender, age, and weight.
+   - The CARDS section provides the data values, with each record separated by a comma.
+   - The INPUT statement specifies the format of the data to be read from the CARDS section.
+
+2. **Creating Charts:**
+   - PROC CHART is used to create different types of charts based on the EMPLOYEES_INFO dataset.
+   - The VBAR statement generates a vertical bar chart to show the distribution of genders.
+   - The HBAR statement generates a horizontal bar chart to visualize the gender distribution.
+   - The PIE statement creates a pie chart to display the proportion of each gender in the dataset.
+
+These SAS code snippets demonstrate the process of visualizing employee gender distribution using various chart types for effective data exploration and analysis.
+
 ## Usage
 
 Clone the repository to your local machine.
