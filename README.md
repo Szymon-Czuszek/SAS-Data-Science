@@ -841,6 +841,23 @@ This SAS code snippet processes employee data and visualizes the gender distribu
 
 These SAS code snippets demonstrate the process of visualizing employee gender distribution using various chart types for effective data exploration and analysis.
 
+## SAS Data Visualization: Age and Course Distribution
+
+This SAS code snippet processes student class data and creates vertical bar charts to visualize the distribution of age and course numbers.
+
+### Explanation:
+
+1. **Creating Dataset:**
+   - The DATA statement creates a dataset named CLASS, which contains information about students, including their name, gender, age, course number, and major.
+   - The INPUT statement specifies the format of the data to be read.
+
+2. **Creating Charts:**
+   - PROC CHART is used to create vertical bar charts based on the CLASS dataset.
+   - The first chart (vbar AGE) visualizes the distribution of ages among students using vertical bars.
+   - The second chart (vbar COURSENO) displays the distribution of course numbers discretely using vertical bars.
+
+These SAS code snippets demonstrate the process of visualizing age and course distribution among students using vertical bar charts for effective data analysis and exploration.
+
 ## Usage
 
 Clone the repository to your local machine.
