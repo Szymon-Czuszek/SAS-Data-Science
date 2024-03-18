@@ -858,6 +858,22 @@ This SAS code snippet processes student class data and creates vertical bar char
 
 These SAS code snippets demonstrate the process of visualizing age and course distribution among students using vertical bar charts for effective data analysis and exploration.
 
+## SAS Data Visualization: Course Enrollment
+
+This SAS code snippet processes student enrollment data and creates a horizontal bar chart to visualize the distribution of course enrollment.
+
+### Explanation:
+
+1. **Creating Dataset:**
+   - The DATA statement creates a dataset named ENROLLMENT_DATA, containing information about students, including their name, gender, age, course ID, and major.
+   - The INPUT statement specifies the format of the data to be read.
+
+2. **Creating Chart:**
+   - PROC CHART is used to create a horizontal bar chart based on the ENROLLMENT_DATA dataset.
+   - The HBAR statement generates a horizontal bar chart, with course IDs plotted discretely along the y-axis.
+
+This SAS code snippet demonstrates the process of visualizing the distribution of course enrollment among students using a horizontal bar chart for effective data analysis and exploration.
+
 ## Usage
 
 Clone the repository to your local machine.
