@@ -910,6 +910,23 @@ This SAS code snippet processes student enrollment data and creates a horizontal
 
 This SAS code snippet demonstrates the process of visualizing the distribution of student ages across different courses, majors, and genders using a horizontal bar chart for insightful analysis and decision-making.
 
+## SAS Data Visualization: Age vs. Weight Analysis
+
+This SAS code snippet processes personal information data and creates scatter plots to analyze the relationship between age and weight.
+
+### Explanation:
+
+1. **Creating Dataset:**
+   - The DATA statement creates a dataset named PERSONAL_INFO, containing information about individuals, including their name, gender, age, and weight.
+   - The INPUT statement specifies the format of the data to be read.
+
+2. **Creating Scatter Plots:**
+   - PROC PLOT is used to create scatter plots based on the PERSONAL_INFO dataset.
+   - The first scatter plot (without symbols) plots age against weight.
+   - The second scatter plot (with '*' symbols) also plots age against weight but uses asterisks as symbols.
+
+These SAS code snippets demonstrate the process of visualizing the relationship between age and weight using scatter plots, allowing for insights into potential correlations or patterns.
+
 ## Usage
 
 Clone the repository to your local machine.
