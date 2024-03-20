@@ -927,6 +927,23 @@ This SAS code snippet processes personal information data and creates scatter pl
 
 These SAS code snippets demonstrate the process of visualizing the relationship between age and weight using scatter plots, allowing for insights into potential correlations or patterns.
 
+## SAS Data Filtering Example: Filtering by Gender
+
+This SAS code snippet processes personal information data and prints selected records based on gender.
+
+### Explanation:
+
+1. **Creating Dataset:**
+   - The DATA statement creates a dataset named PERSON_INFO, containing information about individuals, including their name, gender, age, and weight.
+   - The INPUT statement specifies the format of the data to be read.
+
+2. **Printing Selected Data:**
+   - PROC PRINT is used to display selected data from the PERSON_INFO dataset.
+   - The VAR statement specifies the variables to be displayed.
+   - The WHERE statement filters the records based on gender, displaying only those where the gender is 'M' (Male).
+
+This SAS code snippet demonstrates how to filter and display specific records from a dataset based on certain criteria, such as gender.
+
 ## Usage
 
 Clone the repository to your local machine.
