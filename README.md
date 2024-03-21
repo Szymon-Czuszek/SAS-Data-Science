@@ -960,6 +960,16 @@ This SAS code snippet demonstrates how to filter and display specific records fr
    - Columns include car make, model, type, origin, and MSRP.
    - Column widths and formatting options are specified using DEFINE statements.
 
+## SAS Frequency Analysis Example
+
+### 1. Gender Frequency Table:
+   - The first PROC FREQ generates a frequency table for the GENDER variable from the CLASS dataset.
+   - It counts the number of occurrences of each gender category.
+
+### 2. Course Number Frequency Table:
+   - The second PROC FREQ generates a frequency table for the COURSENO variable from the CLASS dataset.
+   - It counts the number of occurrences of each course number.
+
 ## Usage
 
 Clone the repository to your local machine.
