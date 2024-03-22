@@ -974,6 +974,10 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 - The PROC MEANS procedure calculates basic statistics such as mean, median, minimum, maximum, and standard deviation for the AGE variable from the CLASS dataset.
 
+## Descriptive Statistics for Age Variable
+
+- The PROC UNIVARIATE procedure calculates basic statistics such as mean, median, minimum, maximum, and standard deviation for the AGE variable from the CLASS dataset.
+
 ## Usage
 
 Clone the repository to your local machine.
