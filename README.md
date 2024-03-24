@@ -1006,6 +1006,14 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - ODS TRACE ON and ODS TRACE OFF are used to trace ODS destinations, which helps in debugging and diagnosing issues related to ODS output.
 - The ODS OUTPUT statement saves the output of PROC UNIVARIATE into datasets named MYUNIVMOMENTS and MYUNIVBASIC.
 
+## Filtering Dataset by Macro Variables
+
+### Explanation:
+
+- The DATA step creates a dataset named CLASS with variables: NAME, GENDER, AGE, COURSENO, and MAJOR.
+- Macro variables VAR and VALUE are defined to hold the variable name and value to filter the dataset.
+- PROC PRINT is used to display observations from the CLASS dataset where the value of the variable specified by the macro variable VAR matches the value specified by the macro variable VALUE.
+
 ## Usage
 
 Clone the repository to your local machine.
