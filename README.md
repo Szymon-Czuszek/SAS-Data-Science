@@ -1014,6 +1014,17 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - Macro variables VAR and VALUE are defined to hold the variable name and value to filter the dataset.
 - PROC PRINT is used to display observations from the CLASS dataset where the value of the variable specified by the macro variable VAR matches the value specified by the macro variable VALUE.
 
+## Macro Variable Manipulation
+
+### Explanation:
+
+- Macro variable B is assigned the value 10 using the %LET statement.
+- Macro variable A is assigned the value of macro variable B.
+- The %PUT statement displays the value of macro variable B, which is 10.
+- The %PUT statement displays the value of macro variable A, which is B.
+- The && operator resolves a single ampersand at runtime, so &&A resolves to &B, and the %PUT statement displays the value of macro variable B again.
+- The &&& operator resolves a double ampersand at runtime, so &&&A resolves to &10, and the %PUT statement displays the value 10.
+
 ## Usage
 
 Clone the repository to your local machine.
