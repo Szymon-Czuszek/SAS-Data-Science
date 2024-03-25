@@ -1025,6 +1025,16 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - The && operator resolves a single ampersand at runtime, so &&A resolves to &B, and the %PUT statement displays the value of macro variable B again.
 - The &&& operator resolves a double ampersand at runtime, so &&&A resolves to &10, and the %PUT statement displays the value 10.
 
+## Macro Variable Cascading
+
+### Explanation:
+
+- Macro variables are assigned values in a cascading manner: APPLE is assigned the value "banana", BANANA is assigned "cherry", CHERRY is assigned "plum", and PLUM is assigned "elderberry".
+- The %PUT statements display the values of macro variable APPLE in different configurations using the double ampersand operator.
+- The first %PUT statement displays the direct value of APPLE, which is "banana".
+- The subsequent %PUT statements use the double ampersand operator to resolve the macro variable APPLE in a cascading manner.
+
+
 ## Usage
 
 Clone the repository to your local machine.
