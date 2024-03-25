@@ -1034,6 +1034,19 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - The first %PUT statement displays the direct value of APPLE, which is "banana".
 - The subsequent %PUT statements use the double ampersand operator to resolve the macro variable APPLE in a cascading manner.
 
+## Custom Macro for Reporting
+
+### Explanation:
+
+- This SAS macro, named MYREPORT, is defined to generate summary statistics and print data for a specified dataset within a given library.
+- The macro takes three arguments: LIB, DSN, and STATVAR.
+- LIB represents the library name, DSN represents the dataset name, and STATVAR represents the variable for which summary statistics are calculated.
+- Inside the macro, PROC MEANS is used to calculate summary statistics (mean, min, max, etc.) for the specified variable in the dataset.
+- PROC PRINT is used to display the dataset contents after the summary statistics have been calculated.
+- The macro is invoked twice:
+    - First invocation: Calls MYREPORT with arguments (SASHELP, CLASS, AGE).
+    - Second invocation: Calls MYREPORT with arguments (SASHELP, CARS, MSRP).
+- This approach enables easy generation of summary reports for different datasets and variables by simply calling the MYREPORT macro with appropriate parameters.
 
 ## Usage
 
