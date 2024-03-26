@@ -1048,6 +1048,24 @@ This SAS code snippet demonstrates how to filter and display specific records fr
     - Second invocation: Calls MYREPORT with arguments (SASHELP, CARS, MSRP).
 - This approach enables easy generation of summary reports for different datasets and variables by simply calling the MYREPORT macro with appropriate parameters.
 
+## Custom Macro for Reporting
+
+### Explanation:
+
+- The macro MYREPORT is defined to generate summary statistics and print data for a specified dataset within a given library.
+- It takes three arguments: LIB, DSN, and STATVAR.
+    - LIB represents the library name.
+    - DSN represents the dataset name.
+    - STATVAR represents the variable for which summary statistics are calculated.
+- Inside the macro, PROC MEANS calculates summary statistics (mean, min, max, etc.) for the specified variable in the dataset.
+- Then, PROC PRINT displays the dataset contents after the summary statistics have been calculated.
+- The macro is invoked four times:
+    1. First invocation: Calls MYREPORT with arguments (SASHELP, CLASS, AGE).
+    2. Second invocation: Calls MYREPORT with arguments (SASHELP, CLASS, HEIGHT).
+    3. Third invocation: Calls MYREPORT with arguments (SASHELP, CLASS, WEIGHT).
+    4. Fourth invocation: Calls MYREPORT with arguments (SASHELP, CARS, MSRP).
+- This approach allows for the easy generation of summary reports for different datasets and variables by simply calling the MYREPORT macro with appropriate parameters.
+
 ## Usage
 
 Clone the repository to your local machine.
