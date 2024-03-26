@@ -1066,6 +1066,21 @@ This SAS code snippet demonstrates how to filter and display specific records fr
     4. Fourth invocation: Calls MYREPORT with arguments (SASHELP, CARS, MSRP).
 - This approach allows for the easy generation of summary reports for different datasets and variables by simply calling the MYREPORT macro with appropriate parameters.
 
+## Macro Operations and Functions
+
+### Explanation:
+
+- The macro variables `a`, `b`, `c`, `d`, and `e` are defined using the `%LET` statement to store different values and manipulate them using macro functions.
+- `%UPCASE`: Converts the value of macro variable `a` to uppercase and assigns it to variable `b`.
+- `%LOWCASE`: Converts the value of macro variable `a` to lowercase and assigns it to variable `c`.
+- `%SUBSTR`: Extracts a substring from the value of macro variable `a` starting at position 1 with a length of 6 characters, and assigns it to variable `d`.
+- `%LENGTH`: Calculates the length of the value of macro variable `a` and assigns it to variable `e`.
+- The `PUT` statement is used to display the values of variables `b`, `c`, `d`, and `e`, showing the results of the string manipulations and length calculation.
+- In the second part, numerical values are manipulated:
+    - Macro variables `x` and `y` are defined with decimal values.
+    - `%SYSEVALF`: Calculates the sum of `x` and `y` and assigns it to variable `z`.
+- Finally, the result of the arithmetic operation is displayed using the `PUT` statement.
+
 ## Usage
 
 Clone the repository to your local machine.
