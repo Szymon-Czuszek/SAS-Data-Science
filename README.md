@@ -1090,6 +1090,13 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Importing and Parsing Text File**: The piped-delimited text file `carsasiapipedelimited.txt` is imported into the SAS dataset `cars_asia`, with appropriate data parsing.
 - **Data Filtering and Analysis**: The PROC PRINT procedure is used to display records from `cars_eu` and `cars_asia` where MSRP is greater than $150,000.
 
+### Part 2
+#### Merging and Sorting Car Data
+- **Library Assignment**: The SAS library `MyLib` is assigned to the directory.
+- **Importing and Merging Data**: The SAS dataset `carsusa` from the library `MyLib` is merged with `cars_eu` and `cars_asia` into the dataset `cars_all`.
+- **Sorting Data**: The datasets `cars_all` and `cars_mpg` are sorted by model and make.
+- **Combining Sorted Data**: The datasets `cars_all` and `cars_mpg` are merged into `combined_cars_all` based on model and make.
+
 
 
 ## Usage
