@@ -1097,7 +1097,12 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Sorting Data**: The datasets `cars_all` and `cars_mpg` are sorted by model and make.
 - **Combining Sorted Data**: The datasets `cars_all` and `cars_mpg` are merged into `combined_cars_all` based on model and make.
 
-
+### Part 3
+#### Frequency Analysis and Statistical Calculation
+- **Frequency Count**: PROC FREQ calculates the frequency count of car makes and origins.
+- **Formatting Frequency Table**: The frequency count table is formatted, and percentages are rounded.
+- **Transpose and Print**: The transposed frequency table is printed to display frequency counts by car make and origin.
+- **Statistical Calculation**: A macro `myStat` calculates the frequency count and percentage of hybrid cars based on car make and type.
 
 ## Usage
 
