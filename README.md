@@ -1081,6 +1081,17 @@ This SAS code snippet demonstrates how to filter and display specific records fr
     - `%SYSEVALF`: Calculates the sum of `x` and `y` and assigns it to variable `z`.
 - Finally, the result of the arithmetic operation is displayed using the `PUT` statement.
 
+## Cars Analysis Project Overview
+
+### Part 1
+#### Importing and Analyzing Car Data
+- **Data Import from Excel**: The SAS file `carseu.xlsx` is imported into the SAS dataset `cars_eu` using PROC IMPORT with the XLSX engine.
+- **Formatting Data**: The MSRP variable in the `cars_eu` dataset is formatted as dollar8.
+- **Importing and Parsing Text File**: The piped-delimited text file `carsasiapipedelimited.txt` is imported into the SAS dataset `cars_asia`, with appropriate data parsing.
+- **Data Filtering and Analysis**: The PROC PRINT procedure is used to display records from `cars_eu` and `cars_asia` where MSRP is greater than $150,000.
+
+
+
 ## Usage
 
 Clone the repository to your local machine.
