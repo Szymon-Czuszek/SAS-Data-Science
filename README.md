@@ -1104,7 +1104,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Transpose and Print**: The transposed frequency table is printed to display frequency counts by car make and origin.
 - **Statistical Calculation**: A macro `myStat` calculates the frequency count and percentage of hybrid cars based on car make and type.
 
-## Analyzing Student Health Data
+## Project Heavy Weight - Analyzing Student Health Data
 
 ### Importing and Preprocessing Data
 - **Data Import**: Excel sheets for Statistics (STAT) and History (HIST) classes and student height data (STUDHT) are imported into SAS.
@@ -1113,6 +1113,13 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **BMI Calculation**: BMI is calculated using weight (kg) divided by the square of height (m).
 - **Status Assignment**: Students are categorized into Underweight, Healthy, Overweight, or Obese based on BMI values.
 - **Pie Chart Generation**: A pie chart is generated to visualize the distribution of student health statuses.
+
+### Frequency Distribution Analysis
+- **Frequency Table**: A frequency distribution table is created for gender and health status variables.
+- **Formatting**: Counts and percentages are concatenated and formatted for reporting.
+- **Transposition**: The frequency table is transposed to display health status across gender.
+- **Final Report**: A report titled "Report of Frequency Table" summarizes the distribution of health statuses by gender.
+
 
 ## Usage
 
