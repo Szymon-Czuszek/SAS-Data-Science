@@ -1132,6 +1132,16 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Subset Creation**: A subset of data containing airlines whose names start with 'P' is created using PROC SQL.
 - **Macro Variable Creation**: A macro variable called FASTPLANE is created using PROC SQL to store the name of the airline with the highest speed.
 
+### Project Completion Questions
+- **Data Import Code**: The code to import the data involves using FILENAME statement, INFILE, and INPUT statements to read the text file.
+- **Currency Variable Format**: Dollar10.2 format is used to display currency variables.
+- **Airlines Selection**: PROC SQL is used to select airlines starting with the letter 'P' using the SUBSTR function.
+- **Proc Chart Option**: The DISCRETE option is used in the PROC CHART procedure to create vertical bars for the RATING variable.
+- **Number of Airlines Rated 5**: 7 airlines are rated 5.
+- **Mean Operating Cost of Airlines Rated 5**: The mean operating cost of airlines rated 5 is 43.7857.
+- **Highest Speed**: The FASTPLANE macro variable stores the highest speed at which an airline has flown their planes (216).
+- **SQL Code for FASTPLANE**: PROC SQL is used to find the maximum speed value and store it in the FASTPLANE macro variable.
+
 ## Usage
 
 Clone the repository to your local machine.
