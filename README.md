@@ -1142,6 +1142,10 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Highest Speed**: The FASTPLANE macro variable stores the highest speed at which an airline has flown their planes (216).
 - **SQL Code for FASTPLANE**: PROC SQL is used to find the maximum speed value and store it in the FASTPLANE macro variable.
 
+## Solutions to exercises in Udemy course by Aslam Khan: "The Simplest Guide to SAS Programming- SAS Base-SAS Advanced"
+
+**Exercise 19:** This code creates a vertical bar chart displaying the mean MSRP (Manufacturer's Suggested Retail Price) of cars for each make using the SASHELP.CARS dataset. The second step involves visually inspecting the chart to identify the car with the highest mean MSRP, which corresponds to the tallest bar in the chart.
+
 ## Usage
 
 Clone the repository to your local machine.
