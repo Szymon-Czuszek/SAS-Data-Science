@@ -25,7 +25,7 @@ This example serves as a template for creating datasets to manage information ab
 
 ## SAS Data Processing Example: "employees" Dataset
 
-This SAS code snippet demonstrates the creation of a dataset named "employees" containing information about employees. The dataset has four variables:
+[InputUsingDelimiters.sas](SAS/InputUsingDelimiters.sas): This SAS code snippet demonstrates the creation of a dataset named "employees" containing information about employees. The dataset has four variables:
 
 1. **name**: Represents the name of the employee.
 2. **gender**: Indicates the gender of the employee (M for male, F for female).
