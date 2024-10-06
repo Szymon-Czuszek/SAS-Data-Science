@@ -32,7 +32,7 @@ This example serves as a template for creating datasets to manage information ab
 3. **age**: Represents the age of the employee.
 4. **weight**: Indicates the weight of the employee.
 
-The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). Each line in the "cards" section represents information about an employee, including their name, gender, age, and weight.
+[UsingDSD.sas](SAS/UsingDSD.sas): The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). Each line in the "cards" section represents information about an employee, including their name, gender, age, and weight.
 
 The resulting dataset provides a structured representation of employees' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
