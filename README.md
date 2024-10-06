@@ -59,7 +59,7 @@ The dataset can be further analyzed or used for statistical modeling and visuali
 
 ## SAS Data Processing Example: "custom_dataset" Dataset
 
-This SAS code snippet demonstrates the creation of a dataset named "custom_dataset" containing information about individuals. The dataset has six variables:
+[InputUsingAt.sas](SAS/InputUsingAt.sas): This SAS code snippet demonstrates the creation of a dataset named "custom_dataset" containing information about individuals. The dataset has six variables:
 
 1. **region**: Represents the region where the individual resides.
 2. **first**: Indicates the first name of the individual.
