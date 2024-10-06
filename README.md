@@ -32,7 +32,7 @@ This example serves as a template for creating datasets to manage information ab
 3. **age**: Represents the age of the employee.
 4. **weight**: Indicates the weight of the employee.
 
-[UsingDSD.sas](SAS/UsingDSD.sas): The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). Each line in the "cards" section represents information about an employee, including their name, gender, age, and weight.
+The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). Each line in the "cards" section represents information about an employee, including their name, gender, age, and weight.
 
 The resulting dataset provides a structured representation of employees' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
@@ -44,7 +44,7 @@ The resulting dataset provides a structured representation of employees' demogra
 
 ## SAS Data Processing Example: "guardians" Dataset
 
-This SAS code snippet demonstrates the creation of a dataset named "guardians" containing information about guardians. The dataset has three variables:
+[UsingDSD.sas](SAS/UsingDSD.sas): This SAS code snippet demonstrates the creation of a dataset named "guardians" containing information about guardians. The dataset has three variables:
 
 1. **first_name**: Represents the first name of the guardian.
 2. **last_name**: Indicates the last name of the guardian.
