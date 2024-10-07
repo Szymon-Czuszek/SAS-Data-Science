@@ -113,7 +113,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 
 ## SAS Data Processing Example: "individual_info" Dataset
 
-This SAS code snippet demonstrates the creation of a dataset named "individual_info" containing information about individuals. The dataset has four variables:
+[InputUsingHash.sas](SAS/InputUsingHash.sas): This SAS code snippet demonstrates the creation of a dataset named "individual_info" containing information about individuals. The dataset has four variables:
 
 1. **forename**: Represents the forename of the individual.
 2. **surname**: Represents the surname of the individual.
