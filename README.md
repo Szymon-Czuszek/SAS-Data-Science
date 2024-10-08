@@ -164,7 +164,7 @@ The PROC IMPORT procedure is used to import data from the specified Excel file. 
 
 ## SAS Data Processing Example: "selected_females" Dataset
 
-This SAS code snippet demonstrates the creation of a dataset named "selected_females" containing information about selected females from the "sashelp.class" dataset. 
+[UsingWhereDataStep.sas](SAS/UsingWhereDataStep.sas): This SAS code snippet demonstrates the creation of a dataset named "selected_females" containing information about selected females from the "sashelp.class" dataset. 
 
 The DATA step is used to create the "selected_females" dataset. Data is copied from the existing dataset "sashelp.class", and the WHERE statement filters observations to include only females.
 
