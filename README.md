@@ -178,7 +178,7 @@ The DATA step is used to create the "selected_females" dataset. Data is copied f
 
 ## SAS Data Printing Example: "selected_females_age_12" Dataset
 
-This SAS code snippet demonstrates the printing of data from the "sashelp.class" dataset for selected females aged 12.
+[UsingWhereProcStep.sas](SAS/UsingWhereProcStep.sas): This SAS code snippet demonstrates the printing of data from the "sashelp.class" dataset for selected females aged 12.
 
 The PROC PRINT procedure is used to print data from the specified dataset. The DATA statement is not used in this code snippet as PROC PRINT operates differently from a DATA step. PROC PRINT is a procedure used for data reporting and does not involve the creation or modification of datasets. Instead, it directly operates on existing datasets to display or summarize their contents.
 
