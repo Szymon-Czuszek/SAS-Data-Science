@@ -317,6 +317,8 @@ The SET statement reads data from the "employee_compensation" dataset.
 
 ## SAS Numeric Functions Example with _NULL_ Dataset
 
+[NullDatasetAndFunctions.sas](SAS/NullDatasetAndFunctions.sas): Performing operations on a _NULL_ data set.
+
 ### Explanation:
 - Three separate DATA steps, each starting with DATA NULL, are used to demonstrate different numeric functions in SAS.
 - In the first DATA step, variables a and b are assigned values, and the ABS function is used to calculate the absolute value of variable b. The PUT statement is then used to display the values of variables a and c.
