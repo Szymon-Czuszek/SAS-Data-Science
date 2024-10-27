@@ -420,7 +420,7 @@ This SAS script demonstrates the process of importing, formatting, and analyzing
 
 ## SAS Data Import Example: Student Data
 
-This SAS script imports student data from an external data file named "my_data_file.dat" located at '/home/u62422869/The Simplest Guide to SAS/'.
+[ProjectCars.sas](SAS/ProjectCars.sas): This SAS script imports student data from an external data file named "my_data_file.dat" located at '/home/u62422869/The Simplest Guide to SAS/'.
 
 ### Explanation:
 
