@@ -493,7 +493,7 @@ This SAS script demonstrates how to append data from multiple datasets into a si
 
 ## SAS Data Deduplication Example: Removing Duplicate Student Records
 
-This SAS script processes student records from the "student_records" dataset to remove duplicate entries and create a sorted dataset named "sorted_student_records".
+[UsingNoDupKey.sas](SAS/UsingNoDupKey.sas): This SAS script processes student records from the "student_records" dataset to remove duplicate entries and create a sorted dataset named "sorted_student_records".
 
 ### Explanation:
 
