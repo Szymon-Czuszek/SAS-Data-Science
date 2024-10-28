@@ -391,7 +391,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 
 ## Cars Project SAS Script Explanation
 
-This SAS script, named "CarsProject.SAS", performs data import, manipulation, and analysis tasks related to car data from different regions.
+[ProjectCars.sas](SAS/ProjectCars.sas): This SAS script, named "CarsProject.SAS", performs data import, manipulation, and analysis tasks related to car data from different regions.
 
 1. **Importing European Car Data:**
    - The PROC IMPORT procedure imports data from an Excel file named "carseu.xlsx" located at '/home/u62422869/The Simplest Guide to SAS/'.
@@ -420,7 +420,7 @@ This SAS script demonstrates the process of importing, formatting, and analyzing
 
 ## SAS Data Import Example: Student Data
 
-[ProjectCars.sas](SAS/ProjectCars.sas): This SAS script imports student data from an external data file named "my_data_file.dat" located at '/home/u62422869/The Simplest Guide to SAS/'.
+[InfileStatement.sas](SAS/InfileStatement.sas): This SAS script imports student data from an external data file named "my_data_file.dat" located at '/home/u62422869/The Simplest Guide to SAS/'.
 
 ### Explanation:
 
@@ -441,7 +441,7 @@ This SAS script demonstrates the process of importing student data from an exter
 
 ## SAS Data Combination Example: Combining Student Data
 
-[InfileStatement.sas](SAS/InfileStatement.sas): This SAS script combines data from two datasets "student_data_1" and "student_data_2" into a single dataset named "combined_student_data".
+[AppendingData.sas](SAS/AppendingData.sas): This SAS script combines data from two datasets "student_data_1" and "student_data_2" into a single dataset named "combined_student_data".
 
 ### Explanation:
 
