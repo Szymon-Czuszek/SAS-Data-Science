@@ -466,7 +466,7 @@ This SAS script demonstrates how to combine data from multiple datasets into a s
 
 ## SAS Data Append Example: Appending Student Information
 
-This SAS script appends data from two datasets "student_info_1" and "student_info_2" into a single dataset named "combined_student_info".
+[AppendingData.sas](SAS/AppendingData.sas): This SAS script appends data from two datasets "student_info_1" and "student_info_2" into a single dataset named "combined_student_info".
 
 ### Explanation:
 
