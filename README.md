@@ -514,7 +514,7 @@ This SAS script demonstrates how to remove duplicate records from a dataset in S
 
 ## SAS Data Deduplication Example: Removing Duplicate Employee Records
 
-This SAS script processes employee records from the "employee_data" dataset to remove duplicate entries and create a sorted dataset named "sorted_employee_data".
+[UsingNoDup.sas](SAS/UsingNoDup.sas): This SAS script processes employee records from the "employee_data" dataset to remove duplicate entries and create a sorted dataset named "sorted_employee_data".
 
 ### Explanation:
 
