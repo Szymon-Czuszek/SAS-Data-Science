@@ -560,7 +560,7 @@ This SAS script demonstrates how to merge two datasets based on a common variabl
 
 ## SAS Data Merge Example: Combining Height and Weight Information
 
-This SAS script merges two datasets, "class_weight" and "class_height", based on the common variable "name" to create a combined dataset named "class_merged".
+[MergingDatasetsJoin.sas](SAS/MergingDatasetsJoin.sas): This SAS script merges two datasets, "class_weight" and "class_height", based on the common variable "name" to create a combined dataset named "class_merged".
 
 ### Explanation:
 
