@@ -535,7 +535,7 @@ This SAS script demonstrates how to remove duplicate records from a dataset in S
 
 ## SAS Data Merge Example: Combining Employee Information
 
-This SAS script merges two datasets, "employee_info" and "employee_height", based on the common variable "employee_name" to create a combined dataset named "combined_employee_data".
+[MergingDatasets.sas](SAS/MergingDatasets.sas): This SAS script merges two datasets, "employee_info" and "employee_height", based on the common variable "employee_name" to create a combined dataset named "combined_employee_data".
 
 ### Explanation:
 
