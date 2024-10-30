@@ -610,7 +610,7 @@ This SAS SQL query demonstrates how to create a new table by selecting all recor
 
 ## SAS SQL Example: Creating a New Table with Filtered Data
 
-This SAS SQL query creates a new table named "male_students" by selecting all records from the existing dataset "sashelp.class" where the sex is 'M'.
+[ProcSQL_WHERE.sas](SAS/ProcSQL_WHERE.sas): This SAS SQL query creates a new table named "male_students" by selecting all records from the existing dataset "sashelp.class" where the sex is 'M'.
 
 ### Explanation:
 
