@@ -693,7 +693,7 @@ This SAS SQL query demonstrates how to create a summary table by calculating agg
 
 ## SAS SQL Example: Creating a Table with Unique Gender-Age Combinations
 
-This SAS SQL query creates a new table named "unique_gender_age" by selecting distinct combinations of gender and age from the 'sashelp.class' dataset. The resulting table is ordered by gender and age.
+[ProcSQL_DISTINCT.sas](SAS/ProcSQL_DISTINCT.sas): This SAS SQL query creates a new table named "unique_gender_age" by selecting distinct combinations of gender and age from the 'sashelp.class' dataset. The resulting table is ordered by gender and age.
 
 ### Explanation:
 
