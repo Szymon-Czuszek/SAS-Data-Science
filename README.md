@@ -879,7 +879,7 @@ This SAS code snippet demonstrates the process of visualizing the distribution o
 
 ## SAS Data Visualization: Course Enrollment Analysis
 
-This SAS code snippet processes student enrollment data and creates a vertical bar chart to analyze the distribution of student ages across different courses, majors, and genders.
+[ProcChartHbarDiscrete.sas](SAS/ProcChartHbarDiscrete.sas): This SAS code snippet processes student enrollment data and creates a vertical bar chart to analyze the distribution of student ages across different courses, majors, and genders.
 
 ### Explanation:
 
