@@ -827,7 +827,7 @@ This SAS code snippet demonstrates the process of importing employee bonus infor
 
 ## SAS Data Visualization: Employee Gender Distribution
 
-This SAS code snippet processes employee data and visualizes the gender distribution using various charts.
+[ProcChartVbarHbarPie.sas](SAS/ProcChartVbarHbarPie.sas): This SAS code snippet processes employee data and visualizes the gender distribution using various charts.
 
 ### Explanation:
 
