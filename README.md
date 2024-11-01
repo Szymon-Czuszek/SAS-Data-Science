@@ -863,7 +863,7 @@ These SAS code snippets demonstrate the process of visualizing age and course di
 
 ## SAS Data Visualization: Course Enrollment
 
-This SAS code snippet processes student enrollment data and creates a horizontal bar chart to visualize the distribution of course enrollment.
+[ProcChartDiscrete.sas](SAS/ProcChartDiscrete.sas): This SAS code snippet processes student enrollment data and creates a horizontal bar chart to visualize the distribution of course enrollment.
 
 ### Explanation:
 
