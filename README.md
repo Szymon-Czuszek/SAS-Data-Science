@@ -949,6 +949,8 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 ## SAS Reporting Examples: Tabular Reports
 
+[UsingProcReport.sas(SAS/UsingProcReport.sas)
+
 ### 1. Course Information Report:
    - The first PROC REPORT generates a tabular report of student course information.
    - Columns include student name, gender, age, course code, and major.
