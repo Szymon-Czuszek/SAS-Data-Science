@@ -1020,6 +1020,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 ## Filtering Dataset by Macro Variables
 
 [OdsTraceOn.sas](SAS/OdsTraceOn.sas)
+[OdsTraceOn2.sas](SAS/OdsTraceOn2.sas)
 
 ### Explanation:
 
