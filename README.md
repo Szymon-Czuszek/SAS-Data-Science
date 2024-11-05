@@ -1044,6 +1044,8 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 ## Macro Variable Cascading
 
+[MacroAmpersandFruits.sas](SAS/MacroAmpersandFruits.sas)
+
 ### Explanation:
 
 - Macro variables are assigned values in a cascading manner: APPLE is assigned the value "banana", BANANA is assigned "cherry", CHERRY is assigned "plum", and PLUM is assigned "elderberry".
