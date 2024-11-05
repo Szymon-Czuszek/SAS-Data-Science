@@ -1031,6 +1031,8 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 ## Macro Variable Manipulation
 
+[MacroVariables.sas](SAS/MacroVariables.sas)
+
 ### Explanation:
 
 - Macro variable B is assigned the value 10 using the %LET statement.
