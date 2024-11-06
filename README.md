@@ -1129,6 +1129,8 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 ## Project Heavy Weight - Analyzing Student Health Data
 
+[ProjectHeavyWeight.sas](SAS/ProjectHeavyWeight.sas)
+
 ### Importing and Preprocessing Data
 - **Data Import**: Excel sheets for Statistics (STAT) and History (HIST) classes and student height data (STUDHT) are imported into SAS.
 - **Merging Data**: The STAT and HIST datasets are stacked to create a single dataset called CLASS, then merged with STUDHT.
