@@ -1175,7 +1175,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 ## Using Do Loop in SAS
 
-[DoLoop.sas](SAS/DoLoop.sas) This script, DoLoop.sas, demonstrates how to create a dataset using a DO loop in SAS with a conditional exit.
+[DoLoop.sas](SAS/DoLoop.sas): This script, DoLoop.sas, demonstrates how to create a dataset using a DO loop in SAS with a conditional exit.
 
 DATA Step A:
 
@@ -1190,7 +1190,7 @@ Result:
 The resulting dataset A contains values for i and y that show the progression of i in increments of 0.5, with corresponding values of y up to the limit specified by the WHILE condition (y < 15).
 This code illustrates the combined use of a DO loop with conditional and incremental control to generate a dataset based on calculated values.
 
-[DoLoop2.sas](SAS/DoLoop2.sas) This code creates and processes data on years, transforming it into months or calculating remaining years based on conditions.
+[DoLoop2.sas](SAS/DoLoop2.sas): This code creates and processes data on years, transforming it into months or calculating remaining years based on conditions.
 
 DATA Step A:
 
@@ -1204,6 +1204,32 @@ If years is greater than 5:
 It creates a variable, months, which stores the equivalent number of months (by multiplying years by 12).
 The statement PUT years=months=; writes the values of years and months to the SAS log for records where years > 5.
 Otherwise: It creates a variable, yrsleft, to show the remaining years to reach 5 (calculated as 5 - years).
+
+## Variables in SAS
+
+[CreatingVariables.sas](SAS/CreatingVariables.sas): his script creates a dataset that calculates total sales for each individual based on quarterly sales data.
+
+DATA Step:
+
+A dataset named sales is created with the DATA statement.
+The INPUT statement defines variables:
+Name (character variable for the individual's name)
+Sales_1 to Sales_4 (numeric variables representing quarterly sales)
+Variable Calculation:
+
+The variable total is calculated for each individual by summing the values in Sales_1, Sales_2, Sales_3, and Sales_4 using the SUM function.
+This calculation automatically handles any missing values as SUM ignores them by default.
+Data Entry:
+
+The CARDS statement allows for data entry directly in the code. Four individuals’ sales data are inputted:
+Greg: Sales data for each quarter is 10, 2, 40, 0.
+John: Sales data is 15, 5, 10, 100.
+Lisa: Sales data is 50, 10, 15, 50.
+Mark: Sales data is 20, 0, 5, 20.
+Result:
+
+The RUN statement executes the code, resulting in the sales dataset containing Name, quarterly sales values, and a total column that holds the calculated total sales for each individual.
+This code provides a simple way to manage and analyze quarterly sales data, demonstrating how to define and sum multiple variables in SAS.
 
 ## Solutions to exercises in Udemy course by Aslam Khan: "The Simplest Guide to SAS Programming- SAS Base-SAS Advanced"
 
