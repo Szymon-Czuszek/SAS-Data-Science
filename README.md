@@ -1173,6 +1173,23 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Highest Speed**: The FASTPLANE macro variable stores the highest speed at which an airline has flown their planes (216).
 - **SQL Code for FASTPLANE**: PROC SQL is used to find the maximum speed value and store it in the FASTPLANE macro variable.
 
+## Using Do Loop in SAS
+
+[SAS/DoLoop2.sas](SAS/SAS/DoLoop2.sas) This code creates and processes data on years, transforming it into months or calculating remaining years based on conditions.
+
+DATA Step A:
+
+The first block (DATA A; ... RUN;) creates a dataset named A with a single variable called years.
+Using DATALINES, it assigns integer values (4, 3, 6, 3, 9) to years, representing a period in years.
+DATA Step B:
+
+The second block (DATA B; SET A; ... RUN;) generates a new dataset named B based on dataset A.
+It checks each value in years:
+If years is greater than 5:
+It creates a variable, months, which stores the equivalent number of months (by multiplying years by 12).
+The statement PUT years=months=; writes the values of years and months to the SAS log for records where years > 5.
+Otherwise: It creates a variable, yrsleft, to show the remaining years to reach 5 (calculated as 5 - years).
+
 ## Solutions to exercises in Udemy course by Aslam Khan: "The Simplest Guide to SAS Programming- SAS Base-SAS Advanced"
 
 [SAS_Course_Exercise_19.sas](SAS/SAS_Course_Exercise_19.sas): This code creates a vertical bar chart displaying the mean MSRP (Manufacturer's Suggested Retail Price) of cars for each make using the SASHELP.CARS dataset. The second step involves visually inspecting the chart to identify the car with the highest mean MSRP, which corresponds to the tallest bar in the chart.
