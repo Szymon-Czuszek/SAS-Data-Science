@@ -1231,6 +1231,26 @@ Result:
 The RUN statement executes the code, resulting in the sales dataset containing Name, quarterly sales values, and a total column that holds the calculated total sales for each individual.
 This code provides a simple way to manage and analyze quarterly sales data, demonstrating how to define and sum multiple variables in SAS.
 
+[AutomaticVariables.sas](SAS/AutomaticVariables.sas): This script demonstrates the use of automatic variables in SAS, specifically _ERROR_ and _N_, to handle data input errors.
+
+DATA Step:
+
+A dataset named test is created with variables x and y defined in the INPUT statement.
+
+Error Detection:
+
+The code includes a conditional check on the automatic variable _ERROR_, which is set to 1 if an error occurs in the data step (e.g., if non-numeric data is encountered for a numeric variable).
+When _ERROR_ equals 1, a message is printed to the SAS log using the PUT statement. This message indicates an error in the specific row, identified by the _N_ variable, which counts the current iteration of the data step (essentially, the row number).
+Data Entry:
+
+The DATALINES statement inputs the values for x and y:
+Valid data entries are: (1, 1), (2, 3), and (4, 4).
+The entry (3, n) will trigger an error because n is non-numeric, causing _ERROR_ to be set to 1 and an error message to appear in the log.
+Result:
+
+The RUN statement processes the data, resulting in a dataset test with x and y values, while logging error messages for rows where input issues are detected.
+This code demonstrates the use of automatic variables in SAS for data validation, helping identify and log rows with input errors during dataset creation.
+
 ## Solutions to exercises in Udemy course by Aslam Khan: "The Simplest Guide to SAS Programming- SAS Base-SAS Advanced"
 
 [SAS_Course_Exercise_19.sas](SAS/SAS_Course_Exercise_19.sas): This code creates a vertical bar chart displaying the mean MSRP (Manufacturer's Suggested Retail Price) of cars for each make using the SASHELP.CARS dataset. The second step involves visually inspecting the chart to identify the car with the highest mean MSRP, which corresponds to the tallest bar in the chart.
