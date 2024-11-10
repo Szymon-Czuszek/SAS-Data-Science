@@ -1251,6 +1251,28 @@ Result:
 The RUN statement processes the data, resulting in a dataset test with x and y values, while logging error messages for rows where input issues are detected.
 This code demonstrates the use of automatic variables in SAS for data validation, helping identify and log rows with input errors during dataset creation.
 
+## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
+
+[Exercise 1.sas](SAS/Exercise 1.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
+
+Macro Definition (import_excel): A macro %import_excel is defined to streamline the import process for multiple Excel sheets. The macro takes a parameter, sheet_number, to dynamically select the desired sheet.
+PROC IMPORT imports data from a specified Excel file, Balance_Bank.xlsx, located in /home/u63805106/datasetslearnsas/.
+Bank&sheet_number is the output dataset name, where &sheet_number creates a unique dataset name for each sheet.
+The SHEET option is set to "Sheet&sheet_number", importing data from the specified sheet.
+The PROC SORT step sorts each imported dataset by Acc_number and Date.
+
+Macro Invocation: The macro %import_excel is called twice to import Sheet1 and Sheet2 into datasets Bank1 and Bank2.
+Data Merging and Balance Calculation:
+
+The DATA BankMerged step merges Bank1 and Bank2 by Acc_number.
+The RETAIN statement holds the Balance value across rows within each account.
+The conditional logic calculates Balance as follows:
+For the first row of each Acc_number, Balance is initialized to Credit - Debit.
+For subsequent rows, Balance accumulates by adding the difference (Credit - Debit) to the previous balance.
+
+Result: The final dataset, BankMerged, contains a consolidated list of transactions for each account, with a running balance calculation.
+This script demonstrates using SAS macros for repetitive tasks, importing and merging data from multiple sheets, and calculating cumulative values within groups.
+
 ## Solutions to exercises in Udemy course by Aslam Khan: "The Simplest Guide to SAS Programming- SAS Base-SAS Advanced"
 
 [SAS_Course_Exercise_19.sas](SAS/SAS_Course_Exercise_19.sas): This code creates a vertical bar chart displaying the mean MSRP (Manufacturer's Suggested Retail Price) of cars for each make using the SASHELP.CARS dataset. The second step involves visually inspecting the chart to identify the car with the highest mean MSRP, which corresponds to the tallest bar in the chart.
