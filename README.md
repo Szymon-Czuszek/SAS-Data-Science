@@ -1251,6 +1251,24 @@ Result:
 The RUN statement processes the data, resulting in a dataset test with x and y values, while logging error messages for rows where input issues are detected.
 This code demonstrates the use of automatic variables in SAS for data validation, helping identify and log rows with input errors during dataset creation.
 
+## Using Counter functionality in SAS
+
+[Counter.sas](SAS/Counter.sas): This code creates a dataset of student scores, organizes it by gender, and generates a count of scores for each gender group.
+
+DATA Step (studentscores): A dataset named studentscores is created with variables gender and score.
+The CARDS statement inputs the data directly, where gender is coded as 1 or 2, and each row represents an individual score:
+1 for male students and 2 for female students.
+
+Sorting the Dataset: The PROC SORT step sorts studentscores by gender, organizing the data for the following step.
+
+Counting Scores by Gender (studentscores1): The DATA studentscores1 step creates a new dataset studentscores1 based on studentscores.
+The statement count + 1; initializes and increments count for each row, providing a running count.
+The BY gender statement, combined with the first.gender automatic variable, allows resetting count for each new gender group:
+IF first.gender THEN count=1; resets count to 1 when encountering the first row of each gender group.
+
+Result: The final dataset, studentscores1, includes gender, score, and count, which represents the score sequence number within each gender group.
+This code demonstrates data grouping and conditional counting using automatic variables in SAS, with a focus on resetting counts within sorted groups.
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
