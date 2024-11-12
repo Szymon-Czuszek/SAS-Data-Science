@@ -1287,6 +1287,35 @@ The IF price < 200000; statement filters the data to include only houses with a 
 Result: The resulting dataset filter contains records from houseprice that meet the price condition, along with the calculated profit values.
 This script demonstrates data import, variable calculations, and conditional filtering in SAS.
 
+## Formats in SAS.
+
+[Format.sas](SAS/Format.sas): This script, demonstrates how to apply custom formats to codes in a dataset to enhance readability and add descriptive labels.
+
+DATA Step (disease):
+
+A dataset named disease is created with a single variable, diagcode, which represents diagnostic codes as character strings.
+The DATALINES statement defines three diagnostic codes: 001, 290, and 800.
+Initial Data Display:
+
+PROC PRINT is used to display the disease dataset before applying any formats.
+Creating a Custom Format:
+
+The PROC FORMAT step defines a custom format named $codetwo, which maps each diagcode to a descriptive label:
+'001' maps to "Malaria",
+'290' maps to "Social Anxiety Disorder",
+'800' maps to "Leg Injury".
+Applying the Format:
+
+Another PROC PRINT step displays the disease dataset with the FORMAT statement applied, showing the diagcode values using the $codetwo labels.
+Creating a New Variable with Descriptions (diseasereal):
+
+A new dataset, diseasereal, is created from disease.
+The PUT function with $codetwo. format is used to create a new variable, diagdesc, which stores the descriptive label for each diagcode.
+Final Data Display:
+
+The final PROC PRINT displays diseasereal, including both diagcode and diagdesc.
+This code illustrates using PROC FORMAT for custom labels and transforming coded values into descriptive fields to improve data readability in SAS.
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
