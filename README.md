@@ -1335,6 +1335,21 @@ Result:
 The RUN statement processes the data, resulting in the sales dataset with Name, quarterly sales, total, and fired columns, where fired indicates if Greg met the sales threshold.
 This code demonstrates conditional logic with IF-THEN statements in SAS, enabling decisions based on specific criteria.
 
+[IfWhere.sas](SAS/IfWhere.sas): This script, calculates total sales for each individual and filters data based on specific sales criteria using SQL and PROC PRINT.
+
+DATA Step (sales): A dataset named sales is created with variables Name, Sales_1 through Sales_4 for quarterly sales, and total, which sums all quarterly sales.
+The CARDS statement provides direct input data for four individuals.
+
+SQL Filter (PROC SQL): PROC SQL selects and displays only those records from sales where total is greater than 50.
+This step outputs a table of total sales values that meet the specified condition.
+
+PROC PRINT with Data Step WHERE Clause: The PROC PRINT step includes a where= option within the DATA=sales argument, filtering and displaying only records where total > 50.
+
+PROC PRINT with WHERE Statement: The final PROC PRINT uses a standalone WHERE statement, achieving the same filter as the previous step by displaying records with total > 50.
+
+Result: The final output includes records of individuals with total sales exceeding 50, demonstrated with different methods of filtering.
+This code illustrates various methods of data filtering in SAS, using SQL and WHERE conditions within PROC PRINT.
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
