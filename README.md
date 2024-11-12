@@ -1316,6 +1316,25 @@ Final Data Display:
 The final PROC PRINT displays diseasereal, including both diagcode and diagdesc.
 This code illustrates using PROC FORMAT for custom labels and transforming coded values into descriptive fields to improve data readability in SAS.
 
+## Using IF statement in SAS.
+
+[IfThen.sas](SAS/IfThen.sas): This script, calculates total sales for each individual, evaluates conditions to determine employment status, and marks if an individual meets a specific sales criterion.
+
+DATA Step (sales): A dataset named sales is created with variables Name, Sales_1 through Sales_4 for quarterly sales, and total, which sums all quarterly sales.
+The variable fired is initialized as an empty string.
+
+Conditional Logic: An IF statement checks if the Name is "Greg" and total is greater than or equal to 52:
+If both conditions are met, fired is set to "N", indicating that Greg is not fired based on his total sales.
+Data Entry:
+
+The CARDS statement inputs data directly for each individual:
+Greg: Quarterly sales of 10, 2, 40, 0, with a total of 52, which meets the criterion.
+John, Lisa, and Mark: Their data is included but does not meet the criteria for changing fired.
+Result:
+
+The RUN statement processes the data, resulting in the sales dataset with Name, quarterly sales, total, and fired columns, where fired indicates if Greg met the sales threshold.
+This code demonstrates conditional logic with IF-THEN statements in SAS, enabling decisions based on specific criteria.
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
