@@ -1269,6 +1269,24 @@ IF first.gender THEN count=1; resets count to 1 when encountering the first row 
 Result: The final dataset, studentscores1, includes gender, score, and count, which represents the score sequence number within each gender group.
 This code demonstrates data grouping and conditional counting using automatic variables in SAS, with a focus on resetting counts within sorted groups.
 
+## Filtering in SAS.
+
+[Filter.sas](SAS/Filter.sas): This script, imports house price data, calculates a profit estimate, and filters records based on a price condition.
+
+DATA Step (houseprice): A dataset named houseprice is created by reading data from the file houseprice (2).txt located in /home/u63805106/datasetslearnsas/.
+The INFILE statement specifies the location and delimiter (DLM=" ") used in the text file.
+The INPUT statement defines the variables:
+type (character variable representing the type of house),
+price (numeric variable for the house price),
+tax (numeric variable for the tax amount).
+The profit variable is calculated by rounding the product of price and tax.
+
+Filtering Data (filter): The DATA filter step creates a new dataset filter based on houseprice.
+The IF price < 200000; statement filters the data to include only houses with a price less than 200,000.
+
+Result: The resulting dataset filter contains records from houseprice that meet the price condition, along with the calculated profit values.
+This script demonstrates data import, variable calculations, and conditional filtering in SAS.
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
