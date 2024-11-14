@@ -1350,6 +1350,28 @@ PROC PRINT with WHERE Statement: The final PROC PRINT uses a standalone WHERE st
 Result: The final output includes records of individuals with total sales exceeding 50, demonstrated with different methods of filtering.
 This code illustrates various methods of data filtering in SAS, using SQL and WHERE conditions within PROC PRINT.
 
+## Importing Data in SAS
+
+This code reads data from a CSV file into a SAS dataset, demonstrating the use of options to handle formatted data. Here’s a breakdown:
+
+DATA Step (weightgain):
+
+A dataset named weightgain is created by reading data from a CSV file located at /home/u63805106/datasetslearnsas/weightgain (2).csv.
+INFILE options:
+DSD: Indicates that values are separated by commas and that consecutive delimiters (e.g., two commas) signify missing values.
+MISSOVER: Prevents SAS from moving to the next line if data is missing for the last variables, assigning missing values instead.
+FIRSTOBS=2: Specifies that data import should begin from the second row, skipping the header row.
+Input Variables:
+
+id: An identifier for each observation.
+source: A character variable indicating the source category.
+type: A character variable for the type category.
+weightg: A numeric variable representing weight gain.
+Result:
+
+The resulting weightgain dataset contains each record with id, source, type, and weightg variables.
+This code showcases reading data from a CSV file into SAS with options to handle delimiters, missing values, and header rows effectively.
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
