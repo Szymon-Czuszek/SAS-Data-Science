@@ -1352,25 +1352,21 @@ This code illustrates various methods of data filtering in SAS, using SQL and WH
 
 ## Importing Data in SAS
 
-[ImportCSV.sas](SAS/mportCSV.sas): This code reads data from a CSV file into a SAS dataset, demonstrating the use of options to handle formatted data. Here’s a breakdown:
+[ImportCSV.sas](SAS/mportCSV.sas): This code reads data from a CSV file into a SAS dataset, demonstrating the use of options to handle formatted data.
 
-DATA Step (weightgain):
-
-A dataset named weightgain is created by reading data from a CSV file located at /home/u63805106/datasetslearnsas/weightgain (2).csv.
+DATA Step (weightgain): A dataset named weightgain is created by reading data from a CSV file located at /home/u63805106/datasetslearnsas/weightgain (2).csv.
 INFILE options:
-DSD: Indicates that values are separated by commas and that consecutive delimiters (e.g., two commas) signify missing values.
-MISSOVER: Prevents SAS from moving to the next line if data is missing for the last variables, assigning missing values instead.
-FIRSTOBS=2: Specifies that data import should begin from the second row, skipping the header row.
+1. DSD: Indicates that values are separated by commas and that consecutive delimiters (e.g., two commas) signify missing values.
+2. MISSOVER: Prevents SAS from moving to the next line if data is missing for the last variables, assigning missing values instead.
+3. FIRSTOBS=2: Specifies that data import should begin from the second row, skipping the header row.
+
 Input Variables:
+1. id: An identifier for each observation.
+2. source: A character variable indicating the source category.
+3. type: A character variable for the type category.
+4. weightg: A numeric variable representing weight gain.
 
-id: An identifier for each observation.
-source: A character variable indicating the source category.
-type: A character variable for the type category.
-weightg: A numeric variable representing weight gain.
-Result:
-
-The resulting weightgain dataset contains each record with id, source, type, and weightg variables.
-This code showcases reading data from a CSV file into SAS with options to handle delimiters, missing values, and header rows effectively.
+Result: The resulting weightgain dataset contains each record with id, source, type, and weightg variables. This code showcases reading data from a CSV file into SAS with options to handle delimiters, missing values, and header rows effectively.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
