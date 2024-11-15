@@ -1352,7 +1352,7 @@ This code illustrates various methods of data filtering in SAS, using SQL and WH
 
 ## Importing Data in SAS
 
-[ImportTXT](SAS/ImportTXT): This script, ImportTXT.sas, demonstrates how to import data from a text file into a SAS dataset. Here’s a breakdown:
+[ImportTXT](SAS/ImportTXT): This script, ImportTXT.sas, demonstrates how to import data from a text file into a SAS dataset.
 
 DATA Step (salary):
 
