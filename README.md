@@ -1354,21 +1354,15 @@ This code illustrates various methods of data filtering in SAS, using SQL and WH
 
 [ImportTXT](SAS/ImportTXT): This script, ImportTXT.sas, demonstrates how to import data from a text file into a SAS dataset.
 
-DATA Step (salary):
+DATA Step (salary): A dataset named salary is created by reading data from the text file located at /home/u63805106/datasetslearnsas/salary (2).txt. The INFILE statement specifies the path to the text file to be read.
 
-A dataset named salary is created by reading data from the text file located at /home/u63805106/datasetslearnsas/salary (2).txt.
-The INFILE statement specifies the path to the text file to be read.
 Input Variables:
+1. year: A numeric variable representing the year of the salary record.
+2. salary: A numeric variable representing the salary amount.
 
-year: A numeric variable representing the year of the salary record.
-salary: A numeric variable representing the salary amount.
-INPUT Statement:
+INPUT Statement: Defines the structure of the input data, specifying the variables year and salary to match the format of the data in the text file.
 
-Defines the structure of the input data, specifying the variables year and salary to match the format of the data in the text file.
-Result:
-
-The resulting salary dataset contains records with the year and salary variables extracted from the text file.
-This script demonstrates basic file importing in SAS, showcasing how to load and structure data from an external .txt file.
+Result: The resulting salary dataset contains records with the year and salary variables extracted from the text file. This script demonstrates basic file importing in SAS, showcasing how to load and structure data from an external .txt file.
 
 [ImportCSV.sas](SAS/mportCSV.sas): This code reads data from a CSV file into a SAS dataset, demonstrating the use of options to handle formatted data.
 
