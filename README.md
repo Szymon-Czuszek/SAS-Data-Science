@@ -1364,30 +1364,23 @@ INPUT Statement: Defines the structure of the input data, specifying the variabl
 
 Result: The resulting salary dataset contains records with the year and salary variables extracted from the text file. This script demonstrates basic file importing in SAS, showcasing how to load and structure data from an external .txt file.
 
-####
 [SAS/ImportTXT2.sas](SAS/SAS/ImportTXT2.sas): This script imports data from a text file, performs variable renaming and column selection, and prints a subset of the data.
 
-DATA Step (salaryemp):
+DATA Step (salaryemp): A dataset named salaryemp is created using the INFILE statement to read data from the text file located at /home/u63805106/datasetslearnsas/salary (2).txt.
 
-A dataset named salaryemp is created using the INFILE statement to read data from the text file located at /home/u63805106/datasetslearnsas/salary (2).txt.
 Options used:
-KEEP = salary: Keeps only the salary variable in the output dataset.
-RENAME = salary = salaryemp: Renames the salary variable to salaryemp.
-The DLM = " " option specifies that the data in the text file is space-delimited.
-The INPUT statement defines the variables to read:
-year: A numeric variable representing the year.
-salary: A numeric variable representing the salary amount.
-PROC PRINT:
+1. KEEP = salary: Keeps only the salary variable in the output dataset.
+2. RENAME = salary = salaryemp: Renames the salary variable to salaryemp.
+3. The DLM = " " option specifies that the data in the text file is space-delimited.
+4. The INPUT statement defines the variables to read:
+- year: A numeric variable representing the year.
+- salary: A numeric variable representing the salary amount.
 
-Prints a subset of the salaryemp dataset using:
-FIRSTOBS = 3: Starts printing from the third observation.
-OBS = 4: Stops printing at the fourth observation.
-Result:
+PROC PRINT: Prints a subset of the salaryemp dataset using:
+1. FIRSTOBS = 3: Starts printing from the third observation.
+2. OBS = 4: Stops printing at the fourth observation.
 
-The resulting salaryemp dataset contains the renamed salaryemp variable and excludes the year variable.
-The output includes the selected subset of observations (rows 3 and 4).
-This script demonstrates file importing, variable renaming, column selection, and printing subsets of data in SAS.
-####
+Result: The resulting salaryemp dataset contains the renamed salaryemp variable and excludes the year variable. The output includes the selected subset of observations (rows 3 and 4). This script demonstrates file importing, variable renaming, column selection, and printing subsets of data in SAS.
 
 [ImportCSV.sas](SAS/mportCSV.sas): This code reads data from a CSV file into a SAS dataset, demonstrating the use of options to handle formatted data.
 
