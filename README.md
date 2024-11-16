@@ -1337,15 +1337,10 @@ This code demonstrates conditional logic with IF-THEN statements in SAS, enablin
 
 [IfWhere.sas](SAS/IfWhere.sas): This script, calculates total sales for each individual and filters data based on specific sales criteria using SQL and PROC PRINT.
 
-DATA Step (sales): A dataset named sales is created with variables Name, Sales_1 through Sales_4 for quarterly sales, and total, which sums all quarterly sales.
-The CARDS statement provides direct input data for four individuals.
-
-SQL Filter (PROC SQL): PROC SQL selects and displays only those records from sales where total is greater than 50.
-This step outputs a table of total sales values that meet the specified condition.
-
-PROC PRINT with Data Step WHERE Clause: The PROC PRINT step includes a where= option within the DATA=sales argument, filtering and displaying only records where total > 50.
-
-PROC PRINT with WHERE Statement: The final PROC PRINT uses a standalone WHERE statement, achieving the same filter as the previous step by displaying records with total > 50.
+1. DATA Step (sales): A dataset named sales is created with variables Name, Sales_1 through Sales_4 for quarterly sales, and total, which sums all quarterly sales. The CARDS statement provides direct input data for four individuals.
+2. SQL Filter (PROC SQL): PROC SQL selects and displays only those records from sales where total is greater than 50. This step outputs a table of total sales values that meet the specified condition.
+3. PROC PRINT with Data Step WHERE Clause: The PROC PRINT step includes a where= option within the DATA=sales argument, filtering and displaying only records where total > 50.
+4. PROC PRINT with WHERE Statement: The final PROC PRINT uses a standalone WHERE statement, achieving the same filter as the previous step by displaying records with total > 50.
 
 Result: The final output includes records of individuals with total sales exceeding 50, demonstrated with different methods of filtering.
 This code illustrates various methods of data filtering in SAS, using SQL and WHERE conditions within PROC PRINT.
