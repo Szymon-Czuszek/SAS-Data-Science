@@ -1365,7 +1365,7 @@ INPUT Statement: Defines the structure of the input data, specifying the variabl
 Result: The resulting salary dataset contains records with the year and salary variables extracted from the text file. This script demonstrates basic file importing in SAS, showcasing how to load and structure data from an external .txt file.
 
 ####
-This script, ImportTXT2.sas, imports data from a text file, performs variable renaming and column selection, and prints a subset of the data. Here’s a breakdown:
+[SAS/ImportTXT2.sas](SAS/SAS/ImportTXT2.sas): This script imports data from a text file, performs variable renaming and column selection, and prints a subset of the data.
 
 DATA Step (salaryemp):
 
