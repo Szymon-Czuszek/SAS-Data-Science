@@ -1377,6 +1377,30 @@ PROC PRINT: Prints a subset of the salaryemp dataset using:
 
 Result: The resulting salaryemp dataset contains the renamed salaryemp variable and excludes the year variable. The output includes the selected subset of observations (rows 3 and 4). This script demonstrates file importing, variable renaming, column selection, and printing subsets of data in SAS.
 
+####
+This script, ImportTXT3.sas, imports data from a text file, calculates a new variable, and prints a subset of the dataset. Here’s a breakdown:
+
+DATA Step (houseprice):
+
+A dataset named houseprice is created by reading data from the text file located at /home/u63805106/datasetslearnsas/houseprice (2).txt.
+The INFILE statement specifies the path to the text file, with the DLM = " " option indicating that the data is space-delimited.
+The INPUT statement defines the structure of the data:
+type: A character variable representing the type of property.
+price: A numeric variable representing the price of the house.
+tax: A numeric variable representing the tax rate.
+The variable profit is calculated as the rounded product of price and tax using the ROUND function.
+PROC PRINT:
+
+Prints a subset of the houseprice dataset:
+FIRSTOBS = 3: Starts printing from the third observation.
+OBS = 4: Stops printing at the fourth observation.
+Result:
+
+The resulting houseprice dataset includes the variables type, price, tax, and the calculated profit.
+The output displays rows 3 and 4 from the dataset.
+This script demonstrates importing text files, performing calculations on imported data, and printing specific subsets of a dataset in SAS.
+####
+
 [ImportCSV.sas](SAS/mportCSV.sas): This code reads data from a CSV file into a SAS dataset, demonstrating the use of options to handle formatted data.
 
 DATA Step (weightgain): A dataset named weightgain is created by reading data from a CSV file located at /home/u63805106/datasetslearnsas/weightgain (2).csv.
