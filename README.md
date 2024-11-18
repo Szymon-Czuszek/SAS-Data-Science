@@ -1233,23 +1233,16 @@ This code provides a simple way to manage and analyze quarterly sales data, demo
 
 [AutomaticVariables.sas](SAS/AutomaticVariables.sas): This script demonstrates the use of automatic variables in SAS, specifically _ERROR_ and _N_, to handle data input errors.
 
-DATA Step:
+DATA Step: A dataset named test is created with variables x and y defined in the INPUT statement.
 
-A dataset named test is created with variables x and y defined in the INPUT statement.
+Error Detection: The code includes a conditional check on the automatic variable _ERROR_, which is set to 1 if an error occurs in the data step (e.g., if non-numeric data is encountered for a numeric variable). When _ERROR_ equals 1, a message is printed to the SAS log using the PUT statement. This message indicates an error in the specific row, identified by the _N_ variable, which counts the current iteration of the data step (essentially, the row number).
 
-Error Detection:
-
-The code includes a conditional check on the automatic variable _ERROR_, which is set to 1 if an error occurs in the data step (e.g., if non-numeric data is encountered for a numeric variable).
-When _ERROR_ equals 1, a message is printed to the SAS log using the PUT statement. This message indicates an error in the specific row, identified by the _N_ variable, which counts the current iteration of the data step (essentially, the row number).
 Data Entry:
+1. The DATALINES statement inputs the values for x and y.
+2. Valid data entries are: (1, 1), (2, 3), and (4, 4).
+3. The entry (3, n) will trigger an error because n is non-numeric, causing _ERROR_ to be set to 1 and an error message to appear in the log.
 
-The DATALINES statement inputs the values for x and y:
-Valid data entries are: (1, 1), (2, 3), and (4, 4).
-The entry (3, n) will trigger an error because n is non-numeric, causing _ERROR_ to be set to 1 and an error message to appear in the log.
-Result:
-
-The RUN statement processes the data, resulting in a dataset test with x and y values, while logging error messages for rows where input issues are detected.
-This code demonstrates the use of automatic variables in SAS for data validation, helping identify and log rows with input errors during dataset creation.
+Result: The RUN statement processes the data, resulting in a dataset test with x and y values, while logging error messages for rows where input issues are detected. This code demonstrates the use of automatic variables in SAS for data validation, helping identify and log rows with input errors during dataset creation.
 
 ## Using Counter functionality in SAS
 
