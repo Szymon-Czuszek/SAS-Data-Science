@@ -1424,11 +1424,12 @@ This script demonstrates using SAS macros for repetitive tasks, importing and me
 
 ## Usage
 
-Clone the repository to your local machine.
-Open the desired SAS file in SAS Studio, SAS Enterprise Guide, or any other SAS environment.
-Run the code to execute the specified data processing or analysis tasks.
-Customize the code as needed for your specific use case.
-Future Updates
+1. Clone the repository to your local machine.
+2. Open the desired SAS file in SAS Studio, SAS Enterprise Guide, or any other SAS environment.
+3. Run the code to execute the specified data processing or analysis tasks.
+4. Customize the code as needed for your specific use case.
+
+## Future Updates
 
 This repository will be regularly updated with additional SAS code snippets for various data science tasks and analyses. Stay tuned for more examples and templates to support your data science projects.
 
