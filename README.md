@@ -1293,28 +1293,20 @@ This script demonstrates data import, variable calculations, and conditional fil
 
 DATA Step (disease):
 
-A dataset named disease is created with a single variable, diagcode, which represents diagnostic codes as character strings.
-The DATALINES statement defines three diagnostic codes: 001, 290, and 800.
-Initial Data Display:
+A dataset named disease is created with a single variable, diagcode, which represents diagnostic codes as character strings. The DATALINES statement defines three diagnostic codes: 001, 290, and 800.
 
-PROC PRINT is used to display the disease dataset before applying any formats.
-Creating a Custom Format:
+Initial Data Display: PROC PRINT is used to display the disease dataset before applying any formats.
 
-The PROC FORMAT step defines a custom format named $codetwo, which maps each diagcode to a descriptive label:
-'001' maps to "Malaria",
-'290' maps to "Social Anxiety Disorder",
-'800' maps to "Leg Injury".
-Applying the Format:
+Creating a Custom Format: The PROC FORMAT step defines a custom format named $codetwo, which maps each diagcode to a descriptive label.
+1. '001' maps to "Malaria",
+2. '290' maps to "Social Anxiety Disorder",
+3. '800' maps to "Leg Injury".
 
-Another PROC PRINT step displays the disease dataset with the FORMAT statement applied, showing the diagcode values using the $codetwo labels.
-Creating a New Variable with Descriptions (diseasereal):
+Applying the Format: Another PROC PRINT step displays the disease dataset with the FORMAT statement applied, showing the diagcode values using the $codetwo labels.
 
-A new dataset, diseasereal, is created from disease.
-The PUT function with $codetwo. format is used to create a new variable, diagdesc, which stores the descriptive label for each diagcode.
-Final Data Display:
+Creating a New Variable with Descriptions (diseasereal): A new dataset, diseasereal, is created from disease. The PUT function with $codetwo. format is used to create a new variable, diagdesc, which stores the descriptive label for each diagcode.
 
-The final PROC PRINT displays diseasereal, including both diagcode and diagdesc.
-This code illustrates using PROC FORMAT for custom labels and transforming coded values into descriptive fields to improve data readability in SAS.
+Final Data Display: The final PROC PRINT displays diseasereal, including both diagcode and diagdesc. This code illustrates using PROC FORMAT for custom labels and transforming coded values into descriptive fields to improve data readability in SAS.
 
 ## Using IF statement in SAS.
 
