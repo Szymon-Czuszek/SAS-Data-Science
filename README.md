@@ -1192,12 +1192,11 @@ This code illustrates the combined use of a DO loop with conditional and increme
 
 [DoLoop2.sas](SAS/DoLoop2.sas): This code creates and processes data on years, transforming it into months or calculating remaining years based on conditions.
 
-DATA Step A:
-
+1. DATA Step A:
 The first block (DATA A; ... RUN;) creates a dataset named A with a single variable called years.
 Using DATALINES, it assigns integer values (4, 3, 6, 3, 9) to years, representing a period in years.
-DATA Step B:
 
+2. DATA Step B:
 The second block (DATA B; SET A; ... RUN;) generates a new dataset named B based on dataset A.
 It checks each value in years:
 If years is greater than 5:
