@@ -1394,7 +1394,7 @@ Input Variables:
 
 Result: The resulting weightgain dataset contains each record with id, source, type, and weightg variables. This code showcases reading data from a CSV file into SAS with options to handle delimiters, missing values, and header rows effectively.
 
-This script demonstrates the use of PROC IMPORT to import data from an Excel file into a SAS dataset. Here’s a breakdown:
+[ImportXLSX.sas](SAS/ImportXLSX.sas): This script demonstrates the use of PROC IMPORT to import data from an Excel file into a SAS dataset.
 
 PROC IMPORT Step:
 
