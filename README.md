@@ -1394,6 +1394,23 @@ Input Variables:
 
 Result: The resulting weightgain dataset contains each record with id, source, type, and weightg variables. This code showcases reading data from a CSV file into SAS with options to handle delimiters, missing values, and header rows effectively.
 
+This script demonstrates the use of PROC IMPORT to import data from an Excel file into a SAS dataset. Here’s a breakdown:
+
+PROC IMPORT Step:
+
+OUT = salesdata: Specifies the name of the SAS dataset to be created, salesdata.
+datafile="/home/u63805106/datasetslearnsas/Sample-Sales-Data (3).xlsx": Indicates the path to the Excel file to be imported.
+dbms = xlsx: Specifies the file type as an Excel .xlsx file.
+REPLACE: Allows overwriting the existing salesdata dataset if it already exists.
+Options:
+
+SHEET="Sheet1": Specifies the sheet from which data should be imported.
+GETNAMES=NO: Indicates that the first row of the Excel sheet does not contain variable names; SAS will assign default variable names like VAR1, VAR2, etc.
+Result:
+
+The resulting salesdata dataset contains all rows and columns from "Sheet1" of the Excel file, with SAS-generated variable names if no column headers are present.
+This script demonstrates a simple yet powerful way to import data from Excel files into SAS for further analysis.
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
