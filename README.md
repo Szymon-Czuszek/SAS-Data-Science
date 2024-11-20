@@ -1410,6 +1410,8 @@ Result:
 - The resulting salesdata dataset contains all rows and columns from "Sheet1" of the Excel file, with SAS-generated variable names if no column headers are present.
 - This script demonstrates a simple yet powerful way to import data from Excel files into SAS for further analysis.
 
+#### To add: Informat, Length, Merging
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
