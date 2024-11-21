@@ -1418,17 +1418,15 @@ Result:
 
 This script imports data from a CSV file into a SAS dataset, specifying variable types and handling CSV-specific features.
 
-1. DATA Step (mydata):
-- Creates a dataset named mydata.
-- The LENGTH statement. Specifies the variable types and their maximum lengths:
-a. age: Numeric, up to 3 digits.
-b. sex: Character, up to 6 characters.
-c. children: Numeric, up to 3 digits.
-d. smoker: Character, up to 3 characters.
-e. region: Character, up to 15 characters.
-f. charges: Numeric, up to 8 digits.
+1. DATA Step (mydata). Creates a dataset named mydata. The LENGTH statement. Specifies the variable types and their maximum lengths:
+- age: Numeric, up to 3 digits.
+- sex: Character, up to 6 characters.
+- children: Numeric, up to 3 digits.
+- smoker: Character, up to 3 characters.
+- region: Character, up to 15 characters.
+- charges: Numeric, up to 8 digits.
 
-2. INFILE Statement. Specifies the source file path as /home/u63805106/datasetslearnsas/insurance (1).csv. Options used:
+3. INFILE Statement. Specifies the source file path as /home/u63805106/datasetslearnsas/insurance (1).csv. Options used:
 - DSD: Handles comma-delimited files and treats consecutive delimiters as missing values.
 - MISSOVER: Prevents SAS from advancing to the next line if data is missing, assigning missing values instead.
 - FIRSTOBS=2: Skips the header row and starts reading data from the second row.
