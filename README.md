@@ -1412,18 +1412,14 @@ Result:
 
 ## Informat in SAS
 
-This script, policel, reads data from a CSV file into a SAS dataset, with explicit handling of variable lengths and data types. Here’s a breakdown:
+This script, policel, reads data from a CSV file into a SAS dataset, with explicit handling of variable lengths and data types.
 
-DATA Step (policel):
-
-Creates a dataset named policel.
+DATA Step (policel): Creates a dataset named policel.
 The LENGTH statement specifies the length of each variable:
 CrimeID, ReportedF, FallsW, Location, LSOAC, LSOAN, OutcomeT: Character variables, up to 25 characters each.
 Longitude, Latitude: Numeric variables, up to 4 digits each.
-INFILE Statement:
 
-Specifies the source file as /home/u63805106/datasetslearnsas/londonoutcomes.csv.
-Options used:
+INFILE Statement: Specifies the source file as /home/u63805106/datasetslearnsas/londonoutcomes.csv. Options used:
 DSD: Handles comma-delimited data and treats consecutive delimiters as missing values.
 MISSOVER: Prevents SAS from moving to the next line when encountering missing data, assigning missing values instead.
 FIRSTOBS=2: Skips the first row (header) and starts importing data from the second row.
