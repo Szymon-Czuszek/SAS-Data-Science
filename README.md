@@ -1414,24 +1414,36 @@ Result:
 
 This script, policel, reads data from a CSV file into a SAS dataset, with explicit handling of variable lengths and data types.
 
-DATA Step (policel): Creates a dataset named policel.
-The LENGTH statement specifies the length of each variable:
-CrimeID, ReportedF, FallsW, Location, LSOAC, LSOAN, OutcomeT: Character variables, up to 25 characters each.
-Longitude, Latitude: Numeric variables, up to 4 digits each.
+DATA Step (policel): Creates a dataset named policel. The LENGTH statement specifies the length of each variable:
+- CrimeID
+- ReportedF
+- FallsW
+- Location
+- LSOAC
+- LSOAN
+- OutcomeT
+- Longitude
+- Latitude
 
 INFILE Statement: Specifies the source file as /home/u63805106/datasetslearnsas/londonoutcomes.csv. Options used:
-DSD: Handles comma-delimited data and treats consecutive delimiters as missing values.
-MISSOVER: Prevents SAS from moving to the next line when encountering missing data, assigning missing values instead.
-FIRSTOBS=2: Skips the first row (header) and starts importing data from the second row.
-INPUT Statement:
+- DSD: Handles comma-delimited data and treats consecutive delimiters as missing values.
+- MISSOVER: Prevents SAS from moving to the next line when encountering missing data, assigning missing values instead.
+- FIRSTOBS=2: Skips the first row (header) and starts importing data from the second row.
 
-Defines the structure of the input data:
-CrimeID, ReportedF, FallsW, Location, LSOAC, LSOAN, OutcomeT: Character variables to store text data.
-Longitude, Latitude: Numeric variables to store geographical coordinates.
+INPUT Statement: Defines the structure of the input data:
+- CrimeID
+- ReportedF
+- FallsW
+- Location
+- LSOAC
+- LSOAN
+- OutcomeT
+- Longitude
+- Latitude
+
 Result:
-
-The resulting policel dataset contains the specified variables, with appropriate handling of character lengths, missing values, and numeric data.
-This script demonstrates SAS’s capabilities for importing CSV files with diverse data types and ensuring variables are stored in a well-defined format.
+- The resulting policel dataset contains the specified variables, with appropriate handling of character lengths, missing values, and numeric data.
+- This script demonstrates SAS’s capabilities for importing CSV files with diverse data types and ensuring variables are stored in a well-defined format.
 
 ## Length Statement in SAS
 
