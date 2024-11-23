@@ -1477,7 +1477,39 @@ Result:
 
 ## Merging data in SAS
 
+This SAS script processes two datasets containing information about house prices, calculates profits, and merges them into a single dataset after sorting. Below is a detailed breakdown:
 
+Step 1: Import and Process houseprice Data
+DATA houseprice:
+
+Reads the file houseprice (2).txt, with space (" ") as the delimiter.
+Variables:
+type: Character, type of house.
+price: Numeric, house price.
+tax: Numeric, tax amount.
+profit: Calculated as the rounded product of price and tax.
+PROC SORT:
+
+Sorts the houseprice dataset by price and saves the sorted dataset as houseprice2.
+Step 2: Import and Process newhomes Data
+DATA newhomes:
+
+Reads the file newhomes (2).txt, with space (" ") as the delimiter.
+Variables and profit calculation follow the same structure as in the houseprice dataset.
+PROC SORT:
+
+Sorts the newhomes dataset by price and saves the sorted dataset as newhomes2.
+Step 3: Merge Sorted Datasets
+DATA newcollections:
+Merges the sorted datasets houseprice2 and newhomes2 by the price variable.
+The resulting dataset, newcollections, contains records from both datasets, aligned by price.
+Purpose and Use Case
+This script is designed to:
+
+Compare and integrate data from two sources (houseprice and newhomes).
+Ensure both datasets are sorted and aligned by a common variable (price) before merging.
+Calculate and store additional metrics (e.g., profit) for analysis.
+This approach is useful for scenarios where house price data from multiple sources needs to be combined for further analysis or reporting.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
