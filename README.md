@@ -1447,7 +1447,7 @@ Result:
 
 ## Length Statement in SAS
 
-This script imports data from a CSV file into a SAS dataset, specifying variable types and handling CSV-specific features.
+[Length.sas](SAS/Length.sas): This script imports data from a CSV file into a SAS dataset, specifying variable types and handling CSV-specific features.
 
 1. DATA Step (mydata). Creates a dataset named mydata. The LENGTH statement. Specifies the variable types and their maximum lengths:
 - age: Numeric, up to 3 digits.
