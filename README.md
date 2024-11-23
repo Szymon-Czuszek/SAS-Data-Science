@@ -1477,7 +1477,7 @@ Result:
 
 ## Merging data in SAS
 
-This SAS script processes two datasets containing information about house prices, calculates profits, and merges them into a single dataset after sorting. Below is a detailed breakdown:
+[Merging.sas](SAS/Merging.sas): This SAS script processes two datasets containing information about house prices, calculates profits, and merges them into a single dataset after sorting.
 
 Step 1: Import and Process houseprice Data
 DATA houseprice:
