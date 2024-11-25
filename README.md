@@ -1503,6 +1503,35 @@ Purpose and Use Case. This script is designed to:
 - Calculate and store additional metrics (e.g., profit) for analysis.
 - This approach is useful for scenarios where house price data from multiple sources needs to be combined for further analysis or reporting.
 
+This script, MergingSet.sas, demonstrates how to merge two datasets containing sales data from different sources into a single dataset. Below is a breakdown of the key steps:
+
+Step 1: Create and Process sales1 Dataset
+DATA sales1:
+Inputs a dataset containing sales data for four sales periods (Sales_1 to Sales_4).
+Variables:
+Name: Character variable for salesperson names.
+Sales_1, Sales_2, Sales_3, Sales_4: Numeric variables for sales amounts.
+total: Total sales across all four periods, calculated using the SUM function.
+
+Step 2: Create and Process sales2 Dataset
+DATA sales2:
+Inputs a dataset similar to sales1 but with different salespeople.
+Variables:
+Names: Character variable for salesperson names (different variable name from sales1).
+Sales_1, Sales_2, Sales_3, Sales_4: Numeric variables for sales amounts.
+total: Total sales across all four periods, calculated using the SUM function.
+
+Step 3: Merge Datasets
+DATA salesmerged:
+Merges the two datasets (sales1 and sales2) into a single dataset.
+Uses the SET statement to combine records from both datasets.
+Renames the Names variable in sales2 to Name to match the variable name in sales1.
+Result
+The salesmerged dataset contains all records from both sales1 and sales2.
+Common variables are aligned:
+Name includes all salesperson names, standardizing the variable name across datasets.
+total reflects the calculated total sales for each record.
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
