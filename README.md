@@ -1520,14 +1520,13 @@ Step 2: Create and Process sales2 Dataset
 - total: Total sales across all four periods, calculated using the SUM function.
 
 Step 3: Merge Datasets
-DATA salesmerged: Merges the two datasets (sales1 and sales2) into a single dataset.
-Uses the SET statement to combine records from both datasets.
-Renames the Names variable in sales2 to Name to match the variable name in sales1.
+1. DATA salesmerged: Merges the two datasets (sales1 and sales2) into a single dataset.
+2. Uses the SET statement to combine records from both datasets.
+3. Renames the Names variable in sales2 to Name to match the variable name in sales1.
+
 Result
-The salesmerged dataset contains all records from both sales1 and sales2.
-Common variables are aligned:
-Name includes all salesperson names, standardizing the variable name across datasets.
-total reflects the calculated total sales for each record.
+1. The salesmerged dataset contains all records from both sales1 and sales2.
+2. Common variables are aligned: Name includes all salesperson names, standardizing the variable name across datasets. total reflects the calculated total sales for each record.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
