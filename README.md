@@ -1506,24 +1506,21 @@ Purpose and Use Case. This script is designed to:
 [MergingSet.sas](SAS/MergingSet.sas): This script, demonstrates how to merge two datasets containing sales data from different sources into a single dataset.
 
 Step 1: Create and Process sales1 Dataset
-DATA sales1:
-Inputs a dataset containing sales data for four sales periods (Sales_1 to Sales_4).
-Variables:
-Name: Character variable for salesperson names.
-Sales_1, Sales_2, Sales_3, Sales_4: Numeric variables for sales amounts.
-total: Total sales across all four periods, calculated using the SUM function.
+1. DATA sales1: Inputs a dataset containing sales data for four sales periods (Sales_1 to Sales_4).
+2. Variables:
+- Name: Character variable for salesperson names.
+- Sales_1, Sales_2, Sales_3, Sales_4: Numeric variables for sales amounts.
+- total: Total sales across all four periods, calculated using the SUM function.
 
 Step 2: Create and Process sales2 Dataset
-DATA sales2:
-Inputs a dataset similar to sales1 but with different salespeople.
-Variables:
-Names: Character variable for salesperson names (different variable name from sales1).
-Sales_1, Sales_2, Sales_3, Sales_4: Numeric variables for sales amounts.
-total: Total sales across all four periods, calculated using the SUM function.
+1. DATA sales2: Inputs a dataset similar to sales1 but with different salespeople.
+2. Variables:
+- Names: Character variable for salesperson names (different variable name from sales1).
+- Sales_1, Sales_2, Sales_3, Sales_4: Numeric variables for sales amounts.
+- total: Total sales across all four periods, calculated using the SUM function.
 
 Step 3: Merge Datasets
-DATA salesmerged:
-Merges the two datasets (sales1 and sales2) into a single dataset.
+DATA salesmerged: Merges the two datasets (sales1 and sales2) into a single dataset.
 Uses the SET statement to combine records from both datasets.
 Renames the Names variable in sales2 to Name to match the variable name in sales1.
 Result
