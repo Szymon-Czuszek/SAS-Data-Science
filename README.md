@@ -1503,7 +1503,7 @@ Purpose and Use Case. This script is designed to:
 - Calculate and store additional metrics (e.g., profit) for analysis.
 - This approach is useful for scenarios where house price data from multiple sources needs to be combined for further analysis or reporting.
 
-This script, MergingSet.sas, demonstrates how to merge two datasets containing sales data from different sources into a single dataset. Below is a breakdown of the key steps:
+[MergingSet.sas](SAS/MergingSet.sas): This script, demonstrates how to merge two datasets containing sales data from different sources into a single dataset.
 
 Step 1: Create and Process sales1 Dataset
 DATA sales1:
