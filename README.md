@@ -1549,6 +1549,9 @@ Sorts the houseprice dataset by the tax variable in descending order.
 The sorted dataset is saved as sortedhouseprice.
 Sorting by descending tax ensures that records with the highest tax rates appear first.
 
+Step 4: Print the Sorted Dataset
+PROC PRINT DATA=sortedhouseprice:
+Displays the sorted dataset to verify the order of the records after sorting.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
