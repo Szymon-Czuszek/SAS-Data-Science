@@ -1543,6 +1543,13 @@ PROC PRINT DATA=houseprice:
 Displays the contents of the houseprice dataset as it was initially inputted.
 Provides a reference to compare the dataset before and after sorting.
 
+Step 3: Sort the Dataset
+PROC SORT DATA=houseprice OUT=sortedhouseprice:
+Sorts the houseprice dataset by the tax variable in descending order.
+The sorted dataset is saved as sortedhouseprice.
+Sorting by descending tax ensures that records with the highest tax rates appear first.
+
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
