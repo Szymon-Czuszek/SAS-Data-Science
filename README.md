@@ -1528,7 +1528,7 @@ Result
 1. The salesmerged dataset contains all records from both sales1 and sales2.
 2. Common variables are aligned: Name includes all salesperson names, standardizing the variable name across datasets. total reflects the calculated total sales for each record.
 
-#####
+##### Using PROC Sort in SAS
 
 Step 1: Create the houseprice Dataset
 DATA houseprice:
@@ -1537,6 +1537,11 @@ Variables:
 type: Character variable specifying the type of house (e.g., Single, Duplex).
 price: Numeric variable for the house price.
 tax: Numeric variable for the tax rate as a proportion (e.g., 0.20 for 20% tax).
+
+Step 2: Print the Original Dataset
+PROC PRINT DATA=houseprice:
+Displays the contents of the houseprice dataset as it was initially inputted.
+Provides a reference to compare the dataset before and after sorting.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
