@@ -1528,6 +1528,16 @@ Result
 1. The salesmerged dataset contains all records from both sales1 and sales2.
 2. Common variables are aligned: Name includes all salesperson names, standardizing the variable name across datasets. total reflects the calculated total sales for each record.
 
+#####
+
+Step 1: Create the houseprice Dataset
+DATA houseprice:
+Inputs a dataset containing information about different types of houses, their prices, and tax rates.
+Variables:
+type: Character variable specifying the type of house (e.g., Single, Duplex).
+price: Numeric variable for the house price.
+tax: Numeric variable for the tax rate as a proportion (e.g., 0.20 for 20% tax).
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
