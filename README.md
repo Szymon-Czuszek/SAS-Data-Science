@@ -1538,8 +1538,7 @@ Variables:
 3. tax: Numeric variable for the tax rate as a proportion (e.g., 0.20 for 20% tax).
 
 Step 2: Print the Original Dataset
-PROC PRINT DATA=houseprice:
-Displays the contents of the houseprice dataset as it was initially inputted.
+1. PROC PRINT DATA=houseprice: Displays the contents of the houseprice dataset as it was initially inputted.
 Provides a reference to compare the dataset before and after sorting.
 
 Step 3: Sort the Dataset
