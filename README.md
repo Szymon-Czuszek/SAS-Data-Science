@@ -1531,12 +1531,11 @@ Result
 ##### Using PROC Sort in SAS
 
 Step 1: Create the houseprice Dataset
-DATA houseprice:
-Inputs a dataset containing information about different types of houses, their prices, and tax rates.
+1. DATA houseprice: Inputs a dataset containing information about different types of houses, their prices, and tax rates.
 Variables:
-type: Character variable specifying the type of house (e.g., Single, Duplex).
-price: Numeric variable for the house price.
-tax: Numeric variable for the tax rate as a proportion (e.g., 0.20 for 20% tax).
+1. type: Character variable specifying the type of house (e.g., Single, Duplex).
+2. price: Numeric variable for the house price.
+3. tax: Numeric variable for the tax rate as a proportion (e.g., 0.20 for 20% tax).
 
 Step 2: Print the Original Dataset
 PROC PRINT DATA=houseprice:
