@@ -1610,6 +1610,52 @@ This script demonstrates using SAS macros for repetitive tasks, importing and me
 
 ## Using SAS Functions
 
+Step 1: Data Manipulation Using Functions
+DATA summing:
+
+Demonstrates the use of the SUM function for various purposes:
+sumthis = SUM(7, 9, 13);
+Sums three numeric values: 7, 9, and 13.
+vararg = SUM(sumthis);
+Uses a variable as an argument and calculates its sum (here, just sumthis itself).
+numargum = SUM(6, 8);
+Sums two numeric values: 6 and 8.
+expargum = SUM(sumthis * 7 / 2);
+Sums the result of an expression (sumthis * 7 / 2).
+varargumlist = SUM(of Var1-Var5);
+Sums all values in variables Var1 through Var5 (assumes these variables exist in the dataset).
+datetoday = TODAY();
+Assigns the current date to the variable datetoday using the TODAY function.
+PROC PRINT DATA=summing:
+
+Prints the dataset summing to display the computed variables.
+FORMAT datetoday date11.;
+Formats the datetoday variable to display the date in the DATE11. format (e.g., "28-Nov-2024").
+Step 2: String Manipulation
+DATA splitname:
+
+Creates a dataset for demonstrating the SCAN function, which extracts parts of a string:
+Prefix = SCAN(name, 3);
+Extracts the third word from the name variable and assigns it to the variable Prefix.
+Input Data:
+Copy code
+Mr Ermin Dedic  
+Dr Joanna Ratner  
+For the first row, the third word is "Dedic".
+For the second row, the third word is "Ratner".
+DATALINES:
+
+Provides inline data to populate the name variable.
+Purpose and Use Case
+This script is a great introduction to SAS functions for:
+Arithmetic and date-related calculations.
+String processing, such as splitting names or extracting components from text.
+Formatting data for output and reporting.
+By the end, the script produces two datasets:
+
+summing: Demonstrates numeric and date calculations.
+splitname: Demonstrates string processing using the SCAN function.
+
 ## Solutions to exercises in Udemy course by Aslam Khan: "The Simplest Guide to SAS Programming- SAS Base-SAS Advanced"
 
 [SAS_Course_Exercise_19.sas](SAS/SAS_Course_Exercise_19.sas): This code creates a vertical bar chart displaying the mean MSRP (Manufacturer's Suggested Retail Price) of cars for each make using the SASHELP.CARS dataset. The second step involves visually inspecting the chart to identify the car with the highest mean MSRP, which corresponds to the tallest bar in the chart.
