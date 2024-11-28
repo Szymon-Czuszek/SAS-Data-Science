@@ -1549,6 +1549,43 @@ Step 3: Sort the Dataset
 Step 4: Print the Sorted Dataset
 1. PROC PRINT DATA=sortedhouseprice: Displays the sorted dataset to verify the order of the records after sorting.
 
+## Renaming Variables in SAS
+
+Step 1: Create the newhomes Dataset
+DATA newhomes:
+Creates a dataset with three variables:
+x: The type of home (character variable, e.g., Duplex).
+y: The price of the home (numeric variable).
+z: The tax rate as a proportion (numeric variable).
+
+Step 2: Rename Variables
+DATA cleannewhomes:
+Copies the newhomes dataset while renaming its variables:
+x → type
+y → price
+z → tax
+This step improves clarity by assigning meaningful names to the variables.
+
+Step 3: Add Labels to Variables
+LABEL Statement:
+Adds descriptive labels to the renamed variables:
+type → "Type of Home"
+price → "Price of Home"
+tax → "Percentage of Home"
+These labels provide additional context for reports or outputs.
+
+Step 4: Analyze the Data
+PROC FREQ DATA=cleannewhomes:
+Analyzes the frequency of each value in the type, price, and tax variables.
+Outputs a frequency table showing how often each unique value appears in the dataset.
+
+Purpose and Use Case
+This script is useful for preparing raw data for analysis by:
+Renaming ambiguous variable names for clarity.
+Labeling variables for better understanding in reports.
+Generating frequency tables to explore the distribution of data.
+By the end, the dataset cleannewhomes is ready for further analysis or visualization.
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
