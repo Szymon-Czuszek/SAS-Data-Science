@@ -1588,8 +1588,7 @@ By the end, the dataset cleannewhomes is ready for further analysis or visualiza
 
 ## Using SAS Functions
 
-Step 1: Data Manipulation Using Functions
-DATA summing:
+Step 1: Data Manipulation Using Functions. DATA summing:
 
 Demonstrates the use of the SUM function for various purposes:
 sumthis = SUM(7, 9, 13);
