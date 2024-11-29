@@ -1588,21 +1588,14 @@ By the end, the dataset cleannewhomes is ready for further analysis or visualiza
 
 ## Using SAS Functions
 
-Step 1: Data Manipulation Using Functions. DATA summing:
+Step 1: Data Manipulation Using Functions. DATA summing. Demonstrates the use of the SUM function for various purposes:
+- sumthis = SUM(7, 9, 13); Sums three numeric values: 7, 9, and 13.
+- vararg = SUM(sumthis); Uses a variable as an argument and calculates its sum (here, just sumthis itself).
+- numargum = SUM(6, 8); Sums two numeric values: 6 and 8.
+- expargum = SUM(sumthis * 7 / 2); Sums the result of an expression (sumthis * 7 / 2).
+- varargumlist = SUM(of Var1-Var5); Sums all values in variables Var1 through Var5 (assumes these variables exist in the dataset).
+- datetoday = TODAY(); Assigns the current date to the variable datetoday using the TODAY function.
 
-Demonstrates the use of the SUM function for various purposes:
-sumthis = SUM(7, 9, 13);
-Sums three numeric values: 7, 9, and 13.
-vararg = SUM(sumthis);
-Uses a variable as an argument and calculates its sum (here, just sumthis itself).
-numargum = SUM(6, 8);
-Sums two numeric values: 6 and 8.
-expargum = SUM(sumthis * 7 / 2);
-Sums the result of an expression (sumthis * 7 / 2).
-varargumlist = SUM(of Var1-Var5);
-Sums all values in variables Var1 through Var5 (assumes these variables exist in the dataset).
-datetoday = TODAY();
-Assigns the current date to the variable datetoday using the TODAY function.
 PROC PRINT DATA=summing:
 
 Prints the dataset summing to display the computed variables.
