@@ -1599,18 +1599,12 @@ Step 1: Data Manipulation Using Functions. DATA summing. Demonstrates the use of
 Step 2: Data Presentation. PROC PRINT DATA=summing. Prints the dataset summing to display the computed variables:
 - FORMAT datetoday date11.; Formats the datetoday variable to display the date in the DATE11. format (e.g., "28-Nov-2024").
 
-Step 3: String Manipulation
-DATA splitname:
+Step 3: String Manipulation DATA splitname. Creates a dataset for demonstrating the SCAN function, which extracts parts of a string:
+- Prefix = SCAN(name, 3); Extracts the third word from the name variable and assigns it to the variable Prefix.
+- Input Data:
+1. Mr Ermin Dedic - For the first row, the third word is "Dedic".
+2. Dr Joanna Ratner - For the second row, the third word is "Ratner".
 
-Creates a dataset for demonstrating the SCAN function, which extracts parts of a string:
-Prefix = SCAN(name, 3);
-Extracts the third word from the name variable and assigns it to the variable Prefix.
-Input Data:
-Copy code
-Mr Ermin Dedic  
-Dr Joanna Ratner  
-For the first row, the third word is "Dedic".
-For the second row, the third word is "Ratner".
 DATALINES:
 
 Provides inline data to populate the name variable.
