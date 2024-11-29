@@ -1596,12 +1596,10 @@ Step 1: Data Manipulation Using Functions. DATA summing. Demonstrates the use of
 - varargumlist = SUM(of Var1-Var5); Sums all values in variables Var1 through Var5 (assumes these variables exist in the dataset).
 - datetoday = TODAY(); Assigns the current date to the variable datetoday using the TODAY function.
 
-PROC PRINT DATA=summing:
+Step 2: Data Presentation. PROC PRINT DATA=summing. Prints the dataset summing to display the computed variables:
+- FORMAT datetoday date11.; Formats the datetoday variable to display the date in the DATE11. format (e.g., "28-Nov-2024").
 
-Prints the dataset summing to display the computed variables.
-FORMAT datetoday date11.;
-Formats the datetoday variable to display the date in the DATE11. format (e.g., "28-Nov-2024").
-Step 2: String Manipulation
+Step 3: String Manipulation
 DATA splitname:
 
 Creates a dataset for demonstrating the SCAN function, which extracts parts of a string:
