@@ -1605,18 +1605,14 @@ Step 3: String Manipulation DATA splitname. Creates a dataset for demonstrating 
 1. Mr Ermin Dedic - For the first row, the third word is "Dedic".
 2. Dr Joanna Ratner - For the second row, the third word is "Ratner".
 
-DATALINES:
+Step 4: DATALINES. Provides inline data to populate the name variable. By the end, the script produces two datasets:
+- summing: Demonstrates numeric and date calculations.
+- splitname: Demonstrates string processing using the SCAN function.
 
-Provides inline data to populate the name variable.
-Purpose and Use Case
-This script is a great introduction to SAS functions for:
-Arithmetic and date-related calculations.
-String processing, such as splitting names or extracting components from text.
-Formatting data for output and reporting.
-By the end, the script produces two datasets:
-
-summing: Demonstrates numeric and date calculations.
-splitname: Demonstrates string processing using the SCAN function.
+Step 5: Purpose and Use Case This script is a great introduction to SAS functions for:
+- Arithmetic and date-related calculations.
+- String processing, such as splitting names or extracting components from text.
+- Formatting data for output and reporting.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
