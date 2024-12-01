@@ -1208,12 +1208,10 @@ Otherwise: It creates a variable, yrsleft, to show the remaining years to reach 
 
 [CreatingVariables.sas](SAS/CreatingVariables.sas): his script creates a dataset that calculates total sales for each individual based on quarterly sales data.
 
-DATA Step:
+DATA Step: A dataset named sales is created with the DATA statement. The INPUT statement defines variables:
+- Name (character variable for the individual's name)
+- Sales_1 to Sales_4 (numeric variables representing quarterly sales)
 
-A dataset named sales is created with the DATA statement.
-The INPUT statement defines variables:
-Name (character variable for the individual's name)
-Sales_1 to Sales_4 (numeric variables representing quarterly sales)
 Variable Calculation:
 
 The variable total is calculated for each individual by summing the values in Sales_1, Sales_2, Sales_3, and Sales_4 using the SUM function.
