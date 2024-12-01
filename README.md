@@ -1212,10 +1212,9 @@ DATA Step: A dataset named sales is created with the DATA statement. The INPUT s
 - Name (character variable for the individual's name)
 - Sales_1 to Sales_4 (numeric variables representing quarterly sales)
 
-Variable Calculation:
+Variable Calculation: The variable total is calculated for each individual by summing the values in Sales_1, Sales_2, Sales_3, and Sales_4 using the SUM function.
+- This calculation automatically handles any missing values as SUM ignores them by default.
 
-The variable total is calculated for each individual by summing the values in Sales_1, Sales_2, Sales_3, and Sales_4 using the SUM function.
-This calculation automatically handles any missing values as SUM ignores them by default.
 Data Entry:
 
 The CARDS statement allows for data entry directly in the code. Four individuals’ sales data are inputted:
