@@ -1215,15 +1215,13 @@ DATA Step: A dataset named sales is created with the DATA statement. The INPUT s
 Variable Calculation: The variable total is calculated for each individual by summing the values in Sales_1, Sales_2, Sales_3, and Sales_4 using the SUM function.
 - This calculation automatically handles any missing values as SUM ignores them by default.
 
-Data Entry:
+Data Entry: The CARDS statement allows for data entry directly in the code. Four individuals’ sales data are inputted:
+- Greg: Sales data for each quarter is 10, 2, 40, 0.
+- John: Sales data is 15, 5, 10, 100.
+- Lisa: Sales data is 50, 10, 15, 50.
+- Mark: Sales data is 20, 0, 5, 20.
 
-The CARDS statement allows for data entry directly in the code. Four individuals’ sales data are inputted:
-Greg: Sales data for each quarter is 10, 2, 40, 0.
-John: Sales data is 15, 5, 10, 100.
-Lisa: Sales data is 50, 10, 15, 50.
-Mark: Sales data is 20, 0, 5, 20.
 Result:
-
 The RUN statement executes the code, resulting in the sales dataset containing Name, quarterly sales values, and a total column that holds the calculated total sales for each individual.
 This code provides a simple way to manage and analyze quarterly sales data, demonstrating how to define and sum multiple variables in SAS.
 
