@@ -1605,6 +1605,44 @@ Step 5: Purpose and Use Case This script is a great introduction to SAS function
 - String processing, such as splitting names or extracting components from text.
 - Formatting data for output and reporting.
 
+[SasFunctionsCatx.sas](SAS/SasFunctionsCatx.sas): Using Cat & Catx
+
+Step 1: Using CATX
+DATA concat:
+
+Declares variables:
+separator = ',';
+Defines the separator to use between concatenated strings.
+first = ' Larry';
+A string with leading spaces.
+last = 'Larryson ';
+A string with trailing spaces.
+result = CATX(separator, first, last);
+Concatenates first and last:
+Removes leading and trailing spaces from each string.
+Inserts the defined separator (,) between the two strings.
+Final result: "Larry,Larryson".
+DROP separator;
+Excludes the separator variable from the output dataset.
+PROC PRINT DATA = concat:
+
+Prints the concat dataset to display the resulting variable result.
+Step 2: Using CAT
+DATA concat1:
+
+Similar setup as concat, but uses the CAT function:
+result = CAT(separator, first, last);
+Concatenates separator, first, and last without removing leading/trailing spaces.
+Final result: " Larry,Larryson " (spaces are retained).
+PROC PRINT DATA = concat1:
+
+Prints the concat1 dataset to display the resulting variable result.
+Key Differences Between CATX and CAT
+Function	Behavior
+CATX	Removes leading/trailing spaces from input strings and inserts a separator between them.
+CAT	Concatenates input strings without removing any spaces and does not insert a separator.
+
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
