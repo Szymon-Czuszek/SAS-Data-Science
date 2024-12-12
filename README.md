@@ -1676,6 +1676,40 @@ The COALESCE function:
 Takes multiple arguments and returns the first non-missing value from the list.
 Commonly used in scenarios where you want to fill missing values by prioritizing available data.
 
+[SasFunctionsCompress.sas](SAS/SasFunctionsCompress.sas): This SAS script demonstrates the use of the COMPRESS function to remove specific characters from strings.
+
+Step 1: Data Step
+DATA compressed:
+
+Creates a dataset named compressed.
+Input variable phonen is defined as a string with a length of 15 characters ($1-15).
+Variables Created:
+
+phone1 = COMPRESS(phonen);
+Removes all blank spaces from the variable phonen.
+phone2 = COMPRESS(phonen, '(-)', 's');
+Removes the characters (, ), and - from phonen using the second argument '(-)'.
+The 's' modifier ensures only these specified characters are removed while leaving others intact.
+DATALINES:
+
+Provides sample input data:
+Observation 1: (314)456-4768
+Observation 2: (314) 453-56 78
+RUN:
+
+Executes the DATA step to create the dataset compressed.
+Step 2: PROC PRINT
+PROC PRINT DATA = compressed:
+Prints the dataset compressed to display the output of the COMPRESS function.
+Output
+The resulting dataset compressed will look like this:
+
+phonen	phone1	phone2
+(314)456-4768	(314)456-4768	3144564768
+(314) 453-56 78	(314)453-5678	3144535678
+
+
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
@@ -1697,8 +1731,6 @@ For subsequent rows, Balance accumulates by adding the difference (Credit - Debi
 
 Result: The final dataset, BankMerged, contains a consolidated list of transactions for each account, with a running balance calculation.
 This script demonstrates using SAS macros for repetitive tasks, importing and merging data from multiple sheets, and calculating cumulative values within groups.
-
-
 
 ## Solutions to exercises in Udemy course by Aslam Khan: "The Simplest Guide to SAS Programming- SAS Base-SAS Advanced"
 
