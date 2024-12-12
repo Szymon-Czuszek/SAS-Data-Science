@@ -1708,7 +1708,34 @@ phonen	phone1	phone2
 (314)456-4768	(314)456-4768	3144564768
 (314) 453-56 78	(314)453-5678	3144535678
 
+[SasFunctionsInput.sas](SAS/SasFunctionsInput.sas): This script demonstrates the use of the INPUT function in SAS to convert a character string into a numeric value.
 
+Step 1: Data Step
+DATA inputfunction:
+
+Creates a dataset named inputfunction.
+Variables:
+
+sale $9.:
+Defines the variable sale as a character variable with a length of 9.
+numsale = INPUT(sale, comma9.);:
+Converts the character variable sale into a numeric value using the INPUT function.
+The comma9. informat allows the input to interpret commas within the numeric data.
+DATALINES:
+
+Provides sample data for the variable sale:
+6, 525, 352
+RUN:
+
+Executes the DATA step to create the dataset inputfunction.
+Step 2: PROC PRINT
+PROC PRINT DATA = inputfunction:
+Prints the dataset inputfunction to display the output of the INPUT function.
+Output
+The resulting dataset inputfunction will look like this:
+
+sale	numsale
+6, 525, 352	6525352
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
