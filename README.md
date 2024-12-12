@@ -1605,7 +1605,7 @@ Step 5: Purpose and Use Case This script is a great introduction to SAS function
 - String processing, such as splitting names or extracting components from text.
 - Formatting data for output and reporting.
 
-[SasFunctionsCatx.sas](SAS/SasFunctionsCatx.sas): Using Cat & Catx
+[SasFunctionsCatx.sas](SAS/SasFunctionsCatx.sas): This script demonstrates how to use SAS string functions, specifically CATX and CAT, to concatenate strings while managing separators and whitespace.
 
 Step 1: Using CATX
 DATA concat:
@@ -1642,6 +1642,39 @@ Function	Behavior
 CATX	Removes leading/trailing spaces from input strings and inserts a separator between them.
 CAT	Concatenates input strings without removing any spaces and does not insert a separator.
 
+[SasFunctionsCoalesce.sas](SAS/SasFunctionsCoalesce.sas): This script demonstrates the use of the COALESCE function in SAS to handle missing values by selecting the first non-missing value from a list of variables.
+
+Step 1: Data Step
+DATA coal:
+
+Declares two variables: home and cell, which are numeric.
+Uses the COALESCE function:
+numvalue = coalesce(home, cell);
+Assigns numvalue the first non-missing value between home and cell.
+If home is non-missing, it is assigned to numvalue.
+If home is missing, then the value of cell is assigned to numvalue.
+DATALINES:
+
+Input dataset:
+Two observations:
+Observation 1: Only home is provided (6578975), while cell is missing.
+Observation 2: Only cell is provided (6448565), while home is missing.
+RUN:
+
+Executes the DATA step to create the coal dataset.
+Step 2: PROC PRINT
+PROC PRINT DATA = coal:
+Prints the coal dataset to display the results of the COALESCE function.
+Output
+The dataset coal will look like this:
+
+home	cell	numvalue
+6578975	.	6578975
+.	6448565	6448565
+
+The COALESCE function:
+Takes multiple arguments and returns the first non-missing value from the list.
+Commonly used in scenarios where you want to fill missing values by prioritizing available data.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
@@ -1664,6 +1697,8 @@ For subsequent rows, Balance accumulates by adding the difference (Credit - Debi
 
 Result: The final dataset, BankMerged, contains a consolidated list of transactions for each account, with a running balance calculation.
 This script demonstrates using SAS macros for repetitive tasks, importing and merging data from multiple sheets, and calculating cumulative values within groups.
+
+
 
 ## Solutions to exercises in Udemy course by Aslam Khan: "The Simplest Guide to SAS Programming- SAS Base-SAS Advanced"
 
