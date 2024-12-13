@@ -1631,9 +1631,37 @@ Step 2: Using CAT
 - Prints the concat1 dataset to display the resulting variable result.
 
 Step 3: Key Differences Between CATX and CAT
-Function	Behavior
-CATX	Removes leading/trailing spaces from input strings and inserts a separator between them.
-CAT	Concatenates input strings without removing any spaces and does not insert a separator.
+
+<table>
+    
+    <tr>
+        <td>
+            Function
+        </td>
+        <td>
+            Behavior
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            CATX
+        </td>
+        <td>
+            Removes leading/trailing spaces from input strings and inserts a separator between them.
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            CAT
+        </td>
+        <td>
+            Concatenates input strings without removing any spaces and does not insert a separator.
+        </td>
+    </tr>
+    
+</table>
 
 [SasFunctionsCoalesce.sas](SAS/SasFunctionsCoalesce.sas): This script demonstrates the use of the COALESCE function in SAS to handle missing values by selecting the first non-missing value from a list of variables.
 
