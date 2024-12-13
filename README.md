@@ -1608,25 +1608,20 @@ Step 5: Purpose and Use Case This script is a great introduction to SAS function
 [SasFunctionsCatx.sas](SAS/SasFunctionsCatx.sas): This script demonstrates how to use SAS string functions, specifically CATX and CAT, to concatenate strings while managing separators and whitespace.
 
 Step 1: Using CATX
-DATA concat:
 
-Declares variables:
-separator = ',';
-Defines the separator to use between concatenated strings.
-first = ' Larry';
-A string with leading spaces.
-last = 'Larryson ';
-A string with trailing spaces.
-result = CATX(separator, first, last);
-Concatenates first and last:
-Removes leading and trailing spaces from each string.
-Inserts the defined separator (,) between the two strings.
-Final result: "Larry,Larryson".
-DROP separator;
-Excludes the separator variable from the output dataset.
-PROC PRINT DATA = concat:
+1. DATA concat. Declares variables:
+- separator = ','; Defines the separator to use between concatenated strings.
+- first = ' Larry'; A string with leading spaces.
+- last = 'Larryson '; A string with trailing spaces.
+- result = CATX(separator, first, last);
+2. Concatenates first and last:
+- Removes leading and trailing spaces from each string.
+- Inserts the defined separator (,) between the two strings.
+- Final result: "Larry,Larryson".
+- DROP separator; Excludes the separator variable from the output dataset.
+3. PROC PRINT DATA = concat:
+- Prints the concat dataset to display the resulting variable result.
 
-Prints the concat dataset to display the resulting variable result.
 Step 2: Using CAT
 DATA concat1:
 
