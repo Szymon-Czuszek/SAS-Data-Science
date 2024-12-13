@@ -1623,16 +1623,14 @@ Step 1: Using CATX
 - Prints the concat dataset to display the resulting variable result.
 
 Step 2: Using CAT
-DATA concat1:
 
-Similar setup as concat, but uses the CAT function:
-result = CAT(separator, first, last);
-Concatenates separator, first, and last without removing leading/trailing spaces.
-Final result: " Larry,Larryson " (spaces are retained).
-PROC PRINT DATA = concat1:
+1. DATA concat1. Similar setup as concat, but uses the CAT function:
+- result = CAT(separator, first, last); Concatenates separator, first, and last without removing leading/trailing spaces.
+- Final result: " Larry,Larryson " (spaces are retained).
+2. PROC PRINT DATA = concat1:
+- Prints the concat1 dataset to display the resulting variable result.
 
-Prints the concat1 dataset to display the resulting variable result.
-Key Differences Between CATX and CAT
+Step 3: Key Differences Between CATX and CAT
 Function	Behavior
 CATX	Removes leading/trailing spaces from input strings and inserts a separator between them.
 CAT	Concatenates input strings without removing any spaces and does not insert a separator.
