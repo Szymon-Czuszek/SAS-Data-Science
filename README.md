@@ -1633,7 +1633,6 @@ Step 2: Using CAT
 Step 3: Key Differences Between CATX and CAT
 
 <table>
-    
     <tr>
         <td>
             Function
@@ -1642,7 +1641,6 @@ Step 3: Key Differences Between CATX and CAT
             Behavior
         </td>
     </tr>
-    
     <tr>
         <td>
             CATX
@@ -1651,7 +1649,6 @@ Step 3: Key Differences Between CATX and CAT
             Removes leading/trailing spaces from input strings and inserts a separator between them.
         </td>
     </tr>
-
     <tr>
         <td>
             CAT
@@ -1660,7 +1657,6 @@ Step 3: Key Differences Between CATX and CAT
             Concatenates input strings without removing any spaces and does not insert a separator.
         </td>
     </tr>
-    
 </table>
 
 [SasFunctionsCoalesce.sas](SAS/SasFunctionsCoalesce.sas): This script demonstrates the use of the COALESCE function in SAS to handle missing values by selecting the first non-missing value from a list of variables.
