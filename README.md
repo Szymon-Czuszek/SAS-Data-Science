@@ -1662,23 +1662,16 @@ Step 3: Key Differences Between CATX and CAT
 [SasFunctionsCoalesce.sas](SAS/SasFunctionsCoalesce.sas): This script demonstrates the use of the COALESCE function in SAS to handle missing values by selecting the first non-missing value from a list of variables.
 
 Step 1: Data Step
-DATA coal:
+1. DATA coal. Declares two variables: home and cell, which are numeric.
+- Uses the COALESCE function: numvalue = coalesce(home, cell);
+- Assigns numvalue the first non-missing value between home and cell.
+- If home is non-missing, it is assigned to numvalue.
+- If home is missing, then the value of cell is assigned to numvalue.
+2. DATALINES. Input dataset. Two observations:
+- Observation 1: Only home is provided (6578975), while cell is missing.
+- Observation 2: Only cell is provided (6448565), while home is missing.
+3. RUN. Executes the DATA step to create the coal dataset.
 
-Declares two variables: home and cell, which are numeric.
-Uses the COALESCE function:
-numvalue = coalesce(home, cell);
-Assigns numvalue the first non-missing value between home and cell.
-If home is non-missing, it is assigned to numvalue.
-If home is missing, then the value of cell is assigned to numvalue.
-DATALINES:
-
-Input dataset:
-Two observations:
-Observation 1: Only home is provided (6578975), while cell is missing.
-Observation 2: Only cell is provided (6448565), while home is missing.
-RUN:
-
-Executes the DATA step to create the coal dataset.
 Step 2: PROC PRINT
 PROC PRINT DATA = coal:
 Prints the coal dataset to display the results of the COALESCE function.
