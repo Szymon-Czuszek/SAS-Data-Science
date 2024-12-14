@@ -1719,34 +1719,56 @@ Commonly used in scenarios where you want to fill missing values by prioritizing
 [SasFunctionsCompress.sas](SAS/SasFunctionsCompress.sas): This SAS script demonstrates the use of the COMPRESS function to remove specific characters from strings.
 
 Step 1: Data Step
-DATA compressed:
+1. DATA compressed. Creates a dataset named compressed.
+- Input variable phonen is defined as a string with a length of 15 characters ($1-15).
+2. Variables Created:
+- phone1 = COMPRESS(phonen); Removes all blank spaces from the variable phonen.
+- phone2 = COMPRESS(phonen, '(-)', 's'); Removes the characters (, ), and - from phonen using the second argument '(-)'.
+3. The 's' modifier ensures only these specified characters are removed while leaving others intact.
+4. DATALINES. Provides sample input data:
+- Observation 1: (314)456-4768
+- Observation 2: (314) 453-56 78
+5. RUN. Executes the DATA step to create the dataset compressed.
 
-Creates a dataset named compressed.
-Input variable phonen is defined as a string with a length of 15 characters ($1-15).
-Variables Created:
-
-phone1 = COMPRESS(phonen);
-Removes all blank spaces from the variable phonen.
-phone2 = COMPRESS(phonen, '(-)', 's');
-Removes the characters (, ), and - from phonen using the second argument '(-)'.
-The 's' modifier ensures only these specified characters are removed while leaving others intact.
-DATALINES:
-
-Provides sample input data:
-Observation 1: (314)456-4768
-Observation 2: (314) 453-56 78
-RUN:
-
-Executes the DATA step to create the dataset compressed.
 Step 2: PROC PRINT
-PROC PRINT DATA = compressed:
-Prints the dataset compressed to display the output of the COMPRESS function.
-Output
-The resulting dataset compressed will look like this:
+1. PROC PRINT DATA = compressed. Prints the dataset compressed to display the output of the COMPRESS function.
+2. Output. The resulting dataset compressed will look like this:
 
-phonen	phone1	phone2
-(314)456-4768	(314)456-4768	3144564768
-(314) 453-56 78	(314)453-5678	3144535678
+<table>
+    <tr>
+        <td>
+            phonen
+        </td>
+        <td>
+            phone1
+        </td>
+        <td>
+            phone2
+        </td>
+    </tr>
+    <tr>
+        <td>
+            (314)456-4768
+        </td>
+        <td>
+            (314)456-4768
+        </td>
+        <td>
+            3144564768
+        </td>
+    </tr>
+    <tr>
+        <td>
+            (314) 453-56 78
+        </td>
+        <td>
+            (314)453-5678
+        </td>
+        <td>
+            3144535678
+        </td>
+    </tr>
+</table>
 
 [SasFunctionsInput.sas](SAS/SasFunctionsInput.sas): This script demonstrates the use of the INPUT function in SAS to convert a character string into a numeric value.
 
