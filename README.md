@@ -1673,10 +1673,35 @@ Step 1: Data Step
 3. RUN. Executes the DATA step to create the coal dataset.
 
 Step 2: PROC PRINT
-PROC PRINT DATA = coal:
-Prints the coal dataset to display the results of the COALESCE function.
-Output
-The dataset coal will look like this:
+1. PROC PRINT DATA = coal. Prints the coal dataset to display the results of the COALESCE function.
+2. Output. The dataset coal will look like this:
+
+<table>
+    <tr>
+        <td>
+            home
+        </td>
+        <td>
+            cell
+        </td>
+    </tr>
+    <tr>
+        <td>
+            6578975
+        </td>
+        <td>
+            .
+        </td>
+    </tr>
+    <tr>
+        <td>
+            .
+        </td>
+        <td>
+            6448565
+        </td>
+    </tr>
+</table>
 
 home	cell	numvalue
 6578975	.	6578975
