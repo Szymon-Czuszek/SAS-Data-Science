@@ -1684,6 +1684,9 @@ Step 2: PROC PRINT
         <td>
             cell
         </td>
+        <td>
+            numvalue
+        </td>
     </tr>
     <tr>
         <td>
@@ -1691,6 +1694,9 @@ Step 2: PROC PRINT
         </td>
         <td>
             .
+        </td>
+        <td>
+            6578975
         </td>
     </tr>
     <tr>
@@ -1700,12 +1706,11 @@ Step 2: PROC PRINT
         <td>
             6448565
         </td>
+        <td>
+            6448565
+        </td>
     </tr>
 </table>
-
-home	cell	numvalue
-6578975	.	6578975
-.	6448565	6448565
 
 The COALESCE function:
 Takes multiple arguments and returns the first non-missing value from the list.
