@@ -1773,23 +1773,15 @@ Step 2: PROC PRINT
 [SasFunctionsInput.sas](SAS/SasFunctionsInput.sas): This script demonstrates the use of the INPUT function in SAS to convert a character string into a numeric value.
 
 Step 1: Data Step
-DATA inputfunction:
+1. DATA inputfunction: Creates a dataset named inputfunction.
+2. Variables:
+- sale $9.: Defines the variable sale as a character variable with a length of 9.
+- numsale = INPUT(sale, comma9.);: Converts the character variable sale into a numeric value using the INPUT function.
+- The comma9. informat allows the input to interpret commas within the numeric data.
+3. DATALINES. Provides sample data for the variable sale:
+- 6, 525, 352
+4. RUN. Executes the DATA step to create the dataset inputfunction.
 
-Creates a dataset named inputfunction.
-Variables:
-
-sale $9.:
-Defines the variable sale as a character variable with a length of 9.
-numsale = INPUT(sale, comma9.);:
-Converts the character variable sale into a numeric value using the INPUT function.
-The comma9. informat allows the input to interpret commas within the numeric data.
-DATALINES:
-
-Provides sample data for the variable sale:
-6, 525, 352
-RUN:
-
-Executes the DATA step to create the dataset inputfunction.
 Step 2: PROC PRINT
 PROC PRINT DATA = inputfunction:
 Prints the dataset inputfunction to display the output of the INPUT function.
