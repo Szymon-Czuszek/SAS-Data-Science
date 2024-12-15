@@ -1783,10 +1783,8 @@ Step 1: Data Step
 4. RUN. Executes the DATA step to create the dataset inputfunction.
 
 Step 2: PROC PRINT
-PROC PRINT DATA = inputfunction:
-Prints the dataset inputfunction to display the output of the INPUT function.
-Output
-The resulting dataset inputfunction will look like this:
+1. PROC PRINT DATA = inputfunction: Prints the dataset inputfunction to display the output of the INPUT function.
+2. Output. The resulting dataset inputfunction will look like this:
 
 sale	numsale
 6, 525, 352	6525352
