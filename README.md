@@ -1786,6 +1786,25 @@ Step 2: PROC PRINT
 1. PROC PRINT DATA = inputfunction: Prints the dataset inputfunction to display the output of the INPUT function.
 2. Output. The resulting dataset inputfunction will look like this:
 
+<table>
+    <tr>
+        <td>
+            sale
+        </td>
+        <td>
+            numsale
+        </td>
+    </tr>
+    <tr>
+        <td>
+            6, 525,
+        </td>
+        <td>
+            352	6525352
+        </td>
+    </tr>
+</table>
+
 sale	numsale
 6, 525, 352	6525352
 
