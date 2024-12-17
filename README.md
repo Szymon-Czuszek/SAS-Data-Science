@@ -1805,6 +1805,42 @@ Step 2: PROC PRINT
     </tr>
 </table>
 
+
+
+Step 1: Data Step
+DATA new:
+
+Creates a dataset named new.
+date = '06MAY98';:
+
+A character string 06MAY98 is assigned to the variable date.
+month = SUBSTR(date, 3, 5);:
+
+The SUBSTR function extracts a substring from the variable date.
+
+3: Starting position (3rd character in the string).
+5: Number of characters to extract.
+The extracted portion is MAY98, which starts at position 3 and includes 5 characters.
+
+RUN:
+
+Executes the DATA step to create the dataset.
+Step 2: PROC PRINT
+PROC PRINT DATA = new;:
+Prints the dataset new to display the results.
+Output
+The resulting dataset new will look like this:
+
+date	month
+06MAY98	MAY98
+Explanation of SUBSTR
+The SUBSTR function extracts a portion of a string starting at a specified position and for a specified length.
+Syntax:
+SUBSTR(string, start, length);
+string: The character string from which to extract.
+start: The starting position (1-based index).
+length: The number of characters to extract.
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
