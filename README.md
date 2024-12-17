@@ -1841,6 +1841,55 @@ string: The character string from which to extract.
 start: The starting position (1-based index).
 length: The number of characters to extract.
 
+
+
+Step 1: DATA Step
+DATA concat;:
+
+Creates a dataset named concat.
+Variables Created:
+
+separator = ',';:
+
+Specifies a comma as the separator for concatenation.
+first = ' Larry'; and last = 'Larryson ';:
+
+Assigns leading and trailing-spaced strings to first and last.
+result = CATX(separator, first, last);:
+
+Combines first and last into one string, separated by a comma.
+
+CATX trims leading/trailing spaces before concatenating.
+
+The resulting value for result is:
+Larry,Larryson
+
+scann = SCAN(result, 1);:
+
+Extracts the first word (or token) from the string in result.
+
+Default delimiter is a space or common punctuation (comma, period, etc.).
+
+In this case, the first word before the comma is Larry.
+
+DROP separator;:
+
+Excludes the separator variable from the final dataset.
+RUN;:
+
+Executes the data step.
+Step 2: PROC PRINT
+PROC PRINT DATA = concat;:
+Displays the resulting dataset concat with the variables first, last, result, and scann.
+Output
+The final dataset concat will look like this:
+
+first	last	result	scann
+Larry	Larryson	Larry,Larryson	Larry
+
+
+
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
