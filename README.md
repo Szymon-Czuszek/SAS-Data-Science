@@ -1805,6 +1805,197 @@ Step 2: PROC PRINT
     </tr>
 </table>
 
+
+
+Step 1: Data Step
+DATA new:
+
+Creates a dataset named new.
+date = '06MAY98';:
+
+A character string 06MAY98 is assigned to the variable date.
+month = SUBSTR(date, 3, 5);:
+
+The SUBSTR function extracts a substring from the variable date.
+
+3: Starting position (3rd character in the string).
+5: Number of characters to extract.
+The extracted portion is MAY98, which starts at position 3 and includes 5 characters.
+
+RUN:
+
+Executes the DATA step to create the dataset.
+Step 2: PROC PRINT
+PROC PRINT DATA = new;:
+Prints the dataset new to display the results.
+Output
+The resulting dataset new will look like this:
+
+date	month
+06MAY98	MAY98
+Explanation of SUBSTR
+The SUBSTR function extracts a portion of a string starting at a specified position and for a specified length.
+Syntax:
+SUBSTR(string, start, length);
+string: The character string from which to extract.
+start: The starting position (1-based index).
+length: The number of characters to extract.
+
+
+
+Step 1: DATA Step
+DATA concat;:
+
+Creates a dataset named concat.
+Variables Created:
+
+separator = ',';:
+
+Specifies a comma as the separator for concatenation.
+first = ' Larry'; and last = 'Larryson ';:
+
+Assigns leading and trailing-spaced strings to first and last.
+result = CATX(separator, first, last);:
+
+Combines first and last into one string, separated by a comma.
+
+CATX trims leading/trailing spaces before concatenating.
+
+The resulting value for result is:
+Larry,Larryson
+
+scann = SCAN(result, 1);:
+
+Extracts the first word (or token) from the string in result.
+
+Default delimiter is a space or common punctuation (comma, period, etc.).
+
+In this case, the first word before the comma is Larry.
+
+DROP separator;:
+
+Excludes the separator variable from the final dataset.
+RUN;:
+
+Executes the data step.
+Step 2: PROC PRINT
+PROC PRINT DATA = concat;:
+Displays the resulting dataset concat with the variables first, last, result, and scann.
+Output
+The final dataset concat will look like this:
+
+first	last	result	scann
+Larry	Larryson	Larry,Larryson	Larry
+
+
+
+Step 1: DATA Step
+DATA rand;:
+
+Creates a dataset named rand.
+CALL streaminit(12345);:
+
+Initializes the random number generator with a seed value 12345.
+Using a fixed seed ensures that the random numbers generated are reproducible.
+DO i = 1 to 200;:
+
+Loops 200 times to generate 200 random values.
+x = rand("Normal");:
+
+Generates random values from a standard normal distribution 
+𝑁
+(
+0
+,
+1
+)
+N(0,1) using the RAND function.
+OUTPUT;:
+
+Writes each generated value of x to the dataset rand.
+END;:
+
+Ends the DO loop.
+RUN;:
+
+Executes the data step.
+Step 2: PROC SGPLOT
+PROC SGPLOT DATA = rand;:
+
+Uses the SGPLOT procedure to plot the histogram of the random values.
+TITLE "Random Values from N(0,1)";:
+
+Sets the title for the histogram.
+HISTOGRAM x;:
+
+Creates a histogram of the variable x (the generated random values).
+RUN;:
+
+Executes the plotting procedure.
+Step 3: PROC FREQ
+PROC FREQ DATA = rand;:
+
+Generates frequency statistics for the dataset rand.
+RUN;:
+
+Executes the procedure.
+Output
+Histogram:
+
+Displays the distribution of the 200 random values from 
+𝑁
+(
+0
+,
+1
+)
+N(0,1).
+The histogram should approximate the shape of a standard normal distribution (bell curve).
+Frequency Table:
+
+Outputs the frequency of unique values or ranges in the dataset rand.
+
+
+Step 1: DATA Step
+Variables:
+
+one, two, and three contain string values:
+"ABC ": Includes trailing spaces.
+" ": A string with only a space.
+"ABC XYZ": Includes spaces within the string.
+Functions:
+
+LENGTH: Returns the length of the string, including trailing spaces.
+LENGTHN: Returns the length of the string, excluding trailing spaces, but:
+If the string is blank (contains only spaces), it returns 0.
+LENGTHC: Returns the length of the string after completely trimming blanks.
+Code Logic:
+
+Calculate each function for the strings one, two, and three:
+length_one, lengthn_one, lengthc_one: Results for string one.
+length_two, lengthn_two, lengthc_two: Results for string two.
+length_three, lengthn_three, lengthc_three: Results for string three.
+RUN;:
+
+Executes the data step and writes the results to the dataset lengthfunctions.
+Step 2: PROC PRINT
+PROC PRINT DATA = lengthfunctions;:
+
+Prints the dataset lengthfunctions.
+TITLE "Length(n)(c) Function Examples";:
+
+Adds a descriptive title to the output.
+RUN;:
+
+Executes the PROC PRINT step.
+Key Function Differences
+Function	Description	Behavior for Blank Strings
+LENGTH	Includes all characters + trailing spaces	Returns 1 for a blank string
+LENGTHN	Ignores trailing spaces	Returns 0 for a blank string
+LENGTHC	Ignores all spaces (trims)	Returns 0 for a blank string
+
+
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
