@@ -2146,6 +2146,90 @@ RUN;
 
 
 
+Step 1: Data Validation with VERIFY
+DATA errors valid;
+
+Creates two datasets: errors and valid.
+Rows with invalid data are output to errors. Valid rows are sent to valid.
+INPUT id$ stage : $5.;
+
+Reads two columns:
+id: A character variable (e.g., 001).
+stage: A 5-character variable.
+IF VERIFY(stage, 'abcd') THEN OUTPUT errors;
+
+VERIFY Function:
+Checks if all characters in stage exist in the string 'abcd'.
+Returns the position of the first character not in 'abcd' (e.g., q in aabqc).
+If the function returns a value greater than 0, the row is classified as invalid and output to the errors dataset.
+ELSE OUTPUT valid;
+
+Rows with valid stage values are sent to the valid dataset.
+CARDS;
+
+Provides the input data:
+Example:
+001 aabcd: All characters are valid.
+002 aabqc: Contains q, which is not in 'abcd'.
+RUN;
+
+Executes the data step, creating the errors and valid datasets.
+Step 2: Displaying Results
+PROC PRINT DATA=errors;
+
+Displays rows from the errors dataset.
+Includes rows where stage has invalid characters.
+PROC PRINT DATA=valid;
+
+Displays rows from the valid dataset.
+Includes rows where all characters in stage are valid.
+TITLE Statements:
+
+Adds meaningful titles to the output tables:
+'Errors' for the invalid rows.
+'Valid' for the valid rows.
+Expected Output
+Errors Dataset:
+id	stage
+002	aabqc
+Valid Dataset:
+id	stage
+001	aabcd
+Enhancements
+Custom Validation Characters:
+
+Adjust the validation set 'abcd' to meet specific criteria:
+sas
+Copy code
+IF VERIFY(stage, '12345xyz') THEN OUTPUT errors;
+Add Labels:
+
+Provide context for variables:
+sas
+Copy code
+LABEL id = 'Record ID'
+      stage = 'Process Stage';
+Include Row Numbers:
+
+Add a row number to identify positions:
+sas
+Copy code
+DATA errors valid;
+SET input_data;
+row_number = _N_;
+IF VERIFY(stage, 'abcd') THEN OUTPUT errors;
+ELSE OUTPUT valid;
+RUN;
+Sort Results:
+
+Sort datasets for better readability:
+sas
+Copy code
+PROC SORT DATA=errors;
+BY id;
+RUN;
+
+
 
 ## PLOTS
 
