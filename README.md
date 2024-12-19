@@ -2077,6 +2077,158 @@ All bars are filled with yellow.
 
 
 
+Step 1: Data Input and Transformation
+DATA trimdata;
+
+Creates a dataset named trimdata.
+INPUT:
+
+Reads data into variables:
+firstname: Character variable for the first name.
+lastname: Character variable for the last name.
+age: Numeric variable for the age.
+tscore: Numeric variable for the test score.
+LENGTH name $20;
+
+Sets the length of the new variable name to 20 characters.
+name=(lastname)||', '||firstname;
+
+Concatenates lastname and firstname, separated by a comma and a space (', ').
+|| is the concatenation operator in SAS.
+DATALINES:
+
+Provides the input data directly:
+Example: "Alex Benson 27 45".
+RUN;
+
+Executes the data step to create the dataset trimdata.
+Step 2: Exploring the Data
+PROC CONTENTS DATA=trimdata;
+
+Displays the metadata of the dataset:
+Variable names, types, lengths, and other attributes.
+PROC PRINT DATA=trimdata;
+
+Prints the dataset to show the actual data values.
+Expected Output
+Dataset Structure:
+firstname	lastname	age	tscore	name
+Alex	Benson	27	45	Benson, Alex
+Enhancements
+Apply TRIM to Remove Extra Spaces:
+
+If the firstname or lastname variables contain trailing spaces, use the TRIM function:
+sas
+Copy code
+name = TRIM(lastname) || ', ' || TRIM(firstname);
+This ensures no additional spaces are included in the concatenated name.
+Formatting Variables:
+
+Format age and tscore for readability:
+sas
+Copy code
+FORMAT age 3. tscore 3.;
+Add Labels:
+
+Use labels for better understanding:
+sas
+Copy code
+LABEL name = 'Full Name';
+Enhanced Reporting:
+
+Add sorting or filtering in PROC PRINT for specific insights:
+sas
+Copy code
+PROC PRINT DATA=trimdata;
+WHERE tscore > 40;
+RUN;
+
+
+
+
+
+## PLOTS
+
+Step 1: Data Input
+DATA houseprice;
+
+Reads data from the file houseprice (2).txt into a dataset called houseprice.
+INFILE and INPUT:
+
+INFILE: Specifies the file location containing the data.
+INPUT: Defines the structure of the dataset:
+type: Character variable representing the type of house.
+price: Numeric variable representing the price of the house.
+tax: Numeric variable representing the tax rate on the house.
+RUN;: Executes the data step, preparing the dataset.
+
+Step 2: Scatter Plot Creation
+PROC GPLOT DATA = houseprice;:
+
+Generates a scatter plot using the houseprice dataset.
+TITLE 'House Price';:
+
+Sets the title for the scatter plot.
+FORMAT price dollar9.;:
+
+Formats the price variable as currency (e.g., $300,000).
+SYMBOL Statements:
+
+Define the appearance of data points in the plot:
+SYMBOL1: Uses blue dots for one type of house.
+SYMBOL2: Uses red squares for another type.
+PLOT price*tax = type;:
+
+Creates a scatter plot where:
+price (y-axis) is plotted against tax (x-axis).
+Data is grouped by the type variable, using different symbols/colors for each group.
+RUN;: Executes the plotting procedure.
+
+Features of the Plot
+Axes:
+
+X-axis: Tax rate (tax).
+Y-axis: Price of the house (price).
+Grouping:
+
+Different house types (type) are represented by distinct symbols/colors.
+Formatting:
+
+Prices are displayed in a dollar format for clarity.
+Example Plot Output
+Scatter Plot:
+X-axis: Tax rates (e.g., 0.15, 0.20, 0.25).
+Y-axis: Prices (e.g., $175,000, $300,000).
+Points:
+Blue dots for one house type.
+Red squares for another house type.
+Suggestions for Improvement
+Add Axis Labels:
+
+Use AXIS statements to label the axes for better understanding:
+X-axis: "Tax Rate".
+Y-axis: "House Price".
+Use Modern Procedures:
+
+Replace PROC GPLOT with PROC SGPLOT for better aesthetics and functionality:
+sas
+Copy code
+PROC SGPLOT DATA = houseprice;
+TITLE 'House Price Scatter Plot';
+SCATTER X=tax Y=price / GROUP=type MARKERATTRS=(SYMBOL=circlefilled);
+FORMAT price dollar9.;
+RUN;
+Add Legends:
+
+Include a legend to clarify the symbols/colors used for each house type.
+Visual Enhancements:
+
+Adjust symbol sizes for improved readability.
+Add gridlines for easier interpretation of the data points.
+
+
+
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
