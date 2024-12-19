@@ -2233,6 +2233,8 @@ RUN;
 
 ## PLOTS
 
+[PlotScatter.sas](SAS/PlotScatter.sas)
+
 Step 1: Data Input
 DATA houseprice;
 
