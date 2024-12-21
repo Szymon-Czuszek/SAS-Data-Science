@@ -1848,51 +1848,54 @@ Step 4: Explanation of SUBSTR
 - start: The starting position (1-based index).
 - length: The number of characters to extract.
 
-######
+[SasFunctionsScan.sas](SAS/SasFunctionsScan.sas): This SAS script demonstrates the use of the SCAN function alongside the CATX function.
 
 Step 1: DATA Step
-DATA concat;:
+1. DATA concat;: Creates a dataset named concat.
+2. Variables Created:
+- separator = ',';: Specifies a comma as the separator for concatenation.
+- first = ' Larry'; and last = 'Larryson ';: Assigns leading and trailing-spaced strings to first and last.
+- result = CATX(separator, first, last);: Combines first and last into one string, separated by a comma. CATX trims leading/trailing spaces before concatenating. The resulting value for result is: Larry,Larryson
+- scann = SCAN(result, 1);: Extracts the first word (or token) from the string in result. Default delimiter is a space or common punctuation (comma, period, etc.). In this case, the first word before the comma is Larry.
+3. DROP separator;: Excludes the separator variable from the final dataset.
+4. RUN;: Executes the data step.
 
-Creates a dataset named concat.
-Variables Created:
-
-separator = ',';:
-
-Specifies a comma as the separator for concatenation.
-first = ' Larry'; and last = 'Larryson ';:
-
-Assigns leading and trailing-spaced strings to first and last.
-result = CATX(separator, first, last);:
-
-Combines first and last into one string, separated by a comma.
-
-CATX trims leading/trailing spaces before concatenating.
-
-The resulting value for result is:
-Larry,Larryson
-
-scann = SCAN(result, 1);:
-
-Extracts the first word (or token) from the string in result.
-
-Default delimiter is a space or common punctuation (comma, period, etc.).
-
-In this case, the first word before the comma is Larry.
-
-DROP separator;:
-
-Excludes the separator variable from the final dataset.
-RUN;:
-
-Executes the data step.
 Step 2: PROC PRINT
-PROC PRINT DATA = concat;:
-Displays the resulting dataset concat with the variables first, last, result, and scann.
-Output
-The final dataset concat will look like this:
+1. PROC PRINT DATA = concat;: Displays the resulting dataset concat with the variables first, last, result, and scann.
 
-first	last	result	scann
-Larry	Larryson	Larry,Larryson	Larry
+Step 3: Output The final dataset concat will look like this:
+
+<table>
+    <tr>
+        <td>
+            first
+        </td>
+        <td>
+            last
+        </td>
+        <td>
+            result
+        </td>
+        <td>
+            scann
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Larry
+        </td>
+        <td>
+            Larryson
+        </td>
+        <td>
+            Larry,Larryson
+        </td>
+        <td>
+            Larry
+        </td>
+    </tr>
+</table>
+
 
 ######
 
