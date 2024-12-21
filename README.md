@@ -1896,74 +1896,46 @@ Step 3: Output The final dataset concat will look like this:
     </tr>
 </table>
 
-
-######
+[‎SAS/SasFunctionsRand.sas](‎SAS/SasFunctionsRand.sas): This SAS script generates random values from a Normal distribution using the RAND function and visualizes the output.
 
 Step 1: DATA Step
-DATA rand;:
+1. DATA rand;: Creates a dataset named rand.
+2. CALL streaminit(12345);:
+- Initializes the random number generator with a seed value 12345.
+- Using a fixed seed ensures that the random numbers generated are reproducible.
+3. DO i = 1 to 200;:
+- Loops 200 times to generate 200 random values.
+4. x = rand("Normal");:
+- Generates random values from a standard normal distribution 𝑁(0,1) using the RAND function.
+5. OUTPUT;:
+- Writes each generated value of x to the dataset rand.
+6. END;:
+- Ends the DO loop.
+7. RUN;:
+- Executes the data step.
 
-Creates a dataset named rand.
-CALL streaminit(12345);:
-
-Initializes the random number generator with a seed value 12345.
-Using a fixed seed ensures that the random numbers generated are reproducible.
-DO i = 1 to 200;:
-
-Loops 200 times to generate 200 random values.
-x = rand("Normal");:
-
-Generates random values from a standard normal distribution 
-𝑁
-(
-0
-,
-1
-)
-N(0,1) using the RAND function.
-OUTPUT;:
-
-Writes each generated value of x to the dataset rand.
-END;:
-
-Ends the DO loop.
-RUN;:
-
-Executes the data step.
 Step 2: PROC SGPLOT
-PROC SGPLOT DATA = rand;:
+1. PROC SGPLOT DATA = rand;:
+- Uses the SGPLOT procedure to plot the histogram of the random values.
+2. TITLE "Random Values from N(0,1)";:
+- Sets the title for the histogram.
+3. HISTOGRAM x;:
+- Creates a histogram of the variable x (the generated random values).
+4. RUN;:
+- Executes the plotting procedure.
 
-Uses the SGPLOT procedure to plot the histogram of the random values.
-TITLE "Random Values from N(0,1)";:
-
-Sets the title for the histogram.
-HISTOGRAM x;:
-
-Creates a histogram of the variable x (the generated random values).
-RUN;:
-
-Executes the plotting procedure.
 Step 3: PROC FREQ
-PROC FREQ DATA = rand;:
+1. PROC FREQ DATA = rand;:
+- Generates frequency statistics for the dataset rand.
+2. RUN;:
+- Executes the procedure.
 
-Generates frequency statistics for the dataset rand.
-RUN;:
-
-Executes the procedure.
-Output
-Histogram:
-
-Displays the distribution of the 200 random values from 
-𝑁
-(
-0
-,
-1
-)
-N(0,1).
-The histogram should approximate the shape of a standard normal distribution (bell curve).
-Frequency Table:
-
-Outputs the frequency of unique values or ranges in the dataset rand.
+Step 4: Output
+1. Histogram:
+- Displays the distribution of the 200 random values from 𝑁(0,1)
+- The histogram should approximate the shape of a standard normal distribution (bell curve).
+2. Frequency Table:
+- Outputs the frequency of unique values or ranges in the dataset rand.
 
 ######
 
