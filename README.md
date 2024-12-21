@@ -1937,45 +1937,80 @@ Step 4: Output
 2. Frequency Table:
 - Outputs the frequency of unique values or ranges in the dataset rand.
 
-######
+[‎SAS/SasFunctionsLength.sas](‎SAS/SasFunctionsLength.sas): This SAS script demonstrates the use of the LENGTH, LENGTHN, and LENGTHC functions to evaluate string lengths and handle different cases of whitespace.
 
 Step 1: DATA Step
-Variables:
+1. Variables. one, two, and three contain string values:
+- "ABC ": Includes trailing spaces.
+- " ": A string with only a space.
+- "ABC XYZ": Includes spaces within the string.
+2. Functions:
+- LENGTH: Returns the length of the string, including trailing spaces.
+- LENGTHN: Returns the length of the string, excluding trailing spaces, but if the string is blank (contains only spaces), it returns 0.
+- LENGTHC: Returns the length of the string after completely trimming blanks.
+3. Code Logic. Calculate each function for the strings one, two, and three:
+- length_one, lengthn_one, lengthc_one: Results for string one.
+- length_two, lengthn_two, lengthc_two: Results for string two.
+- length_three, lengthn_three, lengthc_three: Results for string three.
+4. RUN;: Executes the data step and writes the results to the dataset lengthfunctions.
 
-one, two, and three contain string values:
-"ABC ": Includes trailing spaces.
-" ": A string with only a space.
-"ABC XYZ": Includes spaces within the string.
-Functions:
-
-LENGTH: Returns the length of the string, including trailing spaces.
-LENGTHN: Returns the length of the string, excluding trailing spaces, but:
-If the string is blank (contains only spaces), it returns 0.
-LENGTHC: Returns the length of the string after completely trimming blanks.
-Code Logic:
-
-Calculate each function for the strings one, two, and three:
-length_one, lengthn_one, lengthc_one: Results for string one.
-length_two, lengthn_two, lengthc_two: Results for string two.
-length_three, lengthn_three, lengthc_three: Results for string three.
-RUN;:
-
-Executes the data step and writes the results to the dataset lengthfunctions.
 Step 2: PROC PRINT
-PROC PRINT DATA = lengthfunctions;:
+1. PROC PRINT DATA = lengthfunctions;:
+- Prints the dataset lengthfunctions.
+2. TITLE "Length(n)(c) Function Examples";:
+- Adds a descriptive title to the output.
+3. RUN;:
+- Executes the PROC PRINT step.
 
-Prints the dataset lengthfunctions.
-TITLE "Length(n)(c) Function Examples";:
+Step 3: Key Function Differences
 
-Adds a descriptive title to the output.
-RUN;:
+<table>
+    <tr>
+        <td>
+            Function
+        </td>
+        <td>
+            Description
+        </td>
+        <td>
+            Behavior for Blank Strings
+        </td>
+    </tr>
+    <tr>
+        <td>
+            LENGTH
+        </td>
+        <td>
+            Includes all characters + trailing spaces
+        </td>
+        <td>
+            Returns 1 for a blank string
+        </td>
+    </tr>
+    <tr>
+        <td>
+            LENGTHN
+        </td>
+        <td>
+            Ignores trailing spaces
+        </td>
+        <td>
+            Returns 0 for a blank string
+        </td>
+    </tr>
+    <tr>
+        <td>
+            LENGTHC
+        </td>
+        <td>
+            Ignores all spaces (trims)
+        </td>
+        <td>
+            Returns 0 for a blank string
+        </td>
+    </tr>
+</table>
 
-Executes the PROC PRINT step.
-Key Function Differences
-Function	Description	Behavior for Blank Strings
-LENGTH	Includes all characters + trailing spaces	Returns 1 for a blank string
-LENGTHN	Ignores trailing spaces	Returns 0 for a blank string
-LENGTHC	Ignores all spaces (trims)	Returns 0 for a blank string
 
 ######
 
