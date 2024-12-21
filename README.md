@@ -1805,43 +1805,50 @@ Step 2: PROC PRINT
     </tr>
 </table>
 
-
+[SasFunctionsSubstr.sas](SAS/SasFunctionsSubstr.sas): This script demonstrates the use of the SUBSTR function in SAS to extract a portion of a string.
 
 Step 1: Data Step
-DATA new:
+1. DATA new: Creates a dataset named new.
+2. date = '06MAY98';: A character string 06MAY98 is assigned to the variable date.
+3. month = SUBSTR(date, 3, 5);:
+- The SUBSTR function extracts a substring from the variable date.
+- 3: Starting position (3rd character in the string).
+- 5: Number of characters to extract.
+- The extracted portion is MAY98, which starts at position 3 and includes 5 characters.
+4. RUN: Executes the DATA step to create the dataset.
 
-Creates a dataset named new.
-date = '06MAY98';:
-
-A character string 06MAY98 is assigned to the variable date.
-month = SUBSTR(date, 3, 5);:
-
-The SUBSTR function extracts a substring from the variable date.
-
-3: Starting position (3rd character in the string).
-5: Number of characters to extract.
-The extracted portion is MAY98, which starts at position 3 and includes 5 characters.
-
-RUN:
-
-Executes the DATA step to create the dataset.
 Step 2: PROC PRINT
-PROC PRINT DATA = new;:
-Prints the dataset new to display the results.
-Output
-The resulting dataset new will look like this:
+1. PROC PRINT DATA = new;: Prints the dataset new to display the results.
 
-date	month
-06MAY98	MAY98
-Explanation of SUBSTR
-The SUBSTR function extracts a portion of a string starting at a specified position and for a specified length.
-Syntax:
-SUBSTR(string, start, length);
-string: The character string from which to extract.
-start: The starting position (1-based index).
-length: The number of characters to extract.
+Step 3: Output. The resulting dataset new will look like this:
 
+<table>
+    <tr>
+        <td>
+            date
+        </td>
+        <td>
+            month
+        </td>
+    </tr>
+    <tr>
+        <td>
+            06MAY98
+        </td>
+        <td>
+            MAY98
+        </td>
+    </tr>
+</table>
 
+Step 4: Explanation of SUBSTR
+1. The SUBSTR function extracts a portion of a string starting at a specified position and for a specified length.
+2. Syntax: SUBSTR(string, start, length);
+- string: The character string from which to extract.
+- start: The starting position (1-based index).
+- length: The number of characters to extract.
+
+######
 
 Step 1: DATA Step
 DATA concat;:
@@ -1887,7 +1894,7 @@ The final dataset concat will look like this:
 first	last	result	scann
 Larry	Larryson	Larry,Larryson	Larry
 
-
+######
 
 Step 1: DATA Step
 DATA rand;:
@@ -1955,6 +1962,7 @@ Frequency Table:
 
 Outputs the frequency of unique values or ranges in the dataset rand.
 
+######
 
 Step 1: DATA Step
 Variables:
@@ -1994,6 +2002,7 @@ LENGTH	Includes all characters + trailing spaces	Returns 1 for a blank string
 LENGTHN	Ignores trailing spaces	Returns 0 for a blank string
 LENGTHC	Ignores all spaces (trims)	Returns 0 for a blank string
 
+######
 
 Step 1: Data Input
 DATA houseprice:
@@ -2075,6 +2084,7 @@ Heights represent price or tax values.
 All bars are filled with yellow.
 
 
+######
 
 
 Step 1: Data Input and Transformation
@@ -2144,6 +2154,7 @@ WHERE tscore > 40;
 RUN;
 
 
+######
 
 
 Step 1: Data Validation with VERIFY
