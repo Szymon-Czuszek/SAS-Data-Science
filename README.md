@@ -1805,195 +1805,214 @@ Step 2: PROC PRINT
     </tr>
 </table>
 
-
+[SasFunctionsSubstr.sas](SAS/SasFunctionsSubstr.sas): This script demonstrates the use of the SUBSTR function in SAS to extract a portion of a string.
 
 Step 1: Data Step
-DATA new:
+1. DATA new: Creates a dataset named new.
+2. date = '06MAY98';: A character string 06MAY98 is assigned to the variable date.
+3. month = SUBSTR(date, 3, 5);:
+- The SUBSTR function extracts a substring from the variable date.
+- 3: Starting position (3rd character in the string).
+- 5: Number of characters to extract.
+- The extracted portion is MAY98, which starts at position 3 and includes 5 characters.
+4. RUN: Executes the DATA step to create the dataset.
 
-Creates a dataset named new.
-date = '06MAY98';:
-
-A character string 06MAY98 is assigned to the variable date.
-month = SUBSTR(date, 3, 5);:
-
-The SUBSTR function extracts a substring from the variable date.
-
-3: Starting position (3rd character in the string).
-5: Number of characters to extract.
-The extracted portion is MAY98, which starts at position 3 and includes 5 characters.
-
-RUN:
-
-Executes the DATA step to create the dataset.
 Step 2: PROC PRINT
-PROC PRINT DATA = new;:
-Prints the dataset new to display the results.
-Output
-The resulting dataset new will look like this:
+1. PROC PRINT DATA = new;: Prints the dataset new to display the results.
 
-date	month
-06MAY98	MAY98
-Explanation of SUBSTR
-The SUBSTR function extracts a portion of a string starting at a specified position and for a specified length.
-Syntax:
-SUBSTR(string, start, length);
-string: The character string from which to extract.
-start: The starting position (1-based index).
-length: The number of characters to extract.
+Step 3: Output. The resulting dataset new will look like this:
 
+<table>
+    <tr>
+        <td>
+            date
+        </td>
+        <td>
+            month
+        </td>
+    </tr>
+    <tr>
+        <td>
+            06MAY98
+        </td>
+        <td>
+            MAY98
+        </td>
+    </tr>
+</table>
 
+Step 4: Explanation of SUBSTR
+1. The SUBSTR function extracts a portion of a string starting at a specified position and for a specified length.
+2. Syntax: SUBSTR(string, start, length);
+- string: The character string from which to extract.
+- start: The starting position (1-based index).
+- length: The number of characters to extract.
+
+[SasFunctionsScan.sas](SAS/SasFunctionsScan.sas): This SAS script demonstrates the use of the SCAN function alongside the CATX function.
 
 Step 1: DATA Step
-DATA concat;:
+1. DATA concat;: Creates a dataset named concat.
+2. Variables Created:
+- separator = ',';: Specifies a comma as the separator for concatenation.
+- first = ' Larry'; and last = 'Larryson ';: Assigns leading and trailing-spaced strings to first and last.
+- result = CATX(separator, first, last);: Combines first and last into one string, separated by a comma. CATX trims leading/trailing spaces before concatenating. The resulting value for result is: Larry,Larryson
+- scann = SCAN(result, 1);: Extracts the first word (or token) from the string in result. Default delimiter is a space or common punctuation (comma, period, etc.). In this case, the first word before the comma is Larry.
+3. DROP separator;: Excludes the separator variable from the final dataset.
+4. RUN;: Executes the data step.
 
-Creates a dataset named concat.
-Variables Created:
-
-separator = ',';:
-
-Specifies a comma as the separator for concatenation.
-first = ' Larry'; and last = 'Larryson ';:
-
-Assigns leading and trailing-spaced strings to first and last.
-result = CATX(separator, first, last);:
-
-Combines first and last into one string, separated by a comma.
-
-CATX trims leading/trailing spaces before concatenating.
-
-The resulting value for result is:
-Larry,Larryson
-
-scann = SCAN(result, 1);:
-
-Extracts the first word (or token) from the string in result.
-
-Default delimiter is a space or common punctuation (comma, period, etc.).
-
-In this case, the first word before the comma is Larry.
-
-DROP separator;:
-
-Excludes the separator variable from the final dataset.
-RUN;:
-
-Executes the data step.
 Step 2: PROC PRINT
-PROC PRINT DATA = concat;:
-Displays the resulting dataset concat with the variables first, last, result, and scann.
-Output
-The final dataset concat will look like this:
+1. PROC PRINT DATA = concat;: Displays the resulting dataset concat with the variables first, last, result, and scann.
 
-first	last	result	scann
-Larry	Larryson	Larry,Larryson	Larry
+Step 3: Output The final dataset concat will look like this:
 
+<table>
+    <tr>
+        <td>
+            first
+        </td>
+        <td>
+            last
+        </td>
+        <td>
+            result
+        </td>
+        <td>
+            scann
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Larry
+        </td>
+        <td>
+            Larryson
+        </td>
+        <td>
+            Larry,Larryson
+        </td>
+        <td>
+            Larry
+        </td>
+    </tr>
+</table>
 
+[‎SAS/SasFunctionsRand.sas](‎SAS/SasFunctionsRand.sas): This SAS script generates random values from a Normal distribution using the RAND function and visualizes the output.
 
 Step 1: DATA Step
-DATA rand;:
+1. DATA rand;: Creates a dataset named rand.
+2. CALL streaminit(12345);:
+- Initializes the random number generator with a seed value 12345.
+- Using a fixed seed ensures that the random numbers generated are reproducible.
+3. DO i = 1 to 200;:
+- Loops 200 times to generate 200 random values.
+4. x = rand("Normal");:
+- Generates random values from a standard normal distribution 𝑁(0,1) using the RAND function.
+5. OUTPUT;:
+- Writes each generated value of x to the dataset rand.
+6. END;:
+- Ends the DO loop.
+7. RUN;:
+- Executes the data step.
 
-Creates a dataset named rand.
-CALL streaminit(12345);:
-
-Initializes the random number generator with a seed value 12345.
-Using a fixed seed ensures that the random numbers generated are reproducible.
-DO i = 1 to 200;:
-
-Loops 200 times to generate 200 random values.
-x = rand("Normal");:
-
-Generates random values from a standard normal distribution 
-𝑁
-(
-0
-,
-1
-)
-N(0,1) using the RAND function.
-OUTPUT;:
-
-Writes each generated value of x to the dataset rand.
-END;:
-
-Ends the DO loop.
-RUN;:
-
-Executes the data step.
 Step 2: PROC SGPLOT
-PROC SGPLOT DATA = rand;:
+1. PROC SGPLOT DATA = rand;:
+- Uses the SGPLOT procedure to plot the histogram of the random values.
+2. TITLE "Random Values from N(0,1)";:
+- Sets the title for the histogram.
+3. HISTOGRAM x;:
+- Creates a histogram of the variable x (the generated random values).
+4. RUN;:
+- Executes the plotting procedure.
 
-Uses the SGPLOT procedure to plot the histogram of the random values.
-TITLE "Random Values from N(0,1)";:
-
-Sets the title for the histogram.
-HISTOGRAM x;:
-
-Creates a histogram of the variable x (the generated random values).
-RUN;:
-
-Executes the plotting procedure.
 Step 3: PROC FREQ
-PROC FREQ DATA = rand;:
+1. PROC FREQ DATA = rand;:
+- Generates frequency statistics for the dataset rand.
+2. RUN;:
+- Executes the procedure.
 
-Generates frequency statistics for the dataset rand.
-RUN;:
+Step 4: Output
+1. Histogram:
+- Displays the distribution of the 200 random values from 𝑁(0,1)
+- The histogram should approximate the shape of a standard normal distribution (bell curve).
+2. Frequency Table:
+- Outputs the frequency of unique values or ranges in the dataset rand.
 
-Executes the procedure.
-Output
-Histogram:
-
-Displays the distribution of the 200 random values from 
-𝑁
-(
-0
-,
-1
-)
-N(0,1).
-The histogram should approximate the shape of a standard normal distribution (bell curve).
-Frequency Table:
-
-Outputs the frequency of unique values or ranges in the dataset rand.
-
+[‎SAS/SasFunctionsLength.sas](‎SAS/SasFunctionsLength.sas): This SAS script demonstrates the use of the LENGTH, LENGTHN, and LENGTHC functions to evaluate string lengths and handle different cases of whitespace.
 
 Step 1: DATA Step
-Variables:
+1. Variables. one, two, and three contain string values:
+- "ABC ": Includes trailing spaces.
+- " ": A string with only a space.
+- "ABC XYZ": Includes spaces within the string.
+2. Functions:
+- LENGTH: Returns the length of the string, including trailing spaces.
+- LENGTHN: Returns the length of the string, excluding trailing spaces, but if the string is blank (contains only spaces), it returns 0.
+- LENGTHC: Returns the length of the string after completely trimming blanks.
+3. Code Logic. Calculate each function for the strings one, two, and three:
+- length_one, lengthn_one, lengthc_one: Results for string one.
+- length_two, lengthn_two, lengthc_two: Results for string two.
+- length_three, lengthn_three, lengthc_three: Results for string three.
+4. RUN;: Executes the data step and writes the results to the dataset lengthfunctions.
 
-one, two, and three contain string values:
-"ABC ": Includes trailing spaces.
-" ": A string with only a space.
-"ABC XYZ": Includes spaces within the string.
-Functions:
-
-LENGTH: Returns the length of the string, including trailing spaces.
-LENGTHN: Returns the length of the string, excluding trailing spaces, but:
-If the string is blank (contains only spaces), it returns 0.
-LENGTHC: Returns the length of the string after completely trimming blanks.
-Code Logic:
-
-Calculate each function for the strings one, two, and three:
-length_one, lengthn_one, lengthc_one: Results for string one.
-length_two, lengthn_two, lengthc_two: Results for string two.
-length_three, lengthn_three, lengthc_three: Results for string three.
-RUN;:
-
-Executes the data step and writes the results to the dataset lengthfunctions.
 Step 2: PROC PRINT
-PROC PRINT DATA = lengthfunctions;:
+1. PROC PRINT DATA = lengthfunctions;:
+- Prints the dataset lengthfunctions.
+2. TITLE "Length(n)(c) Function Examples";:
+- Adds a descriptive title to the output.
+3. RUN;:
+- Executes the PROC PRINT step.
 
-Prints the dataset lengthfunctions.
-TITLE "Length(n)(c) Function Examples";:
+Step 3: Key Function Differences
 
-Adds a descriptive title to the output.
-RUN;:
+<table>
+    <tr>
+        <td>
+            Function
+        </td>
+        <td>
+            Description
+        </td>
+        <td>
+            Behavior for Blank Strings
+        </td>
+    </tr>
+    <tr>
+        <td>
+            LENGTH
+        </td>
+        <td>
+            Includes all characters + trailing spaces
+        </td>
+        <td>
+            Returns 1 for a blank string
+        </td>
+    </tr>
+    <tr>
+        <td>
+            LENGTHN
+        </td>
+        <td>
+            Ignores trailing spaces
+        </td>
+        <td>
+            Returns 0 for a blank string
+        </td>
+    </tr>
+    <tr>
+        <td>
+            LENGTHC
+        </td>
+        <td>
+            Ignores all spaces (trims)
+        </td>
+        <td>
+            Returns 0 for a blank string
+        </td>
+    </tr>
+</table>
 
-Executes the PROC PRINT step.
-Key Function Differences
-Function	Description	Behavior for Blank Strings
-LENGTH	Includes all characters + trailing spaces	Returns 1 for a blank string
-LENGTHN	Ignores trailing spaces	Returns 0 for a blank string
-LENGTHC	Ignores all spaces (trims)	Returns 0 for a blank string
 
+######
 
 Step 1: Data Input
 DATA houseprice:
@@ -2075,6 +2094,7 @@ Heights represent price or tax values.
 All bars are filled with yellow.
 
 
+######
 
 
 Step 1: Data Input and Transformation
@@ -2144,6 +2164,7 @@ WHERE tscore > 40;
 RUN;
 
 
+######
 
 
 Step 1: Data Validation with VERIFY
