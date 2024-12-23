@@ -2011,87 +2011,52 @@ Step 3: Key Function Differences
     </tr>
 </table>
 
+## Using Plots in SAS
 
-######
+[PlotBar.sas](SAS/PlotBar.sas): This SAS script demonstrates data visualization techniques using the GPLOT and GCHART procedures.
 
 Step 1: Data Input
-DATA houseprice:
+1. DATA houseprice. Reads data from a file houseprice (2).txt. Each record includes:
+- type: Character variable (type of house).
+- price: Numeric variable (price of the house).
+- tax: Numeric variable (tax on the house).
+2. INFILE and INPUT:
+- Specifies the input file path.
+- Defines the structure of the dataset with INPUT.
+3. RUN;: Executes the data step, creating the houseprice dataset.
 
-Reads data from a file houseprice (2).txt.
-Each record includes:
-type: Character variable (type of house).
-price: Numeric variable (price of the house).
-tax: Numeric variable (tax on the house).
-INFILE and INPUT:
-
-Specifies the input file path.
-Defines the structure of the dataset with INPUT.
-RUN;:
-
-Executes the data step, creating the houseprice dataset.
 Step 2: Scatter Plot with PROC GPLOT
-PROC GPLOT DATA = houseprice;:
+1. PROC GPLOT DATA = houseprice;: Creates a scatter plot of the houseprice dataset.
+2. TITLE 'House Price Scatter';: Sets the title for the plot.
+3. FORMAT price dollar9.;: Formats the price variable to display values as currency with commas (e.g., $300,000).
+4. SYMBOL Statements: Define the appearance of the points in the scatter plot:
+- SYMBOL1: Dots with blue color.
+- SYMBOL2: Squares with red color.
+5. PLOT price*tax = type;: Plots price against tax, grouped by type (each type is assigned a unique symbol and color).
+6. RUN;: Executes the plotting procedure.
 
-Creates a scatter plot of the houseprice dataset.
-TITLE 'House Price Scatter';:
-
-Sets the title for the plot.
-FORMAT price dollar9.;:
-
-Formats the price variable to display values as currency with commas (e.g., $300,000).
-SYMBOL Statements:
-
-Define the appearance of the points in the scatter plot:
-SYMBOL1: Dots with blue color.
-SYMBOL2: Squares with red color.
-PLOT price*tax = type;:
-
-Plots price against tax, grouped by type (each type is assigned a unique symbol and color).
-RUN;:
-
-Executes the plotting procedure.
 Step 3: Bar Chart with PROC GCHART
-PROC GCHART DATA = houseprice;:
+1. PROC GCHART DATA = houseprice;: Creates a bar chart of the houseprice dataset.
+2. TITLE 'House Price Bar';: Sets the title for the bar chart.
+3. FORMAT price dollar9.;: Formats the price variable as currency.
+4. VBAR price tax / GROUP = type;: Creates vertical bars for price and tax, grouped by type.
+5. PATTERN COLOR = yellow;: Sets the bar fill color to yellow.
+6. RUN;: Executes the bar chart creation.
 
-Creates a bar chart of the houseprice dataset.
-TITLE 'House Price Bar';:
+Step 4: Key Features and Notes
+1. Scatter Plot with PROC GPLOT: Provides insights into the relationship between price and tax. Differentiates type with symbols and colors.
+2. Bar Chart with PROC GCHART: Shows grouped comparisons of price and tax for each house type. Uses color and grouping for clarity.
+3. Formatting: The FORMAT statement improves readability by displaying monetary values properly.
 
-Sets the title for the bar chart.
-FORMAT price dollar9.;:
-
-Formats the price variable as currency.
-VBAR price tax / GROUP = type;:
-
-Creates vertical bars for price and tax, grouped by type.
-PATTERN COLOR = yellow;:
-
-Sets the bar fill color to yellow.
-RUN;:
-
-Executes the bar chart creation.
-Key Features and Notes
-Scatter Plot with PROC GPLOT:
-
-Provides insights into the relationship between price and tax.
-Differentiates type with symbols and colors.
-Bar Chart with PROC GCHART:
-
-Shows grouped comparisons of price and tax for each house type.
-Uses color and grouping for clarity.
-Formatting:
-
-The FORMAT statement improves readability by displaying monetary values properly.
-Potential Output Example
-Scatter Plot:
-X-axis: Tax values.
-Y-axis: Price values.
-Points:
-Dots (blue): type = "Single".
-Squares (red): type = "Duplex".
-Bar Chart:
-Bars grouped by type:
-Heights represent price or tax values.
-All bars are filled with yellow.
+Step 5:Potential Output Example
+1. Scatter Plot:
+- X-axis: Tax values.
+- Y-axis: Price values.
+- Points: Dots (blue): type = "Single"; Squares (red): type = "Duplex".
+2. Bar Chart:
+- Bars grouped by type:
+- Heights represent price or tax values.
+- All bars are filled with yellow.
 
 
 ######
