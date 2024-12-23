@@ -2011,126 +2011,64 @@ Step 3: Key Function Differences
     </tr>
 </table>
 
-## Using Plots in SAS
-
-[PlotBar.sas](SAS/PlotBar.sas): This SAS script demonstrates data visualization techniques using the GPLOT and GCHART procedures.
-
-Step 1: Data Input
-1. DATA houseprice. Reads data from a file houseprice (2).txt. Each record includes:
-- type: Character variable (type of house).
-- price: Numeric variable (price of the house).
-- tax: Numeric variable (tax on the house).
-2. INFILE and INPUT:
-- Specifies the input file path.
-- Defines the structure of the dataset with INPUT.
-3. RUN;: Executes the data step, creating the houseprice dataset.
-
-Step 2: Scatter Plot with PROC GPLOT
-1. PROC GPLOT DATA = houseprice;: Creates a scatter plot of the houseprice dataset.
-2. TITLE 'House Price Scatter';: Sets the title for the plot.
-3. FORMAT price dollar9.;: Formats the price variable to display values as currency with commas (e.g., $300,000).
-4. SYMBOL Statements: Define the appearance of the points in the scatter plot:
-- SYMBOL1: Dots with blue color.
-- SYMBOL2: Squares with red color.
-5. PLOT price*tax = type;: Plots price against tax, grouped by type (each type is assigned a unique symbol and color).
-6. RUN;: Executes the plotting procedure.
-
-Step 3: Bar Chart with PROC GCHART
-1. PROC GCHART DATA = houseprice;: Creates a bar chart of the houseprice dataset.
-2. TITLE 'House Price Bar';: Sets the title for the bar chart.
-3. FORMAT price dollar9.;: Formats the price variable as currency.
-4. VBAR price tax / GROUP = type;: Creates vertical bars for price and tax, grouped by type.
-5. PATTERN COLOR = yellow;: Sets the bar fill color to yellow.
-6. RUN;: Executes the bar chart creation.
-
-Step 4: Key Features and Notes
-1. Scatter Plot with PROC GPLOT: Provides insights into the relationship between price and tax. Differentiates type with symbols and colors.
-2. Bar Chart with PROC GCHART: Shows grouped comparisons of price and tax for each house type. Uses color and grouping for clarity.
-3. Formatting: The FORMAT statement improves readability by displaying monetary values properly.
-
-Step 5:Potential Output Example
-1. Scatter Plot:
-- X-axis: Tax values.
-- Y-axis: Price values.
-- Points: Dots (blue): type = "Single"; Squares (red): type = "Duplex".
-2. Bar Chart:
-- Bars grouped by type:
-- Heights represent price or tax values.
-- All bars are filled with yellow.
-
-
-######
-
+[SasFunctionsTrim.sas](SAS/SasFunctionsTrim.sas): Using SAS TRIM and Concatenation Functions
 
 Step 1: Data Input and Transformation
-DATA trimdata;
+1. DATA trimdata; Creates a dataset named trimdata.
+2. INPUT: Reads data into variables:
+- firstname: Character variable for the first name.
+- lastname: Character variable for the last name.
+- age: Numeric variable for the age.
+- tscore: Numeric variable for the test score.
+3. LENGTH name $20; Sets the length of the new variable name to 20 characters.
+4. name=(lastname)||', '||firstname; Concatenates lastname and firstname, separated by a comma and a space (', '). || is the concatenation operator in SAS.
+5. DATALINES: Provides the input data directly. Example: "Alex Benson 27 45".
+6. RUN; Executes the data step to create the dataset trimdata.
 
-Creates a dataset named trimdata.
-INPUT:
-
-Reads data into variables:
-firstname: Character variable for the first name.
-lastname: Character variable for the last name.
-age: Numeric variable for the age.
-tscore: Numeric variable for the test score.
-LENGTH name $20;
-
-Sets the length of the new variable name to 20 characters.
-name=(lastname)||', '||firstname;
-
-Concatenates lastname and firstname, separated by a comma and a space (', ').
-|| is the concatenation operator in SAS.
-DATALINES:
-
-Provides the input data directly:
-Example: "Alex Benson 27 45".
-RUN;
-
-Executes the data step to create the dataset trimdata.
 Step 2: Exploring the Data
-PROC CONTENTS DATA=trimdata;
+1. PROC CONTENTS DATA=trimdata; Displays the metadata of the dataset. Variable names, types, lengths, and other attributes.
+2. PROC PRINT DATA=trimdata; Prints the dataset to show the actual data values.
 
-Displays the metadata of the dataset:
-Variable names, types, lengths, and other attributes.
-PROC PRINT DATA=trimdata;
+Step 3: Expected Output. Dataset Structure:
 
-Prints the dataset to show the actual data values.
-Expected Output
-Dataset Structure:
-firstname	lastname	age	tscore	name
-Alex	Benson	27	45	Benson, Alex
-Enhancements
-Apply TRIM to Remove Extra Spaces:
+<table>
+    <tr>
+        <td>
+            firstname
+        </td>
+        <td>
+            lastname
+        </td>
+        <td>
+            age
+        </td>
+        <td>
+            tscore
+        </td>
+        <td>
+            name
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Alex
+        </td>
+        <td>
+            Benson
+        </td>
+        <td>
+            27
+        </td>
+        <td>
+            45
+        </td>
+        <td>
+            Benson, Alex
+        </td>
+    </tr>
+</table>
 
-If the firstname or lastname variables contain trailing spaces, use the TRIM function:
-sas
-Copy code
-name = TRIM(lastname) || ', ' || TRIM(firstname);
-This ensures no additional spaces are included in the concatenated name.
-Formatting Variables:
-
-Format age and tscore for readability:
-sas
-Copy code
-FORMAT age 3. tscore 3.;
-Add Labels:
-
-Use labels for better understanding:
-sas
-Copy code
-LABEL name = 'Full Name';
-Enhanced Reporting:
-
-Add sorting or filtering in PROC PRINT for specific insights:
-sas
-Copy code
-PROC PRINT DATA=trimdata;
-WHERE tscore > 40;
-RUN;
-
-
-######
-
+### ### ###
 
 Step 1: Data Validation with VERIFY
 DATA errors valid;
@@ -2214,6 +2152,58 @@ Copy code
 PROC SORT DATA=errors;
 BY id;
 RUN;
+
+
+
+## Using Plots in SAS
+
+[PlotBar.sas](SAS/PlotBar.sas): This SAS script demonstrates data visualization techniques using the GPLOT and GCHART procedures.
+
+Step 1: Data Input
+1. DATA houseprice. Reads data from a file houseprice (2).txt. Each record includes:
+- type: Character variable (type of house).
+- price: Numeric variable (price of the house).
+- tax: Numeric variable (tax on the house).
+2. INFILE and INPUT:
+- Specifies the input file path.
+- Defines the structure of the dataset with INPUT.
+3. RUN;: Executes the data step, creating the houseprice dataset.
+
+Step 2: Scatter Plot with PROC GPLOT
+1. PROC GPLOT DATA = houseprice;: Creates a scatter plot of the houseprice dataset.
+2. TITLE 'House Price Scatter';: Sets the title for the plot.
+3. FORMAT price dollar9.;: Formats the price variable to display values as currency with commas (e.g., $300,000).
+4. SYMBOL Statements: Define the appearance of the points in the scatter plot:
+- SYMBOL1: Dots with blue color.
+- SYMBOL2: Squares with red color.
+5. PLOT price*tax = type;: Plots price against tax, grouped by type (each type is assigned a unique symbol and color).
+6. RUN;: Executes the plotting procedure.
+
+Step 3: Bar Chart with PROC GCHART
+1. PROC GCHART DATA = houseprice;: Creates a bar chart of the houseprice dataset.
+2. TITLE 'House Price Bar';: Sets the title for the bar chart.
+3. FORMAT price dollar9.;: Formats the price variable as currency.
+4. VBAR price tax / GROUP = type;: Creates vertical bars for price and tax, grouped by type.
+5. PATTERN COLOR = yellow;: Sets the bar fill color to yellow.
+6. RUN;: Executes the bar chart creation.
+
+Step 4: Key Features and Notes
+1. Scatter Plot with PROC GPLOT: Provides insights into the relationship between price and tax. Differentiates type with symbols and colors.
+2. Bar Chart with PROC GCHART: Shows grouped comparisons of price and tax for each house type. Uses color and grouping for clarity.
+3. Formatting: The FORMAT statement improves readability by displaying monetary values properly.
+
+Step 5:Potential Output Example
+1. Scatter Plot:
+- X-axis: Tax values.
+- Y-axis: Price values.
+- Points: Dots (blue): type = "Single"; Squares (red): type = "Duplex".
+2. Bar Chart:
+- Bars grouped by type:
+- Heights represent price or tax values.
+- All bars are filled with yellow.
+
+
+######
 
 
 
