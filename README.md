@@ -2182,94 +2182,39 @@ Step 5:Potential Output Example
 - Heights represent price or tax values.
 - All bars are filled with yellow.
 
-
-######
-
-
-
-## PLOTS
-
 [PlotScatter.sas](SAS/PlotScatter.sas)
 
 Step 1: Data Input
-DATA houseprice;
-
-Reads data from the file houseprice (2).txt into a dataset called houseprice.
-INFILE and INPUT:
-
-INFILE: Specifies the file location containing the data.
-INPUT: Defines the structure of the dataset:
-type: Character variable representing the type of house.
-price: Numeric variable representing the price of the house.
-tax: Numeric variable representing the tax rate on the house.
-RUN;: Executes the data step, preparing the dataset.
+1. DATA houseprice; Reads data from the file houseprice (2).txt into a dataset called houseprice.
+2. INFILE and INPUT: INFILE: Specifies the file location containing the data. INPUT: Defines the structure of the dataset:
+- type: Character variable representing the type of house.
+- price: Numeric variable representing the price of the house.
+- tax: Numeric variable representing the tax rate on the house.
+3. RUN;: Executes the data step, preparing the dataset.
 
 Step 2: Scatter Plot Creation
-PROC GPLOT DATA = houseprice;:
+1. PROC GPLOT DATA = houseprice;: Generates a scatter plot using the houseprice dataset.
+2. TITLE 'House Price';: Sets the title for the scatter plot.
+3. FORMAT price dollar9.;: Formats the price variable as currency (e.g., $300,000).
+4. SYMBOL Statements: Define the appearance of data points in the plot:
+- SYMBOL1: Uses blue dots for one type of house.
+- SYMBOL2: Uses red squares for another type.
+5. PLOT price*tax = type;: Creates a scatter plot where:
+- price (y-axis) is plotted against tax (x-axis).
+- Data is grouped by the type variable, using different symbols/colors for each group.
+6. RUN;: Executes the plotting procedure.
 
-Generates a scatter plot using the houseprice dataset.
-TITLE 'House Price';:
+Step 3: Features of the Plot
+1. Axes:
+- X-axis: Tax rate (tax).
+- Y-axis: Price of the house (price).
+2. Grouping: Different house types (type) are represented by distinct symbols/colors.
+3. Formatting: Prices are displayed in a dollar format for clarity.
 
-Sets the title for the scatter plot.
-FORMAT price dollar9.;:
-
-Formats the price variable as currency (e.g., $300,000).
-SYMBOL Statements:
-
-Define the appearance of data points in the plot:
-SYMBOL1: Uses blue dots for one type of house.
-SYMBOL2: Uses red squares for another type.
-PLOT price*tax = type;:
-
-Creates a scatter plot where:
-price (y-axis) is plotted against tax (x-axis).
-Data is grouped by the type variable, using different symbols/colors for each group.
-RUN;: Executes the plotting procedure.
-
-Features of the Plot
-Axes:
-
-X-axis: Tax rate (tax).
-Y-axis: Price of the house (price).
-Grouping:
-
-Different house types (type) are represented by distinct symbols/colors.
-Formatting:
-
-Prices are displayed in a dollar format for clarity.
-Example Plot Output
-Scatter Plot:
-X-axis: Tax rates (e.g., 0.15, 0.20, 0.25).
-Y-axis: Prices (e.g., $175,000, $300,000).
-Points:
-Blue dots for one house type.
-Red squares for another house type.
-Suggestions for Improvement
-Add Axis Labels:
-
-Use AXIS statements to label the axes for better understanding:
-X-axis: "Tax Rate".
-Y-axis: "House Price".
-Use Modern Procedures:
-
-Replace PROC GPLOT with PROC SGPLOT for better aesthetics and functionality:
-sas
-Copy code
-PROC SGPLOT DATA = houseprice;
-TITLE 'House Price Scatter Plot';
-SCATTER X=tax Y=price / GROUP=type MARKERATTRS=(SYMBOL=circlefilled);
-FORMAT price dollar9.;
-RUN;
-Add Legends:
-
-Include a legend to clarify the symbols/colors used for each house type.
-Visual Enhancements:
-
-Adjust symbol sizes for improved readability.
-Add gridlines for easier interpretation of the data points.
-
-
-
+Step 4: Example Plot Output
+1. Scatter Plot: X-axis: Tax rates (e.g., 0.15, 0.20, 0.25). Y-axis: Prices (e.g., $175,000, $300,000). Points:
+- Blue dots for one house type.
+- Red squares for another house type.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
