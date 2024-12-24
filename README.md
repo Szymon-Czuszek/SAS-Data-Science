@@ -2011,330 +2011,210 @@ Step 3: Key Function Differences
     </tr>
 </table>
 
-
-######
-
-Step 1: Data Input
-DATA houseprice:
-
-Reads data from a file houseprice (2).txt.
-Each record includes:
-type: Character variable (type of house).
-price: Numeric variable (price of the house).
-tax: Numeric variable (tax on the house).
-INFILE and INPUT:
-
-Specifies the input file path.
-Defines the structure of the dataset with INPUT.
-RUN;:
-
-Executes the data step, creating the houseprice dataset.
-Step 2: Scatter Plot with PROC GPLOT
-PROC GPLOT DATA = houseprice;:
-
-Creates a scatter plot of the houseprice dataset.
-TITLE 'House Price Scatter';:
-
-Sets the title for the plot.
-FORMAT price dollar9.;:
-
-Formats the price variable to display values as currency with commas (e.g., $300,000).
-SYMBOL Statements:
-
-Define the appearance of the points in the scatter plot:
-SYMBOL1: Dots with blue color.
-SYMBOL2: Squares with red color.
-PLOT price*tax = type;:
-
-Plots price against tax, grouped by type (each type is assigned a unique symbol and color).
-RUN;:
-
-Executes the plotting procedure.
-Step 3: Bar Chart with PROC GCHART
-PROC GCHART DATA = houseprice;:
-
-Creates a bar chart of the houseprice dataset.
-TITLE 'House Price Bar';:
-
-Sets the title for the bar chart.
-FORMAT price dollar9.;:
-
-Formats the price variable as currency.
-VBAR price tax / GROUP = type;:
-
-Creates vertical bars for price and tax, grouped by type.
-PATTERN COLOR = yellow;:
-
-Sets the bar fill color to yellow.
-RUN;:
-
-Executes the bar chart creation.
-Key Features and Notes
-Scatter Plot with PROC GPLOT:
-
-Provides insights into the relationship between price and tax.
-Differentiates type with symbols and colors.
-Bar Chart with PROC GCHART:
-
-Shows grouped comparisons of price and tax for each house type.
-Uses color and grouping for clarity.
-Formatting:
-
-The FORMAT statement improves readability by displaying monetary values properly.
-Potential Output Example
-Scatter Plot:
-X-axis: Tax values.
-Y-axis: Price values.
-Points:
-Dots (blue): type = "Single".
-Squares (red): type = "Duplex".
-Bar Chart:
-Bars grouped by type:
-Heights represent price or tax values.
-All bars are filled with yellow.
-
-
-######
-
+[SasFunctionsTrim.sas](SAS/SasFunctionsTrim.sas): Using SAS TRIM and Concatenation Functions
 
 Step 1: Data Input and Transformation
-DATA trimdata;
+1. DATA trimdata; Creates a dataset named trimdata.
+2. INPUT: Reads data into variables:
+- firstname: Character variable for the first name.
+- lastname: Character variable for the last name.
+- age: Numeric variable for the age.
+- tscore: Numeric variable for the test score.
+3. LENGTH name $20; Sets the length of the new variable name to 20 characters.
+4. name=(lastname)||', '||firstname; Concatenates lastname and firstname, separated by a comma and a space (', '). || is the concatenation operator in SAS.
+5. DATALINES: Provides the input data directly. Example: "Alex Benson 27 45".
+6. RUN; Executes the data step to create the dataset trimdata.
 
-Creates a dataset named trimdata.
-INPUT:
-
-Reads data into variables:
-firstname: Character variable for the first name.
-lastname: Character variable for the last name.
-age: Numeric variable for the age.
-tscore: Numeric variable for the test score.
-LENGTH name $20;
-
-Sets the length of the new variable name to 20 characters.
-name=(lastname)||', '||firstname;
-
-Concatenates lastname and firstname, separated by a comma and a space (', ').
-|| is the concatenation operator in SAS.
-DATALINES:
-
-Provides the input data directly:
-Example: "Alex Benson 27 45".
-RUN;
-
-Executes the data step to create the dataset trimdata.
 Step 2: Exploring the Data
-PROC CONTENTS DATA=trimdata;
+1. PROC CONTENTS DATA=trimdata; Displays the metadata of the dataset. Variable names, types, lengths, and other attributes.
+2. PROC PRINT DATA=trimdata; Prints the dataset to show the actual data values.
 
-Displays the metadata of the dataset:
-Variable names, types, lengths, and other attributes.
-PROC PRINT DATA=trimdata;
+Step 3: Expected Output. Dataset Structure:
 
-Prints the dataset to show the actual data values.
-Expected Output
-Dataset Structure:
-firstname	lastname	age	tscore	name
-Alex	Benson	27	45	Benson, Alex
-Enhancements
-Apply TRIM to Remove Extra Spaces:
+<table>
+    <tr>
+        <td>
+            firstname
+        </td>
+        <td>
+            lastname
+        </td>
+        <td>
+            age
+        </td>
+        <td>
+            tscore
+        </td>
+        <td>
+            name
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Alex
+        </td>
+        <td>
+            Benson
+        </td>
+        <td>
+            27
+        </td>
+        <td>
+            45
+        </td>
+        <td>
+            Benson, Alex
+        </td>
+    </tr>
+</table>
 
-If the firstname or lastname variables contain trailing spaces, use the TRIM function:
-sas
-Copy code
-name = TRIM(lastname) || ', ' || TRIM(firstname);
-This ensures no additional spaces are included in the concatenated name.
-Formatting Variables:
-
-Format age and tscore for readability:
-sas
-Copy code
-FORMAT age 3. tscore 3.;
-Add Labels:
-
-Use labels for better understanding:
-sas
-Copy code
-LABEL name = 'Full Name';
-Enhanced Reporting:
-
-Add sorting or filtering in PROC PRINT for specific insights:
-sas
-Copy code
-PROC PRINT DATA=trimdata;
-WHERE tscore > 40;
-RUN;
-
-
-######
-
+[‎SAS/SasFunctionsVerify.sas](‎SAS/SasFunctionsVerify.sas): Using SAS VERIFY Function to Validate Data
 
 Step 1: Data Validation with VERIFY
-DATA errors valid;
+1. DATA errors valid; Creates two datasets: errors and valid. Rows with invalid data are output to errors. Valid rows are sent to valid.
+2. INPUT id$ stage : $5.; Reads two columns:
+- id: A character variable (e.g., 001).
+- stage: A 5-character variable.
+3. IF VERIFY(stage, 'abcd') THEN OUTPUT errors; VERIFY Function:
+- Checks if all characters in stage exist in the string 'abcd'.
+- Returns the position of the first character not in 'abcd' (e.g., q in aabqc).
+- If the function returns a value greater than 0, the row is classified as invalid and output to the errors dataset.
+4. ELSE OUTPUT valid; Rows with valid stage values are sent to the valid dataset.
+5. CARDS; Provides the input data. Example:
+- 001 aabcd: All characters are valid.
+- 002 aabqc: Contains q, which is not in 'abcd'.
+6. RUN; Executes the data step, creating the errors and valid datasets.
 
-Creates two datasets: errors and valid.
-Rows with invalid data are output to errors. Valid rows are sent to valid.
-INPUT id$ stage : $5.;
-
-Reads two columns:
-id: A character variable (e.g., 001).
-stage: A 5-character variable.
-IF VERIFY(stage, 'abcd') THEN OUTPUT errors;
-
-VERIFY Function:
-Checks if all characters in stage exist in the string 'abcd'.
-Returns the position of the first character not in 'abcd' (e.g., q in aabqc).
-If the function returns a value greater than 0, the row is classified as invalid and output to the errors dataset.
-ELSE OUTPUT valid;
-
-Rows with valid stage values are sent to the valid dataset.
-CARDS;
-
-Provides the input data:
-Example:
-001 aabcd: All characters are valid.
-002 aabqc: Contains q, which is not in 'abcd'.
-RUN;
-
-Executes the data step, creating the errors and valid datasets.
 Step 2: Displaying Results
-PROC PRINT DATA=errors;
+1. PROC PRINT DATA=errors; Displays rows from the errors dataset. Includes rows where stage has invalid characters.
+2. PROC PRINT DATA=valid; Displays rows from the valid dataset. Includes rows where all characters in stage are valid.
+3. TITLE Statements: Adds meaningful titles to the output tables:
+- 'Errors' for the invalid rows.
+- 'Valid' for the valid rows.
 
-Displays rows from the errors dataset.
-Includes rows where stage has invalid characters.
-PROC PRINT DATA=valid;
+Step 3: Expected Output
+1. Errors Dataset:
 
-Displays rows from the valid dataset.
-Includes rows where all characters in stage are valid.
-TITLE Statements:
+<table>
+    <tr>
+        <td>
+            id
+        </td>
+        <td>
+            stage
+        </td>
+    </tr>
+    <tr>
+        <td>
+            002
+        </td>
+        <td>
+            aabqc
+        </td>
+    </tr>
+</table>
 
-Adds meaningful titles to the output tables:
-'Errors' for the invalid rows.
-'Valid' for the valid rows.
-Expected Output
-Errors Dataset:
-id	stage
-002	aabqc
-Valid Dataset:
-id	stage
-001	aabcd
-Enhancements
-Custom Validation Characters:
+2. Valid Dataset:
 
-Adjust the validation set 'abcd' to meet specific criteria:
-sas
-Copy code
-IF VERIFY(stage, '12345xyz') THEN OUTPUT errors;
-Add Labels:
+<table>
+    <tr>
+        <td>
+            id
+        </td>
+        <td>
+            stage
+        </td>
+    </tr>
+    <tr>
+        <td>
+            001
+        </td>
+        <td>
+            aabcd
+        </td>
+    </tr>
+</table>
 
-Provide context for variables:
-sas
-Copy code
-LABEL id = 'Record ID'
-      stage = 'Process Stage';
-Include Row Numbers:
+## Using Plots in SAS
 
-Add a row number to identify positions:
-sas
-Copy code
-DATA errors valid;
-SET input_data;
-row_number = _N_;
-IF VERIFY(stage, 'abcd') THEN OUTPUT errors;
-ELSE OUTPUT valid;
-RUN;
-Sort Results:
+[PlotBar.sas](SAS/PlotBar.sas): This SAS script demonstrates data visualization techniques using the GPLOT and GCHART procedures.
 
-Sort datasets for better readability:
-sas
-Copy code
-PROC SORT DATA=errors;
-BY id;
-RUN;
+Step 1: Data Input
+1. DATA houseprice. Reads data from a file houseprice (2).txt. Each record includes:
+- type: Character variable (type of house).
+- price: Numeric variable (price of the house).
+- tax: Numeric variable (tax on the house).
+2. INFILE and INPUT:
+- Specifies the input file path.
+- Defines the structure of the dataset with INPUT.
+3. RUN;: Executes the data step, creating the houseprice dataset.
 
+Step 2: Scatter Plot with PROC GPLOT
+1. PROC GPLOT DATA = houseprice;: Creates a scatter plot of the houseprice dataset.
+2. TITLE 'House Price Scatter';: Sets the title for the plot.
+3. FORMAT price dollar9.;: Formats the price variable to display values as currency with commas (e.g., $300,000).
+4. SYMBOL Statements: Define the appearance of the points in the scatter plot:
+- SYMBOL1: Dots with blue color.
+- SYMBOL2: Squares with red color.
+5. PLOT price*tax = type;: Plots price against tax, grouped by type (each type is assigned a unique symbol and color).
+6. RUN;: Executes the plotting procedure.
 
+Step 3: Bar Chart with PROC GCHART
+1. PROC GCHART DATA = houseprice;: Creates a bar chart of the houseprice dataset.
+2. TITLE 'House Price Bar';: Sets the title for the bar chart.
+3. FORMAT price dollar9.;: Formats the price variable as currency.
+4. VBAR price tax / GROUP = type;: Creates vertical bars for price and tax, grouped by type.
+5. PATTERN COLOR = yellow;: Sets the bar fill color to yellow.
+6. RUN;: Executes the bar chart creation.
 
-## PLOTS
+Step 4: Key Features and Notes
+1. Scatter Plot with PROC GPLOT: Provides insights into the relationship between price and tax. Differentiates type with symbols and colors.
+2. Bar Chart with PROC GCHART: Shows grouped comparisons of price and tax for each house type. Uses color and grouping for clarity.
+3. Formatting: The FORMAT statement improves readability by displaying monetary values properly.
+
+Step 5:Potential Output Example
+1. Scatter Plot:
+- X-axis: Tax values.
+- Y-axis: Price values.
+- Points: Dots (blue): type = "Single"; Squares (red): type = "Duplex".
+2. Bar Chart:
+- Bars grouped by type:
+- Heights represent price or tax values.
+- All bars are filled with yellow.
 
 [PlotScatter.sas](SAS/PlotScatter.sas)
 
 Step 1: Data Input
-DATA houseprice;
-
-Reads data from the file houseprice (2).txt into a dataset called houseprice.
-INFILE and INPUT:
-
-INFILE: Specifies the file location containing the data.
-INPUT: Defines the structure of the dataset:
-type: Character variable representing the type of house.
-price: Numeric variable representing the price of the house.
-tax: Numeric variable representing the tax rate on the house.
-RUN;: Executes the data step, preparing the dataset.
+1. DATA houseprice; Reads data from the file houseprice (2).txt into a dataset called houseprice.
+2. INFILE and INPUT: INFILE: Specifies the file location containing the data. INPUT: Defines the structure of the dataset:
+- type: Character variable representing the type of house.
+- price: Numeric variable representing the price of the house.
+- tax: Numeric variable representing the tax rate on the house.
+3. RUN;: Executes the data step, preparing the dataset.
 
 Step 2: Scatter Plot Creation
-PROC GPLOT DATA = houseprice;:
+1. PROC GPLOT DATA = houseprice;: Generates a scatter plot using the houseprice dataset.
+2. TITLE 'House Price';: Sets the title for the scatter plot.
+3. FORMAT price dollar9.;: Formats the price variable as currency (e.g., $300,000).
+4. SYMBOL Statements: Define the appearance of data points in the plot:
+- SYMBOL1: Uses blue dots for one type of house.
+- SYMBOL2: Uses red squares for another type.
+5. PLOT price*tax = type;: Creates a scatter plot where:
+- price (y-axis) is plotted against tax (x-axis).
+- Data is grouped by the type variable, using different symbols/colors for each group.
+6. RUN;: Executes the plotting procedure.
 
-Generates a scatter plot using the houseprice dataset.
-TITLE 'House Price';:
+Step 3: Features of the Plot
+1. Axes:
+- X-axis: Tax rate (tax).
+- Y-axis: Price of the house (price).
+2. Grouping: Different house types (type) are represented by distinct symbols/colors.
+3. Formatting: Prices are displayed in a dollar format for clarity.
 
-Sets the title for the scatter plot.
-FORMAT price dollar9.;:
-
-Formats the price variable as currency (e.g., $300,000).
-SYMBOL Statements:
-
-Define the appearance of data points in the plot:
-SYMBOL1: Uses blue dots for one type of house.
-SYMBOL2: Uses red squares for another type.
-PLOT price*tax = type;:
-
-Creates a scatter plot where:
-price (y-axis) is plotted against tax (x-axis).
-Data is grouped by the type variable, using different symbols/colors for each group.
-RUN;: Executes the plotting procedure.
-
-Features of the Plot
-Axes:
-
-X-axis: Tax rate (tax).
-Y-axis: Price of the house (price).
-Grouping:
-
-Different house types (type) are represented by distinct symbols/colors.
-Formatting:
-
-Prices are displayed in a dollar format for clarity.
-Example Plot Output
-Scatter Plot:
-X-axis: Tax rates (e.g., 0.15, 0.20, 0.25).
-Y-axis: Prices (e.g., $175,000, $300,000).
-Points:
-Blue dots for one house type.
-Red squares for another house type.
-Suggestions for Improvement
-Add Axis Labels:
-
-Use AXIS statements to label the axes for better understanding:
-X-axis: "Tax Rate".
-Y-axis: "House Price".
-Use Modern Procedures:
-
-Replace PROC GPLOT with PROC SGPLOT for better aesthetics and functionality:
-sas
-Copy code
-PROC SGPLOT DATA = houseprice;
-TITLE 'House Price Scatter Plot';
-SCATTER X=tax Y=price / GROUP=type MARKERATTRS=(SYMBOL=circlefilled);
-FORMAT price dollar9.;
-RUN;
-Add Legends:
-
-Include a legend to clarify the symbols/colors used for each house type.
-Visual Enhancements:
-
-Adjust symbol sizes for improved readability.
-Add gridlines for easier interpretation of the data points.
-
-
-
+Step 4: Example Plot Output
+1. Scatter Plot: X-axis: Tax rates (e.g., 0.15, 0.20, 0.25). Y-axis: Prices (e.g., $175,000, $300,000). Points:
+- Blue dots for one house type.
+- Red squares for another house type.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
