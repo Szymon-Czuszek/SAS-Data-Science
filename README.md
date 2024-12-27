@@ -2242,7 +2242,7 @@ Step 4: Example Plot Output
 
 [ProcSqlInsertToTable.sas](SAS/ProcSqlInsertToTable.sas)
 
-[ProcSqlCompareTables.sas](SAS/ProcSqlCompareTables.sas)
+[ProcSqlDropDuplicates.sas](SAS/ProcSqlDropDuplicates.sas)
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
