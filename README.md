@@ -2254,7 +2254,18 @@ Key Features:
 - Leverage aggregate functions for complex reporting.
 - Include dynamic grouping and filtering techniques.
 
-[ProcSql4.sas](SAS/ProcSql4.sas)
+[ProcSql4.sas](SAS/ProcSql4.sas): This script highlights advanced SQL functionality in SAS, with a focus on leveraging database management techniques and reporting capabilities for large-scale datasets. It builds on prior scripts in the ProcSql series, incorporating dynamic filtering, aggregation, and subquery usage.
+
+Key Features:
+1. Dynamic Querying:
+- Utilize parameterized SQL queries to enable dynamic data filtering.
+- Perform advanced case-based logic within queries.
+2. Data Aggregation and Summarization:
+- Leverage nested queries for complex reporting.
+- Apply grouping and summarization techniques for multi-dimensional analysis.
+3. Enhanced Reporting:
+- Design output-ready datasets for integration with reporting tools.
+- Generate insights through calculated fields and formatted data.
 
 [ProcSql5.sas](SAS/ProcSql5.sas)
 
