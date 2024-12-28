@@ -2229,7 +2229,17 @@ Key Features:
 3. PROC SQL Basics:
 - Provides a concise introduction to SAS's implementation of SQL syntax.
 
-[ProcSql2.sas](SAS/ProcSql2.sas)
+[ProcSql2.sas](SAS/ProcSql2.sas): This SAS script builds upon the foundational concepts of ProcSql1.sas by introducing advanced SQL techniques within the SAS environment. It includes more complex queries and data manipulations, showcasing the power of PROC SQL for data analysis and reporting.
+
+Key Features:
+1. Advanced SQL Queries:
+- Perform joins to combine data from multiple tables.
+- Use subqueries for dynamic data selection.
+2. Data Transformation:
+- Create calculated fields using SQL expressions.
+- Apply conditional logic for dynamic transformations.
+3. PROC SQL Extensions:
+- Explore advanced PROC SQL options available in SAS.
 
 [ProcSql3.sas](SAS/ProcSql3.sas)
 
