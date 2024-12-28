@@ -2218,7 +2218,16 @@ Step 4: Example Plot Output
 
 ## Using SQL in SAS
 
-[ProcSql1.sas](SAS/ProcSql1.sas)
+[ProcSql1.sas](SAS/ProcSql1.sas): This SAS script demonstrates the use of PROC SQL for querying and manipulating data within a dataset. The code highlights foundational SQL operations, including selecting columns, filtering rows, and summarizing data, all executed in the SAS environment.
+
+Key Features:
+1. Data Querying:
+- Select specific columns from a dataset.
+- Filter rows using conditional logic.
+2. Data Aggregation:
+- Calculate summary statistics (e.g., averages, totals) within groups.
+3. PROC SQL Basics:
+- Provides a concise introduction to SAS's implementation of SQL syntax.
 
 [ProcSql2.sas](SAS/ProcSql2.sas)
 
