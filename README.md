@@ -2279,7 +2279,21 @@ Uses conditional logic to refine data processing.
 Data Transformation:
 Includes examples of calculated fields, aggregated measures, and formatted results for downstream reporting.
 
-[ProcSql6.sas](SAS/ProcSql6.sas)
+[ProcSql6.sas](SAS/ProcSql6.sas): This script showcases advanced data manipulation and analysis techniques using PROC SQL in SAS. It builds upon prior scripts in the ProcSql series to demonstrate sophisticated query strategies, with a focus on enhancing data accuracy and reporting capabilities.
+
+Key Features:
+Advanced Data Filtering:
+Uses complex WHERE clauses for precise data extraction.
+Demonstrates the use of HAVING clauses to refine grouped data.
+Calculated Fields:
+Introduces additional computed columns for in-depth analysis.
+Includes examples of conditional expressions in calculated fields.
+Grouping and Aggregation:
+Utilizes GROUP BY and aggregate functions (e.g., SUM, AVG) for data summarization.
+Implements nested queries to support multi-layered analysis.
+Performance Considerations:
+Optimized use of indexes for faster query execution.
+Demonstrates query execution plans for large datasets.
 
 [ProcSql7.sas](SAS/ProcSql7.sas)
 
