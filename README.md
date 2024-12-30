@@ -2314,7 +2314,22 @@ Output Customization:
 Formats and sorts query results for report-ready output.
 Demonstrates the use of SQL aliases for improved readability.
 
-[ProcSql8.sas](SAS/ProcSql8.sas)
+[ProcSql8.sas](SAS/ProcSql8.sas): This script showcases advanced SQL functionalities in SAS, emphasizing data summarization, grouping, and conditional aggregation. It is the eighth installment in the ProcSql series, targeting scenarios that require detailed analysis and grouped reporting.
+
+Key Features:
+Data Grouping and Aggregation:
+Utilizes the GROUP BY clause to segment data into meaningful groups.
+Demonstrates the use of aggregate functions such as SUM, AVG, MAX, and COUNT.
+Conditional Aggregation:
+Employs conditional logic in aggregate functions (e.g., CASE within SUM or COUNT) for tailored calculations.
+Filtering with HAVING:
+Highlights filtering of grouped data using the HAVING clause.
+Compares the usage of HAVING and WHERE for granular control.
+Subqueries in Aggregation:
+Incorporates subqueries to derive dynamic filters and summary statistics.
+Output Customization:
+Formats grouped and summarized data for presentation-ready output.
+Applies column aliases for clarity and readability.
 
 [ProcSql9.sas](SAS/ProcSql9.sas)
 
