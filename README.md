@@ -2377,7 +2377,19 @@ Illustrates adding and modifying table constraints like primary keys or unique c
 Best Practices:
 Includes recommendations for table maintenance, such as preserving data integrity during alterations.
 
-[ProcSqlInsertToTable.sas](SAS/ProcSqlInsertToTable.sas)
+[ProcSqlInsertToTable.sas](SAS/ProcSqlInsertToTable.sas): This script provides examples of how to insert data into existing tables using the INSERT INTO statement in PROC SQL. It includes multiple methods for adding rows to tables, ensuring flexibility for dynamic and static data insertion scenarios.
+
+Key Features:
+Single Row Insertion:
+Demonstrates how to insert a single row with specified column values.
+Multiple Rows Insertion:
+Shows how to add multiple rows in a single operation for efficiency.
+Dynamic Data Insertion:
+Illustrates using a SELECT statement to insert data from another table into the target table.
+Data Validation:
+Provides insights into ensuring data integrity and checking constraints during insertion.
+Commented Examples:
+Includes well-commented sections to guide users through different insertion techniques.
 
 [ProcSqlFindDuplicates.sas](SAS/ProcSqlFindDuplicates.sas)
 
