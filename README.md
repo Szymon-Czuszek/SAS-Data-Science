@@ -2363,7 +2363,19 @@ Employs CASE statements within SELECT clauses for conditional column transformat
 Output Customization:
 Applies formatted output with column aliases and calculated fields.
 
-[ProcSqlAlterTable.sas](SAS/ProcSqlAlterTable.sas)
+[ProcSqlAlterTable.sas](SAS/ProcSqlAlterTable.sas): This script demonstrates how to modify existing tables using the ALTER TABLE statement in PROC SQL. It covers adding, modifying, and deleting table columns, as well as applying constraints and labels. This script is essential for maintaining and evolving database structures in SAS.
+
+Key Features:
+Column Addition:
+Shows how to add new columns to an existing table with specified data types and default values.
+Column Modification:
+Demonstrates altering existing column attributes, such as data types, labels, or formats.
+Column Deletion:
+Explains how to drop unnecessary columns safely.
+Constraints:
+Illustrates adding and modifying table constraints like primary keys or unique constraints.
+Best Practices:
+Includes recommendations for table maintenance, such as preserving data integrity during alterations.
 
 [ProcSqlInsertToTable.sas](SAS/ProcSqlInsertToTable.sas)
 
