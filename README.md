@@ -2415,7 +2415,17 @@ Outputs the deduplicated dataset for further analysis or saves it as a new table
 Efficient and Clear Code:
 Implements best practices for SQL in SAS to optimize performance and readability.
 
-[ProcSqlSorting.sas](SAS/ProcSqlSorting.sas)
+[ProcSqlSorting.sas](SAS/ProcSqlSorting.sas): This script demonstrates sorting datasets using PROC SQL in SAS. It highlights methods for organizing data in ascending and descending order based on one or multiple columns.
+
+Key Features:
+Sorting by Single or Multiple Columns:
+Sorts the dataset based on one column or a combination of columns for more granular organization.
+Ascending and Descending Order:
+Supports sorting in both ascending (default) and descending orders for greater flexibility.
+Customizable Sorting Logic:
+Users can define specific columns and the order of sorting as per their dataset's requirements.
+Efficient Data Handling:
+Processes large datasets effectively by leveraging PROC SQL's optimized sorting capabilities.
 
 [ProcSqlCase.sas](SAS/ProcSqlCase.sas)
 
