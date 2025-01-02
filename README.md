@@ -2317,19 +2317,19 @@ Key Features:
 [ProcSql8.sas](SAS/ProcSql8.sas): This script showcases advanced SQL functionalities in SAS, emphasizing data summarization, grouping, and conditional aggregation. It is the eighth installment in the ProcSql series, targeting scenarios that require detailed analysis and grouped reporting.
 
 Key Features:
-Data Grouping and Aggregation:
-Utilizes the GROUP BY clause to segment data into meaningful groups.
-Demonstrates the use of aggregate functions such as SUM, AVG, MAX, and COUNT.
-Conditional Aggregation:
-Employs conditional logic in aggregate functions (e.g., CASE within SUM or COUNT) for tailored calculations.
-Filtering with HAVING:
-Highlights filtering of grouped data using the HAVING clause.
-Compares the usage of HAVING and WHERE for granular control.
-Subqueries in Aggregation:
-Incorporates subqueries to derive dynamic filters and summary statistics.
-Output Customization:
-Formats grouped and summarized data for presentation-ready output.
-Applies column aliases for clarity and readability.
+1. Data Grouping and Aggregation:
+- Utilizes the GROUP BY clause to segment data into meaningful groups.
+- Demonstrates the use of aggregate functions such as SUM, AVG, MAX, and COUNT.
+2. Conditional Aggregation:
+- Employs conditional logic in aggregate functions (e.g., CASE within SUM or COUNT) for tailored calculations.
+3. Filtering with HAVING:
+- Highlights filtering of grouped data using the HAVING clause.
+- Compares the usage of HAVING and WHERE for granular control.
+4. Subqueries in Aggregation:
+- Incorporates subqueries to derive dynamic filters and summary statistics.
+5. Output Customization:
+- Formats grouped and summarized data for presentation-ready output.
+- Applies column aliases for clarity and readability.
 
 [ProcSql9.sas](SAS/ProcSql9.sas): This script introduces advanced SQL techniques in SAS, focusing on complex queries, subquery optimization, and combining datasets using SQL joins and set operations. It is the ninth script in the ProcSql series, designed for users aiming to master sophisticated SQL capabilities within SAS.
 
