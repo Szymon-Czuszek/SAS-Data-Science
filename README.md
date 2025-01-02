@@ -2269,8 +2269,9 @@ Key Features:
 
 [ProcSql5.sas](SAS/ProcSql5.sas): This script demonstrates advanced SQL techniques in SAS, focusing on optimizing query performance, joining datasets, and implementing complex data manipulations. It serves as the final iteration in the ProcSql series, showcasing refined approaches for real-world data analysis.
 
-1. Key Features:
-- Optimized Joins: Demonstrates INNER, LEFT, and FULL joins to combine datasets effectively.
+Key Features:
+1. Optimized Joins:
+- Demonstrates INNER, LEFT, and FULL joins to combine datasets effectively.
 - Utilizes indexing and filtering for performance improvement.
 2. Complex Queries:
 - Implements multi-level subqueries to extract hierarchical data.
@@ -2281,18 +2282,18 @@ Key Features:
 [ProcSql6.sas](SAS/ProcSql6.sas): This script showcases advanced data manipulation and analysis techniques using PROC SQL in SAS. It builds upon prior scripts in the ProcSql series to demonstrate sophisticated query strategies, with a focus on enhancing data accuracy and reporting capabilities.
 
 Key Features:
-Advanced Data Filtering:
-Uses complex WHERE clauses for precise data extraction.
-Demonstrates the use of HAVING clauses to refine grouped data.
-Calculated Fields:
-Introduces additional computed columns for in-depth analysis.
-Includes examples of conditional expressions in calculated fields.
-Grouping and Aggregation:
-Utilizes GROUP BY and aggregate functions (e.g., SUM, AVG) for data summarization.
-Implements nested queries to support multi-layered analysis.
-Performance Considerations:
-Optimized use of indexes for faster query execution.
-Demonstrates query execution plans for large datasets.
+1. Advanced Data Filtering:
+- Uses complex WHERE clauses for precise data extraction.
+- Demonstrates the use of HAVING clauses to refine grouped data.
+2. Calculated Fields:
+- Introduces additional computed columns for in-depth analysis.
+- Includes examples of conditional expressions in calculated fields.
+3. Grouping and Aggregation:
+- Utilizes GROUP BY and aggregate functions (e.g., SUM, AVG) for data summarization.
+- Implements nested queries to support multi-layered analysis.
+4. Performance Considerations:
+- Optimized use of indexes for faster query execution.
+- Demonstrates query execution plans for large datasets.
 
 [ProcSql7.sas](SAS/ProcSql7.sas): This script demonstrates comprehensive examples of SQL operations in SAS, focusing on joining multiple datasets and managing complex relationships. It is a continuation of the ProcSql series, expanding on query optimization and data integration techniques.
 
