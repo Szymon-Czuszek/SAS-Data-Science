@@ -2269,15 +2269,14 @@ Key Features:
 
 [ProcSql5.sas](SAS/ProcSql5.sas): This script demonstrates advanced SQL techniques in SAS, focusing on optimizing query performance, joining datasets, and implementing complex data manipulations. It serves as the final iteration in the ProcSql series, showcasing refined approaches for real-world data analysis.
 
-Key Features:
-Optimized Joins:
-Demonstrates INNER, LEFT, and FULL joins to combine datasets effectively.
-Utilizes indexing and filtering for performance improvement.
-Complex Queries:
-Implements multi-level subqueries to extract hierarchical data.
-Uses conditional logic to refine data processing.
-Data Transformation:
-Includes examples of calculated fields, aggregated measures, and formatted results for downstream reporting.
+1. Key Features:
+- Optimized Joins: Demonstrates INNER, LEFT, and FULL joins to combine datasets effectively.
+- Utilizes indexing and filtering for performance improvement.
+2. Complex Queries:
+- Implements multi-level subqueries to extract hierarchical data.
+- Uses conditional logic to refine data processing.
+3. Data Transformation:
+- Includes examples of calculated fields, aggregated measures, and formatted results for downstream reporting.
 
 [ProcSql6.sas](SAS/ProcSql6.sas): This script showcases advanced data manipulation and analysis techniques using PROC SQL in SAS. It builds upon prior scripts in the ProcSql series to demonstrate sophisticated query strategies, with a focus on enhancing data accuracy and reporting capabilities.
 
