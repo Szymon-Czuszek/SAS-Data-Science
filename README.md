@@ -2298,21 +2298,21 @@ Key Features:
 [ProcSql7.sas](SAS/ProcSql7.sas): This script demonstrates comprehensive examples of SQL operations in SAS, focusing on joining multiple datasets and managing complex relationships. It is a continuation of the ProcSql series, expanding on query optimization and data integration techniques.
 
 Key Features:
-Complex Joins:
-Implements various join types, including INNER JOIN, LEFT JOIN, and FULL OUTER JOIN.
-Demonstrates merging datasets with common and unique keys.
-Subqueries:
-Includes correlated and uncorrelated subqueries for advanced data retrieval.
-Utilizes subqueries within SELECT, WHERE, and FROM clauses.
-Advanced Filtering and Conditions:
-Features intricate WHERE and HAVING clauses for detailed data segmentation.
-Incorporates logical operators and nested conditions for precision.
-Data Transformation:
-Leverages SQL functions to manipulate and transform data.
-Applies CASE statements for conditional value creation.
-Output Customization:
-Formats and sorts query results for report-ready output.
-Demonstrates the use of SQL aliases for improved readability.
+1. Complex Joins:
+- Implements various join types, including INNER JOIN, LEFT JOIN, and FULL OUTER JOIN.
+- Demonstrates merging datasets with common and unique keys.
+2. Subqueries:
+- Includes correlated and uncorrelated subqueries for advanced data retrieval.
+- Utilizes subqueries within SELECT, WHERE, and FROM clauses.
+3. Advanced Filtering and Conditions:
+- Features intricate WHERE and HAVING clauses for detailed data segmentation.
+- Incorporates logical operators and nested conditions for precision.
+4. Data Transformation:
+- Leverages SQL functions to manipulate and transform data.
+- Applies CASE statements for conditional value creation.
+5. Output Customization:
+- Formats and sorts query results for report-ready output.
+- Demonstrates the use of SQL aliases for improved readability.
 
 [ProcSql8.sas](SAS/ProcSql8.sas): This script showcases advanced SQL functionalities in SAS, emphasizing data summarization, grouping, and conditional aggregation. It is the eighth installment in the ProcSql series, targeting scenarios that require detailed analysis and grouped reporting.
 
