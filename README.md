@@ -2350,18 +2350,18 @@ Key Features:
 [ProcSqlCreateTable.sas](SAS/ProcSqlCreateTable.sas): This script introduces advanced SQL techniques in SAS, focusing on complex queries, subquery optimization, and combining datasets using SQL joins and set operations. It is the ninth script in the ProcSql series, designed for users aiming to master sophisticated SQL capabilities within SAS.
 
 Key Features:
-Advanced Joins:
-Demonstrates INNER, LEFT, RIGHT, and FULL OUTER JOIN operations.
-Illustrates combining datasets with different structures and keys.
-Set Operations:
-Uses UNION, INTERSECT, and EXCEPT to merge or compare datasets.
-Optimized Subqueries:
-Embeds subqueries for dynamic filtering and creating derived tables.
-Highlights efficient query construction for large datasets.
-Conditional Logic:
-Employs CASE statements within SELECT clauses for conditional column transformations.
-Output Customization:
-Applies formatted output with column aliases and calculated fields.
+1. Advanced Joins:
+- Demonstrates INNER, LEFT, RIGHT, and FULL OUTER JOIN operations.
+- Illustrates combining datasets with different structures and keys.
+2. Set Operations:
+- Uses UNION, INTERSECT, and EXCEPT to merge or compare datasets.
+3. Optimized Subqueries:
+- Embeds subqueries for dynamic filtering and creating derived tables.
+- Highlights efficient query construction for large datasets.
+4. Conditional Logic:
+- Employs CASE statements within SELECT clauses for conditional column transformations.
+5. Output Customization:
+- Applies formatted output with column aliases and calculated fields.
 
 [ProcSqlAlterTable.sas](SAS/ProcSqlAlterTable.sas): This script demonstrates how to modify existing tables using the ALTER TABLE statement in PROC SQL. It covers adding, modifying, and deleting table columns, as well as applying constraints and labels. This script is essential for maintaining and evolving database structures in SAS.
 
