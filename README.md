@@ -2380,16 +2380,16 @@ Key Features:
 [ProcSqlInsertToTable.sas](SAS/ProcSqlInsertToTable.sas): This script provides examples of how to insert data into existing tables using the INSERT INTO statement in PROC SQL. It includes multiple methods for adding rows to tables, ensuring flexibility for dynamic and static data insertion scenarios.
 
 Key Features:
-Single Row Insertion:
-Demonstrates how to insert a single row with specified column values.
-Multiple Rows Insertion:
-Shows how to add multiple rows in a single operation for efficiency.
-Dynamic Data Insertion:
-Illustrates using a SELECT statement to insert data from another table into the target table.
-Data Validation:
-Provides insights into ensuring data integrity and checking constraints during insertion.
-Commented Examples:
-Includes well-commented sections to guide users through different insertion techniques.
+1. Single Row Insertion:
+- Demonstrates how to insert a single row with specified column values.
+2. Multiple Rows Insertion:
+- Shows how to add multiple rows in a single operation for efficiency.
+3. Dynamic Data Insertion:
+- Illustrates using a SELECT statement to insert data from another table into the target table.
+4. Data Validation:
+- Provides insights into ensuring data integrity and checking constraints during insertion.
+5. Commented Examples:
+- Includes well-commented sections to guide users through different insertion techniques.
 
 [ProcSqlFindDuplicates.sas](SAS/ProcSqlFindDuplicates.sas): This script demonstrates how to identify duplicate records in a dataset using PROC SQL. It highlights efficient methods for detecting duplicates based on one or more columns, ensuring data consistency and accuracy.
 
