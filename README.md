@@ -2418,14 +2418,14 @@ Key Features:
 [ProcSqlSorting.sas](SAS/ProcSqlSorting.sas): This script demonstrates sorting datasets using PROC SQL in SAS. It highlights methods for organizing data in ascending and descending order based on one or multiple columns.
 
 Key Features:
-Sorting by Single or Multiple Columns:
-Sorts the dataset based on one column or a combination of columns for more granular organization.
-Ascending and Descending Order:
-Supports sorting in both ascending (default) and descending orders for greater flexibility.
-Customizable Sorting Logic:
-Users can define specific columns and the order of sorting as per their dataset's requirements.
-Efficient Data Handling:
-Processes large datasets effectively by leveraging PROC SQL's optimized sorting capabilities.
+1. Sorting by Single or Multiple Columns:
+- Sorts the dataset based on one column or a combination of columns for more granular organization.
+2. Ascending and Descending Order:
+- Supports sorting in both ascending (default) and descending orders for greater flexibility.
+3. Customizable Sorting Logic:
+- Users can define specific columns and the order of sorting as per their dataset's requirements.
+4. Efficient Data Handling:
+- Processes large datasets effectively by leveraging PROC SQL's optimized sorting capabilities.
 
 [ProcSqlCase.sas](SAS/ProcSqlCase.sas): This script demonstrates the use of the CASE statement within PROC SQL in SAS. It illustrates how conditional logic can be applied to create new columns or modify existing data based on specific conditions.
 
