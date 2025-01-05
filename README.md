@@ -2394,14 +2394,14 @@ Key Features:
 [ProcSqlFindDuplicates.sas](SAS/ProcSqlFindDuplicates.sas): This script demonstrates how to identify duplicate records in a dataset using PROC SQL. It highlights efficient methods for detecting duplicates based on one or more columns, ensuring data consistency and accuracy.
 
 Key Features:
-Duplicate Detection:
-Identifies rows with duplicate values in specific columns.
-Count of Duplicates:
-Displays the number of occurrences for each duplicate entry.
-Flexible Column Selection:
-Allows users to specify columns for duplicate detection, catering to different dataset structures.
-Clean and Readable Output:
-Outputs results in a clear tabular format, making it easy to analyze duplicate records.
+1. Duplicate Detection:
+- Identifies rows with duplicate values in specific columns.
+2. Count of Duplicates:
+- Displays the number of occurrences for each duplicate entry.
+3. Flexible Column Selection:
+- Allows users to specify columns for duplicate detection, catering to different dataset structures.
+4. Clean and Readable Output:
+- Outputs results in a clear tabular format, making it easy to analyze duplicate records.
 
 [ProcSqlDropDuplicates.sas](SAS/ProcSqlDropDuplicates.sas): This script demonstrates how to remove duplicate records from a dataset using PROC SQL. It ensures data integrity by keeping only unique records based on specified columns.
 
