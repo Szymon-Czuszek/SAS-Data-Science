@@ -2406,14 +2406,14 @@ Key Features:
 [ProcSqlDropDuplicates.sas](SAS/ProcSqlDropDuplicates.sas): This script demonstrates how to remove duplicate records from a dataset using PROC SQL. It ensures data integrity by keeping only unique records based on specified columns.
 
 Key Features:
-Duplicate Removal:
-Eliminates rows with duplicate values from the dataset, retaining only one instance of each unique record.
-Custom Column Specification:
-Allows users to define the columns that determine uniqueness, making it adaptable to various datasets.
-Flexible Output Options:
-Outputs the deduplicated dataset for further analysis or saves it as a new table.
-Efficient and Clear Code:
-Implements best practices for SQL in SAS to optimize performance and readability.
+1. Duplicate Removal:
+- Eliminates rows with duplicate values from the dataset, retaining only one instance of each unique record.
+2. Custom Column Specification:
+- Allows users to define the columns that determine uniqueness, making it adaptable to various datasets.
+3. Flexible Output Options:
+- Outputs the deduplicated dataset for further analysis or saves it as a new table.
+4. Efficient and Clear Code:
+- Implements best practices for SQL in SAS to optimize performance and readability.
 
 [ProcSqlSorting.sas](SAS/ProcSqlSorting.sas): This script demonstrates sorting datasets using PROC SQL in SAS. It highlights methods for organizing data in ascending and descending order based on one or multiple columns.
 
