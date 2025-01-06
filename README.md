@@ -2430,14 +2430,14 @@ Key Features:
 [ProcSqlCase.sas](SAS/ProcSqlCase.sas): This script demonstrates the use of the CASE statement within PROC SQL in SAS. It illustrates how conditional logic can be applied to create new columns or modify existing data based on specific conditions.
 
 Key Features:
-Conditional Logic with CASE:
-Dynamically assigns values to a column based on specified conditions.
-Enhanced Data Categorization:
-Groups or categorizes data effectively by applying conditional logic.
-Customizable Conditions:
-Users can define multiple conditions to suit the data analysis requirements.
-Integration with PROC SQL:
-Combines the power of CASE statements with SQL querying for flexible data manipulation.
+1. Conditional Logic with CASE:
+- Dynamically assigns values to a column based on specified conditions.
+2. Enhanced Data Categorization:
+- Groups or categorizes data effectively by applying conditional logic.
+3. Customizable Conditions:
+- Users can define multiple conditions to suit the data analysis requirements.
+4. Integration with PROC SQL:
+- Combines the power of CASE statements with SQL querying for flexible data manipulation.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
