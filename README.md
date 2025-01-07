@@ -2443,6 +2443,14 @@ Key Features:
 
 [ProcSqlIndex.sas](SAS/ProcSqlIndex.sas)
 
+Create ProcDataSetsBy.sas
+
+Create ProcDataSets.sas
+
+Create IndexVariables.sas
+
+Create IndexLargeData.sas
+
 ...
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
