@@ -2441,7 +2441,9 @@ Key Features:
 
 ## Using Indexes In SAS
 
-...
+[ProqSqlIndex.sas](SAS/ProqSqlIndex.sas)
+
+
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
