@@ -2443,7 +2443,7 @@ Key Features:
 
 [ProcSqlIndex.sas](SAS/ProcSqlIndex.sas)
 
-Create ProcDataSetsBy.sas
+[ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas)
 
 Create ProcDataSets.sas
 
