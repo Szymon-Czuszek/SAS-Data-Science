@@ -2449,7 +2449,7 @@ Key Features:
 
 [IndexVariables.sas](SAS/IndexVariables.sas)
 
-Create IndexLargeData.sas
+[IndexLargeData.sas](SAS/IndexLargeData.sas)
 
 ...
 
