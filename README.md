@@ -2447,7 +2447,7 @@ Key Features:
 
 [ProcDataSets.sas](SAS/ProcDataSets.sas)
 
-Create IndexVariables.sas
+[IndexVariables.sas](SAS/IndexVariables.sas)
 
 Create IndexLargeData.sas
 
