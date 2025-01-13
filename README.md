@@ -2445,7 +2445,7 @@ Key Features:
 
 [ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS
 
-[ProcDataSets.sas](SAS/ProcDataSets.sas)
+[ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS
 
 [IndexVariables.sas](SAS/IndexVariables.sas)
 
