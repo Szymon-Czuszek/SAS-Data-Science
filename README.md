@@ -2441,7 +2441,7 @@ Key Features:
 
 ## Using Indexes In SAS
 
-[ProcSqlIndex.sas](SAS/ProcSqlIndex.sas)
+[ProcSqlIndex.sas](SAS/ProcSqlIndex.sas): Using PROC SQL in Conjunction with Indexes
 
 [ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas)
 
