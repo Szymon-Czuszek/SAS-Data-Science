@@ -2455,6 +2455,8 @@ Key Features:
 
 ## Using Macros in SAS
 
+[MacroVariables1.sas](SAS/MacroVariables1.sas)
+
 ...
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
