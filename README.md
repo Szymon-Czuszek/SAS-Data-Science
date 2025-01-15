@@ -2455,7 +2455,7 @@ Key Features:
 
 ## Using Macros in SAS
 
-[MacroVariables1.sas](SAS/MacroVariables1.sas)
+[MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables
 
 [MacroVariables2.sas](SAS/MacroVariables2.sas)
 
