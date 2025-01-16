@@ -2457,7 +2457,7 @@ Key Features:
 
 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab
 
-[MacroVariables2.sas](SAS/MacroVariables2.sas): Using SAS Macro Variables
+[MacroVariables2.sas](SAS/MacroVariables2.sas): Using SAS Macro Variables and creating dynamic report snippets
 
 ...
 
