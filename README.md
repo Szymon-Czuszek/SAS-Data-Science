@@ -2451,8 +2451,6 @@ Key Features:
 
 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data
 
-...
-
 ## Using Macros in SAS
 
 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab
