@@ -2461,7 +2461,27 @@ Key Features:
 
 [MacroVariables4.sas](SAS/MacroVariables4.sas): Using SAS Macro Variables
 
-[MacroVariables5.sas](SAS/MacroVariables5.sas): This script demonstrates the usage of the %SCAN macro function in SAS for extracting specific substrings or words from a given text string. It highlights its flexibility in handling delimiters and parsing text dynamically.
+[MacroVariables5.sas](SAS/MacroVariables5.sas): This script demonstrates the use of a DATA step to import and process a CSV dataset, followed by a %INDEX macro example to locate the position of a specific character within a string.
+
+Key Features:
+1. CSV Data Import:
+- Reads data from a CSV file (londonoutcomes.csv) with specified options for delimiters, missing values, and starting observation.
+2. Data Variables:
+- Loads key fields such as CrimeID, ReportedF, FallsW, Longitude, Latitude, Location, LSOAC, LSOAN, and OutcomeT.
+3. Macro Function %INDEX:
+- Identifies the position of a specific character (v) within a string (a very long value) and assigns the position to a macro variable.
+4. Output:
+- Displays the position of the character in the SAS log using %PUT.
+
+Code Explanation:
+1. DATA Policel:
+- Utilizes the INFILE statement to read the CSV file with DSD and MISSOVER options.
+- Specifies column mappings with the INPUT statement.
+2. Macro Example:
+- %INDEX(&a, v) calculates the position of the character v in the string a very long value.
+- The result is stored in the macro variable b and displayed in the SAS log.
+
+[MacroVariables6.sas](SAS/MacroVariables6.sas): This script demonstrates the usage of the %SCAN macro function in SAS for extracting specific substrings or words from a given text string. It highlights its flexibility in handling delimiters and parsing text dynamically.
 
 Key Features:
 1. Extract Substrings with %SCAN:
