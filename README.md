@@ -2451,7 +2451,7 @@ Key Features:
 
 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data
 
-## Using Macros in SAS
+## Using Macros and Macro Variables in SAS
 
 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab
 
@@ -2459,7 +2459,27 @@ Key Features:
 
 [MacroVariables3.sas](SAS/MacroVariables3.sas): Using SAS Macro Variables
 
-[MacroVariables4.sas](SAS/MacroVariables4.sas): Using SAS Macro Variables
+[MacroVariables4.sas](SAS/MacroVariables4.sas): This script demonstrates importing a dataset using a DATA step, utilizing SAS macro variables, and enabling the SYMBOLGEN system option to display macro variable resolutions in the SAS log.
+
+Key Features:
+1. CSV Data Import:
+- Reads the londonoutcomes.csv dataset, setting delimiter options and starting from the second observation.
+2. Macro Variables with SYMBOLGEN:
+- Defines macro variables such as TEXT and site to dynamically generate titles and other content.
+- Enables SYMBOLGEN to display macro variable resolutions in the SAS log.
+3. Subset of Data:
+- Displays the first 10 observations from the dataset and keeps only the CrimeID variable in the output.
+4. Dynamic Titles:
+- Uses the macro variable TEXT to create a dynamic title for the printed dataset.
+
+Code Explanation:
+1. DATA Policel:
+- Imports the CSV file using the INFILE and INPUT statements, specifying variable mappings.
+2. Macro and Log Options:
+- The SYMBOLGEN option reveals the resolution of macro variables during execution.
+- %LET TEXT = %STR(Mike%'s Report) demonstrates escaping special characters.
+3. PROC PRINT:
+- Prints the first 10 observations of the dataset with a dynamic title derived from a macro variable.
 
 [MacroVariables5.sas](SAS/MacroVariables5.sas): This script demonstrates the use of a DATA step to import and process a CSV dataset, followed by a %INDEX macro example to locate the position of a specific character within a string.
 
