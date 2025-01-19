@@ -2461,7 +2461,25 @@ Key Features:
 
 [MacroVariables4.sas](SAS/MacroVariables4.sas): Using SAS Macro Variables
 
-[MacroVariables5.sas](SAS/MacroVariables5.sas): Using SAS Macro Variables
+[MacroVariables5.sas](SAS/MacroVariables5.sas): This script demonstrates the usage of the %SCAN macro function in SAS for extracting specific substrings or words from a given text string. It highlights its flexibility in handling delimiters and parsing text dynamically.
+
+Key Features:
+1. Extract Substrings with %SCAN:
+- Retrieves specific words or segments from a string based on their position.
+2. Customizable Delimiters:
+- Allows the use of custom delimiters for parsing text beyond the default spaces.
+3. Macro Variable Integration:
+- Assigns the extracted values to macro variables for further processing in SAS programs.
+
+Code Explanation:
+1. Macro Variable X:
+- Defined as XYZ.ABC/XYY, representing the input string.
+2. First %SCAN Example:
+- %SCAN(&X, 3) extracts the third word (default delimiter: /), assigning the value XYY to WORD.
+3. Second %SCAN Example:
+- %SCAN(&X, 1, Z) extracts the first segment of the string using Z as a delimiter, assigning the value XY to PART.
+4. Output:
+- Displays the extracted WORD and PART values using %PUT.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
