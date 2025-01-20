@@ -2451,11 +2451,95 @@ Key Features:
 
 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data
 
-## Using Macros in SAS
+## Using Macros and Macro Variables in SAS
 
 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab
 
 [MacroVariables2.sas](SAS/MacroVariables2.sas): Using SAS Macro Variables and creating dynamic report snippets
+
+[MacroVariables3.sas](SAS/MacroVariables3.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
+
+Key Features:
+1. CSV Data Import:
+- Reads the londonoutcomes.csv dataset, specifying delimiter options, skipping the first observation, and defining input variables.
+2. Macro Variable Usage:
+- Defines various macro variables to store text strings, expressions, and numeric values.
+- Includes examples of macro variables with empty values, simple arithmetic expressions, and string assignments with special characters.
+3. Displaying Macro Variables:
+- The %PUT _ALL_ statement outputs all macro variables and their values to the SAS log.
+
+Code Explanation:
+1. DATA Policel:
+- Imports data from a CSV file, mapping columns to specified variables.
+2. Macro Variable Assignments:
+- A simple string (name and name2).
+- A string containing special characters (title).
+- Empty values (start).
+- Numeric values and arithmetic expressions (total, sum, and sumtotal).
+3. Log Output:
+- The %PUT _ALL_ statement lists all macro variables and their current values in the SAS log, allowing debugging and tracking.
+
+[MacroVariables4.sas](SAS/MacroVariables4.sas): This script demonstrates importing a dataset using a DATA step, utilizing SAS macro variables, and enabling the SYMBOLGEN system option to display macro variable resolutions in the SAS log.
+
+Key Features:
+1. CSV Data Import:
+- Reads the londonoutcomes.csv dataset, setting delimiter options and starting from the second observation.
+2. Macro Variables with SYMBOLGEN:
+- Defines macro variables such as TEXT and site to dynamically generate titles and other content.
+- Enables SYMBOLGEN to display macro variable resolutions in the SAS log.
+3. Subset of Data:
+- Displays the first 10 observations from the dataset and keeps only the CrimeID variable in the output.
+4. Dynamic Titles:
+- Uses the macro variable TEXT to create a dynamic title for the printed dataset.
+
+Code Explanation:
+1. DATA Policel:
+- Imports the CSV file using the INFILE and INPUT statements, specifying variable mappings.
+2. Macro and Log Options:
+- The SYMBOLGEN option reveals the resolution of macro variables during execution.
+- %LET TEXT = %STR(Mike%'s Report) demonstrates escaping special characters.
+3. PROC PRINT:
+- Prints the first 10 observations of the dataset with a dynamic title derived from a macro variable.
+
+[MacroVariables5.sas](SAS/MacroVariables5.sas): This script demonstrates the use of a DATA step to import and process a CSV dataset, followed by a %INDEX macro example to locate the position of a specific character within a string.
+
+Key Features:
+1. CSV Data Import:
+- Reads data from a CSV file (londonoutcomes.csv) with specified options for delimiters, missing values, and starting observation.
+2. Data Variables:
+- Loads key fields such as CrimeID, ReportedF, FallsW, Longitude, Latitude, Location, LSOAC, LSOAN, and OutcomeT.
+3. Macro Function %INDEX:
+- Identifies the position of a specific character (v) within a string (a very long value) and assigns the position to a macro variable.
+4. Output:
+- Displays the position of the character in the SAS log using %PUT.
+
+Code Explanation:
+1. DATA Policel:
+- Utilizes the INFILE statement to read the CSV file with DSD and MISSOVER options.
+- Specifies column mappings with the INPUT statement.
+2. Macro Example:
+- %INDEX(&a, v) calculates the position of the character v in the string a very long value.
+- The result is stored in the macro variable b and displayed in the SAS log.
+
+[MacroVariables6.sas](SAS/MacroVariables6.sas): This script demonstrates the usage of the %SCAN macro function in SAS for extracting specific substrings or words from a given text string. It highlights its flexibility in handling delimiters and parsing text dynamically.
+
+Key Features:
+1. Extract Substrings with %SCAN:
+- Retrieves specific words or segments from a string based on their position.
+2. Customizable Delimiters:
+- Allows the use of custom delimiters for parsing text beyond the default spaces.
+3. Macro Variable Integration:
+- Assigns the extracted values to macro variables for further processing in SAS programs.
+
+Code Explanation:
+1. Macro Variable X:
+- Defined as XYZ.ABC/XYY, representing the input string.
+2. First %SCAN Example:
+- %SCAN(&X, 3) extracts the third word (default delimiter: /), assigning the value XYY to WORD.
+3. Second %SCAN Example:
+- %SCAN(&X, 1, Z) extracts the first segment of the string using Z as a delimiter, assigning the value XY to PART.
+4. Output:
+- Displays the extracted WORD and PART values using %PUT.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
