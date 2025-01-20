@@ -2455,7 +2455,32 @@ Key Features:
 
 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab
 
-[MacroVariables2.sas](SAS/MacroVariables2.sas): Using SAS Macro Variables and creating dynamic report snippets
+[MacroVariables2.sas](SAS/MacroVariables2.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
+
+Key Features:
+CSV Data Import:
+
+Reads the londonoutcomes.csv dataset, specifying delimiter options, skipping the first observation, and defining input variables.
+Macro Variable Usage:
+
+Defines various macro variables to store text strings, expressions, and numeric values.
+Includes examples of macro variables with empty values, simple arithmetic expressions, and string assignments with special characters.
+Displaying Macro Variables:
+
+The %PUT _ALL_ statement outputs all macro variables and their values to the SAS log.
+Code Explanation:
+DATA Policel:
+
+Imports data from a CSV file, mapping columns to specified variables.
+Macro Variable Assignments:
+
+Demonstrates assigning:
+A simple string (name and name2).
+A string containing special characters (title).
+Empty values (start).
+Numeric values and arithmetic expressions (total, sum, and sumtotal).
+Log Output:
+The %PUT _ALL_ statement lists all macro variables and their current values in the SAS log, allowing debugging and tracking.
 
 [MacroVariables3.sas](SAS/MacroVariables3.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
 
