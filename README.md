@@ -2467,18 +2467,15 @@ Key Features:
 - The %PUT _ALL_ statement outputs all macro variables and their values to the SAS log.
 
 Code Explanation:
-DATA Policel:
-
-Imports data from a CSV file, mapping columns to specified variables.
-Macro Variable Assignments:
-
-Demonstrates assigning:
-A simple string (name and name2).
-A string containing special characters (title).
-Empty values (start).
-Numeric values and arithmetic expressions (total, sum, and sumtotal).
-Log Output:
-The %PUT _ALL_ statement lists all macro variables and their current values in the SAS log, allowing debugging and tracking.
+1. DATA Policel:
+- Imports data from a CSV file, mapping columns to specified variables.
+2. Macro Variable Assignments:
+- A simple string (name and name2).
+- A string containing special characters (title).
+- Empty values (start).
+- Numeric values and arithmetic expressions (total, sum, and sumtotal).
+3. Log Output:
+- The %PUT _ALL_ statement lists all macro variables and their current values in the SAS log, allowing debugging and tracking.
 
 [MacroVariables3.sas](SAS/MacroVariables3.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
 
