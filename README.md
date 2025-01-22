@@ -2463,10 +2463,9 @@ Key Features:
 2. Macro Variable Usage:
 - Defines various macro variables to store text strings, expressions, and numeric values.
 - Includes examples of macro variables with empty values, simple arithmetic expressions, and string assignments with special characters.
+3. Displaying Macro Variables:
+- The %PUT _ALL_ statement outputs all macro variables and their values to the SAS log.
 
-Displaying Macro Variables:
-
-The %PUT _ALL_ statement outputs all macro variables and their values to the SAS log.
 Code Explanation:
 DATA Policel:
 
