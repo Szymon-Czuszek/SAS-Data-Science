@@ -2459,12 +2459,11 @@ Key Features:
 
 Key Features:
 1. CSV Data Import:
+- Reads the londonoutcomes.csv dataset, specifying delimiter options, skipping the first observation, and defining input variables.
+2. Macro Variable Usage:
+- Defines various macro variables to store text strings, expressions, and numeric values.
+- Includes examples of macro variables with empty values, simple arithmetic expressions, and string assignments with special characters.
 
-Reads the londonoutcomes.csv dataset, specifying delimiter options, skipping the first observation, and defining input variables.
-Macro Variable Usage:
-
-Defines various macro variables to store text strings, expressions, and numeric values.
-Includes examples of macro variables with empty values, simple arithmetic expressions, and string assignments with special characters.
 Displaying Macro Variables:
 
 The %PUT _ALL_ statement outputs all macro variables and their values to the SAS log.
