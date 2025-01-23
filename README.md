@@ -2443,7 +2443,7 @@ Key Features:
 
 [ProcSqlIndex.sas](SAS/ProcSqlIndex.sas): Using PROC SQL in Conjunction with Indexes to handle large amounts of data
 
-[ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS
+[ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data
 
 [ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS
 
