@@ -2445,7 +2445,7 @@ Key Features:
 
 [ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data
 
-[ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS
+[ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS to handle large amounts of data
 
 [IndexVariables.sas](SAS/IndexVariables.sas): Using INDEX to create variables
 
