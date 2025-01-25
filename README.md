@@ -2451,7 +2451,7 @@ Key Features:
 
 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data
 
-## Using Macros and Macro Variables in SAS
+## Using Macro Variables in SAS
 
 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab
 
@@ -2560,6 +2560,10 @@ Code Explanation:
 - %SCAN(&X, 1, Z) extracts the first segment of the string using Z as a delimiter, assigning the value XY to PART.
 4. Output:
 - Displays the extracted WORD and PART values using %PUT.
+
+## Using SAS Macros
+
+...
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
