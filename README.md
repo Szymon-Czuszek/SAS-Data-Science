@@ -2563,7 +2563,7 @@ Code Explanation:
 
 ## Using SAS Macros
 
-...
+[MacroInSas3.sas](SAS/MacroInSas3.sas)
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
