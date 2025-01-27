@@ -2563,6 +2563,8 @@ Code Explanation:
 
 ## Using SAS Macros
 
+[MacroInSas2.sas](SAS/MacroInSas2.sas)
+
 [MacroInSas3.sas](SAS/MacroInSas3.sas)
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
