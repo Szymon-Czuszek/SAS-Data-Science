@@ -2566,16 +2566,13 @@ Code Explanation:
 [MacroInSas1.sas](SAS/MacroInSas1.sas): This script demonstrates the creation and execution of SAS macros to perform statistical analysis on a dataset.
 
 Key Features:
-Dataset Creation:
-
-Defines a sample dataset houseprice with columns for property type, price, and tax rate.
-Basic Macro Creation:
-
-Implements a simple macro %somestats to run the PROC MEANS procedure for summary statistics.
-Parameterized Macro:
-
-Defines a macro %newstats(PROG, VARS) that accepts procedure names and variables as parameters.
-Examples show usage with procedures such as MEANS and UNIVARIATE.
+1. Dataset Creation:
+- Defines a sample dataset houseprice with columns for property type, price, and tax rate.
+2. Basic Macro Creation:
+- Implements a simple macro %somestats to run the PROC MEANS procedure for summary statistics.
+3. Parameterized Macro:
+- Defines a macro %newstats(PROG, VARS) that accepts procedure names and variables as parameters.
+- Examples show usage with procedures such as MEANS and UNIVARIATE.
 
 Code Explanation:
 Dataset Definition:
