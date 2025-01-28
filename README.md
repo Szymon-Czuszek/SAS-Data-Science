@@ -2563,7 +2563,9 @@ Code Explanation:
 
 ## Using SAS Macros
 
-[MacroInSas1.sas](SAS/MacroInSas1.sas)
+[MacroInSas1.sas](SAS/MacroInSas1.sas): This script demonstrates the creation and execution of SAS macros to perform statistical analysis on a dataset.
+
+
 
 [MacroInSas2.sas](SAS/MacroInSas2.sas)
 
