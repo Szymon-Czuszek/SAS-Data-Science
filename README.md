@@ -2577,7 +2577,21 @@ Parameterized Macro:
 Defines a macro %newstats(PROG, VARS) that accepts procedure names and variables as parameters.
 Examples show usage with procedures such as MEANS and UNIVARIATE.
 
+Code Explanation:
+Dataset Definition:
 
+Uses the DATA step and DATALINES to create a dataset with property types, prices, and tax rates for further analysis.
+Macro %somestats:
+
+A simple, reusable macro to calculate summary statistics using PROC MEANS.
+Parameterized Macro %newstats:
+
+Generalizes statistical analysis by allowing the user to specify:
+PROG: The procedure to run (e.g., MEANS, UNIVARIATE).
+VARS: The variables for analysis (e.g., price, tax).
+Macro Execution:
+
+Demonstrates executing macros with different combinations of procedures and variables.
 
 [MacroInSas2.sas](SAS/MacroInSas2.sas)
 
