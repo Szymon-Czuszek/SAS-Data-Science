@@ -2575,9 +2575,9 @@ Key Features:
 - Examples show usage with procedures such as MEANS and UNIVARIATE.
 
 Code Explanation:
-Dataset Definition:
+1. Dataset Definition:
+- Uses the DATA step and DATALINES to create a dataset with property types, prices, and tax rates for further analysis.
 
-Uses the DATA step and DATALINES to create a dataset with property types, prices, and tax rates for further analysis.
 Macro %somestats:
 
 A simple, reusable macro to calculate summary statistics using PROC MEANS.
