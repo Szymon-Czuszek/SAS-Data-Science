@@ -2583,10 +2583,8 @@ Code Explanation:
 - Generalizes statistical analysis by allowing the user to specify:
 - PROG: The procedure to run (e.g., MEANS, UNIVARIATE).
 - VARS: The variables for analysis (e.g., price, tax).
-
-Macro Execution:
-
-Demonstrates executing macros with different combinations of procedures and variables.
+4. Macro Execution:
+- Demonstrates executing macros with different combinations of procedures and variables.
 
 [MacroInSas2.sas](SAS/MacroInSas2.sas)
 
