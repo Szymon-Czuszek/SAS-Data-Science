@@ -2577,10 +2577,9 @@ Key Features:
 Code Explanation:
 1. Dataset Definition:
 - Uses the DATA step and DATALINES to create a dataset with property types, prices, and tax rates for further analysis.
+2. Macro %somestats:
+- A simple, reusable macro to calculate summary statistics using PROC MEANS.
 
-Macro %somestats:
-
-A simple, reusable macro to calculate summary statistics using PROC MEANS.
 Parameterized Macro %newstats:
 
 Generalizes statistical analysis by allowing the user to specify:
