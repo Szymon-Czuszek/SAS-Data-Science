@@ -2579,12 +2579,11 @@ Code Explanation:
 - Uses the DATA step and DATALINES to create a dataset with property types, prices, and tax rates for further analysis.
 2. Macro %somestats:
 - A simple, reusable macro to calculate summary statistics using PROC MEANS.
+3. Parameterized Macro %newstats:
+- Generalizes statistical analysis by allowing the user to specify:
+- PROG: The procedure to run (e.g., MEANS, UNIVARIATE).
+- VARS: The variables for analysis (e.g., price, tax).
 
-Parameterized Macro %newstats:
-
-Generalizes statistical analysis by allowing the user to specify:
-PROG: The procedure to run (e.g., MEANS, UNIVARIATE).
-VARS: The variables for analysis (e.g., price, tax).
 Macro Execution:
 
 Demonstrates executing macros with different combinations of procedures and variables.
