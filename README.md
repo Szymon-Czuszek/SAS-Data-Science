@@ -2603,7 +2603,17 @@ Macro Execution with Options:
 Enables debugging options (MPRINT, MLOGIC) for macro execution tracking.
 Calls %AVERAGE to process all yearly datasets.
 
+Code Explanation:
+Data Creation:
 
+Defines six datasets (yr2005 to yr2010), each storing sales values for four individuals.
+Macro Definition %AVERAGE:
+
+Iterates through years using %DO to dynamically reference dataset names.
+Computes summary statistics for the Sales variable using PROC MEANS.
+Macro Execution:
+
+Calls %AVERAGE, triggering PROC MEANS for each dataset.
 
 [MacroInSas3.sas](SAS/MacroInSas3.sas)
 
