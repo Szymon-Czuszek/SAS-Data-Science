@@ -1,67 +1,67 @@
-data yr2005;
-	input name$ Sales;
-	datalines;
+DATA yr2005;
+	INPUT name$ Sales;
+	DATALINES;
 Greg 10
 John 15
 Lisa 50
 Mark 20
-run;
+RUN;
 
-data yr2006;
-	input name$ Sales;
-	datalines;
+DATA yr2006;
+	INPUT name$ Sales;
+	DATALINES;
 Greg 15
 John 35
 Lisa 45
 Mark 34
-run;
+RUN;
 
-data yr2007;
-	input name$ Sales;
-	datalines;
+DATA yr2007;
+	INPUT name$ Sales;
+	DATALINES;
 Greg 67
 John 34
 Lisa 45
 Mark 23
-run;
+RUN;
 
-data yr2008;
-	input name$ Sales;
-	datalines;
+DATA yr2008;
+	INPUT name$ Sales;
+	DATALINES;
 Greg 54
 John 32
 Lisa 46
 Mark 57
-run;
+RUN;
 
-data yr2009;
-	input name$ Sales;
-	datalines;
+DATA yr2009;
+	INPUT name$ Sales;
+	DATALINES;
 Greg 77
 John 45
 Lisa 78
 Mark 87
-run;
+RUN;
 
-data yr2010;
-	input name$ Sales;
-	datalines;
+DATA yr2010;
+	INPUT name$ Sales;
+	DATALINES;
 Greg 99
 John 87
 Lisa 98
 Mark 104
-run;
-	options mprint mlogic;
+RUN;
+	OPTIONS MPRINT MLOGIC;
 
-	%macro average;
-		%do i=2005 %to 2010;
+	%MACRO AVERAGE;
+		%DO i=2005 %TO 2010;
 
-		proc means data=yr&i;
-			var sales;
-			title "Average sales from &i";
-		run;
+		PROC MEANS DATA=yr&i;
+			VAR sales;
+			TITLE "Average sales from &i";
+		RUN;
 
-	%end;
-%mend;
+	%END;
+%MEND;
 
-%average
+%AVERAGE;
