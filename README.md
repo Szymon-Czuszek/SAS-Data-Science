@@ -2563,7 +2563,32 @@ Code Explanation:
 
 ## Using SAS Macros
 
-...
+[MacroInSas1.sas](SAS/MacroInSas1.sas): This script demonstrates the creation and execution of SAS macros to perform statistical analysis on a dataset.
+
+Key Features:
+1. Dataset Creation:
+- Defines a sample dataset houseprice with columns for property type, price, and tax rate.
+2. Basic Macro Creation:
+- Implements a simple macro %somestats to run the PROC MEANS procedure for summary statistics.
+3. Parameterized Macro:
+- Defines a macro %newstats(PROG, VARS) that accepts procedure names and variables as parameters.
+- Examples show usage with procedures such as MEANS and UNIVARIATE.
+
+Code Explanation:
+1. Dataset Definition:
+- Uses the DATA step and DATALINES to create a dataset with property types, prices, and tax rates for further analysis.
+2. Macro %somestats:
+- A simple, reusable macro to calculate summary statistics using PROC MEANS.
+3. Parameterized Macro %newstats:
+- Generalizes statistical analysis by allowing the user to specify:
+- PROG: The procedure to run (e.g., MEANS, UNIVARIATE).
+- VARS: The variables for analysis (e.g., price, tax).
+4. Macro Execution:
+- Demonstrates executing macros with different combinations of procedures and variables.
+
+[MacroInSas2.sas](SAS/MacroInSas2.sas)
+
+[MacroInSas3.sas](SAS/MacroInSas3.sas)
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
