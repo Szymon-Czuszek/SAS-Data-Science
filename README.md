@@ -2619,20 +2619,16 @@ Calls %AVERAGE, triggering PROC MEANS for each dataset.
 
 Key Features:
 External Script Inclusion:
-
 Uses %INCLUDE to import and execute the SAS script MacroInSas2.sas located in /home/u63805106/datasetslearnsas/.
 /SOURCE2 Option:
-
 Enables detailed logging by displaying the included file's source code in the SAS log.
 Helps in debugging and tracking macro execution.
 
 Code Explanation:
 %INCLUDE Statement:
-
 Loads and executes the contents of MacroInSas2.sas dynamically.
 Useful for modularizing SAS programs by reusing existing macro definitions.
 Logging with /SOURCE2:
-
 Ensures that the included script's code appears in the log for better traceability.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
