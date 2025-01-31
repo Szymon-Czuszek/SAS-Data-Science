@@ -2617,6 +2617,16 @@ Calls %AVERAGE, triggering PROC MEANS for each dataset.
 
 [MacroInSas3.sas](SAS/MacroInSas3.sas): This script demonstrates the use of the %INCLUDE statement in SAS to incorporate external SAS code into the current session.
 
+Key Features:
+External Script Inclusion:
+
+Uses %INCLUDE to import and execute the SAS script MacroInSas2.sas located in /home/u63805106/datasetslearnsas/.
+/SOURCE2 Option:
+
+Enables detailed logging by displaying the included file's source code in the SAS log.
+Helps in debugging and tracking macro execution.
+
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
