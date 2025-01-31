@@ -2615,7 +2615,7 @@ Macro Execution:
 
 Calls %AVERAGE, triggering PROC MEANS for each dataset.
 
-[MacroInSas3.sas](SAS/MacroInSas3.sas)
+[MacroInSas3.sas](SAS/MacroInSas3.sas): This script demonstrates the use of the %INCLUDE statement in SAS to incorporate external SAS code into the current session.
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
