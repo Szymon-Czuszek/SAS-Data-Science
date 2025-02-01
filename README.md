@@ -2650,6 +2650,13 @@ Model Output Handling:
 Stores estimation results in separate datasets (est1, est2, etc.).
 Combines results into a final dataset (myparm by default).
 
+Macro Parameters:
+Parameter	Description
+inpdata	Input dataset (e.g., train)
+depvar	Dependent variable(s) (e.g., Survived)
+indvar	Independent variables (default: none)
+myout	Output dataset name (default: _out)
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
