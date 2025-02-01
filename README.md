@@ -2631,6 +2631,8 @@ Useful for modularizing SAS programs by reusing existing macro definitions.
 Logging with /SOURCE2:
 Ensures that the included script's code appears in the log for better traceability.
 
+[MacroInSas4.sas](SAS/MacroInSas4.sas)
+
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
