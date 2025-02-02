@@ -2634,12 +2634,12 @@ Ensures that the included script's code appears in the log for better traceabili
 [MacroInSas4.sas](SAS/MacroInSas4.sas): This script defines a macro %logitma to perform logistic regression in SAS using the PROC LOGISTIC procedure. It allows dynamic selection of dependent and independent variables.
 
 Key Features:
-Data Import:
-Reads the dataset train.csv using INFILE with DSD, MISSOVER, and FIRSTOBS=2 options.
-Macro for Logistic Regression (%logitma):
-Takes input dataset, dependent variable, independent variable(s), and an output dataset name.
-Iterates over multiple dependent variables (if specified).
-Runs PROC LOGISTIC for each dependent variable against the given independent variables.
+1. Data Import:
+- Reads the dataset train.csv using INFILE with DSD, MISSOVER, and FIRSTOBS=2 options.
+2. Macro for Logistic Regression (%logitma):
+- Takes input dataset, dependent variable, independent variable(s), and an output dataset name.
+- Iterates over multiple dependent variables (if specified).
+- Runs PROC LOGISTIC for each dependent variable against the given independent variables.
 Dynamic Title Generation:
 Sets TITLE statements based on dependent and independent variable names.
 Model Output Handling:
