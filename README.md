@@ -2646,11 +2646,49 @@ Key Features:
 - Stores estimation results in separate datasets (est1, est2, etc.).
 - Combines results into a final dataset (myparm by default).
 5. Macro Parameters:
-Parameter	Description
-inpdata	Input dataset (e.g., train)
-depvar	Dependent variable(s) (e.g., Survived)
-indvar	Independent variables (default: none)
-myout	Output dataset name (default: _out)
+
+<table>
+    <tr>
+        <td>
+            Parameter
+        </td>
+        <td>
+            Description
+        </td>
+    </tr>
+    <tr>
+        <td>
+            inpdata
+        </td>
+        <td>
+            Input dataset (e.g., train)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            depvar
+        </td>
+        <td>
+            Dependent variable(s) (e.g., Survived)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            indvar
+        </td>
+        <td>
+            Independent variables (default: none)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            myout
+        </td>
+        <td>
+            Output dataset name (default: _out)
+        </td>
+    </tr>
+</table>
 
 ## Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
