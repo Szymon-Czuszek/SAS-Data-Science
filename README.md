@@ -2589,19 +2589,16 @@ Code Explanation:
 [MacroInSas2.sas](SAS/MacroInSas2.sas): This script demonstrates the use of SAS macros to automate the calculation of average sales for multiple years.
 
 Key Features:
-Multiple Datasets Creation:
-
-Defines yearly sales datasets (yr2005 to yr2010) containing sales data for four individuals.
-Macro %AVERAGE:
-
-Automates the computation of average sales for each year.
-Uses a DO loop to iterate through years (2005-2010).
-Executes PROC MEANS to compute summary statistics for sales data.
-Dynamically sets the report title using the macro variable &i.
-Macro Execution with Options:
-
-Enables debugging options (MPRINT, MLOGIC) for macro execution tracking.
-Calls %AVERAGE to process all yearly datasets.
+1. Multiple Datasets Creation:
+- Defines yearly sales datasets (yr2005 to yr2010) containing sales data for four individuals.
+2. Macro %AVERAGE:
+- Automates the computation of average sales for each year.
+- Uses a DO loop to iterate through years (2005-2010).
+- Executes PROC MEANS to compute summary statistics for sales data.
+- Dynamically sets the report title using the macro variable &i.
+3. Macro Execution with Options:
+- Enables debugging options (MPRINT, MLOGIC) for macro execution tracking.
+- Calls %AVERAGE to process all yearly datasets.
 
 Code Explanation:
 Data Creation:
