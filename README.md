@@ -2625,11 +2625,11 @@ Key Features:
 - Helps in debugging and tracking macro execution.
 
 Code Explanation:
-%INCLUDE Statement:
-Loads and executes the contents of MacroInSas2.sas dynamically.
-Useful for modularizing SAS programs by reusing existing macro definitions.
-Logging with /SOURCE2:
-Ensures that the included script's code appears in the log for better traceability.
+1. %INCLUDE Statement:
+- Loads and executes the contents of MacroInSas2.sas dynamically.
+- Useful for modularizing SAS programs by reusing existing macro definitions.
+2. Logging with /SOURCE2:
+- Ensures that the included script's code appears in the log for better traceability.
 
 [MacroInSas4.sas](SAS/MacroInSas4.sas): This script defines a macro %logitma to perform logistic regression in SAS using the PROC LOGISTIC procedure. It allows dynamic selection of dependent and independent variables.
 
