@@ -2441,7 +2441,7 @@ Key Features:
 
 ## Using Indexes In SAS
 
-[ProcSqlIndex.sas](SAS/ProcSqlIndex.sas): Using PROC SQL in Conjunction with Indexes to handle large amounts of data
+[ProcSqlIndex.sas](SAS/ProcSqlIndex.sas): This script demonstrates how to create both simple and composite indexes in SAS using PROC SQL.
 
 [ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data
 
