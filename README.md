@@ -2453,6 +2453,11 @@ Defines a composite index compind on CrimeID and LSOAC for efficient multi-colum
 Unique Index Option:
 Includes a commented-out example of enforcing uniqueness with CREATE UNIQUE INDEX.
 
+SQL Index Syntax:
+Index Type	Syntax Example
+Simple Index	CREATE INDEX LSOAC ON policel;
+Unique Index	CREATE UNIQUE INDEX LSOAC ON policel;
+Composite Index	CREATE INDEX compind ON policel(CrimeID, LSOAC);
 
 [ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data
 
