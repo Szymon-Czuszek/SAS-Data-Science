@@ -2443,6 +2443,17 @@ Key Features:
 
 [ProcSqlIndex.sas](SAS/ProcSqlIndex.sas): This script demonstrates how to create both simple and composite indexes in SAS using PROC SQL.
 
+Key Features:
+Data Import:
+Reads londonoutcomes.csv into a dataset named policel.
+Simple Index Creation:
+Creates an index on the LSOAC variable using PROC SQL.
+Composite Index Creation:
+Defines a composite index compind on CrimeID and LSOAC for efficient multi-column lookups.
+Unique Index Option:
+Includes a commented-out example of enforcing uniqueness with CREATE UNIQUE INDEX.
+
+
 [ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data
 
 [ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS to handle large amounts of data
