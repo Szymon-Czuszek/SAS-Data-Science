@@ -2459,6 +2459,53 @@ Simple Index	CREATE INDEX LSOAC ON policel;
 Unique Index	CREATE UNIQUE INDEX LSOAC ON policel;
 Composite Index	CREATE INDEX compind ON policel(CrimeID, LSOAC);
 
+<table>
+    <tr>
+        <td>
+            Index
+        </td>
+        <td>
+            Type
+        </td>
+        <td>
+            Syntax Example
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Simple
+        </td>
+        <td>
+            Index
+        </td>
+        <td>
+            CREATE INDEX LSOAC ON policel;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Unique
+        </td>
+        <td>
+            Index
+        </td>
+        <td>
+            CREATE UNIQUE INDEX LSOAC ON policel;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Composite
+        </td>
+        <td>
+            Index
+        </td>
+        <td>
+            CREATE INDEX compind ON policel(CrimeID, LSOAC);
+        </td>
+    </tr>
+</table>
+
 [ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data
 
 [ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS to handle large amounts of data
