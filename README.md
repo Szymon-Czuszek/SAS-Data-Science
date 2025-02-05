@@ -2511,8 +2511,12 @@ Adds an index on the LSOAC column.
 Using the Index in Data Processing:
 The useindexby dataset leverages the index for sorting operations.
 Message Level Setting:
-
 Enables informational messages (MSGLVL=I) to display indexing details.
+
+Indexing Syntax in PROC DATASETS:
+Task	Syntax Example
+Create Index	INDEX CREATE LSOAC /;
+Modify Dataset	MODIFY policel;
 
 [ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS to handle large amounts of data
 
