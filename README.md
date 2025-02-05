@@ -2452,12 +2452,7 @@ Key Features:
 - Defines a composite index compind on CrimeID and LSOAC for efficient multi-column lookups.
 4. Unique Index Option:
 - Includes a commented-out example of enforcing uniqueness with CREATE UNIQUE INDEX.
-
-SQL Index Syntax:
-Index Type	Syntax Example
-Simple Index	CREATE INDEX LSOAC ON policel;
-Unique Index	CREATE UNIQUE INDEX LSOAC ON policel;
-Composite Index	CREATE INDEX compind ON policel(CrimeID, LSOAC);
+5. SQL Index Syntax:
 
 <table>
     <tr>
