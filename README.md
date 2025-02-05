@@ -2501,7 +2501,7 @@ Key Features:
     </tr>
 </table>
 
-[ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data
+[ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data. This script demonstrates how to create an index on a dataset using PROC DATASETS and leverage it for sorting operations.
 
 [ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS to handle large amounts of data
 
