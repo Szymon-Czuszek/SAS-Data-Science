@@ -2513,9 +2513,6 @@ Key Features:
 4. Message Level Setting:
 - Enables informational messages (MSGLVL=I) to display indexing details.
 5. Indexing Syntax in PROC DATASETS:
-Task	Syntax Example
-Create Index	INDEX CREATE LSOAC /;
-Modify Dataset	MODIFY policel;
 
 <table>
     <tr>
