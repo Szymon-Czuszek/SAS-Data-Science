@@ -2517,6 +2517,33 @@ Task	Syntax Example
 Create Index	INDEX CREATE LSOAC /;
 Modify Dataset	MODIFY policel;
 
+<table>
+    <tr>
+        <td>
+            Task
+        </td>
+        <td>
+            Syntax Example
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Create Index
+        </td>
+        <td>
+            INDEX CREATE LSOAC /;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Modify Dataset
+        </td>
+        <td>
+            MODIFY policel;
+        </td>
+    </tr>
+</table>
+
 [ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS to handle large amounts of data
 
 [IndexVariables.sas](SAS/IndexVariables.sas): Using INDEX to create variables to handle large amounts of data
