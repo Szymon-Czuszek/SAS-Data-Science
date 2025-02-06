@@ -2504,14 +2504,14 @@ Key Features:
 [ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data. This script demonstrates how to create an index on a dataset using PROC DATASETS and leverage it for sorting operations.
 
 Key Features:
-Data Import:
-Reads londonoutcomes.csv into a dataset named policel.
-Index Creation Using PROC DATASETS:
-Adds an index on the LSOAC column.
-Using the Index in Data Processing:
-The useindexby dataset leverages the index for sorting operations.
-Message Level Setting:
-Enables informational messages (MSGLVL=I) to display indexing details.
+1. Data Import:
+- Reads londonoutcomes.csv into a dataset named policel.
+2. Index Creation Using PROC DATASETS:
+- Adds an index on the LSOAC column.
+3. Using the Index in Data Processing:
+- The useindexby dataset leverages the index for sorting operations.
+4. Message Level Setting:
+- Enables informational messages (MSGLVL=I) to display indexing details.
 
 Indexing Syntax in PROC DATASETS:
 Task	Syntax Example
