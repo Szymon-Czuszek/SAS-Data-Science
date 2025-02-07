@@ -2541,7 +2541,7 @@ Key Features:
     </tr>
 </table>
 
-[ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS to handle large amounts of data
+[ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS to handle large amounts of data. This script demonstrates indexing in SAS using PROC DATASETS and filtering missing values using WHERE conditions.
 
 [IndexVariables.sas](SAS/IndexVariables.sas): Using INDEX to create variables to handle large amounts of data
 
