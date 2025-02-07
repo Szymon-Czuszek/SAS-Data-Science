@@ -2554,6 +2554,11 @@ Uses PROC FREQ to analyze LSOAC distribution.
 Filtering Missing Values:
 Creates usingindex dataset to store records where LSOAC is missing.
 
+Indexing Syntax in PROC DATASETS:
+Task	Syntax Example
+Create Index on One Variable	INDEX CREATE LSOAC /;
+Create Composite Index	INDEX CREATE compind=(CrimeID LSOAC) /;
+
 [IndexVariables.sas](SAS/IndexVariables.sas): Using INDEX to create variables to handle large amounts of data
 
 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data
