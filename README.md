@@ -2549,8 +2549,8 @@ Key Features:
 2. Indexing Operations:
 - Creates an index on LSOAC using PROC DATASETS.
 - Creates a composite index (compind) on CrimeID and LSOAC.
-Frequency Analysis:
-Uses PROC FREQ to analyze LSOAC distribution.
+3. Frequency Analysis:
+- Uses PROC FREQ to analyze LSOAC distribution.
 Filtering Missing Values:
 Creates usingindex dataset to store records where LSOAC is missing.
 
