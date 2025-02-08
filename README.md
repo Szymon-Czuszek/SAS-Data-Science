@@ -2551,8 +2551,8 @@ Key Features:
 - Creates a composite index (compind) on CrimeID and LSOAC.
 3. Frequency Analysis:
 - Uses PROC FREQ to analyze LSOAC distribution.
-Filtering Missing Values:
-Creates usingindex dataset to store records where LSOAC is missing.
+4. Filtering Missing Values:
+- Creates usingindex dataset to store records where LSOAC is missing.
 
 Indexing Benefits: Optimizes search and query performance.
 Filtering with Index: Uses WHERE LSOAC IS MISSING; to extract missing values efficiently.
