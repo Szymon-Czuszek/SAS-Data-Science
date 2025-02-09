@@ -2554,8 +2554,8 @@ Key Features:
 4. Filtering Missing Values:
 - Creates usingindex dataset to store records where LSOAC is missing.
 
-Indexing Benefits: Optimizes search and query performance.
-Filtering with Index: Uses WHERE LSOAC IS MISSING; to extract missing values efficiently.
+1. Indexing Benefits: Optimizes search and query performance.
+- Filtering with Index: Uses WHERE LSOAC IS MISSING; to extract missing values efficiently.
 Composite Indexing: Enables multi-key searches for performance optimization.
 Indexing Syntax in PROC DATASETS:
 Task	Syntax Example
