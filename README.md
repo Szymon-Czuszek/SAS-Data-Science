@@ -2554,6 +2554,9 @@ Key Features:
 4. Filtering Missing Values:
 - Creates usingindex dataset to store records where LSOAC is missing.
 
+<br>
+
+Details:
 1. Indexing Benefits: Optimizes search and query performance.
 - Filtering with Index: Uses WHERE LSOAC IS MISSING; to extract missing values efficiently.
 - Composite Indexing: Enables multi-key searches for performance optimization.
