@@ -2558,9 +2558,9 @@ Key Features:
 - Filtering with Index: Uses WHERE LSOAC IS MISSING; to extract missing values efficiently.
 - Composite Indexing: Enables multi-key searches for performance optimization.
 2. Indexing Syntax in PROC DATASETS:
-Task	Syntax Example
-Create Index on One Variable	INDEX CREATE LSOAC /;
-Create Composite Index	INDEX CREATE compind=(CrimeID LSOAC) /;
+- Task	Syntax Example
+- Create Index on One Variable	INDEX CREATE LSOAC /;
+- Create Composite Index	INDEX CREATE compind=(CrimeID LSOAC) /;
 
 [IndexVariables.sas](SAS/IndexVariables.sas): Using INDEX to create variables to handle large amounts of data
 
