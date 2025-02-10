@@ -2567,6 +2567,16 @@ Details:
 
 [IndexVariables.sas](SAS/IndexVariables.sas): Using INDEX to create variables to handle large amounts of data. This script imports sales data, processes it into a SAS dataset, and performs frequency analysis.
 
+Key Features:
+Library Assignment:
+Uses LIBNAME to assign a path for storing datasets (sa).
+Data Import:
+Reads sales.csv into sa.sal using INFILE.
+Variable Assignment:
+Defines numeric (x1-x8, MSRP) and categorical (Status, ProductLine, ProductCode, CustomerName) variables.
+Frequency Analysis:
+Uses PROC FREQ to analyze CustomerName distribution.
+
 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data
 
 ## Using Macro Variables in SAS
