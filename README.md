@@ -2572,8 +2572,8 @@ Key Features:
 - Uses LIBNAME to assign a path for storing datasets (sa).
 2. Data Import:
 - Reads sales.csv into sa.sal using INFILE.
-Variable Assignment:
-Defines numeric (x1-x8, MSRP) and categorical (Status, ProductLine, ProductCode, CustomerName) variables.
+3. Variable Assignment:
+- Defines numeric (x1-x8, MSRP) and categorical (Status, ProductLine, ProductCode, CustomerName) variables.
 Frequency Analysis:
 Uses PROC FREQ to analyze CustomerName distribution.
 
