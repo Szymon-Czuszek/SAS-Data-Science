@@ -2565,7 +2565,7 @@ Details:
 - Create Index on One Variable	INDEX CREATE LSOAC /;
 - Create Composite Index	INDEX CREATE compind=(CrimeID LSOAC) /;
 
-[IndexVariables.sas](SAS/IndexVariables.sas): Using INDEX to create variables to handle large amounts of data
+[IndexVariables.sas](SAS/IndexVariables.sas): Using INDEX to create variables to handle large amounts of data. This script imports sales data, processes it into a SAS dataset, and performs frequency analysis.
 
 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data
 
