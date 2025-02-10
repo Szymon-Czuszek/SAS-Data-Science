@@ -2574,8 +2574,8 @@ Key Features:
 - Reads sales.csv into sa.sal using INFILE.
 3. Variable Assignment:
 - Defines numeric (x1-x8, MSRP) and categorical (Status, ProductLine, ProductCode, CustomerName) variables.
-Frequency Analysis:
-Uses PROC FREQ to analyze CustomerName distribution.
+4. Frequency Analysis:
+- Uses PROC FREQ to analyze CustomerName distribution.
 
 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data
 
