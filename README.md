@@ -2581,7 +2581,9 @@ Key Features:
 
 ## Using Macro Variables in SAS
 
-[MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab
+[MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab. This script imports crime outcome data, prints a subset, and displays macro variables.
+
+
 
 [MacroVariables2.sas](SAS/MacroVariables2.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
 
