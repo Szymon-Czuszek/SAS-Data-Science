@@ -2583,7 +2583,17 @@ Key Features:
 
 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab. This script imports crime outcome data, prints a subset, and displays macro variables.
 
-
+Key Features:
+Data Import:
+Reads londonoutcomes.csv into a dataset (policel) using INFILE.
+Variable Assignment:
+Defines categorical (CrimeID, ReportedF, FallsW, Location, LSOAC, LSOAN, OutcomeT) and numeric (Longitude, Latitude) variables.
+Subset Printing:
+Uses PROC PRINT to display the first 10 records of CrimeID.
+Macro Variables:
+Defines site = NY and references it in TITLE.
+Macro Debugging:
+%PUT _all_; outputs all macro variables for debugging.
 
 [MacroVariables2.sas](SAS/MacroVariables2.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
 
