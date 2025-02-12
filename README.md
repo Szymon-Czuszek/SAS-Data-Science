@@ -2579,6 +2579,22 @@ Key Features:
 
 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data. This script generates a large dataset, queries data with and without indexing, and demonstrates indexing efficiency.
 
+Key Features:
+Dataset Creation (LARGEDATA):
+
+Generates 800,000 records.
+Computes X, Y, and Z dynamically.
+Assigns categorical values (M, N, O, P) based on a cyclic pattern.
+Data Querying (Without Indexing):
+
+PROC SQL selects specific records (X values: 792286, 486273, 237838) into NOINDEX.
+Index Creation:
+
+Uses PROC DATASETS to add an index on X for faster lookups.
+Data Querying (With Indexing):
+
+PROC SQL retrieves the same records into INDEX but benefits from the indexed search.
+
 ## Using Macro Variables in SAS
 
 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab. This script imports crime outcome data, prints a subset, and displays macro variables.
