@@ -2581,18 +2581,14 @@ Key Features:
 
 Key Features:
 Dataset Creation (LARGEDATA):
-
 Generates 800,000 records.
 Computes X, Y, and Z dynamically.
 Assigns categorical values (M, N, O, P) based on a cyclic pattern.
 Data Querying (Without Indexing):
-
 PROC SQL selects specific records (X values: 792286, 486273, 237838) into NOINDEX.
 Index Creation:
-
 Uses PROC DATASETS to add an index on X for faster lookups.
 Data Querying (With Indexing):
-
 PROC SQL retrieves the same records into INDEX but benefits from the indexed search.
 
 ## Using Macro Variables in SAS
