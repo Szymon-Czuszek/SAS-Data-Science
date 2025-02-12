@@ -2577,7 +2577,7 @@ Key Features:
 4. Frequency Analysis:
 - Uses PROC FREQ to analyze CustomerName distribution.
 
-[IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data
+[IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data. This script generates a large dataset, queries data with and without indexing, and demonstrates indexing efficiency.
 
 ## Using Macro Variables in SAS
 
