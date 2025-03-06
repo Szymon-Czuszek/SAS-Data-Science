@@ -1,4 +1,4 @@
-# SAS Data Science
+# SAS Data Science 📊
 
 ## Overview
 
