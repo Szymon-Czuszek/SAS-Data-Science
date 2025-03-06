@@ -6,7 +6,7 @@ This repository contains SAS code snippets for data science tasks and analyses. 
 
 ## 📂 Contents
 
-## SAS Data Processing Example: "characters" Dataset
+## 📌 SAS Data Processing Example: "characters" Dataset
 
 [CharactersData.sas](SAS/CharactersData.sas): This SAS code snippet demonstrates the creation of a dataset named "characters" containing information about fictional characters. The dataset has four variables:
 
