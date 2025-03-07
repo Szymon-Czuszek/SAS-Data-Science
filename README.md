@@ -20,11 +20,11 @@ This repository contains SAS code snippets for data science tasks and analyses. 
 ### 📊 Data Entry Method
 The data is manually entered using the `cards` section, where each line represents information about a character, including their name, gender, height, and weight.
 
-### Explanation:
-The characters dataset is structured to store information about fictional characters, including their name, gender, height, and weight.
-Each observation in the dataset corresponds to a single character and includes their respective information.
-The data is manually entered into the code using the input statement followed by the cards section.
-This example serves as a template for creating datasets to manage information about characters in a fictional universe, which can be valuable for various analytical and storytelling purposes in SAS.
+### 🔍 Explanation
+- The characters dataset is structured to store information about fictional characters, including their name, gender, height, and weight.
+- Each observation in the dataset corresponds to a single character and includes their respective information.
+- The data is manually entered into the code using the input statement followed by the cards section.
+- This example serves as a template for creating datasets to manage information about characters in a fictional universe, which can be valuable for various analytical and storytelling purposes in SAS.
 
 ## SAS Data Processing Example: "employees" Dataset
 
