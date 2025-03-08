@@ -35,6 +35,7 @@ The data is manually entered using the `cards` section, where each line represen
 3. **age**: Represents the age of the employee.
 4. **weight**: Indicates the weight of the employee.
 
+📊 Data Entry Method
 The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). Each line in the "cards" section represents information about an employee, including their name, gender, age, and weight.
 
 The resulting dataset provides a structured representation of employees' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
