@@ -17,7 +17,7 @@ This repository contains SAS code snippets for data science tasks and analyses. 
 4. **weight**: Indicates the weight of the character.
 
 ### 📊 Data Entry Method
-The data is manually entered using the `cards` section, where each line represents information about a character, including their name, gender, height, and weight.
+- The data is manually entered using the `cards` section, where each line represents information about a character, including their name, gender, height, and weight.
 
 ### 🔍 Explanation
 - The characters dataset is structured to store information about fictional characters, including their name, gender, height, and weight.
@@ -36,9 +36,8 @@ The data is manually entered using the `cards` section, where each line represen
 4. **weight**: Indicates the weight of the employee.
 
 ### 📊 Data Entry Method
-The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). Each line in the "cards" section represents information about an employee, including their name, gender, age, and weight.
-
-The resulting dataset provides a structured representation of employees' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
+- The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). Each line in the "cards" section represents information about an employee, including their name, gender, age, and weight.
+- The resulting dataset provides a structured representation of employees' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
 ### 🔍 Explanation
 - The employees dataset is structured to store information about employees, including their first name, last name, gender, age, and weight.
