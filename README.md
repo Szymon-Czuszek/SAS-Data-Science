@@ -44,8 +44,8 @@ The resulting dataset provides a structured representation of employees' demogra
 - The employees dataset is structured to store information about employees, including their first name, last name, gender, age, and weight.
 - The data is read from the "cards" section using the INFILE statement with a specified delimiter (,). The dsd option is used to handle consecutive delimiters as separate, empty fields.
 - Each line in the "cards" section represents information about an employee, including their first name, last name, gender, age, and weight.
-- The resulting dataset provides a structured representation of employees' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
-
+- The resulting dataset provides a structured representation of employees' demographic information, which can be further analysed or used for statistical modeling and visualisation tasks in SAS.
+ 
 ## SAS Data Processing Example: "guardians" Dataset
 
 [UsingDSD.sas](SAS/UsingDSD.sas): This SAS code snippet demonstrates the creation of a dataset named "guardians" containing information about guardians. The dataset has three variables:
