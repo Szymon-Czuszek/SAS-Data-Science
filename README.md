@@ -54,6 +54,7 @@ This repository contains SAS code snippets for data science tasks and analyses. 
 2. **last_name**: Indicates the last name of the guardian.
 3. **height**: Represents the height of the guardian.
 
+### 📊 Data Entry Method
 The data is read from the "cards" section using the INFILE statement with a specified delimiter (`,`). The `dsd` option is also used, which stands for "Delimiter-Sensitive Data". This option treats consecutive delimiters as separate, empty fields. In this case, it allows the code to properly handle the data where the delimiter is a comma, and there are no missing values for some variables.
 
 ### Explanation:
