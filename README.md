@@ -66,6 +66,7 @@ The dataset can be further analyzed or used for statistical modeling and visuali
 
 [InputUsingAt.sas](SAS/InputUsingAt.sas): This SAS code snippet demonstrates the creation of a dataset named "custom_dataset" containing information about individuals. The dataset has six variables:
 
+### 📊 Data Entry Method
 1. **region**: Represents the region where the individual resides.
 2. **first**: Indicates the first name of the individual.
 3. **last**: Represents the last name of the individual.
