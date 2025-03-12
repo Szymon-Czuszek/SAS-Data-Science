@@ -86,7 +86,7 @@ This example serves as a template for creating datasets to manage information ab
 
 ## 📌 SAS Data Processing Example: "individuals" Dataset
 
-[InputUsing2At.sas](SAS/InputUsing2At.sas): This SAS code snippet demonstrates the creation of a dataset named "individuals" containing information about individuals. The dataset has six variables:
+📄 [InputUsing2At.sas](SAS/InputUsing2At.sas): This SAS code snippet demonstrates the creation of a dataset named "individuals" containing information about individuals. The dataset has six variables:
 
 1. **first**: Indicates the first name of the individual.
 2. **last**: Represents the last name of the individual.
