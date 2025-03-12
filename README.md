@@ -96,7 +96,7 @@ This example serves as a template for creating datasets to manage information ab
 
 The data is entered using the `cards` section, where each line represents information about an individual, including their first name, last name, gender, age, and mass.
 
-### Explanation:
+### 🔍 Explanation
 The individuals dataset is structured to store information about individuals, including their first name, last name, gender, age, and mass.
 The @@ symbols in the input statement indicate that SAS should hold the input pointer at the current line after reading the values. This allows for reading multiple observations from the same line of data without advancing to the next line.
 The data is manually entered using the input statement followed by the cards section, where each line represents information about an individual.
