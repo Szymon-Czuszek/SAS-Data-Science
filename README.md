@@ -83,7 +83,7 @@ The data is entered using the `cards` section, where each line represents inform
 - A conditional statement is used to delete observations where the region is 'Midwest', demonstrating data manipulation capabilities in SAS.
 This example serves as a template for creating datasets to manage information about individuals, which can be valuable for various analytical and reporting purposes in SAS.
 
-## SAS Data Processing Example: "individuals" Dataset
+## 📌 SAS Data Processing Example: "individuals" Dataset
 
 [InputUsing2At.sas](SAS/InputUsing2At.sas): This SAS code snippet demonstrates the creation of a dataset named "individuals" containing information about individuals. The dataset has six variables:
 
