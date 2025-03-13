@@ -95,6 +95,7 @@ This example serves as a template for creating datasets to manage information ab
 4. **years**: Represents the age of the individual.
 5. **mass**: Indicates the mass of the individual.
 
+### 📊 Data Entry Method
 The data is entered using the `cards` section, where each line represents information about an individual, including their first name, last name, gender, age, and mass.
 
 ### 🔍 Explanation
