@@ -117,7 +117,7 @@ This example serves as a template for creating datasets to manage information ab
 ### 📊 Data Entry Method
 The data is read from the "cards" section using the INPUT statement with specified column positions. Each line in the "cards" section represents information about an individual, including their unique identifier, age, gender, and weight.
 
-### Explanation:
+### 🔍 Explanation
 - The personnel dataset is structured to store information about individuals, including their unique identifier, age, gender, and weight.
 - The data is read from the "cards" section using the INPUT statement with specified column positions. Each line in the "cards" section represents information about an individual, including their unique identifier, age, gender, and weight.
 - The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
