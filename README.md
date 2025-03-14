@@ -114,6 +114,7 @@ This example serves as a template for creating datasets to manage information ab
 3. **sex**: Indicates the gender of the individual (M for male, F for female).
 4. **mass**: Indicates the weight of the individual.
 
+### 📊 Data Entry Method
 The data is read from the "cards" section using the INPUT statement with specified column positions. Each line in the "cards" section represents information about an individual, including their unique identifier, age, gender, and weight.
 
 ### Explanation:
