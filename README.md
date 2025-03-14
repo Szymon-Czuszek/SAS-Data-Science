@@ -108,6 +108,7 @@ This example serves as a template for creating datasets to manage information ab
 
 📄 [InputUsingFixedWidth.sas](SAS/InputUsingFixedWidth.sas): This SAS code snippet demonstrates the creation of a dataset named "personnel" containing information about individuals. The dataset has four variables:
 
+### 📝 Dataset Structure
 1. **identifier**: Represents the unique identifier of the individual.
 2. **years**: Indicates the age of the individual.
 3. **sex**: Indicates the gender of the individual (M for male, F for female).
