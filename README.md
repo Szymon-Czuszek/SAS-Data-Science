@@ -133,6 +133,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 4. **years**: Represents the age of the individual.
 5. **mass**: Indicates the weight of the individual.
 
+### 📊 Data Entry Method
 The data is read from the "cards" section using the INPUT statement with specified column positions. The `#` symbol is used to skip a specified number of columns before reading the next variable. Each line in the "cards" section represents information about an individual, including their forename, surname, gender, age, and weight.
 
 ### Explanation:
