@@ -126,6 +126,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 
 📄 [InputUsingHash.sas](SAS/InputUsingHash.sas): This SAS code snippet demonstrates the creation of a dataset named "individual_info" containing information about individuals. The dataset has four variables:
 
+### 📝 Dataset Structure
 1. **forename**: Represents the forename of the individual.
 2. **surname**: Represents the surname of the individual.
 3. **sex**: Indicates the gender of the individual (M for male, F for female).
