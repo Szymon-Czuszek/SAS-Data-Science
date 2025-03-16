@@ -156,7 +156,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 ### 📊 Data Entry Method
 The data is read from the "cards" section using the INPUT statement with specified column positions. The `/` symbol is used to indicate a continuation of input data from the previous line. Each line in the "cards" section represents information about an individual, including their first name, last name, gender, age, and weight.
 
-### Explanation:
+### 🔍 Explanation
 - The personal_data dataset is structured to store information about individuals, including their first name, last name, gender, age, and weight.
 - The data is read from the "cards" section using the INPUT statement with specified column positions. The / symbol is used to indicate a continuation of input data from the previous line. This allows for splitting the input data over multiple lines for better readability.
 - Each line in the "cards" section represents information about an individual, including their first name, last name, gender, age, and weight.
