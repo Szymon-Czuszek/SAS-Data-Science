@@ -146,6 +146,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 
 📄 [InputUsingSlash.sas](SAS/InputUsingSlash.sas): This SAS code snippet demonstrates the creation of a dataset named "personal_data" containing information about individuals. The dataset has four variables:
 
+### 📝 Dataset Structure
 1. **first_name**: Represents the first name of the individual.
 2. **last_name**: Represents the last name of the individual.
 3. **sex**: Indicates the gender of the individual (M for male, F for female).
