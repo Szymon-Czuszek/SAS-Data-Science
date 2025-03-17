@@ -166,6 +166,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 
 📄 [InputUsingProcImportExcel.sas](SAS/InputUsingProcImportExcel.sas): This SAS code snippet demonstrates the import of data from an Excel file named "employee_data.xlsx" into a dataset named "employee_data". 
 
+### 📝 Dataset Structure
 The PROC IMPORT procedure is used to import data from the specified Excel file. The FILENAME statement assigns a fileref "inputfile" to the Excel file path. The PROC IMPORT statement specifies the input data file as "inputfile", the DBMS (Database Management System) as "xlsx" to indicate that the input file is an Excel file, and the OUT option specifies the name of the output SAS dataset as "employee_data". The GETNAMES option is set to "yes" to indicate that the first row of the Excel file contains variable names.
 
 ### Explanation:
