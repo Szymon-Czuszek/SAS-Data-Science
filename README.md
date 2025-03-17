@@ -169,7 +169,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 ### 📝 Dataset Structure
 The PROC IMPORT procedure is used to import data from the specified Excel file. The FILENAME statement assigns a fileref "inputfile" to the Excel file path. The PROC IMPORT statement specifies the input data file as "inputfile", the DBMS (Database Management System) as "xlsx" to indicate that the input file is an Excel file, and the OUT option specifies the name of the output SAS dataset as "employee_data". The GETNAMES option is set to "yes" to indicate that the first row of the Excel file contains variable names.
 
-### Explanation:
+### 🔍 Explanation
 - The FILENAME statement assigns a fileref "inputfile" to the Excel file located at '/home/x62422869/The Simplest Guide to SAS/employee_data.xlsx'.
 - The PROC IMPORT procedure reads the data from the Excel file specified by the FILENAME statement.
 - The DBMS option is set to "xlsx" to indicate that the input file format is Excel.
