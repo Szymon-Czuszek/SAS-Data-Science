@@ -185,8 +185,7 @@ The PROC IMPORT procedure is used to import data from the specified Excel file. 
 ### 📝 Dataset Structure
 The DATA step is used to create the "selected_females" dataset. Data is copied from the existing dataset "sashelp.class", and the WHERE statement filters observations to include only females.
 
-### Explanation:
-
+### 🔍 Explanation
 - The DATA statement begins the DATA step and specifies the name of the output dataset as "selected_females".
 - The SET statement reads data from the existing dataset "sashelp.class".
 - The WHERE statement filters observations based on the condition specified (sex = "F"), selecting only females.
