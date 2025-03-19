@@ -182,7 +182,7 @@ The PROC IMPORT procedure is used to import data from the specified Excel file. 
 
 📄 [UsingWhereDataStep.sas](SAS/UsingWhereDataStep.sas): This SAS code snippet demonstrates the creation of a dataset named "selected_females" containing information about selected females from the "sashelp.class" dataset. 
 
-### 📝 Dataset Structure
+### 📊 Data Entry Method
 The DATA step is used to create the "selected_females" dataset. Data is copied from the existing dataset "sashelp.class", and the WHERE statement filters observations to include only females.
 
 ### 🔍 Explanation
@@ -196,6 +196,7 @@ The DATA step is used to create the "selected_females" dataset. Data is copied f
 
 📄 [UsingWhereProcStep.sas](SAS/UsingWhereProcStep.sas): This SAS code snippet demonstrates the printing of data from the "sashelp.class" dataset for selected females aged 12.
 
+### 📊 Data Entry Method
 The PROC PRINT procedure is used to print data from the specified dataset. The DATA statement is not used in this code snippet as PROC PRINT operates differently from a DATA step. PROC PRINT is a procedure used for data reporting and does not involve the creation or modification of datasets. Instead, it directly operates on existing datasets to display or summarize their contents.
 
 ### Explanation:
