@@ -199,8 +199,7 @@ The DATA step is used to create the "selected_females" dataset. Data is copied f
 ### 📊 Data Entry Method
 The PROC PRINT procedure is used to print data from the specified dataset. The DATA statement is not used in this code snippet as PROC PRINT operates differently from a DATA step. PROC PRINT is a procedure used for data reporting and does not involve the creation or modification of datasets. Instead, it directly operates on existing datasets to display or summarize their contents.
 
-### Explanation:
-
+### 🔍 Explanation
 - The PROC PRINT statement specifies the procedure used for printing data.
 - The DATA option indicates the dataset from which data will be printed, in this case, "sashelp.class".
 - The WHERE statement filters observations based on the conditions specified (sex = "F" and age = 12), selecting only females aged 12.
