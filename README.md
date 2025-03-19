@@ -192,7 +192,7 @@ The DATA step is used to create the "selected_females" dataset. Data is copied f
 - The RUN statement marks the end of the DATA step.
 - This code snippet creates a new dataset named "selected_females" by copying data from the existing "sashelp.class" dataset and including only observations where the sex variable is "F" (indicating females). The resulting dataset can be further analyzed or used for various tasks in SAS.
 
-## SAS Data Printing Example: "selected_females_age_12" Dataset
+## 📌 SAS Data Printing Example: "selected_females_age_12" Dataset
 
 [UsingWhereProcStep.sas](SAS/UsingWhereProcStep.sas): This SAS code snippet demonstrates the printing of data from the "sashelp.class" dataset for selected females aged 12.
 
