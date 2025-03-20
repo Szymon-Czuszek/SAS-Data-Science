@@ -208,7 +208,7 @@ The PROC PRINT procedure is used to print data from the specified dataset. The D
 
 ## 📌 SAS Data Processing Example: "modified_student_info" Dataset
 
-[UsingCharacterFunctions.sas](SAS/UsingCharacterFunctions.sas): This SAS code snippet demonstrates the processing of data from the "student_info" dataset to create a new dataset named "modified_student_info" with modified variables.
+📄 [UsingCharacterFunctions.sas](SAS/UsingCharacterFunctions.sas): This SAS code snippet demonstrates the processing of data from the "student_info" dataset to create a new dataset named "modified_student_info" with modified variables.
 
 The DATA step is used to process data and create the "modified_student_info" dataset. Several transformations are applied to the variables first_name and last_name.
 
