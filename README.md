@@ -213,8 +213,7 @@ The PROC PRINT procedure is used to print data from the specified dataset. The D
 ### 📊 Data Entry Method
 The DATA step is used to process data and create the "modified_student_info" dataset. Several transformations are applied to the variables first_name and last_name.
 
-### Explanation:
-
+### 🔍 Explanation
 - The DATA statement begins the DATA step and specifies the name of the output dataset as "modified_student_info".
 - The SET statement reads data from the existing dataset "student_info".
 - Various DATA step statements are used to manipulate the data:
