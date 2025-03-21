@@ -229,6 +229,7 @@ The DATA step is used to process data and create the "modified_student_info" dat
 
 📄 [UsingSubstrCatTrimStripLeft.sas](SAS/UsingSubstrCatTrimStripLeft.sas): This SAS code snippet demonstrates the processing of data from the "student_records" dataset to create a new dataset named "modified_student_records" with modified variables.
 
+### 📊 Data Entry Method
 The DATA step is used to process data and create the "modified_student_records" dataset. Various transformations are applied to the variables first_name, last_name, and course.
 
 ### Explanation:
