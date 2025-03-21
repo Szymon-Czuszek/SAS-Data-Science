@@ -232,8 +232,7 @@ The DATA step is used to process data and create the "modified_student_info" dat
 ### 📊 Data Entry Method
 The DATA step is used to process data and create the "modified_student_records" dataset. Various transformations are applied to the variables first_name, last_name, and course.
 
-### Explanation:
-
+### 🔍 Explanation
 - The DATA statement begins the DATA step and specifies the name of the output dataset as "modified_student_records".
 - The SET statement reads data from the existing dataset "student_records".
 - Various DATA step statements are used to manipulate the data:
