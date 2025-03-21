@@ -225,7 +225,7 @@ The DATA step is used to process data and create the "modified_student_info" dat
 - The RUN statement marks the end of the DATA step.
 - This code snippet creates a new dataset named "modified_student_info" by processing data from the "student_info" dataset. It applies various transformations to the first_name and last_name variables, creating new variables with modified values. The resulting dataset can be further analyzed or used for various tasks in SAS.
 
-## SAS Data Processing Example: "modified_student_records" Dataset
+## 📌 SAS Data Processing Example: "modified_student_records" Dataset
 
 [UsingSubstrCatTrimStripLeft.sas](SAS/UsingSubstrCatTrimStripLeft.sas): This SAS code snippet demonstrates the processing of data from the "student_records" dataset to create a new dataset named "modified_student_records" with modified variables.
 
