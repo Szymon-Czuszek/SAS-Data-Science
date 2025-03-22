@@ -250,8 +250,7 @@ The DATA step is used to process data and create the "modified_student_records" 
 ### 📊 Data Entry Method
 The DATA step is used to create the "text_processing" dataset and perform text processing operations on character strings.
 
-### Explanation:
-
+### 🔍 Explanation
 - The DATA statement begins the DATA step and specifies the name of the output dataset as "text_processing".
 - Character strings are assigned to variables a.
 - The COMPRESS function removes all leading, trailing, and repeated spaces from the character string assigned to variable a and stores the result in variable b.
