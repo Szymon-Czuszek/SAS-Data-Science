@@ -243,7 +243,7 @@ The DATA step is used to process data and create the "modified_student_records" 
 - The RUN statement marks the end of the DATA step.
 - This code snippet creates a new dataset named "modified_student_records" by processing data from the "student_records" dataset. It applies various transformations to the first_name, last_name, and course variables, creating new variables with modified values. The resulting dataset can be further analyzed or used for various tasks in SAS.
 
-## SAS Text Processing Example: "text_processing" Dataset
+## 📌 SAS Text Processing Example: "text_processing" Dataset
 
 [UsingCompressCompbl.sas](SAS/UsingCompressCompbl.sas): This SAS code snippet demonstrates text processing functions using the COMPRESS and COMPBL functions.
 
