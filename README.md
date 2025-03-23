@@ -262,6 +262,7 @@ The DATA step is used to create the "text_processing" dataset and perform text p
 
 📄 [IfElseIf.sas](SAS/IfElseIf.sas): This SAS code snippet demonstrates the processing of data from the "sashelp.class" dataset to calculate Body Mass Index (BMI) and determine the weight status of students.
 
+### 📊 Data Entry Method
 The DATA step is used to process data and create the "student_data" dataset. BMI and weight status are calculated based on the Weight and Height variables.
 
 ### 🔍 Explanation
