@@ -287,8 +287,7 @@ The DATA step is used to process data and create the "student_data" dataset. BMI
 ### 📊 Data Entry Method
 The DATA step is used to create the "date_comparison" dataset and perform date calculations.
 
-### Explanation:
-
+### 🔍 Explanation
 - The DATA statement begins the DATA step and specifies the name of the output dataset as "date_comparison".
 - Date literals are assigned to variables a, b, c, and d, representing specific dates in SAS date format.
 - The difference between dates c and d is calculated and stored in the variable diff.
