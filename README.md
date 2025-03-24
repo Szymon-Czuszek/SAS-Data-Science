@@ -284,6 +284,7 @@ The DATA step is used to process data and create the "student_data" dataset. BMI
 
 📄 [DatesInSAS.sas](SAS/DatesInSAS.sas): This SAS code snippet demonstrates the comparison of dates in SAS.
 
+### 📊 Data Entry Method
 The DATA step is used to create the "date_comparison" dataset and perform date calculations.
 
 ### Explanation:
