@@ -282,7 +282,7 @@ The DATA step is used to process data and create the "student_data" dataset. BMI
 
 ## 📌 SAS Date Comparison Example: "date_comparison" Dataset
 
-[DatesInSAS.sas](SAS/DatesInSAS.sas): This SAS code snippet demonstrates the comparison of dates in SAS.
+📄 [DatesInSAS.sas](SAS/DatesInSAS.sas): This SAS code snippet demonstrates the comparison of dates in SAS.
 
 The DATA step is used to create the "date_comparison" dataset and perform date calculations.
 
