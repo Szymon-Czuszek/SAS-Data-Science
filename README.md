@@ -280,7 +280,7 @@ The DATA step is used to process data and create the "student_data" dataset. BMI
 - The RUN statement marks the end of the DATA step.
 - This code snippet creates a new dataset named "student_data" by processing data from the "sashelp.class" dataset. It calculates BMI and determines weight status for each student based on BMI values. The resulting dataset can be further analyzed or used for various tasks in SAS.
 
-## SAS Date Comparison Example: "date_comparison" Dataset
+## 📌 SAS Date Comparison Example: "date_comparison" Dataset
 
 [DatesInSAS.sas](SAS/DatesInSAS.sas): This SAS code snippet demonstrates the comparison of dates in SAS.
 
