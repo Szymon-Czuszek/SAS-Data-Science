@@ -298,8 +298,7 @@ The DATA step is used to create the "date_comparison" dataset and perform date c
 
 📄 [DropKeepRename.sas](SAS/DropKeepRename.sas): This SAS code snippet processes student health information from the "sashelp.class" dataset to calculate Body Mass Index (BMI) and modify variable names.
 
-### Explanation:
-
+### 🔍 Explanation
 - The DATA statement initiates the DATA step to create a new dataset named "class" by processing data from the existing dataset "sashelp.class".
 - The SET statement reads data from the "sashelp.class" dataset.
 - Several calculations are performed:
