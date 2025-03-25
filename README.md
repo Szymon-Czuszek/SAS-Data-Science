@@ -312,7 +312,7 @@ The DATA step is used to create the "date_comparison" dataset and perform date c
 - Although the variable Sex is renamed to Gender, it must still be referenced by its original name in subsequent processing steps. This is a limitation of SAS where the RENAME statement only changes the label of the variable, not its internal name.
 - This code snippet showcases data processing techniques in SAS, including variable renaming, calculation of derived variables (BMI), and selecting specific variables for analysis or reporting purposes.
 
-## Processing Employee Compensation Data with "employee_compensation" Dataset
+## 📌 Processing Employee Compensation Data with "employee_compensation" Dataset
 
 [SummingNull.sas](SAS/SummingNull.sas): The DATA step creates a dataset named "employee_compensation" with variables name, salary, and bonus.
 
