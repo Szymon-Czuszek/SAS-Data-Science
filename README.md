@@ -316,6 +316,7 @@ The DATA step is used to create the "date_comparison" dataset and perform date c
 
 📄 [SummingNull.sas](SAS/SummingNull.sas): The DATA step creates a dataset named "employee_compensation" with variables name, salary, and bonus.
 
+### 📝 Dataset Structure
 Four observations are provided with corresponding values for each variable.
 Calculation of Net Salary Using "+" Operator
 The DATA step "testdata1" calculates the net salary by adding the salary and bonus using the "+" operator.
