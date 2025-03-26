@@ -331,7 +331,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - This demonstrates a difference in behavior between the "+" operator and the SUM function when handling missing values in SAS.
 - These SAS code snippets illustrate how different methods of calculation can produce different results when dealing with missing values in SAS datasets.
 
-## SAS Numeric Functions Example with _NULL_ Dataset
+## 📌 SAS Numeric Functions Example with _NULL_ Dataset
 
 [NullDatasetAndFunctions.sas](SAS/NullDatasetAndFunctions.sas): Performing operations on a _NULL_ data set.
 
