@@ -325,7 +325,7 @@ Calculation of Net Salary Using SUM Function
 The DATA step "testdata2" calculates the net salary using the SUM function.
 The SET statement reads data from the "employee_compensation" dataset.
 
-### Explanation:
+### 🔍 Explanation
 - In the "testdata1" DATA step, the "+" operator is used to calculate the net salary. However, when a missing value (.) is encountered in the "bonus" variable, SAS treats it as a missing value and sets the result of the addition to missing.
 - In the "testdata2" DATA step, the SUM function is used to calculate the net salary. The SUM function treats missing values as zeros and continues the addition. Therefore, even when a missing value (.) is present in the "bonus" variable, the SUM function still calculates the sum of salary and bonus correctly.
 - This demonstrates a difference in behavior between the "+" operator and the SUM function when handling missing values in SAS.
