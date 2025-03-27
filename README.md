@@ -346,8 +346,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 
 [FunctionScan.sas](SAS/FunctionScan.sas): This SAS code snippet demonstrates how to use the SCAN function to extract specific words or tokens from a string in SAS. In this example, the fourth word from the given string representing the name of a country is extracted and stored in a new variable for further analysis or processing.
 
-### Explanation:
-
+### 🔍 Explanation
 - The DATA step creates a dataset named "country_data".
 - A character variable 'a' is assigned the string '     United     Kingdom   of    Great    Britain   '.
 - The SCAN function is used to extract the fourth word from the string stored in variable 'a'.
