@@ -355,7 +355,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 
 ## SAS String Manipulation Example: Finding Substrings using the "country_info" Dataset
 
-[UsingIndexFunctions.sas](SAS/UsingIndexFunctions.sas): This SAS code snippet demonstrates how to use the INDEXC and INDEXW functions to find substrings within a string in SAS. In this example, the position of the character "A" and the word "Emirates" within the given string representing a country name is determined for further analysis or processing.
+📄 [UsingIndexFunctions.sas](SAS/UsingIndexFunctions.sas): This SAS code snippet demonstrates how to use the INDEXC and INDEXW functions to find substrings within a string in SAS. In this example, the position of the character "A" and the word "Emirates" within the given string representing a country name is determined for further analysis or processing.
 
 ### 🔍 Explanation
 - The DATA step creates a dataset named "country_info".
