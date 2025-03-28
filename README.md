@@ -344,7 +344,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 
 ## 📌 SAS String Manipulation Example: Extracting Country Name using the "country_data" Dataset
 
-[FunctionScan.sas](SAS/FunctionScan.sas): This SAS code snippet demonstrates how to use the SCAN function to extract specific words or tokens from a string in SAS. In this example, the fourth word from the given string representing the name of a country is extracted and stored in a new variable for further analysis or processing.
+📄 [FunctionScan.sas](SAS/FunctionScan.sas): This SAS code snippet demonstrates how to use the SCAN function to extract specific words or tokens from a string in SAS. In this example, the fourth word from the given string representing the name of a country is extracted and stored in a new variable for further analysis or processing.
 
 ### 🔍 Explanation
 - The DATA step creates a dataset named "country_data".
