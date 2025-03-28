@@ -353,7 +353,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - The result, representing the country name "Great", is stored in a new variable named "country".
 - The RUN statement marks the end of the DATA step.
 
-## SAS String Manipulation Example: Finding Substrings using the "country_info" Dataset
+## 📌 SAS String Manipulation Example: Finding Substrings using the "country_info" Dataset
 
 📄 [UsingIndexFunctions.sas](SAS/UsingIndexFunctions.sas): This SAS code snippet demonstrates how to use the INDEXC and INDEXW functions to find substrings within a string in SAS. In this example, the position of the character "A" and the word "Emirates" within the given string representing a country name is determined for further analysis or processing.
 
