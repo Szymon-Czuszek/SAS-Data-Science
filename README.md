@@ -365,7 +365,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - The INDEXW function is used to find the position of the word "Emirates" in the original string. The result is stored in variable 'c'.
 - The RUN statement marks the end of the DATA step.
 
-## SAS Data Generation Example: Generating Numeric Data with "numeric_data" Dataset
+## 📌 SAS Data Generation Example: Generating Numeric Data with "numeric_data" Dataset
 
 [UsingDoLoop.sas](SAS/UsingDoLoop.sas): This SAS code snippet demonstrates how to generate numeric data using a DO loop in SAS. In this example, variables x_value and y_value are assigned values from 1 to 10 iteratively, resulting in a dataset containing numeric data pairs for further analysis or processing.
 
