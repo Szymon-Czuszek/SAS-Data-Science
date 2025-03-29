@@ -369,8 +369,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 
 📄 [UsingDoLoop.sas](SAS/UsingDoLoop.sas): This SAS code snippet demonstrates how to generate numeric data using a DO loop in SAS. In this example, variables x_value and y_value are assigned values from 1 to 10 iteratively, resulting in a dataset containing numeric data pairs for further analysis or processing.
 
-### Explanation:
-
+### 🔍 Explanation
 - The DATA step creates a dataset named "numeric_data".
 - Within a DO loop that iterates from 1 to 10, two variables x_value and y_value are assigned values equal to the loop index.
 - The OUTPUT statement writes the values of x_value and y_value to the dataset for each iteration of the loop.
