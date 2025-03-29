@@ -376,7 +376,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - The DROP statement removes the loop index variable 'index' from the dataset.
 - The RUN statement marks the end of the DATA step.
 
-## SAS Data Processing Example: Calculating BMI
+## 📌 SAS Data Processing Example: Calculating BMI
 
 [UsingOutputFunction.sas](SAS/UsingOutputFunction.sas): This SAS code snippet demonstrates how to calculate Body Mass Index (BMI) using data from the "sashelp.class" dataset. It calculates BMI values both in metric and imperial units and writes them to a new dataset for further analysis or reporting purposes.
 
