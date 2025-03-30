@@ -391,7 +391,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 
 ## 📌 SAS Data Entry Example: Recording Employee Bonuses
 
-[UsingInformat.sas](SAS/UsingInformat.sas): This SAS code snippet demonstrates how to record employee bonuses in a dataset using manual data entry. It defines variables for employee name, bonus amount, and date of birth, assigns appropriate formats to the variables, and then manually enters the data for each employee into the dataset for further analysis or reporting.
+📄 [UsingInformat.sas](SAS/UsingInformat.sas): This SAS code snippet demonstrates how to record employee bonuses in a dataset using manual data entry. It defines variables for employee name, bonus amount, and date of birth, assigns appropriate formats to the variables, and then manually enters the data for each employee into the dataset for further analysis or reporting.
 
 ### Explanation:
 
