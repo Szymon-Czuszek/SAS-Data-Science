@@ -378,7 +378,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 
 ## 📌 SAS Data Processing Example: Calculating BMI
 
-[UsingOutputFunction.sas](SAS/UsingOutputFunction.sas): This SAS code snippet demonstrates how to calculate Body Mass Index (BMI) using data from the "sashelp.class" dataset. It calculates BMI values both in metric and imperial units and writes them to a new dataset for further analysis or reporting purposes.
+📄 [UsingOutputFunction.sas](SAS/UsingOutputFunction.sas): This SAS code snippet demonstrates how to calculate Body Mass Index (BMI) using data from the "sashelp.class" dataset. It calculates BMI values both in metric and imperial units and writes them to a new dataset for further analysis or reporting purposes.
 
 ### Explanation:
 
