@@ -434,8 +434,7 @@ This SAS script demonstrates the process of importing, formatting, and analyzing
 
 📄 [InfileStatement.sas](SAS/InfileStatement.sas): This SAS script imports student data from an external data file named "my_data_file.dat" located at '/home/u62422869/The Simplest Guide to SAS/'.
 
-### Explanation:
-
+### 🔍 Explanation
 1. **File Location Specification:**
    - The FILENAME statement assigns a fileref "my_data" to the external data file "my_data_file.dat".
 
