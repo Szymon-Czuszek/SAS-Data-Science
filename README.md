@@ -474,7 +474,7 @@ This SAS script demonstrates the process of importing student data from an exter
 
 This SAS script demonstrates how to combine data from multiple datasets into a single dataset in SAS. It imports and defines variables for student data in two separate datasets, and then combines them into a unified dataset for further analysis or processing.
 
-## SAS Data Append Example: Appending Student Information
+## 📌 SAS Data Append Example: Appending Student Information
 
 [AppendingDataUsingProc.sas](SAS/AppendingDataUsingProc.sas): This SAS script appends data from two datasets "student_info_1" and "student_info_2" into a single dataset named "combined_student_info".
 
