@@ -452,7 +452,7 @@ This SAS script demonstrates the process of importing student data from an exter
 
 ## 📌 SAS Data Combination Example: Combining Student Data
 
-[AppendingData.sas](SAS/AppendingData.sas): This SAS script combines data from two datasets "student_data_1" and "student_data_2" into a single dataset named "combined_student_data".
+📄 [AppendingData.sas](SAS/AppendingData.sas): This SAS script combines data from two datasets "student_data_1" and "student_data_2" into a single dataset named "combined_student_data".
 
 ### 🔍 Explanation
 1. **Data Import and Definition (Dataset A):**
