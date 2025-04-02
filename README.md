@@ -450,7 +450,7 @@ This SAS script demonstrates the process of importing, formatting, and analyzing
 
 This SAS script demonstrates the process of importing student data from an external file into a SAS dataset. It specifies the file location, defines the variables and their positions within the input data lines, and then reads the data accordingly to create the "student_data" dataset for further analysis or processing.
 
-## SAS Data Combination Example: Combining Student Data
+## 📌 SAS Data Combination Example: Combining Student Data
 
 [AppendingData.sas](SAS/AppendingData.sas): This SAS script combines data from two datasets "student_data_1" and "student_data_2" into a single dataset named "combined_student_data".
 
