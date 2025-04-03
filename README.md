@@ -454,7 +454,8 @@ This SAS script demonstrates the process of importing student data from an exter
 
 📄 [AppendingData.sas](SAS/AppendingData.sas): This SAS script combines data from two datasets "student_data_1" and "student_data_2" into a single dataset named "combined_student_data".
 
-### 🔍 Explanation
+### 📊 Data Entry Method
+
 1. **Data Import and Definition (Dataset A):**
    - The DATA step "student_data_1" creates a dataset to store student information.
    - The INPUT statement defines the variables and their types: student_name, gender, student_age, and student_weight.
@@ -472,13 +473,14 @@ This SAS script demonstrates the process of importing student data from an exter
    - The SET statement is used to concatenate the observations from datasets A and B.
    - The RUN statement marks the end of the DATA step.
 
+### 🔍 Explanation
 This SAS script demonstrates how to combine data from multiple datasets into a single dataset in SAS. It imports and defines variables for student data in two separate datasets, and then combines them into a unified dataset for further analysis or processing.
 
 ## 📌 SAS Data Append Example: Appending Student Information
 
 📄 [AppendingDataUsingProc.sas](SAS/AppendingDataUsingProc.sas): This SAS script appends data from two datasets "student_info_1" and "student_info_2" into a single dataset named "combined_student_info".
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **Data Import and Definition (Dataset A):**
    - The DATA step "student_info_1" creates a dataset to store student information.
@@ -499,6 +501,7 @@ This SAS script demonstrates how to combine data from multiple datasets into a s
    - The DATA option specifies the dataset from which data will be appended.
    - The RUN statement marks the end of each PROC APPEND procedure.
 
+### 🔍 Explanation
 This SAS script demonstrates how to append data from multiple datasets into a single dataset in SAS. It imports and defines variables for student data in two separate datasets, and then appends them into a unified dataset for further analysis or processing. Note that running the code multiple times may result in duplicated appended records.
 
 ## SAS Data Deduplication Example: Removing Duplicate Student Records
