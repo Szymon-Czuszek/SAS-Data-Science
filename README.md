@@ -504,7 +504,7 @@ This SAS script demonstrates how to combine data from multiple datasets into a s
 ### 🔍 Explanation
 This SAS script demonstrates how to append data from multiple datasets into a single dataset in SAS. It imports and defines variables for student data in two separate datasets, and then appends them into a unified dataset for further analysis or processing. Note that running the code multiple times may result in duplicated appended records.
 
-## SAS Data Deduplication Example: Removing Duplicate Student Records
+## 📌 SAS Data Deduplication Example: Removing Duplicate Student Records
 
 [UsingNoDupKey.sas](SAS/UsingNoDupKey.sas): This SAS script processes student records from the "student_records" dataset to remove duplicate entries and create a sorted dataset named "sorted_student_records".
 
