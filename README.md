@@ -512,7 +512,7 @@ This SAS script demonstrates how to append data from multiple datasets into a si
 
 📄 [UsingNoDupKey.sas](SAS/UsingNoDupKey.sas): This SAS script processes student records from the "student_records" dataset to remove duplicate entries and create a sorted dataset named "sorted_student_records".
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **Data Import and Definition (Dataset A):**
    - The DATA step "student_records" creates a dataset to store student information.
