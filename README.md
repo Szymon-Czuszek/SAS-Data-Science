@@ -404,7 +404,8 @@ The SET statement reads data from the "employee_compensation" dataset.
 
 📄 [ProjectCars.sas](SAS/ProjectCars.sas): This SAS script, named "CarsProject.SAS", performs data import, manipulation, and analysis tasks related to car data from different regions.
 
-### 🔍 Explanation
+### 📊 Data Entry Method
+
 1. **Importing European Car Data:**
    - The PROC IMPORT procedure imports data from an Excel file named "carseu.xlsx" located at '/home/u62422869/The Simplest Guide to SAS/'.
    - The OUT option specifies the output dataset as "cars_eu" and replaces it if it already exists.
@@ -428,13 +429,15 @@ The SET statement reads data from the "employee_compensation" dataset.
 6. **Printing Asian Cars with MSRP over $150,000:**
    - The PROC PRINT procedure prints the dataset "cars_asia", showing only records where MSRP is greater than $150,000.
 
+### 🔍 Explanation
 This SAS script demonstrates the process of importing, formatting, and analyzing car data from different regions, providing insights into high-value cars in both European and Asian markets.
 
 ## 📌 SAS Data Import Example: Student Data
 
 📄 [InfileStatement.sas](SAS/InfileStatement.sas): This SAS script imports student data from an external data file named "my_data_file.dat" located at '/home/u62422869/The Simplest Guide to SAS/'.
 
-### 🔍 Explanation
+### 📊 Data Entry Method
+
 1. **File Location Specification:**
    - The FILENAME statement assigns a fileref "my_data" to the external data file "my_data_file.dat".
 
@@ -448,6 +451,7 @@ This SAS script demonstrates the process of importing, formatting, and analyzing
      - Variable "Weight" is read from the current position (@18) in the input line.
    - The RUN statement marks the end of the DATA step.
 
+### 🔍 Explanation
 This SAS script demonstrates the process of importing student data from an external file into a SAS dataset. It specifies the file location, defines the variables and their positions within the input data lines, and then reads the data accordingly to create the "student_data" dataset for further analysis or processing.
 
 ## 📌 SAS Data Combination Example: Combining Student Data
@@ -506,7 +510,7 @@ This SAS script demonstrates how to append data from multiple datasets into a si
 
 ## 📌 SAS Data Deduplication Example: Removing Duplicate Student Records
 
-[UsingNoDupKey.sas](SAS/UsingNoDupKey.sas): This SAS script processes student records from the "student_records" dataset to remove duplicate entries and create a sorted dataset named "sorted_student_records".
+📄 [UsingNoDupKey.sas](SAS/UsingNoDupKey.sas): This SAS script processes student records from the "student_records" dataset to remove duplicate entries and create a sorted dataset named "sorted_student_records".
 
 ### Explanation:
 
