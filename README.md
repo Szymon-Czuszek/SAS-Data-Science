@@ -534,7 +534,7 @@ This SAS script demonstrates how to remove duplicate records from a dataset in S
 
 📄 [UsingNoDup.sas](SAS/UsingNoDup.sas): This SAS script processes employee records from the "employee_data" dataset to remove duplicate entries and create a sorted dataset named "sorted_employee_data".
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **Data Import and Definition (Dataset A):**
    - The DATA step "employee_data" creates a dataset to store employee information.
