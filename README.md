@@ -527,6 +527,7 @@ This SAS script demonstrates how to append data from multiple datasets into a si
    - The BY statement in PROC SORT specifies the variable by which the dataset should be sorted.
    - The RUN statement marks the end of the PROC SORT procedure.
 
+### 🔍 Explanation
 This SAS script demonstrates how to remove duplicate records from a dataset in SAS using the PROC SORT procedure with the NODUPKEY option. It sorts the dataset by student name and removes duplicate entries, resulting in a sorted dataset with unique student records.
 
 ## SAS Data Deduplication Example: Removing Duplicate Employee Records
