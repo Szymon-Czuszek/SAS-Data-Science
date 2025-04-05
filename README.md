@@ -549,6 +549,7 @@ This SAS script demonstrates how to remove duplicate records from a dataset in S
    - The BY statement in PROC SORT specifies the variable by which the dataset should be sorted.
    - The RUN statement marks the end of the PROC SORT procedure.
 
+### 🔍 Explanation
 This SAS script demonstrates how to remove duplicate records from a dataset in SAS using the PROC SORT procedure with the NODUP option. It sorts the dataset by employee name and removes duplicate entries, resulting in a sorted dataset with unique employee records.
 
 ## SAS Data Merge Example: Combining Employee Information
