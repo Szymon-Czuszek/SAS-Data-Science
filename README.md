@@ -602,6 +602,7 @@ This SAS script demonstrates how to merge two datasets based on a common variabl
    - The IF statement ensures that only observations present in both datasets are included in the merged dataset.
    - The RUN statement marks the end of the DATA step.
 
+### 🔍 Explanation
 This SAS script demonstrates how to merge two datasets based on a common variable using the MERGE statement. It combines weight and height information into a single dataset for comprehensive analysis or reporting.
 
 ## SAS SQL Example: Creating a New Table from an Existing Dataset
