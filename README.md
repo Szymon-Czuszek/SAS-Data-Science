@@ -582,7 +582,7 @@ This SAS script demonstrates how to merge two datasets based on a common variabl
 
 📄 [MergingDatasetsJoin.sas](SAS/MergingDatasetsJoin.sas): This SAS script merges two datasets, "class_weight" and "class_height", based on the common variable "name" to create a combined dataset named "class_merged".
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **Data Import and Definition (Datasets A and B):**
    - Two DATA steps, "class_weight" and "class_height", create datasets to store weight and height information, respectively.
