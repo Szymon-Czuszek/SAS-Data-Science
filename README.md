@@ -578,7 +578,7 @@ This SAS script demonstrates how to remove duplicate records from a dataset in S
 ### 🔍 Explanation
 This SAS script demonstrates how to merge two datasets based on a common variable using the MERGE statement. It combines employee information and height data into a single dataset for comprehensive analysis or reporting.
 
-## SAS Data Merge Example: Combining Height and Weight Information
+## 📌 SAS Data Merge Example: Combining Height and Weight Information
 
 [MergingDatasetsJoin.sas](SAS/MergingDatasetsJoin.sas): This SAS script merges two datasets, "class_weight" and "class_height", based on the common variable "name" to create a combined dataset named "class_merged".
 
