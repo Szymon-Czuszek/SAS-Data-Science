@@ -609,7 +609,7 @@ This SAS script demonstrates how to merge two datasets based on a common variabl
 
 📄 [ProcSQL_SELECT.sas](SAS/ProcSQL_SELECT.sas): This SAS SQL query creates a new table named "student_info" by selecting all records from the existing dataset "sashelp.class".
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **PROC SQL Statement:**
    - The PROC SQL statement initiates the SQL procedure.
