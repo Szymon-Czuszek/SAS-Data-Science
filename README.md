@@ -627,6 +627,7 @@ This SAS script demonstrates how to merge two datasets based on a common variabl
 5. **QUIT Statement:**
    - The QUIT statement ends the SQL procedure.
 
+### 🔍 Explanation
 This SAS SQL query demonstrates how to create a new table by selecting all records from an existing dataset using the PROC SQL procedure. It provides a way to store and manipulate data for further analysis or reporting purposes.
 
 ## SAS SQL Example: Creating a New Table with Filtered Data
