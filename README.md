@@ -630,7 +630,7 @@ This SAS script demonstrates how to merge two datasets based on a common variabl
 ### 🔍 Explanation
 This SAS SQL query demonstrates how to create a new table by selecting all records from an existing dataset using the PROC SQL procedure. It provides a way to store and manipulate data for further analysis or reporting purposes.
 
-## SAS SQL Example: Creating a New Table with Filtered Data
+## 📌 SAS SQL Example: Creating a New Table with Filtered Data
 
 [ProcSQL_WHERE.sas](SAS/ProcSQL_WHERE.sas): This SAS SQL query creates a new table named "male_students" by selecting all records from the existing dataset "sashelp.class" where the sex is 'M'.
 
