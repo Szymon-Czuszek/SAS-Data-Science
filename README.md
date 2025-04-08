@@ -655,6 +655,7 @@ This SAS SQL query demonstrates how to create a new table by selecting all recor
 6. **QUIT Statement:**
    - The QUIT statement ends the SQL procedure.
 
+### 🔍 Explanation
 This SAS SQL query demonstrates how to create a new table by selecting specific records from an existing dataset based on certain criteria using the PROC SQL procedure. It allows for the creation of targeted subsets of data for further analysis or reporting purposes.
 
 ## SAS SQL Example: Creating a Summary Table with Grouping + AVG.
