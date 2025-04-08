@@ -634,7 +634,7 @@ This SAS SQL query demonstrates how to create a new table by selecting all recor
 
 📄 [ProcSQL_WHERE.sas](SAS/ProcSQL_WHERE.sas): This SAS SQL query creates a new table named "male_students" by selecting all records from the existing dataset "sashelp.class" where the sex is 'M'.
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **PROC SQL Statement:**
    - The PROC SQL statement initiates the SQL procedure.
