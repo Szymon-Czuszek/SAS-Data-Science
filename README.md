@@ -658,7 +658,7 @@ This SAS SQL query demonstrates how to create a new table by selecting all recor
 ### 🔍 Explanation
 This SAS SQL query demonstrates how to create a new table by selecting specific records from an existing dataset based on certain criteria using the PROC SQL procedure. It allows for the creation of targeted subsets of data for further analysis or reporting purposes.
 
-## SAS SQL Example: Creating a Summary Table with Grouping + AVG.
+## 📌 SAS SQL Example: Creating a Summary Table with Grouping + AVG.
 
 [ProcSQL_GROUP_AVG.sas](SAS/ProcSQL_GROUP_AVG.sas): This SAS SQL query creates a new table named "average_age_by_sex" by calculating the average age and grouping the data by sex from the 'sashelp.class' dataset.
 
