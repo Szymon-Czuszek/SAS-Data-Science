@@ -684,6 +684,7 @@ This SAS SQL query demonstrates how to create a new table by selecting specific 
 6. **QUIT Statement:**
    - The QUIT statement ends the SQL procedure.
 
+### 🔍 Explanation
 This SAS SQL query demonstrates how to create a summary table by calculating aggregates and grouping data based on specific criteria from an existing dataset using the PROC SQL procedure. It provides insights into the distribution of average ages by sex.
 
 ## SAS SQL Example: Creating a Summary Table with Grouping + MIN.
