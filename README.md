@@ -662,7 +662,7 @@ This SAS SQL query demonstrates how to create a new table by selecting specific 
 
 [ProcSQL_GROUP_AVG.sas](SAS/ProcSQL_GROUP_AVG.sas): This SAS SQL query creates a new table named "average_age_by_sex" by calculating the average age and grouping the data by sex from the 'sashelp.class' dataset.
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **PROC SQL Statement:**
    - The PROC SQL statement initiates the SQL procedure.
