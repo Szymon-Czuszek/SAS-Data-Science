@@ -687,7 +687,7 @@ This SAS SQL query demonstrates how to create a new table by selecting specific 
 ### 🔍 Explanation
 This SAS SQL query demonstrates how to create a summary table by calculating aggregates and grouping data based on specific criteria from an existing dataset using the PROC SQL procedure. It provides insights into the distribution of average ages by sex.
 
-## SAS SQL Example: Creating a Summary Table with Grouping + MIN.
+## 📌 SAS SQL Example: Creating a Summary Table with Grouping + MIN.
 
 [ProcSQL_GROUP_MIN.sas](SAS/ProcSQL_GROUP_MIN.sas): This SAS SQL query creates a new table named "minimum_msrp_by_origin" by calculating the minimum Manufacturer's Suggested Retail Price (MSRP) and grouping the data by origin from the 'sashelp.cars' dataset.
 
