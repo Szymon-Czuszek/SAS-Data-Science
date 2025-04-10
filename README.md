@@ -689,7 +689,7 @@ This SAS SQL query demonstrates how to create a summary table by calculating agg
 
 ## 📌 SAS SQL Example: Creating a Summary Table with Grouping + MIN.
 
-[ProcSQL_GROUP_MIN.sas](SAS/ProcSQL_GROUP_MIN.sas): This SAS SQL query creates a new table named "minimum_msrp_by_origin" by calculating the minimum Manufacturer's Suggested Retail Price (MSRP) and grouping the data by origin from the 'sashelp.cars' dataset.
+📄 [ProcSQL_GROUP_MIN.sas](SAS/ProcSQL_GROUP_MIN.sas): This SAS SQL query creates a new table named "minimum_msrp_by_origin" by calculating the minimum Manufacturer's Suggested Retail Price (MSRP) and grouping the data by origin from the 'sashelp.cars' dataset.
 
 ### Explanation:
 
