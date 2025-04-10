@@ -713,6 +713,7 @@ This SAS SQL query demonstrates how to create a summary table by calculating agg
 6. **QUIT Statement:**
    - The QUIT statement ends the SQL procedure.
 
+### 🔍 Explanation
 This SAS SQL query demonstrates how to create a summary table by calculating aggregates and grouping data based on specific criteria from an existing dataset using the PROC SQL procedure. It provides insights into the distribution of minimum MSRP values by origin.
 
 ## SAS SQL Example: Creating a Table with Unique Gender-Age Combinations
