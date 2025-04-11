@@ -742,6 +742,7 @@ This SAS SQL query demonstrates how to create a summary table by calculating agg
 6. **QUIT Statement:**
    - The QUIT statement ends the SQL procedure.
 
+### 🔍 Explanation
 This SAS SQL query demonstrates how to create a new table with unique combinations of gender and age from an existing dataset using the PROC SQL procedure. It provides a way to analyze and explore the distribution of gender-age combinations in the dataset.
 
 ## SAS Data Processing Example: Transposing Student Information
