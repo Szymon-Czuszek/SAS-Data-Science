@@ -716,7 +716,7 @@ This SAS SQL query demonstrates how to create a summary table by calculating agg
 ### 🔍 Explanation
 This SAS SQL query demonstrates how to create a summary table by calculating aggregates and grouping data based on specific criteria from an existing dataset using the PROC SQL procedure. It provides insights into the distribution of minimum MSRP values by origin.
 
-## SAS SQL Example: Creating a Table with Unique Gender-Age Combinations
+## 📌 SAS SQL Example: Creating a Table with Unique Gender-Age Combinations
 
 [ProcSQL_DISTINCT.sas](SAS/ProcSQL_DISTINCT.sas): This SAS SQL query creates a new table named "unique_gender_age" by selecting distinct combinations of gender and age from the 'sashelp.class' dataset. The resulting table is ordered by gender and age.
 
