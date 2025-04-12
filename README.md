@@ -745,7 +745,7 @@ This SAS SQL query demonstrates how to create a summary table by calculating agg
 ### 🔍 Explanation
 This SAS SQL query demonstrates how to create a new table with unique combinations of gender and age from an existing dataset using the PROC SQL procedure. It provides a way to analyze and explore the distribution of gender-age combinations in the dataset.
 
-## SAS Data Processing Example: Transposing Student Information
+## 📌 SAS Data Processing Example: Transposing Student Information
 
 [ProcTransopose.sas](SAS/ProcTransopose.sas): This SAS snippet demonstrates data processing steps involving the creation of a dataset named STUDENT_INFO and its subsequent transposition using the PROC TRANSPOSE procedure.
 
