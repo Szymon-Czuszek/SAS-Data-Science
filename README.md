@@ -763,6 +763,7 @@ This SAS SQL query demonstrates how to create a new table with unique combinatio
    - The ID statement specifies STUDENT_NAME as the identifier variable.
    - The resulting transposed dataset is named T_STUDENT_INFO.
 
+### 🔍 Explanation
 This SAS code snippet illustrates how to organize and manipulate student information, demonstrating the creation of a dataset and its transformation through transposition for further analysis or reporting purposes.
 
 ## SAS Data Processing Example: Transposing Patient Vitals
