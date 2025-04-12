@@ -749,7 +749,7 @@ This SAS SQL query demonstrates how to create a new table with unique combinatio
 
 📄 [ProcTransopose.sas](SAS/ProcTransopose.sas): This SAS snippet demonstrates data processing steps involving the creation of a dataset named STUDENT_INFO and its subsequent transposition using the PROC TRANSPOSE procedure.
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **DATA Step (Creating Dataset):**
    - The DATA statement initiates the creation of a dataset named STUDENT_INFO.
