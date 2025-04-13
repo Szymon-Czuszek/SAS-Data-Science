@@ -768,7 +768,7 @@ This SAS code snippet illustrates how to organize and manipulate student informa
 
 ## 📌 SAS Data Processing Example: Transposing Patient Vitals
 
-[ProcTransoposeBy.sas](SAS/ProcTransoposeBy.sas): This SAS snippet demonstrates data processing steps involving the creation of a dataset named PATIENT_VITALS and its subsequent transposition using the PROC TRANSPOSE procedure.
+📄 [ProcTransoposeBy.sas](SAS/ProcTransoposeBy.sas): This SAS snippet demonstrates data processing steps involving the creation of a dataset named PATIENT_VITALS and its subsequent transposition using the PROC TRANSPOSE procedure.
 
 ### Explanation:
 
