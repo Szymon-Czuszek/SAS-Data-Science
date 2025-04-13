@@ -770,7 +770,7 @@ This SAS code snippet illustrates how to organize and manipulate student informa
 
 📄 [ProcTransoposeBy.sas](SAS/ProcTransoposeBy.sas): This SAS snippet demonstrates data processing steps involving the creation of a dataset named PATIENT_VITALS and its subsequent transposition using the PROC TRANSPOSE procedure.
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **DATA Step (Creating Dataset):**
    - The DATA statement initiates the creation of a dataset named PATIENT_VITALS.
