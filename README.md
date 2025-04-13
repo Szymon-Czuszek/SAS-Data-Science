@@ -766,7 +766,7 @@ This SAS SQL query demonstrates how to create a new table with unique combinatio
 ### 🔍 Explanation
 This SAS code snippet illustrates how to organize and manipulate student information, demonstrating the creation of a dataset and its transformation through transposition for further analysis or reporting purposes.
 
-## SAS Data Processing Example: Transposing Patient Vitals
+## 📌 SAS Data Processing Example: Transposing Patient Vitals
 
 [ProcTransoposeBy.sas](SAS/ProcTransoposeBy.sas): This SAS snippet demonstrates data processing steps involving the creation of a dataset named PATIENT_VITALS and its subsequent transposition using the PROC TRANSPOSE procedure.
 
