@@ -789,6 +789,7 @@ This SAS code snippet illustrates how to organize and manipulate student informa
    - The BY statement specifies PATIENT_ID and PATIENT_NAME for grouping.
    - The resulting transposed dataset is named T_PATIENT_VITALS.
 
+### 🔍 Explanation
 This SAS code snippet illustrates how to organize and manipulate patient vital information, demonstrating the creation of a dataset and its transformation through transposition for further analysis or reporting purposes.
 
 ## SAS Data Processing Example: Employee Total Pay Calculation
