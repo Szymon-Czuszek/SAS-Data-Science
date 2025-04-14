@@ -792,7 +792,7 @@ This SAS code snippet illustrates how to organize and manipulate student informa
 ### 🔍 Explanation
 This SAS code snippet illustrates how to organize and manipulate patient vital information, demonstrating the creation of a dataset and its transformation through transposition for further analysis or reporting purposes.
 
-## SAS Data Processing Example: Employee Total Pay Calculation
+## 📌 SAS Data Processing Example: Employee Total Pay Calculation
 
 [Retain.sas](SAS/Retain.sas): This SAS snippet demonstrates data processing steps involving the calculation of total pay for each employee from the dataset EMPLOYEE_PAY.
 
