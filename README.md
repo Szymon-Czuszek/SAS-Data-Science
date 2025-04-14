@@ -815,6 +815,7 @@ This SAS code snippet illustrates how to organize and manipulate patient vital i
    - The RETAIN statement initializes and retains the value of the variable TOTAL_PAY.
    - The IF statement conditionally assigns the value of TOTAL_PAY based on whether it is the first observation for a given EMPLOYEE_NAME.
 
+### 🔍 Explanation
 This SAS code snippet illustrates how to calculate total pay for each employee across different pay periods, providing insights into overall compensation patterns.
 
 ## SAS Data Processing Example: Employee Salary Details
