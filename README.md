@@ -822,7 +822,7 @@ This SAS code snippet illustrates how to calculate total pay for each employee a
 
 📄 [FormatStatement.sas](SAS/FormatStatement.sas): This SAS code snippet demonstrates the processing of employee salary data to convert numeric values to character values with specific formats.
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **Creating Dataset and Defining Variables:**
    - The DATA statement creates a dataset named EMPLOYEE_SALARY with variables WORKER, PAY, and WORKER_ID.
