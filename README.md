@@ -818,7 +818,7 @@ This SAS code snippet illustrates how to organize and manipulate patient vital i
 ### 🔍 Explanation
 This SAS code snippet illustrates how to calculate total pay for each employee across different pay periods, providing insights into overall compensation patterns.
 
-## SAS Data Processing Example: Employee Salary Details
+## 📌 SAS Data Processing Example: Employee Salary Details
 
 [FormatStatement.sas](SAS/FormatStatement.sas): This SAS code snippet demonstrates the processing of employee salary data to convert numeric values to character values with specific formats.
 
