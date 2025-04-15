@@ -820,7 +820,7 @@ This SAS code snippet illustrates how to calculate total pay for each employee a
 
 ## 📌 SAS Data Processing Example: Employee Salary Details
 
-[FormatStatement.sas](SAS/FormatStatement.sas): This SAS code snippet demonstrates the processing of employee salary data to convert numeric values to character values with specific formats.
+📄 [FormatStatement.sas](SAS/FormatStatement.sas): This SAS code snippet demonstrates the processing of employee salary data to convert numeric values to character values with specific formats.
 
 ### Explanation:
 
