@@ -835,6 +835,7 @@ This SAS code snippet illustrates how to calculate total pay for each employee a
    - The PUT function is used to convert numeric values to character values for PAY and WORKER_ID.
    - The PUT function formats the variables with appropriate dollar and SSN formats, specified by dollar10.2 and ssn11. formats, respectively.
 
+### 🔍 Explanation
 This SAS code snippet demonstrates the conversion of numeric employee salary and ID values to character values with specific formats for reporting or display purposes.
 
 ## SAS Data Import Example: Employee Bonus Information
