@@ -853,6 +853,7 @@ This SAS code snippet demonstrates the conversion of numeric employee salary and
    - Another dataset named EMPLOYEE_BONUS1 is created as a duplicate of EMPLOYEE_BONUS using the same DATA statement, INPUT statement, and CARDS statement.
    - Both datasets contain the same bonus information for different employees.
 
+### 🔍 Explanation
 This SAS code snippet demonstrates the process of importing employee bonus information into SAS datasets for further analysis or processing.
 
 ## SAS Data Visualization: Employee Gender Distribution
