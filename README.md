@@ -842,7 +842,7 @@ This SAS code snippet demonstrates the conversion of numeric employee salary and
 
 📄 [InformatStatement.sas](SAS/InformatStatement.sas): This SAS code snippet demonstrates the import of employee bonus information into two datasets: EMPLOYEE_BONUS and EMPLOYEE_BONUS1.
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **Creating Dataset and Defining Variables:**
    - The DATA statement creates a dataset named EMPLOYEE_BONUS with variables EMPLOYEE_NAME, BONUS_AMOUNT, and DATE_OF_BIRTH.
