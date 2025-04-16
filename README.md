@@ -838,7 +838,7 @@ This SAS code snippet illustrates how to calculate total pay for each employee a
 ### 🔍 Explanation
 This SAS code snippet demonstrates the conversion of numeric employee salary and ID values to character values with specific formats for reporting or display purposes.
 
-## SAS Data Import Example: Employee Bonus Information
+## 📌 SAS Data Import Example: Employee Bonus Information
 
 [InformatStatement.sas](SAS/InformatStatement.sas): This SAS code snippet demonstrates the import of employee bonus information into two datasets: EMPLOYEE_BONUS and EMPLOYEE_BONUS1.
 
