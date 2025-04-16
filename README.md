@@ -840,7 +840,7 @@ This SAS code snippet demonstrates the conversion of numeric employee salary and
 
 ## 📌 SAS Data Import Example: Employee Bonus Information
 
-[InformatStatement.sas](SAS/InformatStatement.sas): This SAS code snippet demonstrates the import of employee bonus information into two datasets: EMPLOYEE_BONUS and EMPLOYEE_BONUS1.
+📄 [InformatStatement.sas](SAS/InformatStatement.sas): This SAS code snippet demonstrates the import of employee bonus information into two datasets: EMPLOYEE_BONUS and EMPLOYEE_BONUS1.
 
 ### Explanation:
 
