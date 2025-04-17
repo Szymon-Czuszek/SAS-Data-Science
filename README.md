@@ -873,6 +873,7 @@ This SAS code snippet demonstrates the process of importing employee bonus infor
    - The HBAR statement generates a horizontal bar chart to visualize the gender distribution.
    - The PIE statement creates a pie chart to display the proportion of each gender in the dataset.
 
+### 🔍 Explanation
 These SAS code snippets demonstrate the process of visualizing employee gender distribution using various chart types for effective data exploration and analysis.
 
 ## SAS Data Visualization: Age and Course Distribution
