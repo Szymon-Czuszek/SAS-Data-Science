@@ -860,7 +860,7 @@ This SAS code snippet demonstrates the process of importing employee bonus infor
 
 📄 [ProcChartVbarHbarPie.sas](SAS/ProcChartVbarHbarPie.sas): This SAS code snippet processes employee data and visualizes the gender distribution using various charts.
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **Creating Dataset:**
    - The DATA statement creates a dataset named EMPLOYEES_INFO, which contains information about employees, including their name, gender, age, and weight.
