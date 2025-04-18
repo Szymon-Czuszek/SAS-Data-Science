@@ -876,7 +876,7 @@ This SAS code snippet demonstrates the process of importing employee bonus infor
 ### 🔍 Explanation
 These SAS code snippets demonstrate the process of visualizing employee gender distribution using various chart types for effective data exploration and analysis.
 
-## SAS Data Visualization: Age and Course Distribution
+## 📌 SAS Data Visualization: Age and Course Distribution
 
 [ProcChartDiscrete.sas](SAS/ProcChartDiscrete.sas): This SAS code snippet processes student class data and creates vertical bar charts to visualize the distribution of age and course numbers.
 
