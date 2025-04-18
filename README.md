@@ -878,7 +878,7 @@ These SAS code snippets demonstrate the process of visualizing employee gender d
 
 ## 📌 SAS Data Visualization: Age and Course Distribution
 
-[ProcChartDiscrete.sas](SAS/ProcChartDiscrete.sas): This SAS code snippet processes student class data and creates vertical bar charts to visualize the distribution of age and course numbers.
+📄 [ProcChartDiscrete.sas](SAS/ProcChartDiscrete.sas): This SAS code snippet processes student class data and creates vertical bar charts to visualize the distribution of age and course numbers.
 
 ### Explanation:
 
