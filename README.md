@@ -891,6 +891,7 @@ These SAS code snippets demonstrate the process of visualizing employee gender d
    - The first chart (vbar AGE) visualizes the distribution of ages among students using vertical bars.
    - The second chart (vbar COURSENO) displays the distribution of course numbers discretely using vertical bars.
 
+### 🔍 Explanation
 These SAS code snippets demonstrate the process of visualizing age and course distribution among students using vertical bar charts for effective data analysis and exploration.
 
 ## SAS Data Visualization: Course Enrollment
