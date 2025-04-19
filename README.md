@@ -908,6 +908,7 @@ These SAS code snippets demonstrate the process of visualizing age and course di
    - PROC CHART is used to create a horizontal bar chart based on the ENROLLMENT_DATA dataset.
    - The HBAR statement generates a horizontal bar chart, with course IDs plotted discretely along the y-axis.
 
+### 🔍 Explanation
 This SAS code snippet demonstrates the process of visualizing the distribution of course enrollment among students using a horizontal bar chart for effective data analysis and exploration.
 
 ## SAS Data Visualization: Course Enrollment Analysis
