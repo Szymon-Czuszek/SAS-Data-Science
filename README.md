@@ -927,6 +927,7 @@ This SAS code snippet demonstrates the process of visualizing the distribution o
    - Grouping is done by major, and subgrouping is done by gender.
    - The SUMVAR option calculates the mean age for each combination of course, major, and gender.
 
+### 🔍 Explanation
 This SAS code snippet demonstrates the process of visualizing the distribution of student ages across different courses, majors, and genders using a vertical bar chart for insightful analysis and decision-making.
 
 ## SAS Data Visualization: Course Enrollment Analysis
