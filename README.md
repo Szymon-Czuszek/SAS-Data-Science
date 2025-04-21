@@ -934,7 +934,7 @@ This SAS code snippet demonstrates the process of visualizing the distribution o
 
 📄 [ProcChartHbarAdvanced.sas](SAS/ProcChartHbarAdvanced.sas): This SAS code snippet processes student enrollment data and creates a horizontal bar chart to analyze the distribution of student ages across different courses, majors, and genders.
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **Creating Dataset:**
    - The DATA statement creates a dataset named STUDENT_DATA, containing information about students, including their name, gender, age, course number, and major.
