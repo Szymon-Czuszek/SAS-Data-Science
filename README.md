@@ -964,6 +964,7 @@ This SAS code snippet demonstrates the process of visualizing the distribution o
    - The first scatter plot (without symbols) plots age against weight.
    - The second scatter plot (with '*' symbols) also plots age against weight but uses asterisks as symbols.
 
+### 🔍 Explanation
 These SAS code snippets demonstrate the process of visualizing the relationship between age and weight using scatter plots, allowing for insights into potential correlations or patterns.
 
 ## SAS Data Filtering Example: Filtering by Gender
