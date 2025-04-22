@@ -953,7 +953,7 @@ This SAS code snippet demonstrates the process of visualizing the distribution o
 
 📄 [ProcChartPlotScatter.sas](SAS/ProcChartPlotScatter.sas): This SAS code snippet processes personal information data and creates scatter plots to analyze the relationship between age and weight.
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **Creating Dataset:**
    - The DATA statement creates a dataset named PERSONAL_INFO, containing information about individuals, including their name, gender, age, and weight.
