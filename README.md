@@ -951,7 +951,7 @@ This SAS code snippet demonstrates the process of visualizing the distribution o
 
 ## SAS Data Visualization: Age vs. Weight Analysis
 
-[ProcChartPlotScatter.sas](SAS/ProcChartPlotScatter.sas): This SAS code snippet processes personal information data and creates scatter plots to analyze the relationship between age and weight.
+📄 [ProcChartPlotScatter.sas](SAS/ProcChartPlotScatter.sas): This SAS code snippet processes personal information data and creates scatter plots to analyze the relationship between age and weight.
 
 ### Explanation:
 
