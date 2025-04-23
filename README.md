@@ -971,7 +971,7 @@ These SAS code snippets demonstrate the process of visualizing the relationship 
 
 📄 [UsingProcPrint.sas](SAS/UsingProcPrint.sas): This SAS code snippet processes personal information data and prints selected records based on gender.
 
-### Explanation:
+### 📊 Data Entry Method
 
 1. **Creating Dataset:**
    - The DATA statement creates a dataset named PERSON_INFO, containing information about individuals, including their name, gender, age, and weight.
