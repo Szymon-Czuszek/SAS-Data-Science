@@ -982,6 +982,7 @@ These SAS code snippets demonstrate the process of visualizing the relationship 
    - The VAR statement specifies the variables to be displayed.
    - The WHERE statement filters the records based on gender, displaying only those where the gender is 'M' (Male).
 
+### 🔍 Explanation
 This SAS code snippet demonstrates how to filter and display specific records from a dataset based on certain criteria, such as gender.
 
 ## SAS Reporting Examples: Tabular Reports
