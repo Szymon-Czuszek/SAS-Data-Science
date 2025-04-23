@@ -969,7 +969,7 @@ These SAS code snippets demonstrate the process of visualizing the relationship 
 
 ## 📌 SAS Data Filtering Example: Filtering by Gender
 
-[UsingProcPrint.sas](SAS/UsingProcPrint.sas): This SAS code snippet processes personal information data and prints selected records based on gender.
+📄 [UsingProcPrint.sas](SAS/UsingProcPrint.sas): This SAS code snippet processes personal information data and prints selected records based on gender.
 
 ### Explanation:
 
