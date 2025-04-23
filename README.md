@@ -967,7 +967,7 @@ This SAS code snippet demonstrates the process of visualizing the distribution o
 ### 🔍 Explanation
 These SAS code snippets demonstrate the process of visualizing the relationship between age and weight using scatter plots, allowing for insights into potential correlations or patterns.
 
-## SAS Data Filtering Example: Filtering by Gender
+## 📌 SAS Data Filtering Example: Filtering by Gender
 
 [UsingProcPrint.sas](SAS/UsingProcPrint.sas): This SAS code snippet processes personal information data and prints selected records based on gender.
 
