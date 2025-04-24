@@ -989,16 +989,18 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [UsingProcReport.sas](SAS/UsingProcReport.sas)
 
-### 1. Course Information Report:
+### 📊 Data Entry Method
+
+#### 1. Course Information Report:
    - The first PROC REPORT generates a tabular report of student course information.
    - Columns include student name, gender, age, course code, and major.
    - Each column is defined using DEFINE statements.
    
-### 2. Mean Age by Gender Report:
+#### 2. Mean Age by Gender Report:
    - The second PROC REPORT generates a tabular report showing the mean age by gender.
    - The STUDENT_GENDER column is grouped, and the STUDENT_AGE column is analyzed to calculate the mean.
    
-### 3. Cars Dataset Report:
+#### 3. Cars Dataset Report:
    - The third PROC REPORT generates a tabular report of selected variables from the SASHELP.CARS dataset.
    - Columns include car make, model, type, origin, and MSRP.
    - Column widths and formatting options are specified using DEFINE statements.
