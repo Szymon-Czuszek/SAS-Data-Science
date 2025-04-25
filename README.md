@@ -1009,6 +1009,8 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [UsingProcFreq.sas](SAS/UsingProcFreq.sas)
 
+### 📊 Data Entry Method
+
 ### 1. Gender Frequency Table:
    - The first PROC FREQ generates a frequency table for the GENDER variable from the CLASS dataset.
    - It counts the number of occurrences of each gender category.
