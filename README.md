@@ -1007,7 +1007,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 ## 📌 SAS Frequency Analysis Example
 
-[UsingProcFreq.sas](SAS/UsingProcFreq.sas)
+📄 [UsingProcFreq.sas](SAS/UsingProcFreq.sas)
 
 ### 1. Gender Frequency Table:
    - The first PROC FREQ generates a frequency table for the GENDER variable from the CLASS dataset.
