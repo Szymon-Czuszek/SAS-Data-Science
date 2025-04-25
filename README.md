@@ -1019,7 +1019,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
    - The second PROC FREQ generates a frequency table for the COURSENO variable from the CLASS dataset.
    - It counts the number of occurrences of each course number.
 
-## Descriptive Statistics for Age Variable
+## 📌 Descriptive Statistics for Age Variable
 
 - The PROC MEANS procedure calculates basic statistics such as mean, median, minimum, maximum, and standard deviation for the AGE variable from the CLASS dataset.
 
