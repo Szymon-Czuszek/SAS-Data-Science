@@ -1040,8 +1040,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [UsingProcMeans.sas](SAS/UsingProcMeans.sas)
 
-## Explanation:
-
+### 🔍 Explanation
 - The DATA step creates a dataset named CLASS with variables: NAME, GENDER, AGE, COURSE, and MAJOR.
 - PROC MEANS is used to calculate summary statistics for the AGE variable.
 - ODS TRACE ON and ODS TRACE OFF are used to trace ODS destinations, which helps in debugging and diagnosing issues related to ODS output.
