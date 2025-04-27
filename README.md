@@ -1056,7 +1056,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - ODS TRACE ON and ODS TRACE OFF are used to trace ODS destinations, which helps in debugging and diagnosing issues related to ODS output.
 - The ODS OUTPUT statement saves the output of PROC UNIVARIATE into datasets named MYUNIVMOMENTS and MYUNIVBASIC.
 
-## Filtering Dataset by Macro Variables
+## 📌 Filtering Dataset by Macro Variables
 
 [OdsTraceOn.sas](SAS/OdsTraceOn.sas)
 [OdsTraceOn2.sas](SAS/OdsTraceOn2.sas)
