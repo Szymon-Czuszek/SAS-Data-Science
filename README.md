@@ -1050,8 +1050,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [ProcUnivariate.sas](SAS/ProcUnivariate.sas)
 
-## Explanation:
-
+### 🔍 Explanation
 - The DATA step creates a dataset named CLASS with variables: NAME, GENDER, AGE, COURSE, and MAJOR.
 - PROC UNIVARIATE is used to analyze the AGE variable, providing various statistical measures.
 - ODS TRACE ON and ODS TRACE OFF are used to trace ODS destinations, which helps in debugging and diagnosing issues related to ODS output.
