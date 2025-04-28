@@ -1060,7 +1060,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [OdsTraceOn.sas](SAS/OdsTraceOn.sas)
 📄 [OdsTraceOn2.sas](SAS/OdsTraceOn2.sas)
-[OdsTraceOn3.sas](SAS/OdsTraceOn3.sas)
+📄 [OdsTraceOn3.sas](SAS/OdsTraceOn3.sas)
 
 ### Explanation:
 
