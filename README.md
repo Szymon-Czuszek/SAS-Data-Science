@@ -1062,8 +1062,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 📄 [OdsTraceOn2.sas](SAS/OdsTraceOn2.sas)
 📄 [OdsTraceOn3.sas](SAS/OdsTraceOn3.sas)
 
-### Explanation:
-
+### 🔍 Explanation
 - The DATA step creates a dataset named CLASS with variables: NAME, GENDER, AGE, COURSENO, and MAJOR.
 - Macro variables VAR and VALUE are defined to hold the variable name and value to filter the dataset.
 - PROC PRINT is used to display observations from the CLASS dataset where the value of the variable specified by the macro variable VAR matches the value specified by the macro variable VALUE.
