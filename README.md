@@ -1067,7 +1067,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - Macro variables VAR and VALUE are defined to hold the variable name and value to filter the dataset.
 - PROC PRINT is used to display observations from the CLASS dataset where the value of the variable specified by the macro variable VAR matches the value specified by the macro variable VALUE.
 
-## Macro Variable Manipulation
+## 📌 Macro Variable Manipulation
 
 [MacroAmpersand.sas.sas](SAS/MacroAmpersand.sas.sas)
 
