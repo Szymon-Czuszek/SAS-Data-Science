@@ -1069,7 +1069,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 ## 📌 Macro Variable Manipulation
 
-[MacroAmpersand.sas.sas](SAS/MacroAmpersand.sas.sas)
+📄 [MacroAmpersand.sas.sas](SAS/MacroAmpersand.sas.sas)
 
 ### Explanation:
 
