@@ -1071,8 +1071,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [MacroAmpersand.sas.sas](SAS/MacroAmpersand.sas.sas)
 
-### Explanation:
-
+### 🔍 Explanation
 - Macro variable B is assigned the value 10 using the %LET statement.
 - Macro variable A is assigned the value of macro variable B.
 - The %PUT statement displays the value of macro variable B, which is 10.
