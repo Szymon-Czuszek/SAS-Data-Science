@@ -1083,8 +1083,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [MacroAmpersandFruits.sas](SAS/MacroAmpersandFruits.sas)
 
-### Explanation:
-
+### 🔍 Explanation
 - Macro variables are assigned values in a cascading manner: APPLE is assigned the value "banana", BANANA is assigned "cherry", CHERRY is assigned "plum", and PLUM is assigned "elderberry".
 - The %PUT statements display the values of macro variable APPLE in different configurations using the double ampersand operator.
 - The first %PUT statement displays the direct value of APPLE, which is "banana".
