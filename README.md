@@ -1081,7 +1081,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 ## 📌 Macro Variable Cascading
 
-[MacroAmpersandFruits.sas](SAS/MacroAmpersandFruits.sas)
+📄 [MacroAmpersandFruits.sas](SAS/MacroAmpersandFruits.sas)
 
 ### Explanation:
 
