@@ -1089,7 +1089,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - The first %PUT statement displays the direct value of APPLE, which is "banana".
 - The subsequent %PUT statements use the double ampersand operator to resolve the macro variable APPLE in a cascading manner.
 
-## Custom Macro for Reporting
+## 📌 Custom Macro for Reporting
 
 [MacroProcedure.sas](SAS/MacroProcedure.sas)
 
