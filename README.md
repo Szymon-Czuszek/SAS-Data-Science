@@ -1123,7 +1123,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
     4. Fourth invocation: Calls MYREPORT with arguments (SASHELP, CARS, MSRP).
 - This approach allows for the easy generation of summary reports for different datasets and variables by simply calling the MYREPORT macro with appropriate parameters.
 
-## Macro Operations and Functions
+## 📌 Macro Operations and Functions
 
 [MacroProcedure3.sas](SAS/MacroProcedure3.sas)
 
