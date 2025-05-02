@@ -1108,8 +1108,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [MacroProcedure2.sas](SAS/MacroProcedure2.sas)
 
-### Explanation:
-
+### 🔍 Explanation
 - The macro MYREPORT is defined to generate summary statistics and print data for a specified dataset within a given library.
 - It takes three arguments: LIB, DSN, and STATVAR.
     - LIB represents the library name.
