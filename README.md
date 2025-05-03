@@ -1127,8 +1127,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [MacroProcedure3.sas](SAS/MacroProcedure3.sas)
 
-### Explanation:
-
+### 🔍 Explanation
 - The macro variables `a`, `b`, `c`, `d`, and `e` are defined using the `%LET` statement to store different values and manipulate them using macro functions.
 - `%UPCASE`: Converts the value of macro variable `a` to uppercase and assigns it to variable `b`.
 - `%LOWCASE`: Converts the value of macro variable `a` to lowercase and assigns it to variable `c`.
