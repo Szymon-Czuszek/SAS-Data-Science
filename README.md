@@ -1144,7 +1144,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 📄 [Project-Cars.sas](SAS/Project-Cars.sas)
 
 ### 🚗 Part 1
-#### Importing and Analyzing Car Data
+#### 📥 Importing and Analyzing Car Data
 - **Data Import from Excel**: The SAS file `carseu.xlsx` is imported into the SAS dataset `cars_eu` using PROC IMPORT with the XLSX engine.
 - **Formatting Data**: The MSRP variable in the `cars_eu` dataset is formatted as dollar8.
 - **Importing and Parsing Text File**: The piped-delimited text file `carsasiapipedelimited.txt` is imported into the SAS dataset `cars_asia`, with appropriate data parsing.
