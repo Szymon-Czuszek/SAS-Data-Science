@@ -1151,7 +1151,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Data Filtering and Analysis**: The PROC PRINT procedure is used to display records from `cars_eu` and `cars_asia` where MSRP is greater than $150,000.
 
 ### 🛠️ Part 2
-#### Merging and Sorting Car Data
+#### 🔄 Merging and Sorting Car Data
 - **Library Assignment**: The SAS library `MyLib` is assigned to the directory.
 - **Importing and Merging Data**: The SAS dataset `carsusa` from the library `MyLib` is merged with `cars_eu` and `cars_asia` into the dataset `cars_all`.
 - **Sorting Data**: The datasets `cars_all` and `cars_mpg` are sorted by model and make.
