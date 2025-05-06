@@ -1182,7 +1182,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Transposition**: The frequency table is transposed to display health status across gender.
 - **Final Report**: A report titled "Report of Frequency Table" summarizes the distribution of health statuses by gender.
 
-## Analysing American Airline Data
+## 📌 Analysing American Airline Data
 
 [ProjectAirlines.sas](SAS/ProjectAirlines.sas)
 
