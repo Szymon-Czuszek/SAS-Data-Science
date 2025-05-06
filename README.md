@@ -1168,7 +1168,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [ProjectHeavyWeight.sas](SAS/ProjectHeavyWeight.sas)
 
-### Importing and Preprocessing Data
+###  Importing and Preprocessing Data
 - **Data Import**: Excel sheets for Statistics (STAT) and History (HIST) classes and student height data (STUDHT) are imported into SAS.
 - **Merging Data**: The STAT and HIST datasets are stacked to create a single dataset called CLASS, then merged with STUDHT.
 - **Unit Conversion**: Weight and height are converted to metric units (kilograms and meters, respectively).
@@ -1176,7 +1176,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Status Assignment**: Students are categorized into Underweight, Healthy, Overweight, or Obese based on BMI values.
 - **Pie Chart Generation**: A pie chart is generated to visualize the distribution of student health statuses.
 
-### Frequency Distribution Analysis
+### 📊 Frequency Distribution Analysis
 - **Frequency Table**: A frequency distribution table is created for gender and health status variables.
 - **Formatting**: Counts and percentages are concatenated and formatted for reporting.
 - **Transposition**: The frequency table is transposed to display health status across gender.
