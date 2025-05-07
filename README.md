@@ -1215,7 +1215,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - Loop Processing: Within the loop, y is calculated as i * 2 on each iteration. The OUTPUT statement writes the current values of i and y to the dataset A for each iteration that meets the condition y < 15.
 - Result: The resulting dataset A contains values for i and y that show the progression of i in increments of 0.5, with corresponding values of y up to the limit specified by the WHILE condition (y < 15). This code illustrates the combined use of a DO loop with conditional and incremental control to generate a dataset based on calculated values.
 
-[DoLoop2.sas](SAS/DoLoop2.sas): This code creates and processes data on years, transforming it into months or calculating remaining years based on conditions.
+📄 [DoLoop2.sas](SAS/DoLoop2.sas): This code creates and processes data on years, transforming it into months or calculating remaining years based on conditions.
 
 1. DATA Step A:
 The first block (DATA A; ... RUN;) creates a dataset named A with a single variable called years.
