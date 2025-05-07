@@ -1206,7 +1206,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Highest Speed**: The FASTPLANE macro variable stores the highest speed at which an airline has flown their planes (216).
 - **SQL Code for FASTPLANE**: PROC SQL is used to find the maximum speed value and store it in the FASTPLANE macro variable.
 
-## Using Do Loop in SAS
+## 📌 Using Do Loop in SAS
 
 [DoLoop.sas](SAS/DoLoop.sas): This script, DoLoop.sas, demonstrates how to create a dataset using a DO loop in SAS with a conditional exit.
 
