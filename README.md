@@ -1208,7 +1208,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 ## 📌 Using Do Loop in SAS
 
-[DoLoop.sas](SAS/DoLoop.sas): This script, DoLoop.sas, demonstrates how to create a dataset using a DO loop in SAS with a conditional exit.
+📄 [DoLoop.sas](SAS/DoLoop.sas): This script, DoLoop.sas, demonstrates how to create a dataset using a DO loop in SAS with a conditional exit.
 
 DATA Step A:
 
