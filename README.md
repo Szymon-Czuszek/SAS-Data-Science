@@ -1210,18 +1210,10 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [DoLoop.sas](SAS/DoLoop.sas): This script, DoLoop.sas, demonstrates how to create a dataset using a DO loop in SAS with a conditional exit.
 
-DATA Step A:
-
-A dataset named A is created with a DO loop that iterates through values for i, starting at 1 and incrementing by 0.5 each time.
-The loop stops if y reaches or exceeds 15, using the WHILE (y < 15) condition.
-Loop Processing:
-
-Within the loop, y is calculated as i * 2 on each iteration.
-The OUTPUT statement writes the current values of i and y to the dataset A for each iteration that meets the condition y < 15.
-Result:
-
-The resulting dataset A contains values for i and y that show the progression of i in increments of 0.5, with corresponding values of y up to the limit specified by the WHILE condition (y < 15).
-This code illustrates the combined use of a DO loop with conditional and incremental control to generate a dataset based on calculated values.
+### 📊 Data Entry Method
+- DATA Step A: A dataset named A is created with a DO loop that iterates through values for i, starting at 1 and incrementing by 0.5 each time. The loop stops if y reaches or exceeds 15, using the WHILE (y < 15) condition.
+- Loop Processing: Within the loop, y is calculated as i * 2 on each iteration. The OUTPUT statement writes the current values of i and y to the dataset A for each iteration that meets the condition y < 15.
+- Result: The resulting dataset A contains values for i and y that show the progression of i in increments of 0.5, with corresponding values of y up to the limit specified by the WHILE condition (y < 15). This code illustrates the combined use of a DO loop with conditional and incremental control to generate a dataset based on calculated values.
 
 [DoLoop2.sas](SAS/DoLoop2.sas): This code creates and processes data on years, transforming it into months or calculating remaining years based on conditions.
 
