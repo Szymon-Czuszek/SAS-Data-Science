@@ -1186,7 +1186,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 
 📄 [ProjectAirlines.sas](SAS/ProjectAirlines.sas)
 
-### Importing and Preprocessing Data
+### 📊 Importing and Preprocessing Data
 - **Data Import**: The airline data is imported from the airlines.txt file using the FILENAME statement, INFILE, and INPUT statements to align columns.
 - **Currency Format**: Dollar formats (dollar10.2) are applied to currency variables like Total Assets.
 - **Rating Assignment**: A new variable called RATING is created based on TotalOpCost using a defined format.
