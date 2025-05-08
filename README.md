@@ -1192,7 +1192,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Rating Assignment**: A new variable called RATING is created based on TotalOpCost using a defined format.
 - **Charts**: Vertical bar charts and horizontal bar charts are created to visualize the distribution of ratings and average operating costs, respectively.
 
-### SQL Operations
+### 🛠️ SQL Operations
 - **Subset Creation**: A subset of data containing airlines whose names start with 'P' is created using PROC SQL.
 - **Macro Variable Creation**: A macro variable called FASTPLANE is created using PROC SQL to store the name of the airline with the highest speed.
 
