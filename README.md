@@ -1229,7 +1229,7 @@ It creates a variable, months, which stores the equivalent number of months (by 
 The statement PUT years=months=; writes the values of years and months to the SAS log for records where years > 5.
 Otherwise: It creates a variable, yrsleft, to show the remaining years to reach 5 (calculated as 5 - years).
 
-## Variables in SAS
+## 📌 Variables in SAS
 
 [CreatingVariables.sas](SAS/CreatingVariables.sas): his script creates a dataset that calculates total sales for each individual based on quarterly sales data.
 
