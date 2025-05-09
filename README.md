@@ -1249,7 +1249,7 @@ Data Entry: The CARDS statement allows for data entry directly in the code. Four
 Result: The RUN statement executes the code, resulting in the sales dataset containing Name, quarterly sales values, and a total column that holds the calculated total sales for each individual.
 - This code provides a simple way to manage and analyze quarterly sales data, demonstrating how to define and sum multiple variables in SAS.
 
-[AutomaticVariables.sas](SAS/AutomaticVariables.sas): This script demonstrates the use of automatic variables in SAS, specifically _ERROR_ and _N_, to handle data input errors.
+📄 [AutomaticVariables.sas](SAS/AutomaticVariables.sas): This script demonstrates the use of automatic variables in SAS, specifically _ERROR_ and _N_, to handle data input errors.
 
 DATA Step: A dataset named test is created with variables x and y defined in the INPUT statement.
 
