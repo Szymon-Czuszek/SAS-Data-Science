@@ -1231,7 +1231,7 @@ Otherwise: It creates a variable, yrsleft, to show the remaining years to reach 
 
 ## 📌 Variables in SAS
 
-[CreatingVariables.sas](SAS/CreatingVariables.sas): his script creates a dataset that calculates total sales for each individual based on quarterly sales data.
+📄 [CreatingVariables.sas](SAS/CreatingVariables.sas): his script creates a dataset that calculates total sales for each individual based on quarterly sales data.
 
 DATA Step: A dataset named sales is created with the DATA statement. The INPUT statement defines variables:
 - Name (character variable for the individual's name)
