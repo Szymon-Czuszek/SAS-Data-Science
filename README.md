@@ -1282,7 +1282,7 @@ IF first.gender THEN count=1; resets count to 1 when encountering the first row 
 Result: The final dataset, studentscores1, includes gender, score, and count, which represents the score sequence number within each gender group.
 This code demonstrates data grouping and conditional counting using automatic variables in SAS, with a focus on resetting counts within sorted groups.
 
-## Filtering in SAS.
+## 📌 Filtering in SAS.
 
 [Filter.sas](SAS/Filter.sas): This script, imports house price data, calculates a profit estimate, and filters records based on a price condition.
 
