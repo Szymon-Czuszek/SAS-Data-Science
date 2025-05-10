@@ -1284,7 +1284,7 @@ This code demonstrates data grouping and conditional counting using automatic va
 
 ## 📌 Filtering in SAS.
 
-[Filter.sas](SAS/Filter.sas): This script, imports house price data, calculates a profit estimate, and filters records based on a price condition.
+📄 [Filter.sas](SAS/Filter.sas): This script, imports house price data, calculates a profit estimate, and filters records based on a price condition.
 
 DATA Step (houseprice): A dataset named houseprice is created by reading data from the file houseprice (2).txt located in /home/u63805106/datasetslearnsas/.
 The INFILE statement specifies the location and delimiter (DLM=" ") used in the text file.
