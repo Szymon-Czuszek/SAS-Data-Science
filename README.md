@@ -1264,7 +1264,7 @@ Data Entry:
 
 Result: The RUN statement processes the data, resulting in a dataset test with x and y values, while logging error messages for rows where input issues are detected. This code demonstrates the use of automatic variables in SAS for data validation, helping identify and log rows with input errors during dataset creation.
 
-## Using Counter functionality in SAS
+## 📌 Using Counter functionality in SAS
 
 [Counter.sas](SAS/Counter.sas): This code creates a dataset of student scores, organizes it by gender, and generates a count of scores for each gender group.
 
