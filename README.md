@@ -1300,7 +1300,7 @@ The IF price < 200000; statement filters the data to include only houses with a 
 Result: The resulting dataset filter contains records from houseprice that meet the price condition, along with the calculated profit values.
 This script demonstrates data import, variable calculations, and conditional filtering in SAS.
 
-## Formats in SAS.
+## 📌 Formats in SAS.
 
 [Format.sas](SAS/Format.sas): This script, demonstrates how to apply custom formats to codes in a dataset to enhance readability and add descriptive labels.
 
