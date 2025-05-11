@@ -1321,7 +1321,7 @@ Creating a New Variable with Descriptions (diseasereal): A new dataset, diseaser
 
 Final Data Display: The final PROC PRINT displays diseasereal, including both diagcode and diagdesc. This code illustrates using PROC FORMAT for custom labels and transforming coded values into descriptive fields to improve data readability in SAS.
 
-## Using IF statement in SAS.
+## 📌 Using IF statement in SAS.
 
 [IfThen.sas](SAS/IfThen.sas): This script, calculates total sales for each individual, evaluates conditions to determine employment status, and marks if an individual meets a specific sales criterion.
 
