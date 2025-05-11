@@ -1302,7 +1302,7 @@ This script demonstrates data import, variable calculations, and conditional fil
 
 ## 📌 Formats in SAS.
 
-[Format.sas](SAS/Format.sas): This script, demonstrates how to apply custom formats to codes in a dataset to enhance readability and add descriptive labels.
+📄 [Format.sas](SAS/Format.sas): This script, demonstrates how to apply custom formats to codes in a dataset to enhance readability and add descriptive labels.
 
 DATA Step (disease):
 
