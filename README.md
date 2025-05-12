@@ -1352,7 +1352,7 @@ This code illustrates various methods of data filtering in SAS, using SQL and WH
 
 ## 📌 Importing Data in SAS
 
-[ImportTXT](SAS/ImportTXT): This script, ImportTXT.sas, demonstrates how to import data from a text file into a SAS dataset.
+📄 [ImportTXT](SAS/ImportTXT): This script, ImportTXT.sas, demonstrates how to import data from a text file into a SAS dataset.
 
 DATA Step (salary): A dataset named salary is created by reading data from the text file located at /home/u63805106/datasetslearnsas/salary (2).txt. The INFILE statement specifies the path to the text file to be read.
 
