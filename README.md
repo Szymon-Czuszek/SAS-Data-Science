@@ -1350,7 +1350,7 @@ This code demonstrates conditional logic with IF-THEN statements in SAS, enablin
 Result: The final output includes records of individuals with total sales exceeding 50, demonstrated with different methods of filtering.
 This code illustrates various methods of data filtering in SAS, using SQL and WHERE conditions within PROC PRINT.
 
-## Importing Data in SAS
+## 📌 Importing Data in SAS
 
 [ImportTXT](SAS/ImportTXT): This script, ImportTXT.sas, demonstrates how to import data from a text file into a SAS dataset.
 
