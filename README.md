@@ -1340,7 +1340,7 @@ Result:
 The RUN statement processes the data, resulting in the sales dataset with Name, quarterly sales, total, and fired columns, where fired indicates if Greg met the sales threshold.
 This code demonstrates conditional logic with IF-THEN statements in SAS, enabling decisions based on specific criteria.
 
-[IfWhere.sas](SAS/IfWhere.sas): This script, calculates total sales for each individual and filters data based on specific sales criteria using SQL and PROC PRINT.
+📄 [IfWhere.sas](SAS/IfWhere.sas): This script, calculates total sales for each individual and filters data based on specific sales criteria using SQL and PROC PRINT.
 
 1. DATA Step (sales): A dataset named sales is created with variables Name, Sales_1 through Sales_4 for quarterly sales, and total, which sums all quarterly sales. The CARDS statement provides direct input data for four individuals.
 2. SQL Filter (PROC SQL): PROC SQL selects and displays only those records from sales where total is greater than 50. This step outputs a table of total sales values that meet the specified condition.
