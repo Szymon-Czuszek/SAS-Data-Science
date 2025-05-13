@@ -1382,7 +1382,7 @@ PROC PRINT: Prints a subset of the salaryemp dataset using:
 
 Result: The resulting salaryemp dataset contains the renamed salaryemp variable and excludes the year variable. The output includes the selected subset of observations (rows 3 and 4). This script demonstrates file importing, variable renaming, column selection, and printing subsets of data in SAS.
 
-[ImportTXT3.sas](SAS/ImportTXT3.sas): This script, imports data from a text file, calculates a new variable, and prints a subset of the dataset.
+📄 [ImportTXT3.sas](SAS/ImportTXT3.sas): This script, imports data from a text file, calculates a new variable, and prints a subset of the dataset.
 
 DATA Step (houseprice):
 1. A dataset named houseprice is created by reading data from the text file located at /home/u63805106/datasetslearnsas/houseprice (2).txt.
