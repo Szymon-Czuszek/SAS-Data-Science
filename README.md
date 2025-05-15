@@ -1570,7 +1570,7 @@ Step 3: Sort the Dataset
 Step 4: Print the Sorted Dataset
 1. PROC PRINT DATA=sortedhouseprice: Displays the sorted dataset to verify the order of the records after sorting.
 
-## Renaming Variables in SAS
+## 📌 Renaming Variables in SAS
 
 [SAS/RenamingVariables.sas](SAS/RenamingVariables.sas): Using the RENAME statement in SAS.
 
