@@ -1572,7 +1572,7 @@ Step 4: Print the Sorted Dataset
 
 ## 📌 Renaming Variables in SAS
 
-[SAS/RenamingVariables.sas](SAS/RenamingVariables.sas): Using the RENAME statement in SAS.
+📄 [SAS/RenamingVariables.sas](SAS/RenamingVariables.sas): Using the RENAME statement in SAS.
 
 Step 1: Create the newhomes Dataset DATA newhomes. Creates a dataset with three variables:
 - x: The type of home (character variable, e.g., Duplex).
