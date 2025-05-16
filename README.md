@@ -1602,7 +1602,7 @@ Step 5: Purpose and Use Case. This script is useful for preparing raw data for a
 - Generating frequency tables to explore the distribution of data.
 - By the end, the dataset cleannewhomes is ready for further analysis or visualization.
 
-## Using SAS Functions
+## 📌 Using SAS Functions
 
 [SasFunctions.sas](SAS/SasFunctions.sas): Using SUM to add arguments in SAS.
 
