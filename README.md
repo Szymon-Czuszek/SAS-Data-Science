@@ -1632,7 +1632,7 @@ Step 5: Purpose and Use Case This script is a great introduction to SAS function
 - String processing, such as splitting names or extracting components from text.
 - Formatting data for output and reporting.
 
-[SasFunctionsCatx.sas](SAS/SasFunctionsCatx.sas): This script demonstrates how to use SAS string functions, specifically CATX and CAT, to concatenate strings while managing separators and whitespace.
+📄 [SasFunctionsCatx.sas](SAS/SasFunctionsCatx.sas): This script demonstrates how to use SAS string functions, specifically CATX and CAT, to concatenate strings while managing separators and whitespace.
 
 Step 1: Using CATX
 
