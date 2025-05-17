@@ -1686,7 +1686,7 @@ Step 3: Key Differences Between CATX and CAT
     </tr>
 </table>
 
-[SasFunctionsCoalesce.sas](SAS/SasFunctionsCoalesce.sas): This script demonstrates the use of the COALESCE function in SAS to handle missing values by selecting the first non-missing value from a list of variables.
+📄 [SasFunctionsCoalesce.sas](SAS/SasFunctionsCoalesce.sas): This script demonstrates the use of the COALESCE function in SAS to handle missing values by selecting the first non-missing value from a list of variables.
 
 Step 1: Data Step
 1. DATA coal. Declares two variables: home and cell, which are numeric.
