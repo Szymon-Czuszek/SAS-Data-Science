@@ -1797,7 +1797,7 @@ Step 2: PROC PRINT
     </tr>
 </table>
 
-[SasFunctionsInput.sas](SAS/SasFunctionsInput.sas): This script demonstrates the use of the INPUT function in SAS to convert a character string into a numeric value.
+📄 [SasFunctionsInput.sas](SAS/SasFunctionsInput.sas): This script demonstrates the use of the INPUT function in SAS to convert a character string into a numeric value.
 
 Step 1: Data Step
 1. DATA inputfunction: Creates a dataset named inputfunction.
