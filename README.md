@@ -1743,7 +1743,7 @@ The COALESCE function:
 Takes multiple arguments and returns the first non-missing value from the list.
 Commonly used in scenarios where you want to fill missing values by prioritizing available data.
 
-[SasFunctionsCompress.sas](SAS/SasFunctionsCompress.sas): This SAS script demonstrates the use of the COMPRESS function to remove specific characters from strings.
+📄 [SasFunctionsCompress.sas](SAS/SasFunctionsCompress.sas): This SAS script demonstrates the use of the COMPRESS function to remove specific characters from strings.
 
 Step 1: Data Step
 1. DATA compressed. Creates a dataset named compressed.
