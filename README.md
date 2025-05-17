@@ -1832,7 +1832,7 @@ Step 2: PROC PRINT
     </tr>
 </table>
 
-[SasFunctionsSubstr.sas](SAS/SasFunctionsSubstr.sas): This script demonstrates the use of the SUBSTR function in SAS to extract a portion of a string.
+📄 [SasFunctionsSubstr.sas](SAS/SasFunctionsSubstr.sas): This script demonstrates the use of the SUBSTR function in SAS to extract a portion of a string.
 
 Step 1: Data Step
 1. DATA new: Creates a dataset named new.
