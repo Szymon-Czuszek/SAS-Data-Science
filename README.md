@@ -1875,7 +1875,7 @@ Step 4: Explanation of SUBSTR
 - start: The starting position (1-based index).
 - length: The number of characters to extract.
 
-[SasFunctionsScan.sas](SAS/SasFunctionsScan.sas): This SAS script demonstrates the use of the SCAN function alongside the CATX function.
+📄 [SasFunctionsScan.sas](SAS/SasFunctionsScan.sas): This SAS script demonstrates the use of the SCAN function alongside the CATX function.
 
 Step 1: DATA Step
 1. DATA concat;: Creates a dataset named concat.
