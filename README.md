@@ -1964,7 +1964,7 @@ Step 4: Output
 2. Frequency Table:
 - Outputs the frequency of unique values or ranges in the dataset rand.
 
-[‎SAS/SasFunctionsLength.sas](‎SAS/SasFunctionsLength.sas): This SAS script demonstrates the use of the LENGTH, LENGTHN, and LENGTHC functions to evaluate string lengths and handle different cases of whitespace.
+📄 [‎SAS/SasFunctionsLength.sas](‎SAS/SasFunctionsLength.sas): This SAS script demonstrates the use of the LENGTH, LENGTHN, and LENGTHC functions to evaluate string lengths and handle different cases of whitespace.
 
 Step 1: DATA Step
 1. Variables. one, two, and three contain string values:
