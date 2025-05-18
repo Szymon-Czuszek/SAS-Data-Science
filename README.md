@@ -2038,7 +2038,7 @@ Step 3: Key Function Differences
     </tr>
 </table>
 
-[SasFunctionsTrim.sas](SAS/SasFunctionsTrim.sas): Using SAS TRIM and Concatenation Functions
+📄 [SasFunctionsTrim.sas](SAS/SasFunctionsTrim.sas): Using SAS TRIM and Concatenation Functions
 
 Step 1: Data Input and Transformation
 1. DATA trimdata; Creates a dataset named trimdata.
