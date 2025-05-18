@@ -1923,7 +1923,7 @@ Step 3: Output The final dataset concat will look like this:
     </tr>
 </table>
 
-[‎SAS/SasFunctionsRand.sas](‎SAS/SasFunctionsRand.sas): This SAS script generates random values from a Normal distribution using the RAND function and visualizes the output.
+📄 [‎SAS/SasFunctionsRand.sas](‎SAS/SasFunctionsRand.sas): This SAS script generates random values from a Normal distribution using the RAND function and visualizes the output.
 
 Step 1: DATA Step
 1. DATA rand;: Creates a dataset named rand.
