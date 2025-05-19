@@ -2095,7 +2095,7 @@ Step 3: Expected Output. Dataset Structure:
     </tr>
 </table>
 
-[‎SAS/SasFunctionsVerify.sas](‎SAS/SasFunctionsVerify.sas): Using SAS VERIFY Function to Validate Data
+📄 [‎SAS/SasFunctionsVerify.sas](‎SAS/SasFunctionsVerify.sas): Using SAS VERIFY Function to Validate Data
 
 Step 1: Data Validation with VERIFY
 1. DATA errors valid; Creates two datasets: errors and valid. Rows with invalid data are output to errors. Valid rows are sent to valid.
