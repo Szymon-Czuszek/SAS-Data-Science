@@ -2164,7 +2164,7 @@ Step 3: Expected Output
 
 ## Using Plots in SAS
 
-[PlotBar.sas](SAS/PlotBar.sas): This SAS script demonstrates data visualization techniques using the GPLOT and GCHART procedures.
+📄 [PlotBar.sas](SAS/PlotBar.sas): This SAS script demonstrates data visualization techniques using the GPLOT and GCHART procedures.
 
 Step 1: Data Input
 1. DATA houseprice. Reads data from a file houseprice (2).txt. Each record includes:
