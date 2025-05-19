@@ -2162,7 +2162,7 @@ Step 3: Expected Output
     </tr>
 </table>
 
-## Using Plots in SAS
+## 📌 Using Plots in SAS
 
 📄 [PlotBar.sas](SAS/PlotBar.sas): This SAS script demonstrates data visualization techniques using the GPLOT and GCHART procedures.
 
