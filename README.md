@@ -2306,7 +2306,7 @@ Key Features:
 3. Data Transformation:
 - Includes examples of calculated fields, aggregated measures, and formatted results for downstream reporting.
 
-[ProcSql6.sas](SAS/ProcSql6.sas): This script showcases advanced data manipulation and analysis techniques using PROC SQL in SAS. It builds upon prior scripts in the ProcSql series to demonstrate sophisticated query strategies, with a focus on enhancing data accuracy and reporting capabilities.
+📄 [ProcSql6.sas](SAS/ProcSql6.sas): This script showcases advanced data manipulation and analysis techniques using PROC SQL in SAS. It builds upon prior scripts in the ProcSql series to demonstrate sophisticated query strategies, with a focus on enhancing data accuracy and reporting capabilities.
 
 Key Features:
 1. Advanced Data Filtering:
