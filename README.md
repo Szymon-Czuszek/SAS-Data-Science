@@ -2322,7 +2322,7 @@ Key Features:
 - Optimized use of indexes for faster query execution.
 - Demonstrates query execution plans for large datasets.
 
-[ProcSql7.sas](SAS/ProcSql7.sas): This script demonstrates comprehensive examples of SQL operations in SAS, focusing on joining multiple datasets and managing complex relationships. It is a continuation of the ProcSql series, expanding on query optimization and data integration techniques.
+📄 [ProcSql7.sas](SAS/ProcSql7.sas): This script demonstrates comprehensive examples of SQL operations in SAS, focusing on joining multiple datasets and managing complex relationships. It is a continuation of the ProcSql series, expanding on query optimization and data integration techniques.
 
 Key Features:
 1. Complex Joins:
