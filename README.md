@@ -2390,7 +2390,7 @@ Key Features:
 5. Output Customization:
 - Applies formatted output with column aliases and calculated fields.
 
-[ProcSqlAlterTable.sas](SAS/ProcSqlAlterTable.sas): This script demonstrates how to modify existing tables using the ALTER TABLE statement in PROC SQL. It covers adding, modifying, and deleting table columns, as well as applying constraints and labels. This script is essential for maintaining and evolving database structures in SAS.
+📄 [ProcSqlAlterTable.sas](SAS/ProcSqlAlterTable.sas): This script demonstrates how to modify existing tables using the ALTER TABLE statement in PROC SQL. It covers adding, modifying, and deleting table columns, as well as applying constraints and labels. This script is essential for maintaining and evolving database structures in SAS.
 
 Key Features:
 1. Column Addition:
