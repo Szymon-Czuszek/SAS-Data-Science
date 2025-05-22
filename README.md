@@ -2358,7 +2358,7 @@ Key Features:
 - Formats grouped and summarized data for presentation-ready output.
 - Applies column aliases for clarity and readability.
 
-[ProcSql9.sas](SAS/ProcSql9.sas): This script introduces advanced SQL techniques in SAS, focusing on complex queries, subquery optimization, and combining datasets using SQL joins and set operations. It is the ninth script in the ProcSql series, designed for users aiming to master sophisticated SQL capabilities within SAS.
+📄 [ProcSql9.sas](SAS/ProcSql9.sas): This script introduces advanced SQL techniques in SAS, focusing on complex queries, subquery optimization, and combining datasets using SQL joins and set operations. It is the ninth script in the ProcSql series, designed for users aiming to master sophisticated SQL capabilities within SAS.
 
 Key Features:
 1. Advanced Joins:
