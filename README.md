@@ -2341,7 +2341,7 @@ Key Features:
 - Formats and sorts query results for report-ready output.
 - Demonstrates the use of SQL aliases for improved readability.
 
-[ProcSql8.sas](SAS/ProcSql8.sas): This script showcases advanced SQL functionalities in SAS, emphasizing data summarization, grouping, and conditional aggregation. It is the eighth installment in the ProcSql series, targeting scenarios that require detailed analysis and grouped reporting.
+📄 [ProcSql8.sas](SAS/ProcSql8.sas): This script showcases advanced SQL functionalities in SAS, emphasizing data summarization, grouping, and conditional aggregation. It is the eighth installment in the ProcSql series, targeting scenarios that require detailed analysis and grouped reporting.
 
 Key Features:
 1. Data Grouping and Aggregation:
