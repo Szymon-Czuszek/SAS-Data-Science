@@ -2374,7 +2374,7 @@ Key Features:
 5. Output Customization:
 - Applies formatted output with column aliases and calculated fields.
 
-[ProcSqlCreateTable.sas](SAS/ProcSqlCreateTable.sas): This script introduces advanced SQL techniques in SAS, focusing on complex queries, subquery optimization, and combining datasets using SQL joins and set operations. It is the ninth script in the ProcSql series, designed for users aiming to master sophisticated SQL capabilities within SAS.
+📄 [ProcSqlCreateTable.sas](SAS/ProcSqlCreateTable.sas): This script introduces advanced SQL techniques in SAS, focusing on complex queries, subquery optimization, and combining datasets using SQL joins and set operations. It is the ninth script in the ProcSql series, designed for users aiming to master sophisticated SQL capabilities within SAS.
 
 Key Features:
 1. Advanced Joins:
