@@ -2430,7 +2430,7 @@ Key Features:
 4. Clean and Readable Output:
 - Outputs results in a clear tabular format, making it easy to analyze duplicate records.
 
-[ProcSqlDropDuplicates.sas](SAS/ProcSqlDropDuplicates.sas): This script demonstrates how to remove duplicate records from a dataset using PROC SQL. It ensures data integrity by keeping only unique records based on specified columns.
+📄 [ProcSqlDropDuplicates.sas](SAS/ProcSqlDropDuplicates.sas): This script demonstrates how to remove duplicate records from a dataset using PROC SQL. It ensures data integrity by keeping only unique records based on specified columns.
 
 Key Features:
 1. Duplicate Removal:
