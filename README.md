@@ -2404,7 +2404,7 @@ Key Features:
 5. Best Practices:
 - Includes recommendations for table maintenance, such as preserving data integrity during alterations.
 
-[ProcSqlInsertToTable.sas](SAS/ProcSqlInsertToTable.sas): This script provides examples of how to insert data into existing tables using the INSERT INTO statement in PROC SQL. It includes multiple methods for adding rows to tables, ensuring flexibility for dynamic and static data insertion scenarios.
+📄 [ProcSqlInsertToTable.sas](SAS/ProcSqlInsertToTable.sas): This script provides examples of how to insert data into existing tables using the INSERT INTO statement in PROC SQL. It includes multiple methods for adding rows to tables, ensuring flexibility for dynamic and static data insertion scenarios.
 
 Key Features:
 1. Single Row Insertion:
