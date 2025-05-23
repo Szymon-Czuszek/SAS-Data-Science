@@ -2418,7 +2418,7 @@ Key Features:
 5. Commented Examples:
 - Includes well-commented sections to guide users through different insertion techniques.
 
-[ProcSqlFindDuplicates.sas](SAS/ProcSqlFindDuplicates.sas): This script demonstrates how to identify duplicate records in a dataset using PROC SQL. It highlights efficient methods for detecting duplicates based on one or more columns, ensuring data consistency and accuracy.
+📄 [ProcSqlFindDuplicates.sas](SAS/ProcSqlFindDuplicates.sas): This script demonstrates how to identify duplicate records in a dataset using PROC SQL. It highlights efficient methods for detecting duplicates based on one or more columns, ensuring data consistency and accuracy.
 
 Key Features:
 1. Duplicate Detection:
