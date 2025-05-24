@@ -2454,7 +2454,7 @@ Key Features:
 4. Efficient Data Handling:
 - Processes large datasets effectively by leveraging PROC SQL's optimized sorting capabilities.
 
-[ProcSqlCase.sas](SAS/ProcSqlCase.sas): This script demonstrates the use of the CASE statement within PROC SQL in SAS. It illustrates how conditional logic can be applied to create new columns or modify existing data based on specific conditions.
+📄 [ProcSqlCase.sas](SAS/ProcSqlCase.sas): This script demonstrates the use of the CASE statement within PROC SQL in SAS. It illustrates how conditional logic can be applied to create new columns or modify existing data based on specific conditions.
 
 Key Features:
 1. Conditional Logic with CASE:
