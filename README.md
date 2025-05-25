@@ -2618,7 +2618,7 @@ Key Features:
 4. Data Querying (With Indexing):
 - PROC SQL retrieves the same records into INDEX but benefits from the indexed search.
 
-## Using Macro Variables in SAS
+## 📌 Using Macro Variables in SAS
 
 📄 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab. This script imports crime outcome data, prints a subset, and displays macro variables.
 
