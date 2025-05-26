@@ -2678,7 +2678,7 @@ Code Explanation:
 3. Log Output:
 - The %PUT _ALL_ statement lists all macro variables and their current values in the SAS log, allowing debugging and tracking.
 
-[MacroVariables4.sas](SAS/MacroVariables4.sas): This script demonstrates importing a dataset using a DATA step, utilizing SAS macro variables, and enabling the SYMBOLGEN system option to display macro variable resolutions in the SAS log.
+📄 [MacroVariables4.sas](SAS/MacroVariables4.sas): This script demonstrates importing a dataset using a DATA step, utilizing SAS macro variables, and enabling the SYMBOLGEN system option to display macro variable resolutions in the SAS log.
 
 Key Features:
 1. CSV Data Import:
