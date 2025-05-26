@@ -2700,7 +2700,7 @@ Code Explanation:
 3. PROC PRINT:
 - Prints the first 10 observations of the dataset with a dynamic title derived from a macro variable.
 
-[MacroVariables5.sas](SAS/MacroVariables5.sas): This script demonstrates the use of a DATA step to import and process a CSV dataset, followed by a %INDEX macro example to locate the position of a specific character within a string.
+📄 [MacroVariables5.sas](SAS/MacroVariables5.sas): This script demonstrates the use of a DATA step to import and process a CSV dataset, followed by a %INDEX macro example to locate the position of a specific character within a string.
 
 Key Features:
 1. CSV Data Import:
