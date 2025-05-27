@@ -2765,7 +2765,7 @@ Code Explanation:
 4. Macro Execution:
 - Demonstrates executing macros with different combinations of procedures and variables.
 
-[MacroInSas2.sas](SAS/MacroInSas2.sas): This script demonstrates the use of SAS macros to automate the calculation of average sales for multiple years.
+📄 [MacroInSas2.sas](SAS/MacroInSas2.sas): This script demonstrates the use of SAS macros to automate the calculation of average sales for multiple years.
 
 Key Features:
 1. Multiple Datasets Creation:
