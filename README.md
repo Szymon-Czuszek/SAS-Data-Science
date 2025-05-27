@@ -2720,7 +2720,7 @@ Code Explanation:
 - %INDEX(&a, v) calculates the position of the character v in the string a very long value.
 - The result is stored in the macro variable b and displayed in the SAS log.
 
-[MacroVariables6.sas](SAS/MacroVariables6.sas): This script demonstrates the usage of the %SCAN macro function in SAS for extracting specific substrings or words from a given text string. It highlights its flexibility in handling delimiters and parsing text dynamically.
+📄 [MacroVariables6.sas](SAS/MacroVariables6.sas): This script demonstrates the usage of the %SCAN macro function in SAS for extracting specific substrings or words from a given text string. It highlights its flexibility in handling delimiters and parsing text dynamically.
 
 Key Features:
 1. Extract Substrings with %SCAN:
