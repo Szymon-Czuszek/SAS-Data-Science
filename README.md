@@ -2740,7 +2740,7 @@ Code Explanation:
 4. Output:
 - Displays the extracted WORD and PART values using %PUT.
 
-## Using SAS Macros
+## 📌 Using SAS Macros
 
 [MacroInSas1.sas](SAS/MacroInSas1.sas): This script demonstrates the creation and execution of SAS macros to perform statistical analysis on a dataset.
 
