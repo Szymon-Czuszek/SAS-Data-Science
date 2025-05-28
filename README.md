@@ -2804,7 +2804,7 @@ Code Explanation:
 2. Logging with /SOURCE2:
 - Ensures that the included script's code appears in the log for better traceability.
 
-[MacroInSas4.sas](SAS/MacroInSas4.sas): This script defines a macro %logitma to perform logistic regression in SAS using the PROC LOGISTIC procedure. It allows dynamic selection of dependent and independent variables.
+📄 [MacroInSas4.sas](SAS/MacroInSas4.sas): This script defines a macro %logitma to perform logistic regression in SAS using the PROC LOGISTIC procedure. It allows dynamic selection of dependent and independent variables.
 
 Key Features:
 1. Data Import:
