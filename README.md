@@ -2884,7 +2884,7 @@ Key Features:
 
 ## Solutions to exercises in Udemy course by Aslam Khan: "The Simplest Guide to SAS Programming- SAS Base-SAS Advanced"
 
-[SAS_Course_Exercise_19.sas](SAS/SAS_Course_Exercise_19.sas): This code creates a vertical bar chart displaying the mean MSRP (Manufacturer's Suggested Retail Price) of cars for each make using the SASHELP.CARS dataset. The second step involves visually inspecting the chart to identify the car with the highest mean MSRP, which corresponds to the tallest bar in the chart.
+📄 [SAS_Course_Exercise_19.sas](SAS/SAS_Course_Exercise_19.sas): This code creates a vertical bar chart displaying the mean MSRP (Manufacturer's Suggested Retail Price) of cars for each make using the SASHELP.CARS dataset. The second step involves visually inspecting the chart to identify the car with the highest mean MSRP, which corresponds to the tallest bar in the chart.
 
 [SAS_Course_Exercise_20.sas](SAS/SAS_Course_Exercise_20.sas): This code generates a report using PROC REPORT on the SASHELP.CARS dataset. It includes columns for Make, Type, Origin, Sum Retail Price, and Mean Retail Price. The Sum Retail Price column displays the total MSRP of all cars within each Make, Type, and Origin group, while the Mean Retail Price column shows the average MSRP for the same groups.
 
