@@ -2895,7 +2895,7 @@ Key Features:
 3. Run the code to execute the specified data processing or analysis tasks.
 4. Customize the code as needed for your specific use case.
 
-## Future Updates
+## 🌍 Future Updates
 
 This repository will be regularly updated with additional SAS code snippets for various data science tasks and analyses. Stay tuned for more examples and templates to support your data science projects.
 
