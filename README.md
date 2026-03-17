@@ -25,8 +25,7 @@
 - This example serves as a template for creating datasets to manage information about characters in a fictional universe, which can be valuable for various analytical and storytelling purposes in SAS.
 
 ## 📌 SAS Data Processing Example: "employees" Dataset
-
-📄 [InputUsingDelimiters.sas](SAS/InputUsingDelimiters.sas): This SAS code snippet demonstrates the creation of a dataset named "employees" containing information about employees. The dataset has four variables:
+- 📄 [InputUsingDelimiters.sas](SAS/InputUsingDelimiters.sas): This SAS code snippet demonstrates the creation of a dataset named "employees" containing information about employees. The dataset has four variables:
 
 ### 📝 Dataset Structure
 1. **name**: Represents the name of the employee.
