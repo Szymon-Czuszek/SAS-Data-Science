@@ -99,8 +99,7 @@ The data is manually entered using the input statement followed by the cards sec
 This example serves as a template for creating datasets to manage information about individuals, which can be valuable for various analytical and reporting purposes in SAS.
 
 ## 📌 SAS Data Processing Example: "personnel" Dataset
-
-📄 [InputUsingFixedWidth.sas](SAS/InputUsingFixedWidth.sas): This SAS code snippet demonstrates the creation of a dataset named "personnel" containing information about individuals. The dataset has four variables:
+- 📄 [InputUsingFixedWidth.sas](SAS/InputUsingFixedWidth.sas): This SAS code snippet demonstrates the creation of a dataset named "personnel" containing information about individuals. The dataset has four variables:
 
 ### 📝 Dataset Structure
 1. **identifier**: Represents the unique identifier of the individual.
