@@ -135,8 +135,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 - The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
 ## 📌 SAS Data Processing Example: "personal_data" Dataset
-
-📄 [InputUsingSlash.sas](SAS/InputUsingSlash.sas): This SAS code snippet demonstrates the creation of a dataset named "personal_data" containing information about individuals. The dataset has four variables:
+- 📄 [InputUsingSlash.sas](SAS/InputUsingSlash.sas): This SAS code snippet demonstrates the creation of a dataset named "personal_data" containing information about individuals. The dataset has four variables:
 
 ### 📝 Dataset Structure
 1. **first_name**: Represents the first name of the individual.
