@@ -376,8 +376,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - The RUN statement marks the end of the DATA step.
 
 ## 📌 Cars Project SAS Script Explanation
-
-📄 [ProjectCars.sas](SAS/ProjectCars.sas): This SAS script, named "CarsProject.SAS", performs data import, manipulation, and analysis tasks related to car data from different regions.
+- 📄 [ProjectCars.sas](SAS/ProjectCars.sas): This SAS script, named "CarsProject.SAS", performs data import, manipulation, and analysis tasks related to car data from different regions.
 
 ### 📊 Data Entry Method
 
