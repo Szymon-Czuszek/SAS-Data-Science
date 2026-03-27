@@ -814,8 +814,7 @@ This SAS code snippet demonstrates the conversion of numeric employee salary and
 This SAS code snippet demonstrates the process of importing employee bonus information into SAS datasets for further analysis or processing.
 
 ## 📌 SAS Data Visualization: Employee Gender Distribution
-
-📄 [ProcChartVbarHbarPie.sas](SAS/ProcChartVbarHbarPie.sas): This SAS code snippet processes employee data and visualizes the gender distribution using various charts.
+- 📄 [ProcChartVbarHbarPie.sas](SAS/ProcChartVbarHbarPie.sas): This SAS code snippet processes employee data and visualizes the gender distribution using various charts.
 
 ### 📊 Data Entry Method
 
