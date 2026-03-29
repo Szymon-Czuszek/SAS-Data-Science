@@ -955,8 +955,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
    - Column widths and formatting options are specified using DEFINE statements.
 
 ## 📌 SAS Frequency Analysis Example
-
-📄 [UsingProcFreq.sas](SAS/UsingProcFreq.sas)
+- 📄 [UsingProcFreq.sas](SAS/UsingProcFreq.sas)
 
 ### 📊 Data Entry Method
 
