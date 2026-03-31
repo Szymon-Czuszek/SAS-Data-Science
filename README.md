@@ -1033,8 +1033,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - The subsequent %PUT statements use the double ampersand operator to resolve the macro variable APPLE in a cascading manner.
 
 ## 📌 Custom Macro for Reporting
-
-📄 [MacroProcedure.sas](SAS/MacroProcedure.sas)
+- 📄 [MacroProcedure.sas](SAS/MacroProcedure.sas)
 
 ### 🔍 Explanation
 - This SAS macro, named MYREPORT, is defined to generate summary statistics and print data for a specified dataset within a given library.
