@@ -1013,8 +1013,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - PROC PRINT is used to display observations from the CLASS dataset where the value of the variable specified by the macro variable VAR matches the value specified by the macro variable VALUE.
 
 ## 📌 Macro Variable Manipulation
-
-📄 [MacroAmpersand.sas.sas](SAS/MacroAmpersand.sas.sas)
+- 📄 [MacroAmpersand.sas.sas](SAS/MacroAmpersand.sas.sas)
 
 ### 🔍 Explanation
 - Macro variable B is assigned the value 10 using the %LET statement.
