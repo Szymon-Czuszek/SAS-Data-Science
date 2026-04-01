@@ -1080,8 +1080,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - Finally, the result of the arithmetic operation is displayed using the `PUT` statement.
 
 ## 📌 Cars Analysis Project Overview
-
-📄 [Project-Cars.sas](SAS/Project-Cars.sas)
+- 📄 [Project-Cars.sas](SAS/Project-Cars.sas)
 
 ### 🚗 Part 1
 #### 📥 Importing and Analyzing Car Data
