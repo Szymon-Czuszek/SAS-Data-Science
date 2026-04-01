@@ -1047,8 +1047,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - This approach enables easy generation of summary reports for different datasets and variables by simply calling the MYREPORT macro with appropriate parameters.
 
 ## 📌 Custom Macro for Reporting
-
-📄 [MacroProcedure2.sas](SAS/MacroProcedure2.sas)
+- 📄 [MacroProcedure2.sas](SAS/MacroProcedure2.sas)
 
 ### 🔍 Explanation
 - The macro MYREPORT is defined to generate summary statistics and print data for a specified dataset within a given library.
