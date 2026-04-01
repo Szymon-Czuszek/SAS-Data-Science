@@ -1104,8 +1104,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Statistical Calculation**: A macro `myStat` calculates the frequency count and percentage of hybrid cars based on car make and type.
 
 ## 📌 Project Heavy Weight - Analyzing Student Health Data
-
-📄 [ProjectHeavyWeight.sas](SAS/ProjectHeavyWeight.sas)
+- 📄 [ProjectHeavyWeight.sas](SAS/ProjectHeavyWeight.sas)
 
 ### 🔄 Importing and Preprocessing Data
 - **Data Import**: Excel sheets for Statistics (STAT) and History (HIST) classes and student height data (STUDHT) are imported into SAS.
