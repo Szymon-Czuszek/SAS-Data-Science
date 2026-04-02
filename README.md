@@ -1166,8 +1166,7 @@ The statement PUT years=months=; writes the values of years and months to the SA
 Otherwise: It creates a variable, yrsleft, to show the remaining years to reach 5 (calculated as 5 - years).
 
 ## 📌 Variables in SAS
-
-📄 [CreatingVariables.sas](SAS/CreatingVariables.sas): his script creates a dataset that calculates total sales for each individual based on quarterly sales data.
+- 📄 [CreatingVariables.sas](SAS/CreatingVariables.sas): his script creates a dataset that calculates total sales for each individual based on quarterly sales data.
 
 ### 📊 Data Entry Method
 DATA Step: A dataset named sales is created with the DATA statement. The INPUT statement defines variables:
