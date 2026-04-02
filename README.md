@@ -1144,8 +1144,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **SQL Code for FASTPLANE**: PROC SQL is used to find the maximum speed value and store it in the FASTPLANE macro variable.
 
 ## 📌 Using Do Loop in SAS
-
-📄 [DoLoop.sas](SAS/DoLoop.sas): This script, DoLoop.sas, demonstrates how to create a dataset using a DO loop in SAS with a conditional exit.
+- 📄 [DoLoop.sas](SAS/DoLoop.sas): This script, DoLoop.sas, demonstrates how to create a dataset using a DO loop in SAS with a conditional exit.
 
 ### 📊 Data Entry Method
 - DATA Step A: A dataset named A is created with a DO loop that iterates through values for i, starting at 1 and incrementing by 0.5 each time. The loop stops if y reaches or exceeds 15, using the WHILE (y < 15) condition.
