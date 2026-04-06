@@ -1425,8 +1425,7 @@ Result:
 - This script demonstrates a structured approach to importing CSV data into SAS, highlighting the flexibility of SAS in managing data types and file-specific quirks.
 
 ## 📌 Merging data in SAS
-
-📄 [Merging.sas](SAS/Merging.sas): This SAS script processes two datasets containing information about house prices, calculates profits, and merges them into a single dataset after sorting.
+- 📄 [Merging.sas](SAS/Merging.sas): This SAS script processes two datasets containing information about house prices, calculates profits, and merges them into a single dataset after sorting.
 
 Step 1: Import and Process houseprice Data
 1. DATA houseprice: Reads the file houseprice (2).txt, with space (" ") as the delimiter.
