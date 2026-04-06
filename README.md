@@ -1529,8 +1529,7 @@ Step 5: Purpose and Use Case. This script is useful for preparing raw data for a
 - By the end, the dataset cleannewhomes is ready for further analysis or visualization.
 
 ## 📌 Using SAS Functions
-
-📄 [SasFunctions.sas](SAS/SasFunctions.sas): Using SUM to add arguments in SAS.
+- 📄 [SasFunctions.sas](SAS/SasFunctions.sas): Using SUM to add arguments in SAS.
 
 Step 1: Data Manipulation Using Functions. DATA summing. Demonstrates the use of the SUM function for various purposes:
 - sumthis = SUM(7, 9, 13); Sums three numeric values: 7, 9, and 13.
