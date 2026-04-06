@@ -1498,8 +1498,7 @@ Step 4: Print the Sorted Dataset
 1. PROC PRINT DATA=sortedhouseprice: Displays the sorted dataset to verify the order of the records after sorting.
 
 ## 📌 Renaming Variables in SAS
-
-📄 [SAS/RenamingVariables.sas](SAS/RenamingVariables.sas): Using the RENAME statement in SAS.
+- 📄 [SAS/RenamingVariables.sas](SAS/RenamingVariables.sas): Using the RENAME statement in SAS.
 
 Step 1: Create the newhomes Dataset DATA newhomes. Creates a dataset with three variables:
 - x: The type of home (character variable, e.g., Duplex).
