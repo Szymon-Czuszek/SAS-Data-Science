@@ -2133,7 +2133,7 @@ Step 5:Potential Output Example
 - Heights represent price or tax values.
 - All bars are filled with yellow.
 
-📄 [PlotScatter.sas](SAS/PlotScatter.sas)
+- 📄 [PlotScatter.sas](SAS/PlotScatter.sas)
 
 Step 1: Data Input
 1. DATA houseprice; Reads data from the file houseprice (2).txt into a dataset called houseprice.
