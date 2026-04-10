@@ -2217,7 +2217,7 @@ Key Features:
 - Design output-ready datasets for integration with reporting tools.
 - Generate insights through calculated fields and formatted data.
 
-📄 [ProcSql5.sas](SAS/ProcSql5.sas): This script demonstrates advanced SQL techniques in SAS, focusing on optimizing query performance, joining datasets, and implementing complex data manipulations. It serves as the final iteration in the ProcSql series, showcasing refined approaches for real-world data analysis.
+- 📄 [ProcSql5.sas](SAS/ProcSql5.sas): This script demonstrates advanced SQL techniques in SAS, focusing on optimizing query performance, joining datasets, and implementing complex data manipulations. It serves as the final iteration in the ProcSql series, showcasing refined approaches for real-world data analysis.
 
 Key Features:
 1. Optimized Joins:
