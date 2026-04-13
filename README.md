@@ -2390,7 +2390,6 @@ Key Features:
 - Combines the power of CASE statements with SQL querying for flexible data manipulation.
 
 ## 📌 Using Indexes In SAS
-
 - 📄 [ProcSqlIndex.sas](SAS/ProcSqlIndex.sas): This script demonstrates how to create both simple and composite indexes in SAS using PROC SQL.
 
 Key Features:
