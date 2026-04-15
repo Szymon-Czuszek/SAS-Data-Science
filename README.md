@@ -2556,7 +2556,7 @@ Key Features:
 5. Macro Debugging:
 - %PUT _all_; outputs all macro variables for debugging.
 
-📄 [MacroVariables2.sas](SAS/MacroVariables2.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
+- 📄 [MacroVariables2.sas](SAS/MacroVariables2.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
 
 Key Features:
 1. CSV Data Import:
