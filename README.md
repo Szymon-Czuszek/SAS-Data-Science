@@ -17,6 +17,7 @@
 4. **weight**: Indicates the weight of the character.
 
 ### 📊 Data Entry Method
+
 - The data is manually entered using the `cards` section, where each line represents information about a character, including their name, gender, height, and weight.
 
 ### 🔍 Explanation
