@@ -249,7 +249,8 @@ The DATA step is used to process data and create the "modified_student_records" 
 - 📄 [UsingCompressCompbl.sas](SAS/UsingCompressCompbl.sas): This SAS code snippet demonstrates text processing functions using the COMPRESS and COMPBL functions.
 
 ### 📊 Data Entry Method
-The DATA step is used to create the "text_processing" dataset and perform text processing operations on character strings.
+
+- The DATA step is used to create the "text_processing" dataset and perform text processing operations on character strings.
 
 ### 🔍 Explanation
 - The DATA statement begins the DATA step and specifies the name of the output dataset as "text_processing".
