@@ -22,6 +22,7 @@
 - The data is manually entered using the `cards` section, where each line represents information about a character, including their name, gender, height, and weight.
 
 ### 🔍 Explanation
+
 - The characters dataset is structured to store information about fictional characters, including their name, gender, height, and weight.
 - Each observation in the dataset corresponds to a single character and includes their respective information.
 - The data is manually entered into the code using the input statement followed by the cards section.
