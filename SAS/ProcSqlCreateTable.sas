@@ -19,6 +19,16 @@ DATALINES;
 ;
 RUN;
 
+/*============================================================================*/
+/* STEP 2: Create employee weight dataset                                     */
+/*============================================================================*/
+
+/*
+   This dataset stores:
+   - employee IDs
+   - employee weights
+*/
+
 DATA info2;
 INPUT empidd$ weight;
 DATALINES;
