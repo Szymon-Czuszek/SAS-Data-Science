@@ -1,3 +1,14 @@
+/*============================================================================*/
+/* STEP 1: Create employee information dataset                                */
+/*============================================================================*/
+
+/*
+   This dataset stores:
+   - employee IDs
+   - employee first names
+   - employee heights
+*/
+
 DATA info;
 INPUT empid$ fname$ height;
 DATALINES;
