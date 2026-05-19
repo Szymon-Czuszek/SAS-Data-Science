@@ -1,32 +1,39 @@
 # SAS Data Science 📊
 
 ## Overview 🌍
+
 - This repository contains SAS code snippets for data science tasks and analyses. The code provided here serves as examples and templates for various data manipulation, analysis, and visualization tasks using SAS.
 
 ## 📂 Contents
 
 ## 📌 SAS Data Processing Example: "characters" Dataset
+
 - 📄 [CharactersData.sas](SAS/CharactersData.sas): This SAS code snippet demonstrates the creation of a dataset named "characters" containing information about fictional characters. The dataset has four variables:
 
 ### 📝 Dataset Structure
+
 1. **name**: Represents the name of the character.
 2. **gender**: Indicates the gender of the character (M for male, F for female).
 3. **height**: Represents the height of the character.
 4. **weight**: Indicates the weight of the character.
 
 ### 📊 Data Entry Method
-- The data is manually entered using the `cards` section, where each line represents information about a character, including their name, gender, height, and weight.
+
+- The data is entered manually using the `cards` section, where each line represents information about a character, including their name, gender, height, and weight.
 
 ### 🔍 Explanation
+
 - The characters dataset is structured to store information about fictional characters, including their name, gender, height, and weight.
 - Each observation in the dataset corresponds to a single character and includes their respective information.
 - The data is manually entered into the code using the input statement followed by the cards section.
 - This example serves as a template for creating datasets to manage information about characters in a fictional universe, which can be valuable for various analytical and storytelling purposes in SAS.
 
 ## 📌 SAS Data Processing Example: "employees" Dataset
+
 - 📄 [InputUsingDelimiters.sas](SAS/InputUsingDelimiters.sas): This SAS code snippet demonstrates the creation of a dataset named "employees" containing information about employees. The dataset has four variables:
 
 ### 📝 Dataset Structure
+
 1. **name**: Represents the name of the employee.
 2. **gender**: Indicates the gender of the employee (M for male, F for female).
 3. **age**: Represents the age of the employee.
@@ -43,6 +50,7 @@
 - The resulting dataset provides a structured representation of employees' demographic information, which can be further analysed or used for statistical modeling and visualisation tasks in SAS.
  
 ## 📌 SAS Data Processing Example: "guardians" Dataset
+
 - 📄 [UsingDSD.sas](SAS/UsingDSD.sas): This SAS code snippet demonstrates the creation of a dataset named "guardians" containing information about guardians. The dataset has three variables:
 
 ### 📝 Dataset Structure
@@ -59,6 +67,7 @@ Each observation in the dataset corresponds to a single guardian and includes th
 The dataset can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
 ## 📌 SAS Data Processing Example: "custom_dataset" Dataset
+
 - 📄 [InputUsingAt.sas](SAS/InputUsingAt.sas): This SAS code snippet demonstrates the creation of a dataset named "custom_dataset" containing information about individuals. The dataset has six variables:
 
 ### 📝 Dataset Structure
@@ -80,6 +89,7 @@ The data is entered using the `cards` section, where each line represents inform
 This example serves as a template for creating datasets to manage information about individuals, which can be valuable for various analytical and reporting purposes in SAS.
 
 ## 📌 SAS Data Processing Example: "individuals" Dataset
+
 - 📄 [InputUsing2At.sas](SAS/InputUsing2At.sas): This SAS code snippet demonstrates the creation of a dataset named "individuals" containing information about individuals. The dataset has six variables:
 
 ### 📝 Dataset Structure
@@ -99,6 +109,7 @@ The data is manually entered using the input statement followed by the cards sec
 This example serves as a template for creating datasets to manage information about individuals, which can be valuable for various analytical and reporting purposes in SAS.
 
 ## 📌 SAS Data Processing Example: "personnel" Dataset
+
 - 📄 [InputUsingFixedWidth.sas](SAS/InputUsingFixedWidth.sas): This SAS code snippet demonstrates the creation of a dataset named "personnel" containing information about individuals. The dataset has four variables:
 
 ### 📝 Dataset Structure
@@ -116,6 +127,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 - The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
 ## 📌 SAS Data Processing Example: "individual_info" Dataset
+
 - 📄 [InputUsingHash.sas](SAS/InputUsingHash.sas): This SAS code snippet demonstrates the creation of a dataset named "individual_info" containing information about individuals. The dataset has four variables:
 
 ### 📝 Dataset Structure
@@ -135,6 +147,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 - The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
 ## 📌 SAS Data Processing Example: "personal_data" Dataset
+
 - 📄 [InputUsingSlash.sas](SAS/InputUsingSlash.sas): This SAS code snippet demonstrates the creation of a dataset named "personal_data" containing information about individuals. The dataset has four variables:
 
 ### 📝 Dataset Structure
@@ -154,6 +167,7 @@ The data is read from the "cards" section using the INPUT statement with specifi
 - The resulting dataset provides a structured representation of individuals' demographic information, which can be further analyzed or used for statistical modeling and visualization tasks in SAS.
 
 ## 📌 SAS Data Import Example: "employee_data" Dataset
+
 - 📄 [InputUsingProcImportExcel.sas](SAS/InputUsingProcImportExcel.sas): This SAS code snippet demonstrates the import of data from an Excel file named "employee_data.xlsx" into a dataset named "employee_data". 
 
 ### 📝 Dataset Structure
@@ -169,6 +183,7 @@ The PROC IMPORT procedure is used to import data from the specified Excel file. 
 - This code snippet demonstrates the process of importing data from an Excel file into a SAS dataset using PROC IMPORT, providing a way to access and analyze external data within the SAS environment.
 
 ## 📌 SAS Data Processing Example: "selected_females" Dataset
+
 - 📄 [UsingWhereDataStep.sas](SAS/UsingWhereDataStep.sas): This SAS code snippet demonstrates the creation of a dataset named "selected_females" containing information about selected females from the "sashelp.class" dataset. 
 
 ### 📊 Data Entry Method
@@ -182,6 +197,7 @@ The DATA step is used to create the "selected_females" dataset. Data is copied f
 - This code snippet creates a new dataset named "selected_females" by copying data from the existing "sashelp.class" dataset and including only observations where the sex variable is "F" (indicating females). The resulting dataset can be further analyzed or used for various tasks in SAS.
 
 ## 📌 SAS Data Printing Example: "selected_females_age_12" Dataset
+
 - 📄 [UsingWhereProcStep.sas](SAS/UsingWhereProcStep.sas): This SAS code snippet demonstrates the printing of data from the "sashelp.class" dataset for selected females aged 12.
 
 ### 📊 Data Entry Method
@@ -195,6 +211,7 @@ The PROC PRINT procedure is used to print data from the specified dataset. The D
 - This code snippet prints data from the "sashelp.class" dataset for selected females aged 12, demonstrating the use of PROC PRINT for data reporting and filtering. Unlike a DATA step, PROC PRINT does not involve the creation or modification of datasets; instead, it operates on existing datasets for reporting purposes.
 
 ## 📌 SAS Data Processing Example: "modified_student_info" Dataset
+
 - 📄 [UsingCharacterFunctions.sas](SAS/UsingCharacterFunctions.sas): This SAS code snippet demonstrates the processing of data from the "student_info" dataset to create a new dataset named "modified_student_info" with modified variables.
 
 ### 📊 Data Entry Method
@@ -213,6 +230,7 @@ The DATA step is used to process data and create the "modified_student_info" dat
 - This code snippet creates a new dataset named "modified_student_info" by processing data from the "student_info" dataset. It applies various transformations to the first_name and last_name variables, creating new variables with modified values. The resulting dataset can be further analyzed or used for various tasks in SAS.
 
 ## 📌 SAS Data Processing Example: "modified_student_records" Dataset
+
 - 📄 [UsingSubstrCatTrimStripLeft.sas](SAS/UsingSubstrCatTrimStripLeft.sas): This SAS code snippet demonstrates the processing of data from the "student_records" dataset to create a new dataset named "modified_student_records" with modified variables.
 
 ### 📊 Data Entry Method
@@ -230,10 +248,12 @@ The DATA step is used to process data and create the "modified_student_records" 
 - This code snippet creates a new dataset named "modified_student_records" by processing data from the "student_records" dataset. It applies various transformations to the first_name, last_name, and course variables, creating new variables with modified values. The resulting dataset can be further analyzed or used for various tasks in SAS.
 
 ## 📌 SAS Text Processing Example: "text_processing" Dataset
+
 - 📄 [UsingCompressCompbl.sas](SAS/UsingCompressCompbl.sas): This SAS code snippet demonstrates text processing functions using the COMPRESS and COMPBL functions.
 
 ### 📊 Data Entry Method
-The DATA step is used to create the "text_processing" dataset and perform text processing operations on character strings.
+
+- The DATA step is used to create the "text_processing" dataset and perform text processing operations on character strings.
 
 ### 🔍 Explanation
 - The DATA statement begins the DATA step and specifies the name of the output dataset as "text_processing".
@@ -244,6 +264,7 @@ The DATA step is used to create the "text_processing" dataset and perform text p
 - This code snippet demonstrates the usage of text processing functions COMPRESS and COMPBL to manipulate character strings in SAS, providing flexibility in data cleansing and formatting tasks.
 
 ## 📌 SAS Data Processing Example: "student_data" Dataset
+
 - 📄 [IfElseIf.sas](SAS/IfElseIf.sas): This SAS code snippet demonstrates the processing of data from the "sashelp.class" dataset to calculate Body Mass Index (BMI) and determine the weight status of students.
 
 ### 📊 Data Entry Method
@@ -265,6 +286,7 @@ The DATA step is used to process data and create the "student_data" dataset. BMI
 - This code snippet creates a new dataset named "student_data" by processing data from the "sashelp.class" dataset. It calculates BMI and determines weight status for each student based on BMI values. The resulting dataset can be further analyzed or used for various tasks in SAS.
 
 ## 📌 SAS Date Comparison Example: "date_comparison" Dataset
+
 - 📄 [DatesInSAS.sas](SAS/DatesInSAS.sas): This SAS code snippet demonstrates the comparison of dates in SAS.
 
 ### 📊 Data Entry Method
@@ -278,6 +300,7 @@ The DATA step is used to create the "date_comparison" dataset and perform date c
 - This code snippet demonstrates the comparison of dates in SAS, including the calculation of date differences. SAS represents dates as the number of days since January 1, 1960, with January 1, 1960, being represented as 0. The resulting dataset "date_comparison" can be further analyzed or used for various tasks in SAS.
 
 ## 📌 SAS Student Health Information Processing
+
 - 📄 [DropKeepRename.sas](SAS/DropKeepRename.sas): This SAS code snippet processes student health information from the "sashelp.class" dataset to calculate Body Mass Index (BMI) and modify variable names.
 
 ### 🔍 Explanation
@@ -295,6 +318,7 @@ The DATA step is used to create the "date_comparison" dataset and perform date c
 - This code snippet showcases data processing techniques in SAS, including variable renaming, calculation of derived variables (BMI), and selecting specific variables for analysis or reporting purposes.
 
 ## 📌 Processing Employee Compensation Data with "employee_compensation" Dataset
+
 - 📄 [SummingNull.sas](SAS/SummingNull.sas): The DATA step creates a dataset named "employee_compensation" with variables name, salary, and bonus.
 
 ### 📝 Dataset Structure
@@ -313,6 +337,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - These SAS code snippets illustrate how different methods of calculation can produce different results when dealing with missing values in SAS datasets.
 
 ## 📌 SAS Numeric Functions Example with _NULL_ Dataset
+
 - 📄 [NullDatasetAndFunctions.sas](SAS/NullDatasetAndFunctions.sas): Performing operations on a _NULL_ data set.
 
 ### 🔍 Explanation
@@ -323,6 +348,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - These SAS code snippets showcase the usage of numeric functions such as ABS, CEIL, FLOOR, INT, MIN, and MAX, demonstrating their functionality and how they can be utilized in SAS programming for numerical calculations and comparisons.
 
 ## 📌 SAS String Manipulation Example: Extracting Country Name using the "country_data" Dataset
+
 - 📄 [FunctionScan.sas](SAS/FunctionScan.sas): This SAS code snippet demonstrates how to use the SCAN function to extract specific words or tokens from a string in SAS. In this example, the fourth word from the given string representing the name of a country is extracted and stored in a new variable for further analysis or processing.
 
 ### 🔍 Explanation
@@ -333,6 +359,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - The RUN statement marks the end of the DATA step.
 
 ## 📌 SAS String Manipulation Example: Finding Substrings using the "country_info" Dataset
+
 - 📄 [UsingIndexFunctions.sas](SAS/UsingIndexFunctions.sas): This SAS code snippet demonstrates how to use the INDEXC and INDEXW functions to find substrings within a string in SAS. In this example, the position of the character "A" and the word "Emirates" within the given string representing a country name is determined for further analysis or processing.
 
 ### 🔍 Explanation
@@ -344,6 +371,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - The RUN statement marks the end of the DATA step.
 
 ## 📌 SAS Data Generation Example: Generating Numeric Data with "numeric_data" Dataset
+
 - 📄 [UsingDoLoop.sas](SAS/UsingDoLoop.sas): This SAS code snippet demonstrates how to generate numeric data using a DO loop in SAS. In this example, variables x_value and y_value are assigned values from 1 to 10 iteratively, resulting in a dataset containing numeric data pairs for further analysis or processing.
 
 ### 🔍 Explanation
@@ -354,6 +382,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - The RUN statement marks the end of the DATA step.
 
 ## 📌 SAS Data Processing Example: Calculating BMI
+
 - 📄 [UsingOutputFunction.sas](SAS/UsingOutputFunction.sas): This SAS code snippet demonstrates how to calculate Body Mass Index (BMI) using data from the "sashelp.class" dataset. It calculates BMI values both in metric and imperial units and writes them to a new dataset for further analysis or reporting purposes.
 
 ### 🔍 Explanation
@@ -366,6 +395,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - The RUN statement marks the end of the DATA step.
 
 ## 📌 SAS Data Entry Example: Recording Employee Bonuses
+
 - 📄 [UsingInformat.sas](SAS/UsingInformat.sas): This SAS code snippet demonstrates how to record employee bonuses in a dataset using manual data entry. It defines variables for employee name, bonus amount, and date of birth, assigns appropriate formats to the variables, and then manually enters the data for each employee into the dataset for further analysis or reporting.
 
 ### 🔍 Explanation
@@ -376,6 +406,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 - The RUN statement marks the end of the DATA step.
 
 ## 📌 Cars Project SAS Script Explanation
+
 - 📄 [ProjectCars.sas](SAS/ProjectCars.sas): This SAS script, named "CarsProject.SAS", performs data import, manipulation, and analysis tasks related to car data from different regions.
 
 ### 📊 Data Entry Method
@@ -407,6 +438,7 @@ The SET statement reads data from the "employee_compensation" dataset.
 This SAS script demonstrates the process of importing, formatting, and analyzing car data from different regions, providing insights into high-value cars in both European and Asian markets.
 
 ## 📌 SAS Data Import Example: Student Data
+
 - 📄 [InfileStatement.sas](SAS/InfileStatement.sas): This SAS script imports student data from an external data file named "my_data_file.dat" located at '/home/u62422869/The Simplest Guide to SAS/'.
 
 ### 📊 Data Entry Method
@@ -428,6 +460,7 @@ This SAS script demonstrates the process of importing, formatting, and analyzing
 This SAS script demonstrates the process of importing student data from an external file into a SAS dataset. It specifies the file location, defines the variables and their positions within the input data lines, and then reads the data accordingly to create the "student_data" dataset for further analysis or processing.
 
 ## 📌 SAS Data Combination Example: Combining Student Data
+
 - 📄 [AppendingData.sas](SAS/AppendingData.sas): This SAS script combines data from two datasets "student_data_1" and "student_data_2" into a single dataset named "combined_student_data".
 
 ### 📊 Data Entry Method
@@ -453,6 +486,7 @@ This SAS script demonstrates the process of importing student data from an exter
 This SAS script demonstrates how to combine data from multiple datasets into a single dataset in SAS. It imports and defines variables for student data in two separate datasets, and then combines them into a unified dataset for further analysis or processing.
 
 ## 📌 SAS Data Append Example: Appending Student Information
+
 - 📄 [AppendingDataUsingProc.sas](SAS/AppendingDataUsingProc.sas): This SAS script appends data from two datasets "student_info_1" and "student_info_2" into a single dataset named "combined_student_info".
 
 ### 📊 Data Entry Method
@@ -480,6 +514,7 @@ This SAS script demonstrates how to combine data from multiple datasets into a s
 This SAS script demonstrates how to append data from multiple datasets into a single dataset in SAS. It imports and defines variables for student data in two separate datasets, and then appends them into a unified dataset for further analysis or processing. Note that running the code multiple times may result in duplicated appended records.
 
 ## 📌 SAS Data Deduplication Example: Removing Duplicate Student Records
+
 - 📄 [UsingNoDupKey.sas](SAS/UsingNoDupKey.sas): This SAS script processes student records from the "student_records" dataset to remove duplicate entries and create a sorted dataset named "sorted_student_records".
 
 ### 📊 Data Entry Method
@@ -501,6 +536,7 @@ This SAS script demonstrates how to append data from multiple datasets into a si
 This SAS script demonstrates how to remove duplicate records from a dataset in SAS using the PROC SORT procedure with the NODUPKEY option. It sorts the dataset by student name and removes duplicate entries, resulting in a sorted dataset with unique student records.
 
 ## 📌 SAS Data Deduplication Example: Removing Duplicate Employee Records
+
 - 📄 [UsingNoDup.sas](SAS/UsingNoDup.sas): This SAS script processes employee records from the "employee_data" dataset to remove duplicate entries and create a sorted dataset named "sorted_employee_data".
 
 ### 📊 Data Entry Method
@@ -522,6 +558,7 @@ This SAS script demonstrates how to remove duplicate records from a dataset in S
 This SAS script demonstrates how to remove duplicate records from a dataset in SAS using the PROC SORT procedure with the NODUP option. It sorts the dataset by employee name and removes duplicate entries, resulting in a sorted dataset with unique employee records.
 
 ## 📌 SAS Data Merge Example: Combining Employee Information
+
 - 📄 [MergingDatasets.sas](SAS/MergingDatasets.sas): This SAS script merges two datasets, "employee_info" and "employee_height", based on the common variable "employee_name" to create a combined dataset named "combined_employee_data".
 
 ### 📊 Data Entry Method
@@ -547,6 +584,7 @@ This SAS script demonstrates how to remove duplicate records from a dataset in S
 This SAS script demonstrates how to merge two datasets based on a common variable using the MERGE statement. It combines employee information and height data into a single dataset for comprehensive analysis or reporting.
 
 ## 📌 SAS Data Merge Example: Combining Height and Weight Information
+
 - 📄 [MergingDatasetsJoin.sas](SAS/MergingDatasetsJoin.sas): This SAS script merges two datasets, "class_weight" and "class_height", based on the common variable "name" to create a combined dataset named "class_merged".
 
 ### 📊 Data Entry Method
@@ -573,6 +611,7 @@ This SAS script demonstrates how to merge two datasets based on a common variabl
 This SAS script demonstrates how to merge two datasets based on a common variable using the MERGE statement. It combines weight and height information into a single dataset for comprehensive analysis or reporting.
 
 ## 📌 SAS SQL Example: Creating a New Table from an Existing Dataset
+
 - 📄 [ProcSQL_SELECT.sas](SAS/ProcSQL_SELECT.sas): This SAS SQL query creates a new table named "student_info" by selecting all records from the existing dataset "sashelp.class".
 
 ### 📊 Data Entry Method
@@ -597,6 +636,7 @@ This SAS script demonstrates how to merge two datasets based on a common variabl
 This SAS SQL query demonstrates how to create a new table by selecting all records from an existing dataset using the PROC SQL procedure. It provides a way to store and manipulate data for further analysis or reporting purposes.
 
 ## 📌 SAS SQL Example: Creating a New Table with Filtered Data
+
 - 📄 [ProcSQL_WHERE.sas](SAS/ProcSQL_WHERE.sas): This SAS SQL query creates a new table named "male_students" by selecting all records from the existing dataset "sashelp.class" where the sex is 'M'.
 
 ### 📊 Data Entry Method
@@ -624,6 +664,7 @@ This SAS SQL query demonstrates how to create a new table by selecting all recor
 This SAS SQL query demonstrates how to create a new table by selecting specific records from an existing dataset based on certain criteria using the PROC SQL procedure. It allows for the creation of targeted subsets of data for further analysis or reporting purposes.
 
 ## 📌 SAS SQL Example: Creating a Summary Table with Grouping + AVG.
+
 - 📄 [ProcSQL_GROUP_AVG.sas](SAS/ProcSQL_GROUP_AVG.sas): This SAS SQL query creates a new table named "average_age_by_sex" by calculating the average age and grouping the data by sex from the 'sashelp.class' dataset.
 
 ### 📊 Data Entry Method
@@ -652,6 +693,7 @@ This SAS SQL query demonstrates how to create a new table by selecting specific 
 This SAS SQL query demonstrates how to create a summary table by calculating aggregates and grouping data based on specific criteria from an existing dataset using the PROC SQL procedure. It provides insights into the distribution of average ages by sex.
 
 ## 📌 SAS SQL Example: Creating a Summary Table with Grouping + MIN.
+
 - 📄 [ProcSQL_GROUP_MIN.sas](SAS/ProcSQL_GROUP_MIN.sas): This SAS SQL query creates a new table named "minimum_msrp_by_origin" by calculating the minimum Manufacturer's Suggested Retail Price (MSRP) and grouping the data by origin from the 'sashelp.cars' dataset.
 
 ### 📊 Data Entry Method
@@ -680,6 +722,7 @@ This SAS SQL query demonstrates how to create a summary table by calculating agg
 This SAS SQL query demonstrates how to create a summary table by calculating aggregates and grouping data based on specific criteria from an existing dataset using the PROC SQL procedure. It provides insights into the distribution of minimum MSRP values by origin.
 
 ## 📌 SAS SQL Example: Creating a Table with Unique Gender-Age Combinations
+
 - 📄 [ProcSQL_DISTINCT.sas](SAS/ProcSQL_DISTINCT.sas): This SAS SQL query creates a new table named "unique_gender_age" by selecting distinct combinations of gender and age from the 'sashelp.class' dataset. The resulting table is ordered by gender and age.
 
 ### 📊 Data Entry Method
@@ -708,6 +751,7 @@ This SAS SQL query demonstrates how to create a summary table by calculating agg
 This SAS SQL query demonstrates how to create a new table with unique combinations of gender and age from an existing dataset using the PROC SQL procedure. It provides a way to analyze and explore the distribution of gender-age combinations in the dataset.
 
 ## 📌 SAS Data Processing Example: Transposing Student Information
+
 - 📄 [ProcTransopose.sas](SAS/ProcTransopose.sas): This SAS snippet demonstrates data processing steps involving the creation of a dataset named STUDENT_INFO and its subsequent transposition using the PROC TRANSPOSE procedure.
 
 ### 📊 Data Entry Method
@@ -1121,8 +1165,7 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **Final Report**: A report titled "Report of Frequency Table" summarizes the distribution of health statuses by gender.
 
 ## 📌 Analysing American Airline Data
-
-📄 [ProjectAirlines.sas](SAS/ProjectAirlines.sas)
+- 📄 [ProjectAirlines.sas](SAS/ProjectAirlines.sas)
 
 ### 📊 Importing and Preprocessing Data
 - **Data Import**: The airline data is imported from the airlines.txt file using the FILENAME statement, INFILE, and INPUT statements to align columns.
@@ -1145,15 +1188,14 @@ This SAS code snippet demonstrates how to filter and display specific records fr
 - **SQL Code for FASTPLANE**: PROC SQL is used to find the maximum speed value and store it in the FASTPLANE macro variable.
 
 ## 📌 Using Do Loop in SAS
-
-📄 [DoLoop.sas](SAS/DoLoop.sas): This script, DoLoop.sas, demonstrates how to create a dataset using a DO loop in SAS with a conditional exit.
+- 📄 [DoLoop.sas](SAS/DoLoop.sas): This script, DoLoop.sas, demonstrates how to create a dataset using a DO loop in SAS with a conditional exit.
 
 ### 📊 Data Entry Method
 - DATA Step A: A dataset named A is created with a DO loop that iterates through values for i, starting at 1 and incrementing by 0.5 each time. The loop stops if y reaches or exceeds 15, using the WHILE (y < 15) condition.
 - Loop Processing: Within the loop, y is calculated as i * 2 on each iteration. The OUTPUT statement writes the current values of i and y to the dataset A for each iteration that meets the condition y < 15.
 - Result: The resulting dataset A contains values for i and y that show the progression of i in increments of 0.5, with corresponding values of y up to the limit specified by the WHILE condition (y < 15). This code illustrates the combined use of a DO loop with conditional and incremental control to generate a dataset based on calculated values.
 
-📄 [DoLoop2.sas](SAS/DoLoop2.sas): This code creates and processes data on years, transforming it into months or calculating remaining years based on conditions.
+- 📄 [DoLoop2.sas](SAS/DoLoop2.sas): This code creates and processes data on years, transforming it into months or calculating remaining years based on conditions.
 
 1. DATA Step A:
 The first block (DATA A; ... RUN;) creates a dataset named A with a single variable called years.
@@ -1168,8 +1210,7 @@ The statement PUT years=months=; writes the values of years and months to the SA
 Otherwise: It creates a variable, yrsleft, to show the remaining years to reach 5 (calculated as 5 - years).
 
 ## 📌 Variables in SAS
-
-📄 [CreatingVariables.sas](SAS/CreatingVariables.sas): his script creates a dataset that calculates total sales for each individual based on quarterly sales data.
+- 📄 [CreatingVariables.sas](SAS/CreatingVariables.sas): his script creates a dataset that calculates total sales for each individual based on quarterly sales data.
 
 ### 📊 Data Entry Method
 DATA Step: A dataset named sales is created with the DATA statement. The INPUT statement defines variables:
@@ -1203,8 +1244,7 @@ Data Entry:
 Result: The RUN statement processes the data, resulting in a dataset test with x and y values, while logging error messages for rows where input issues are detected. This code demonstrates the use of automatic variables in SAS for data validation, helping identify and log rows with input errors during dataset creation.
 
 ## 📌 Using Counter functionality in SAS
-
-📄 [Counter.sas](SAS/Counter.sas): This code creates a dataset of student scores, organizes it by gender, and generates a count of scores for each gender group.
+- 📄 [Counter.sas](SAS/Counter.sas): This code creates a dataset of student scores, organizes it by gender, and generates a count of scores for each gender group.
 
 DATA Step (studentscores): A dataset named studentscores is created with variables gender and score.
 The CARDS statement inputs the data directly, where gender is coded as 1 or 2, and each row represents an individual score:
@@ -1221,8 +1261,7 @@ Result: The final dataset, studentscores1, includes gender, score, and count, wh
 This code demonstrates data grouping and conditional counting using automatic variables in SAS, with a focus on resetting counts within sorted groups.
 
 ## 📌 Filtering in SAS.
-
-📄 [Filter.sas](SAS/Filter.sas): This script, imports house price data, calculates a profit estimate, and filters records based on a price condition.
+- 📄 [Filter.sas](SAS/Filter.sas): This script, imports house price data, calculates a profit estimate, and filters records based on a price condition.
 
 DATA Step (houseprice): A dataset named houseprice is created by reading data from the file houseprice (2).txt located in /home/u63805106/datasetslearnsas/.
 The INFILE statement specifies the location and delimiter (DLM=" ") used in the text file.
@@ -1239,8 +1278,7 @@ Result: The resulting dataset filter contains records from houseprice that meet 
 This script demonstrates data import, variable calculations, and conditional filtering in SAS.
 
 ## 📌 Formats in SAS.
-
-📄 [Format.sas](SAS/Format.sas): This script, demonstrates how to apply custom formats to codes in a dataset to enhance readability and add descriptive labels.
+- 📄 [Format.sas](SAS/Format.sas): This script, demonstrates how to apply custom formats to codes in a dataset to enhance readability and add descriptive labels.
 
 DATA Step (disease):
 
@@ -1260,8 +1298,7 @@ Creating a New Variable with Descriptions (diseasereal): A new dataset, diseaser
 Final Data Display: The final PROC PRINT displays diseasereal, including both diagcode and diagdesc. This code illustrates using PROC FORMAT for custom labels and transforming coded values into descriptive fields to improve data readability in SAS.
 
 ## 📌 Using IF statement in SAS.
-
-📄 [IfThen.sas](SAS/IfThen.sas): This script, calculates total sales for each individual, evaluates conditions to determine employment status, and marks if an individual meets a specific sales criterion.
+- 📄 [IfThen.sas](SAS/IfThen.sas): This script, calculates total sales for each individual, evaluates conditions to determine employment status, and marks if an individual meets a specific sales criterion.
 
 DATA Step (sales): A dataset named sales is created with variables Name, Sales_1 through Sales_4 for quarterly sales, and total, which sums all quarterly sales.
 The variable fired is initialized as an empty string.
@@ -1278,7 +1315,7 @@ Result:
 The RUN statement processes the data, resulting in the sales dataset with Name, quarterly sales, total, and fired columns, where fired indicates if Greg met the sales threshold.
 This code demonstrates conditional logic with IF-THEN statements in SAS, enabling decisions based on specific criteria.
 
-📄 [IfWhere.sas](SAS/IfWhere.sas): This script, calculates total sales for each individual and filters data based on specific sales criteria using SQL and PROC PRINT.
+- 📄 [IfWhere.sas](SAS/IfWhere.sas): This script, calculates total sales for each individual and filters data based on specific sales criteria using SQL and PROC PRINT.
 
 1. DATA Step (sales): A dataset named sales is created with variables Name, Sales_1 through Sales_4 for quarterly sales, and total, which sums all quarterly sales. The CARDS statement provides direct input data for four individuals.
 2. SQL Filter (PROC SQL): PROC SQL selects and displays only those records from sales where total is greater than 50. This step outputs a table of total sales values that meet the specified condition.
@@ -1289,8 +1326,7 @@ Result: The final output includes records of individuals with total sales exceed
 This code illustrates various methods of data filtering in SAS, using SQL and WHERE conditions within PROC PRINT.
 
 ## 📌 Importing Data in SAS
-
-📄 [ImportTXT](SAS/ImportTXT): This script, ImportTXT.sas, demonstrates how to import data from a text file into a SAS dataset.
+- 📄 [ImportTXT](SAS/ImportTXT): This script, ImportTXT.sas, demonstrates how to import data from a text file into a SAS dataset.
 
 DATA Step (salary): A dataset named salary is created by reading data from the text file located at /home/u63805106/datasetslearnsas/salary (2).txt. The INFILE statement specifies the path to the text file to be read.
 
@@ -1302,7 +1338,7 @@ INPUT Statement: Defines the structure of the input data, specifying the variabl
 
 Result: The resulting salary dataset contains records with the year and salary variables extracted from the text file. This script demonstrates basic file importing in SAS, showcasing how to load and structure data from an external .txt file.
 
-📄 [SAS/ImportTXT2.sas](SAS/SAS/ImportTXT2.sas): This script imports data from a text file, performs variable renaming and column selection, and prints a subset of the data.
+- 📄 [SAS/ImportTXT2.sas](SAS/SAS/ImportTXT2.sas): This script imports data from a text file, performs variable renaming and column selection, and prints a subset of the data.
 
 DATA Step (salaryemp): A dataset named salaryemp is created using the INFILE statement to read data from the text file located at /home/u63805106/datasetslearnsas/salary (2).txt.
 
@@ -1320,7 +1356,7 @@ PROC PRINT: Prints a subset of the salaryemp dataset using:
 
 Result: The resulting salaryemp dataset contains the renamed salaryemp variable and excludes the year variable. The output includes the selected subset of observations (rows 3 and 4). This script demonstrates file importing, variable renaming, column selection, and printing subsets of data in SAS.
 
-📄 [ImportTXT3.sas](SAS/ImportTXT3.sas): This script, imports data from a text file, calculates a new variable, and prints a subset of the dataset.
+- 📄 [ImportTXT3.sas](SAS/ImportTXT3.sas): This script, imports data from a text file, calculates a new variable, and prints a subset of the dataset.
 
 DATA Step (houseprice):
 1. A dataset named houseprice is created by reading data from the text file located at /home/u63805106/datasetslearnsas/houseprice (2).txt.
@@ -1337,7 +1373,7 @@ PROC PRINT: Prints a subset of the houseprice dataset:
 
 Result: The resulting houseprice dataset includes the variables type, price, tax, and the calculated profit. The output displays rows 3 and 4 from the dataset. This script demonstrates importing text files, performing calculations on imported data, and printing specific subsets of a dataset in SAS.
 
-📄 [ImportCSV.sas](SAS/mportCSV.sas): This code reads data from a CSV file into a SAS dataset, demonstrating the use of options to handle formatted data.
+- 📄 [ImportCSV.sas](SAS/mportCSV.sas): This code reads data from a CSV file into a SAS dataset, demonstrating the use of options to handle formatted data.
 
 DATA Step (weightgain): A dataset named weightgain is created by reading data from a CSV file located at /home/u63805106/datasetslearnsas/weightgain (2).csv.
 INFILE options:
@@ -1353,7 +1389,7 @@ Input Variables:
 
 Result: The resulting weightgain dataset contains each record with id, source, type, and weightg variables. This code showcases reading data from a CSV file into SAS with options to handle delimiters, missing values, and header rows effectively.
 
-📄 [ImportXLSX.sas](SAS/ImportXLSX.sas): This script demonstrates the use of PROC IMPORT to import data from an Excel file into a SAS dataset.
+- 📄 [ImportXLSX.sas](SAS/ImportXLSX.sas): This script demonstrates the use of PROC IMPORT to import data from an Excel file into a SAS dataset.
 
 PROC IMPORT Step:
 1. OUT = salesdata: Specifies the name of the SAS dataset to be created, salesdata.
@@ -1370,8 +1406,7 @@ Result:
 - This script demonstrates a simple yet powerful way to import data from Excel files into SAS for further analysis.
 
 ## 📌 Informat in SAS
-
-📄 [Informat.sas](SAS/Informat.sas): This script, policel, reads data from a CSV file into a SAS dataset, with explicit handling of variable lengths and data types.
+- 📄 [Informat.sas](SAS/Informat.sas): This script, policel, reads data from a CSV file into a SAS dataset, with explicit handling of variable lengths and data types.
 
 DATA Step (policel): Creates a dataset named policel. The LENGTH statement specifies the length of each variable:
 - CrimeID
@@ -1405,8 +1440,7 @@ Result:
 - This script demonstrates SAS’s capabilities for importing CSV files with diverse data types and ensuring variables are stored in a well-defined format.
 
 ## 📌 Length Statement in SAS
-
-📄 [Length.sas](SAS/Length.sas): This script imports data from a CSV file into a SAS dataset, specifying variable types and handling CSV-specific features.
+- 📄 [Length.sas](SAS/Length.sas): This script imports data from a CSV file into a SAS dataset, specifying variable types and handling CSV-specific features.
 
 1. DATA Step (mydata). Creates a dataset named mydata. The LENGTH statement. Specifies the variable types and their maximum lengths:
 - age: Numeric, up to 3 digits.
@@ -1435,8 +1469,7 @@ Result:
 - This script demonstrates a structured approach to importing CSV data into SAS, highlighting the flexibility of SAS in managing data types and file-specific quirks.
 
 ## 📌 Merging data in SAS
-
-📄 [Merging.sas](SAS/Merging.sas): This SAS script processes two datasets containing information about house prices, calculates profits, and merges them into a single dataset after sorting.
+- 📄 [Merging.sas](SAS/Merging.sas): This SAS script processes two datasets containing information about house prices, calculates profits, and merges them into a single dataset after sorting.
 
 Step 1: Import and Process houseprice Data
 1. DATA houseprice: Reads the file houseprice (2).txt, with space (" ") as the delimiter.
@@ -1462,7 +1495,7 @@ Purpose and Use Case. This script is designed to:
 - Calculate and store additional metrics (e.g., profit) for analysis.
 - This approach is useful for scenarios where house price data from multiple sources needs to be combined for further analysis or reporting.
 
-📄 [MergingSet.sas](SAS/MergingSet.sas): This script, demonstrates how to merge two datasets containing sales data from different sources into a single dataset.
+- 📄 [MergingSet.sas](SAS/MergingSet.sas): This script, demonstrates how to merge two datasets containing sales data from different sources into a single dataset.
 
 Step 1: Create and Process sales1 Dataset
 1. DATA sales1: Inputs a dataset containing sales data for four sales periods (Sales_1 to Sales_4).
@@ -1509,8 +1542,7 @@ Step 4: Print the Sorted Dataset
 1. PROC PRINT DATA=sortedhouseprice: Displays the sorted dataset to verify the order of the records after sorting.
 
 ## 📌 Renaming Variables in SAS
-
-📄 [SAS/RenamingVariables.sas](SAS/RenamingVariables.sas): Using the RENAME statement in SAS.
+- 📄 [SAS/RenamingVariables.sas](SAS/RenamingVariables.sas): Using the RENAME statement in SAS.
 
 Step 1: Create the newhomes Dataset DATA newhomes. Creates a dataset with three variables:
 - x: The type of home (character variable, e.g., Duplex).
@@ -1541,8 +1573,7 @@ Step 5: Purpose and Use Case. This script is useful for preparing raw data for a
 - By the end, the dataset cleannewhomes is ready for further analysis or visualization.
 
 ## 📌 Using SAS Functions
-
-📄 [SasFunctions.sas](SAS/SasFunctions.sas): Using SUM to add arguments in SAS.
+- 📄 [SasFunctions.sas](SAS/SasFunctions.sas): Using SUM to add arguments in SAS.
 
 Step 1: Data Manipulation Using Functions. DATA summing. Demonstrates the use of the SUM function for various purposes:
 - sumthis = SUM(7, 9, 13); Sums three numeric values: 7, 9, and 13.
@@ -1570,7 +1601,7 @@ Step 5: Purpose and Use Case This script is a great introduction to SAS function
 - String processing, such as splitting names or extracting components from text.
 - Formatting data for output and reporting.
 
-📄 [SasFunctionsCatx.sas](SAS/SasFunctionsCatx.sas): This script demonstrates how to use SAS string functions, specifically CATX and CAT, to concatenate strings while managing separators and whitespace.
+- 📄 [SasFunctionsCatx.sas](SAS/SasFunctionsCatx.sas): This script demonstrates how to use SAS string functions, specifically CATX and CAT, to concatenate strings while managing separators and whitespace.
 
 Step 1: Using CATX
 
@@ -1624,7 +1655,7 @@ Step 3: Key Differences Between CATX and CAT
     </tr>
 </table>
 
-📄 [SasFunctionsCoalesce.sas](SAS/SasFunctionsCoalesce.sas): This script demonstrates the use of the COALESCE function in SAS to handle missing values by selecting the first non-missing value from a list of variables.
+- 📄 [SasFunctionsCoalesce.sas](SAS/SasFunctionsCoalesce.sas): This script demonstrates the use of the COALESCE function in SAS to handle missing values by selecting the first non-missing value from a list of variables.
 
 Step 1: Data Step
 1. DATA coal. Declares two variables: home and cell, which are numeric.
@@ -1681,7 +1712,7 @@ The COALESCE function:
 Takes multiple arguments and returns the first non-missing value from the list.
 Commonly used in scenarios where you want to fill missing values by prioritizing available data.
 
-📄 [SasFunctionsCompress.sas](SAS/SasFunctionsCompress.sas): This SAS script demonstrates the use of the COMPRESS function to remove specific characters from strings.
+- 📄 [SasFunctionsCompress.sas](SAS/SasFunctionsCompress.sas): This SAS script demonstrates the use of the COMPRESS function to remove specific characters from strings.
 
 Step 1: Data Step
 1. DATA compressed. Creates a dataset named compressed.
@@ -1735,7 +1766,7 @@ Step 2: PROC PRINT
     </tr>
 </table>
 
-📄 [SasFunctionsInput.sas](SAS/SasFunctionsInput.sas): This script demonstrates the use of the INPUT function in SAS to convert a character string into a numeric value.
+- 📄 [SasFunctionsInput.sas](SAS/SasFunctionsInput.sas): This script demonstrates the use of the INPUT function in SAS to convert a character string into a numeric value.
 
 Step 1: Data Step
 1. DATA inputfunction: Creates a dataset named inputfunction.
@@ -1770,7 +1801,7 @@ Step 2: PROC PRINT
     </tr>
 </table>
 
-📄 [SasFunctionsSubstr.sas](SAS/SasFunctionsSubstr.sas): This script demonstrates the use of the SUBSTR function in SAS to extract a portion of a string.
+- 📄 [SasFunctionsSubstr.sas](SAS/SasFunctionsSubstr.sas): This script demonstrates the use of the SUBSTR function in SAS to extract a portion of a string.
 
 Step 1: Data Step
 1. DATA new: Creates a dataset named new.
@@ -1813,7 +1844,7 @@ Step 4: Explanation of SUBSTR
 - start: The starting position (1-based index).
 - length: The number of characters to extract.
 
-📄 [SasFunctionsScan.sas](SAS/SasFunctionsScan.sas): This SAS script demonstrates the use of the SCAN function alongside the CATX function.
+- 📄 [SasFunctionsScan.sas](SAS/SasFunctionsScan.sas): This SAS script demonstrates the use of the SCAN function alongside the CATX function.
 
 Step 1: DATA Step
 1. DATA concat;: Creates a dataset named concat.
@@ -1861,7 +1892,7 @@ Step 3: Output The final dataset concat will look like this:
     </tr>
 </table>
 
-📄 [‎SAS/SasFunctionsRand.sas](‎SAS/SasFunctionsRand.sas): This SAS script generates random values from a Normal distribution using the RAND function and visualizes the output.
+- 📄 [‎SAS/SasFunctionsRand.sas](‎SAS/SasFunctionsRand.sas): This SAS script generates random values from a Normal distribution using the RAND function and visualizes the output.
 
 Step 1: DATA Step
 1. DATA rand;: Creates a dataset named rand.
@@ -1902,7 +1933,7 @@ Step 4: Output
 2. Frequency Table:
 - Outputs the frequency of unique values or ranges in the dataset rand.
 
-📄 [‎SAS/SasFunctionsLength.sas](‎SAS/SasFunctionsLength.sas): This SAS script demonstrates the use of the LENGTH, LENGTHN, and LENGTHC functions to evaluate string lengths and handle different cases of whitespace.
+- 📄 [‎SAS/SasFunctionsLength.sas](‎SAS/SasFunctionsLength.sas): This SAS script demonstrates the use of the LENGTH, LENGTHN, and LENGTHC functions to evaluate string lengths and handle different cases of whitespace.
 
 Step 1: DATA Step
 1. Variables. one, two, and three contain string values:
@@ -1976,7 +2007,7 @@ Step 3: Key Function Differences
     </tr>
 </table>
 
-📄 [SasFunctionsTrim.sas](SAS/SasFunctionsTrim.sas): Using SAS TRIM and Concatenation Functions
+- 📄 [SasFunctionsTrim.sas](SAS/SasFunctionsTrim.sas): Using SAS TRIM and Concatenation Functions
 
 Step 1: Data Input and Transformation
 1. DATA trimdata; Creates a dataset named trimdata.
@@ -2033,7 +2064,7 @@ Step 3: Expected Output. Dataset Structure:
     </tr>
 </table>
 
-📄 [‎SAS/SasFunctionsVerify.sas](‎SAS/SasFunctionsVerify.sas): Using SAS VERIFY Function to Validate Data
+- 📄 [‎SAS/SasFunctionsVerify.sas](‎SAS/SasFunctionsVerify.sas): Using SAS VERIFY Function to Validate Data
 
 Step 1: Data Validation with VERIFY
 1. DATA errors valid; Creates two datasets: errors and valid. Rows with invalid data are output to errors. Valid rows are sent to valid.
@@ -2101,8 +2132,7 @@ Step 3: Expected Output
 </table>
 
 ## 📌 Using Plots in SAS
-
-📄 [PlotBar.sas](SAS/PlotBar.sas): This SAS script demonstrates data visualization techniques using the GPLOT and GCHART procedures.
+- 📄 [PlotBar.sas](SAS/PlotBar.sas): This SAS script demonstrates data visualization techniques using the GPLOT and GCHART procedures.
 
 Step 1: Data Input
 1. DATA houseprice. Reads data from a file houseprice (2).txt. Each record includes:
@@ -2147,7 +2177,7 @@ Step 5:Potential Output Example
 - Heights represent price or tax values.
 - All bars are filled with yellow.
 
-📄 [PlotScatter.sas](SAS/PlotScatter.sas)
+- 📄 [PlotScatter.sas](SAS/PlotScatter.sas)
 
 Step 1: Data Input
 1. DATA houseprice; Reads data from the file houseprice (2).txt into a dataset called houseprice.
@@ -2182,8 +2212,7 @@ Step 4: Example Plot Output
 - Red squares for another house type.
 
 ## 📌 Using SQL in SAS
-
-📄 [ProcSql1.sas](SAS/ProcSql1.sas): This SAS script demonstrates the use of PROC SQL for querying and manipulating data within a dataset. The code highlights foundational SQL operations, including selecting columns, filtering rows, and summarising data, all executed in the SAS environment.
+- 📄 [ProcSql1.sas](SAS/ProcSql1.sas): This SAS script demonstrates the use of PROC SQL for querying and manipulating data within a dataset. The code highlights foundational SQL operations, including selecting columns, filtering rows, and summarising data, all executed in the SAS environment.
 
 Key Features:
 1. Data Querying:
@@ -2194,7 +2223,7 @@ Key Features:
 3. PROC SQL Basics:
 - Provides a concise introduction to SAS's implementation of SQL syntax.
 
-📄 [ProcSql2.sas](SAS/ProcSql2.sas): This SAS script builds upon the foundational concepts of ProcSql1.sas by introducing advanced SQL techniques within the SAS environment. It includes more complex queries and data manipulations, showcasing the power of PROC SQL for data analysis and reporting.
+- 📄 [ProcSql2.sas](SAS/ProcSql2.sas): This SAS script builds upon the foundational concepts of ProcSql1.sas by introducing advanced SQL techniques within the SAS environment. It includes more complex queries and data manipulations, showcasing the power of PROC SQL for data analysis and reporting.
 
 Key Features:
 1. Advanced SQL Queries:
@@ -2206,7 +2235,7 @@ Key Features:
 3. PROC SQL Extensions:
 - Explore advanced PROC SQL options available in SAS.
 
-📄 [ProcSql3.sas](SAS/ProcSql3.sas): This script demonstrates expert-level SQL techniques in SAS, focusing on performance optimization and advanced query capabilities. It extends the concepts from previous scripts (ProcSql1.sas and ProcSql2.sas), introducing intricate operations for sophisticated data management and reporting.
+- 📄 [ProcSql3.sas](SAS/ProcSql3.sas): This script demonstrates expert-level SQL techniques in SAS, focusing on performance optimization and advanced query capabilities. It extends the concepts from previous scripts (ProcSql1.sas and ProcSql2.sas), introducing intricate operations for sophisticated data management and reporting.
 
 Key Features:
 1. Complex Data Manipulation:
@@ -2219,7 +2248,7 @@ Key Features:
 - Leverage aggregate functions for complex reporting.
 - Include dynamic grouping and filtering techniques.
 
-📄 [ProcSql4.sas](SAS/ProcSql4.sas): This script highlights advanced SQL functionality in SAS, with a focus on leveraging database management techniques and reporting capabilities for large-scale datasets. It builds on prior scripts in the ProcSql series, incorporating dynamic filtering, aggregation, and subquery usage.
+- 📄 [ProcSql4.sas](SAS/ProcSql4.sas): This script highlights advanced SQL functionality in SAS, with a focus on leveraging database management techniques and reporting capabilities for large-scale datasets. It builds on prior scripts in the ProcSql series, incorporating dynamic filtering, aggregation, and subquery usage.
 
 Key Features:
 1. Dynamic Querying:
@@ -2232,7 +2261,7 @@ Key Features:
 - Design output-ready datasets for integration with reporting tools.
 - Generate insights through calculated fields and formatted data.
 
-📄 [ProcSql5.sas](SAS/ProcSql5.sas): This script demonstrates advanced SQL techniques in SAS, focusing on optimizing query performance, joining datasets, and implementing complex data manipulations. It serves as the final iteration in the ProcSql series, showcasing refined approaches for real-world data analysis.
+- 📄 [ProcSql5.sas](SAS/ProcSql5.sas): This script demonstrates advanced SQL techniques in SAS, focusing on optimizing query performance, joining datasets, and implementing complex data manipulations. It serves as the final iteration in the ProcSql series, showcasing refined approaches for real-world data analysis.
 
 Key Features:
 1. Optimized Joins:
@@ -2244,7 +2273,7 @@ Key Features:
 3. Data Transformation:
 - Includes examples of calculated fields, aggregated measures, and formatted results for downstream reporting.
 
-📄 [ProcSql6.sas](SAS/ProcSql6.sas): This script showcases advanced data manipulation and analysis techniques using PROC SQL in SAS. It builds upon prior scripts in the ProcSql series to demonstrate sophisticated query strategies, with a focus on enhancing data accuracy and reporting capabilities.
+- 📄 [ProcSql6.sas](SAS/ProcSql6.sas): This script showcases advanced data manipulation and analysis techniques using PROC SQL in SAS. It builds upon prior scripts in the ProcSql series to demonstrate sophisticated query strategies, with a focus on enhancing data accuracy and reporting capabilities.
 
 Key Features:
 1. Advanced Data Filtering:
@@ -2260,7 +2289,7 @@ Key Features:
 - Optimized use of indexes for faster query execution.
 - Demonstrates query execution plans for large datasets.
 
-📄 [ProcSql7.sas](SAS/ProcSql7.sas): This script demonstrates comprehensive examples of SQL operations in SAS, focusing on joining multiple datasets and managing complex relationships. It is a continuation of the ProcSql series, expanding on query optimization and data integration techniques.
+- 📄 [ProcSql7.sas](SAS/ProcSql7.sas): This script demonstrates comprehensive examples of SQL operations in SAS, focusing on joining multiple datasets and managing complex relationships. It is a continuation of the ProcSql series, expanding on query optimization and data integration techniques.
 
 Key Features:
 1. Complex Joins:
@@ -2279,7 +2308,7 @@ Key Features:
 - Formats and sorts query results for report-ready output.
 - Demonstrates the use of SQL aliases for improved readability.
 
-📄 [ProcSql8.sas](SAS/ProcSql8.sas): This script showcases advanced SQL functionalities in SAS, emphasizing data summarization, grouping, and conditional aggregation. It is the eighth installment in the ProcSql series, targeting scenarios that require detailed analysis and grouped reporting.
+- 📄 [ProcSql8.sas](SAS/ProcSql8.sas): This script showcases advanced SQL functionalities in SAS, emphasizing data summarization, grouping, and conditional aggregation. It is the eighth installment in the ProcSql series, targeting scenarios that require detailed analysis and grouped reporting.
 
 Key Features:
 1. Data Grouping and Aggregation:
@@ -2296,7 +2325,7 @@ Key Features:
 - Formats grouped and summarized data for presentation-ready output.
 - Applies column aliases for clarity and readability.
 
-📄 [ProcSql9.sas](SAS/ProcSql9.sas): This script introduces advanced SQL techniques in SAS, focusing on complex queries, subquery optimization, and combining datasets using SQL joins and set operations. It is the ninth script in the ProcSql series, designed for users aiming to master sophisticated SQL capabilities within SAS.
+- 📄 [ProcSql9.sas](SAS/ProcSql9.sas): This script introduces advanced SQL techniques in SAS, focusing on complex queries, subquery optimization, and combining datasets using SQL joins and set operations. It is the ninth script in the ProcSql series, designed for users aiming to master sophisticated SQL capabilities within SAS.
 
 Key Features:
 1. Advanced Joins:
@@ -2312,7 +2341,7 @@ Key Features:
 5. Output Customization:
 - Applies formatted output with column aliases and calculated fields.
 
-📄 [ProcSqlCreateTable.sas](SAS/ProcSqlCreateTable.sas): This script introduces advanced SQL techniques in SAS, focusing on complex queries, subquery optimization, and combining datasets using SQL joins and set operations. It is the ninth script in the ProcSql series, designed for users aiming to master sophisticated SQL capabilities within SAS.
+- 📄 [ProcSqlCreateTable.sas](SAS/ProcSqlCreateTable.sas): This script introduces advanced SQL techniques in SAS, focusing on complex queries, subquery optimization, and combining datasets using SQL joins and set operations. It is the ninth script in the ProcSql series, designed for users aiming to master sophisticated SQL capabilities within SAS.
 
 Key Features:
 1. Advanced Joins:
@@ -2328,7 +2357,7 @@ Key Features:
 5. Output Customization:
 - Applies formatted output with column aliases and calculated fields.
 
-📄 [ProcSqlAlterTable.sas](SAS/ProcSqlAlterTable.sas): This script demonstrates how to modify existing tables using the ALTER TABLE statement in PROC SQL. It covers adding, modifying, and deleting table columns, as well as applying constraints and labels. This script is essential for maintaining and evolving database structures in SAS.
+- 📄 [ProcSqlAlterTable.sas](SAS/ProcSqlAlterTable.sas): This script demonstrates how to modify existing tables using the ALTER TABLE statement in PROC SQL. It covers adding, modifying, and deleting table columns, as well as applying constraints and labels. This script is essential for maintaining and evolving database structures in SAS.
 
 Key Features:
 1. Column Addition:
@@ -2342,7 +2371,7 @@ Key Features:
 5. Best Practices:
 - Includes recommendations for table maintenance, such as preserving data integrity during alterations.
 
-📄 [ProcSqlInsertToTable.sas](SAS/ProcSqlInsertToTable.sas): This script provides examples of how to insert data into existing tables using the INSERT INTO statement in PROC SQL. It includes multiple methods for adding rows to tables, ensuring flexibility for dynamic and static data insertion scenarios.
+- 📄 [ProcSqlInsertToTable.sas](SAS/ProcSqlInsertToTable.sas): This script provides examples of how to insert data into existing tables using the INSERT INTO statement in PROC SQL. It includes multiple methods for adding rows to tables, ensuring flexibility for dynamic and static data insertion scenarios.
 
 Key Features:
 1. Single Row Insertion:
@@ -2356,7 +2385,7 @@ Key Features:
 5. Commented Examples:
 - Includes well-commented sections to guide users through different insertion techniques.
 
-📄 [ProcSqlFindDuplicates.sas](SAS/ProcSqlFindDuplicates.sas): This script demonstrates how to identify duplicate records in a dataset using PROC SQL. It highlights efficient methods for detecting duplicates based on one or more columns, ensuring data consistency and accuracy.
+- 📄 [ProcSqlFindDuplicates.sas](SAS/ProcSqlFindDuplicates.sas): This script demonstrates how to identify duplicate records in a dataset using PROC SQL. It highlights efficient methods for detecting duplicates based on one or more columns, ensuring data consistency and accuracy.
 
 Key Features:
 1. Duplicate Detection:
@@ -2368,7 +2397,7 @@ Key Features:
 4. Clean and Readable Output:
 - Outputs results in a clear tabular format, making it easy to analyze duplicate records.
 
-📄 [ProcSqlDropDuplicates.sas](SAS/ProcSqlDropDuplicates.sas): This script demonstrates how to remove duplicate records from a dataset using PROC SQL. It ensures data integrity by keeping only unique records based on specified columns.
+- 📄 [ProcSqlDropDuplicates.sas](SAS/ProcSqlDropDuplicates.sas): This script demonstrates how to remove duplicate records from a dataset using PROC SQL. It ensures data integrity by keeping only unique records based on specified columns.
 
 Key Features:
 1. Duplicate Removal:
@@ -2380,7 +2409,7 @@ Key Features:
 4. Efficient and Clear Code:
 - Implements best practices for SQL in SAS to optimize performance and readability.
 
-📄 [ProcSqlSorting.sas](SAS/ProcSqlSorting.sas): This script demonstrates sorting datasets using PROC SQL in SAS. It highlights methods for organizing data in ascending and descending order based on one or multiple columns.
+- 📄 [ProcSqlSorting.sas](SAS/ProcSqlSorting.sas): This script demonstrates sorting datasets using PROC SQL in SAS. It highlights methods for organizing data in ascending and descending order based on one or multiple columns.
 
 Key Features:
 1. Sorting by Single or Multiple Columns:
@@ -2392,7 +2421,7 @@ Key Features:
 4. Efficient Data Handling:
 - Processes large datasets effectively by leveraging PROC SQL's optimized sorting capabilities.
 
-📄 [ProcSqlCase.sas](SAS/ProcSqlCase.sas): This script demonstrates the use of the CASE statement within PROC SQL in SAS. It illustrates how conditional logic can be applied to create new columns or modify existing data based on specific conditions.
+- 📄 [ProcSqlCase.sas](SAS/ProcSqlCase.sas): This script demonstrates the use of the CASE statement within PROC SQL in SAS. It illustrates how conditional logic can be applied to create new columns or modify existing data based on specific conditions.
 
 Key Features:
 1. Conditional Logic with CASE:
@@ -2406,7 +2435,7 @@ Key Features:
 
 ## 📌 Using Indexes In SAS
 
-📄 [ProcSqlIndex.sas](SAS/ProcSqlIndex.sas): This script demonstrates how to create both simple and composite indexes in SAS using PROC SQL.
+- 📄 [ProcSqlIndex.sas](SAS/ProcSqlIndex.sas): This script demonstrates how to create both simple and composite indexes in SAS using PROC SQL.
 
 Key Features:
 1. Data Import:
@@ -2466,7 +2495,7 @@ Key Features:
     </tr>
 </table>
 
-📄 [ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data. This script demonstrates how to create an index on a dataset using PROC DATASETS and leverage it for sorting operations.
+- 📄 [ProcDataSetsBy.sas](SAS/ProcDataSetsBy.sas): Using PROC DATASETS in SAS to handle large amounts of data. This script demonstrates how to create an index on a dataset using PROC DATASETS and leverage it for sorting operations.
 
 Key Features:
 1. Data Import:
@@ -2506,7 +2535,7 @@ Key Features:
     </tr>
 </table>
 
-📄 [ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS to handle large amounts of data. This script demonstrates indexing in SAS using PROC DATASETS and filtering missing values using WHERE conditions.
+- 📄 [ProcDataSets.sas](SAS/ProcDataSets.sas): Using PROC DATASETS in SAS to handle large amounts of data. This script demonstrates indexing in SAS using PROC DATASETS and filtering missing values using WHERE conditions.
 
 Key Features:
 1. Data Import:
@@ -2530,7 +2559,7 @@ Details:
 - Create Index on One Variable	INDEX CREATE LSOAC /;
 - Create Composite Index	INDEX CREATE compind=(CrimeID LSOAC) /;
 
-📄 [IndexVariables.sas](SAS/IndexVariables.sas): Using INDEX to create variables to handle large amounts of data. This script imports sales data, processes it into a SAS dataset, and performs frequency analysis.
+- 📄 [IndexVariables.sas](SAS/IndexVariables.sas): Using INDEX to create variables to handle large amounts of data. This script imports sales data, processes it into a SAS dataset, and performs frequency analysis.
 
 Key Features:
 1. Library Assignment:
@@ -2542,7 +2571,7 @@ Key Features:
 4. Frequency Analysis:
 - Uses PROC FREQ to analyze CustomerName distribution.
 
-📄 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data. This script generates a large dataset, queries data with and without indexing, and demonstrates indexing efficiency.
+- 📄 [IndexLargeData.sas](SAS/IndexLargeData.sas): Using INDEX to handle large data. This script generates a large dataset, queries data with and without indexing, and demonstrates indexing efficiency.
 
 Key Features:
 1. Dataset Creation (LARGEDATA):
@@ -2558,7 +2587,7 @@ Key Features:
 
 ## 📌 Using Macro Variables in SAS
 
-📄 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab. This script imports crime outcome data, prints a subset, and displays macro variables.
+- 📄 [MacroVariables1.sas](SAS/MacroVariables1.sas): Using SAS Macro Variables and displaying all of them in the results tab. This script imports crime outcome data, prints a subset, and displays macro variables.
 
 Key Features:
 1. Data Import:
@@ -2572,7 +2601,7 @@ Key Features:
 5. Macro Debugging:
 - %PUT _all_; outputs all macro variables for debugging.
 
-📄 [MacroVariables2.sas](SAS/MacroVariables2.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
+- 📄 [MacroVariables2.sas](SAS/MacroVariables2.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
 
 Key Features:
 1. CSV Data Import:
@@ -2594,7 +2623,7 @@ Code Explanation:
 3. Log Output:
 - The %PUT _ALL_ statement lists all macro variables and their current values in the SAS log, allowing debugging and tracking.
 
-📄 [MacroVariables3.sas](SAS/MacroVariables3.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
+- 📄 [MacroVariables3.sas](SAS/MacroVariables3.sas): This script demonstrates importing a dataset using the DATA step and using SAS macro variables to manage text, numbers, and dynamic expressions. The _ALL_ log feature is used to display the current state of all macro variables.
 
 Key Features:
 1. CSV Data Import:
@@ -2616,7 +2645,7 @@ Code Explanation:
 3. Log Output:
 - The %PUT _ALL_ statement lists all macro variables and their current values in the SAS log, allowing debugging and tracking.
 
-📄 [MacroVariables4.sas](SAS/MacroVariables4.sas): This script demonstrates importing a dataset using a DATA step, utilizing SAS macro variables, and enabling the SYMBOLGEN system option to display macro variable resolutions in the SAS log.
+- 📄 [MacroVariables4.sas](SAS/MacroVariables4.sas): This script demonstrates importing a dataset using a DATA step, utilizing SAS macro variables, and enabling the SYMBOLGEN system option to display macro variable resolutions in the SAS log.
 
 Key Features:
 1. CSV Data Import:
@@ -2638,7 +2667,7 @@ Code Explanation:
 3. PROC PRINT:
 - Prints the first 10 observations of the dataset with a dynamic title derived from a macro variable.
 
-📄 [MacroVariables5.sas](SAS/MacroVariables5.sas): This script demonstrates the use of a DATA step to import and process a CSV dataset, followed by a %INDEX macro example to locate the position of a specific character within a string.
+- 📄 [MacroVariables5.sas](SAS/MacroVariables5.sas): This script demonstrates the use of a DATA step to import and process a CSV dataset, followed by a %INDEX macro example to locate the position of a specific character within a string.
 
 Key Features:
 1. CSV Data Import:
@@ -2658,7 +2687,7 @@ Code Explanation:
 - %INDEX(&a, v) calculates the position of the character v in the string a very long value.
 - The result is stored in the macro variable b and displayed in the SAS log.
 
-📄 [MacroVariables6.sas](SAS/MacroVariables6.sas): This script demonstrates the usage of the %SCAN macro function in SAS for extracting specific substrings or words from a given text string. It highlights its flexibility in handling delimiters and parsing text dynamically.
+- 📄 [MacroVariables6.sas](SAS/MacroVariables6.sas): This script demonstrates the usage of the %SCAN macro function in SAS for extracting specific substrings or words from a given text string. It highlights its flexibility in handling delimiters and parsing text dynamically.
 
 Key Features:
 1. Extract Substrings with %SCAN:
@@ -2680,7 +2709,7 @@ Code Explanation:
 
 ## 📌 Using SAS Macros
 
-📄 [MacroInSas1.sas](SAS/MacroInSas1.sas): This script demonstrates the creation and execution of SAS macros to perform statistical analysis on a dataset.
+- 📄 [MacroInSas1.sas](SAS/MacroInSas1.sas): This script demonstrates the creation and execution of SAS macros to perform statistical analysis on a dataset.
 
 Key Features:
 1. Dataset Creation:
@@ -2703,7 +2732,7 @@ Code Explanation:
 4. Macro Execution:
 - Demonstrates executing macros with different combinations of procedures and variables.
 
-📄 [MacroInSas2.sas](SAS/MacroInSas2.sas): This script demonstrates the use of SAS macros to automate the calculation of average sales for multiple years.
+- 📄 [MacroInSas2.sas](SAS/MacroInSas2.sas): This script demonstrates the use of SAS macros to automate the calculation of average sales for multiple years.
 
 Key Features:
 1. Multiple Datasets Creation:
@@ -2726,7 +2755,7 @@ Code Explanation:
 3. Macro Execution:
 - Calls %AVERAGE, triggering PROC MEANS for each dataset.
 
-📄 [MacroInSas3.sas](SAS/MacroInSas3.sas): This script demonstrates the use of the %INCLUDE statement in SAS to incorporate external SAS code into the current session.
+- 📄 [MacroInSas3.sas](SAS/MacroInSas3.sas): This script demonstrates the use of the %INCLUDE statement in SAS to incorporate external SAS code into the current session.
 
 Key Features:
 1. External Script Inclusion:
@@ -2742,7 +2771,7 @@ Code Explanation:
 2. Logging with /SOURCE2:
 - Ensures that the included script's code appears in the log for better traceability.
 
-📄 [MacroInSas4.sas](SAS/MacroInSas4.sas): This script defines a macro %logitma to perform logistic regression in SAS using the PROC LOGISTIC procedure. It allows dynamic selection of dependent and independent variables.
+- 📄 [MacroInSas4.sas](SAS/MacroInSas4.sas): This script defines a macro %logitma to perform logistic regression in SAS using the PROC LOGISTIC procedure. It allows dynamic selection of dependent and independent variables.
 
 Key Features:
 1. Data Import:
@@ -2803,7 +2832,7 @@ Key Features:
 
 ## 📌 Solutions to exercises in Udemy course by Ermin Dedic: "SAS Programming Complete: Learn SAS and Become a Data Ninja"
 
-📄 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
+- 📄 [Exercise 1.sas](SAS/Exercise%201.sas): This script imports data from multiple sheets of an Excel file and merges the data based on account number. It also calculates the running balance for each account across the merged sheets.
 
 1. Macro Definition (import_excel): A macro %import_excel is defined to streamline the import process for multiple Excel sheets. The macro takes a parameter, sheet_number, to dynamically select the desired sheet.
 2. PROC IMPORT imports data from a specified Excel file, Balance_Bank.xlsx, located in /home/u63805106/datasetslearnsas/.
@@ -2822,9 +2851,9 @@ Key Features:
 
 ## 📌 Solutions to exercises in Udemy course by Aslam Khan: "The Simplest Guide to SAS Programming- SAS Base-SAS Advanced"
 
-📄 [SAS_Course_Exercise_19.sas](SAS/SAS_Course_Exercise_19.sas): This code creates a vertical bar chart displaying the mean MSRP (Manufacturer's Suggested Retail Price) of cars for each make using the SASHELP.CARS dataset. The second step involves visually inspecting the chart to identify the car with the highest mean MSRP, which corresponds to the tallest bar in the chart.
+- 📄 [SAS_Course_Exercise_19.sas](SAS/SAS_Course_Exercise_19.sas): This code creates a vertical bar chart displaying the mean MSRP (Manufacturer's Suggested Retail Price) of cars for each make using the SASHELP.CARS dataset. The second step involves visually inspecting the chart to identify the car with the highest mean MSRP, which corresponds to the tallest bar in the chart.
 
-📄 [SAS_Course_Exercise_20.sas](SAS/SAS_Course_Exercise_20.sas): This code generates a report using PROC REPORT on the SASHELP.CARS dataset. It includes columns for Make, Type, Origin, Sum Retail Price, and Mean Retail Price. The Sum Retail Price column displays the total MSRP of all cars within each Make, Type, and Origin group, while the Mean Retail Price column shows the average MSRP for the same groups.
+- 📄 [SAS_Course_Exercise_20.sas](SAS/SAS_Course_Exercise_20.sas): This code generates a report using PROC REPORT on the SASHELP.CARS dataset. It includes columns for Make, Type, Origin, Sum Retail Price, and Mean Retail Price. The Sum Retail Price column displays the total MSRP of all cars within each Make, Type, and Origin group, while the Mean Retail Price column shows the average MSRP for the same groups.
 
 ## 📝 Usage
 
