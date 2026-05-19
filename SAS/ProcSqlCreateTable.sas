@@ -39,6 +39,15 @@ DATALINES;
 ;
 RUN;
 
+/*============================================================================*/
+/* STEP 3: Merge datasets using PROC SQL                                      */
+/*============================================================================*/
+
+/*
+   Combine employee personal information
+   with employee weight data using SQL JOIN.
+*/
+
 PROC SQL;
 TITLE "Final Table";
 CREATE TABLE final AS
