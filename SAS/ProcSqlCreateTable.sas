@@ -84,4 +84,21 @@ QUIT;
    - create datasets
    - load raw data
    - transform observations
+
+ INPUT Statement
+   ----------------------------------------------------------------
+   Defines variable names and types.
+
+   Example:
+   ------------------------------------------------
+   empid $
+   fname $
+   height
+
+   Character variables:
+   - empid
+   - fname
+
+   Numeric variable:
+   - height
 /*
