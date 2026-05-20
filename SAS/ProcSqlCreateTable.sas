@@ -57,6 +57,17 @@ ON i.empid = ii.empidd;
 SELECT * FROM final;
 QUIT;
 
+/*============================================================================*/
+/* STEP 4: Create empty table structure copy                                  */
+/*============================================================================*/
+
+/*
+   Create a new empty table with the same structure
+   as the FINAL dataset.
+
+   No observations are copied.
+*/
+
 PROC SQL;
 CREATE TABLE newfinal
 LIKE final;
