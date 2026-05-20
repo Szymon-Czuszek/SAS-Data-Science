@@ -78,3 +78,10 @@ QUIT;
 /*============================================================================*/
 
 /*
+   DATA Step
+   ----------------------------------------------------------------
+   DATA steps are used to:
+   - create datasets
+   - load raw data
+   - transform observations
+/*
