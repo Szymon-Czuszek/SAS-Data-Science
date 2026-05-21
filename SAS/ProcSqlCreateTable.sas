@@ -106,4 +106,8 @@ DATALINES
    ----------------------------------------------------------------
    Allows manual inline data entry directly
    within the SAS program.
+
+ FULL JOIN
+   ----------------------------------------------------------------
+   Combines all observations from both tables.
 /*
