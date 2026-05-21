@@ -120,4 +120,11 @@ DATALINES
    In this example:
    ------------------------------------------------
    all employees from both tables are retained.
+
+Table Aliases
+   ----------------------------------------------------------------
+   AS i
+   AS ii
+
+   Short aliases improve query readability.
 /*
