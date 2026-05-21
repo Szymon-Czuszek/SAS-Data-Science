@@ -110,4 +110,10 @@ DATALINES
  FULL JOIN
    ----------------------------------------------------------------
    Combines all observations from both tables.
+
+   Behavior:
+   ------------------------------------------------
+   - matching rows are merged
+   - non-matching rows are preserved
+   - missing values appear when no match exists
 /*
