@@ -116,4 +116,8 @@ DATALINES
    - matching rows are merged
    - non-matching rows are preserved
    - missing values appear when no match exists
+
+   In this example:
+   ------------------------------------------------
+   all employees from both tables are retained.
 /*
