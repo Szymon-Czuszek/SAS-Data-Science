@@ -101,4 +101,9 @@ QUIT;
 
    Numeric variable:
    - height
+
+DATALINES
+   ----------------------------------------------------------------
+   Allows manual inline data entry directly
+   within the SAS program.
 /*
