@@ -127,4 +127,8 @@ Table Aliases
    AS ii
 
    Short aliases improve query readability.
+
+   ON Clause
+   ----------------------------------------------------------------
+   Defines matching condition:
 /*
