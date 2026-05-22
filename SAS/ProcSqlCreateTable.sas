@@ -151,4 +151,18 @@ Column Label
    ----------------------------------------------------------------
    Ensures Employee ID is displayed
    as a 6-character string.
+
+   CREATE TABLE LIKE
+   ----------------------------------------------------------------
+   Creates an empty table using the structure
+   of another dataset.
+
+   Includes:
+   - variable names
+   - formats
+   - labels
+   - variable types
+
+   Does NOT copy:
+   - observations/data
 /*
