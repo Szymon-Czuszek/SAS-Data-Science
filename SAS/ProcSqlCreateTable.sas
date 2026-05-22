@@ -139,4 +139,16 @@ Table Aliases
    This links:
    - employee IDs from INFO
    - employee IDs from INFO2
+
+Column Label
+   ----------------------------------------------------------------
+   empid "Employee ID"
+
+   Changes displayed column name in output.
+
+
+   FORMAT=$6.
+   ----------------------------------------------------------------
+   Ensures Employee ID is displayed
+   as a 6-character string.
 /*
