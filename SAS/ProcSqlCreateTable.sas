@@ -131,4 +131,12 @@ Table Aliases
    ON Clause
    ----------------------------------------------------------------
    Defines matching condition:
+
+ ------------------------------------------------
+   i.empid = ii.empidd
+   ------------------------------------------------
+
+   This links:
+   - employee IDs from INFO
+   - employee IDs from INFO2
 /*
