@@ -196,4 +196,9 @@ Why Use PROC SQL?
    - aggregation
    - filtering
    - table creation
+
+ Advantages:
+   - concise syntax
+   - powerful merging capabilities
+   - database-like querying
 /*
