@@ -177,4 +177,14 @@ Example Output
    000124        Mary       155       120
    000125        Lisa       190       180
    000126        Joseph     187       160
+
+Common Use Cases
+   ----------------------------------------------------------------
+   - Employee management systems
+   - HR databases
+   - SQL joins in SAS
+   - Data integration
+   - Table structure replication
+   - ETL processes
+   - Data warehouse preparation
 /*
