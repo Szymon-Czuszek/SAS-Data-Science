@@ -165,4 +165,16 @@ Column Label
 
    Does NOT copy:
    - observations/data
+
+Example Output
+   ----------------------------------------------------------------
+
+   final
+   ------------------------------------------------
+   Employee ID   fname    height    weight
+   ----------------------------------------
+   000123        John       175       150
+   000124        Mary       155       120
+   000125        Lisa       190       180
+   000126        Joseph     187       160
 /*
