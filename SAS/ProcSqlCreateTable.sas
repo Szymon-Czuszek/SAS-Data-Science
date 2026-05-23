@@ -187,4 +187,13 @@ Common Use Cases
    - Table structure replication
    - ETL processes
    - Data warehouse preparation
+
+Why Use PROC SQL?
+   ----------------------------------------------------------------
+   PROC SQL provides:
+   - relational database operations
+   - joins
+   - aggregation
+   - filtering
+   - table creation
 /*
