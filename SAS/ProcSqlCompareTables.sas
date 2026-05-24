@@ -1,3 +1,14 @@
+/*============================================================================*/
+/* STEP 1: Create first employee dataset                                      */
+/*============================================================================*/
+
+/*
+   Dataset STAFF1 contains:
+   - employee IDs
+   - employee names
+   - salaries
+*/
+
 DATA staff1;
 INPUT empid$ fname$ salary;
 DATALINES;
