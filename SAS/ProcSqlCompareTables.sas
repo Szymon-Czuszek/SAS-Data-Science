@@ -19,6 +19,16 @@ DATALINES;
 ;
 RUN;
 
+/*============================================================================*/
+/* STEP 2: Create second employee dataset                                     */
+/*============================================================================*/
+
+/*
+   Dataset STAFF2 contains:
+   - all employees from STAFF1
+   - additional employee records
+*/
+
 DATA staff2;
 INPUT empid$ fname$ salary;
 DATALINES;
