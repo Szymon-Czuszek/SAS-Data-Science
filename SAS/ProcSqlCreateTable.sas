@@ -10,14 +10,22 @@
 */
 
 DATA info;
-INPUT empid$ fname$ height;
-DATALINES;
+
+    /* Define input variables */
+    INPUT
+        empid $
+        fname $
+        height;
+
+    /* Inline data values */
+    DATALINES;
 000123 John 175
 000124 Mary 155
 000125 Lisa 190
 000126 Joseph 187
 ;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 2: Create employee weight dataset                                     */
@@ -30,14 +38,21 @@ RUN;
 */
 
 DATA info2;
-INPUT empidd$ weight;
-DATALINES;
+
+    /* Define input variables */
+    INPUT
+        empidd $
+        weight;
+
+    /* Inline data values */
+    DATALINES;
 000123 150
 000124 120
 000125 180
 000126 160
 ;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 3: Merge datasets using PROC SQL                                      */
@@ -49,13 +64,38 @@ RUN;
 */
 
 PROC SQL;
-TITLE "Final Table";
-CREATE TABLE final AS
-SELECT empid "Employee ID" format$6., fname, height, weight
-FROM info AS i FULL JOIN info2 as ii
-ON i.empid = ii.empidd;
-SELECT * FROM final;
+
+    /* Add title to output */
+    TITLE "Final Table";
+
+    /* Create merged table */
+    CREATE TABLE final AS
+
+    SELECT
+
+        /* Rename displayed column label */
+        empid
+            "Employee ID"
+
+            FORMAT=$6.,
+
+        fname,
+        height,
+        weight
+
+    FROM info AS i
+
+    /* Perform FULL JOIN */
+    FULL JOIN info2 AS ii
+
+    /* Join condition */
+    ON i.empid = ii.empidd;
+
+    /* Display merged table */
+    SELECT * FROM final;
+
 QUIT;
+
 
 /*============================================================================*/
 /* STEP 4: Create empty table structure copy                                  */
@@ -69,9 +109,13 @@ QUIT;
 */
 
 PROC SQL;
-CREATE TABLE newfinal
-LIKE final;
+
+    CREATE TABLE newfinal
+
+    LIKE final;
+
 QUIT;
+
 
 /*============================================================================*/
 /* Commentary                                                                 */
@@ -85,7 +129,8 @@ QUIT;
    - load raw data
    - transform observations
 
- INPUT Statement
+
+   INPUT Statement
    ----------------------------------------------------------------
    Defines variable names and types.
 
@@ -102,12 +147,14 @@ QUIT;
    Numeric variable:
    - height
 
-DATALINES
+
+   DATALINES
    ----------------------------------------------------------------
    Allows manual inline data entry directly
    within the SAS program.
 
- FULL JOIN
+
+   FULL JOIN
    ----------------------------------------------------------------
    Combines all observations from both tables.
 
@@ -121,18 +168,20 @@ DATALINES
    ------------------------------------------------
    all employees from both tables are retained.
 
-Table Aliases
+
+   Table Aliases
    ----------------------------------------------------------------
    AS i
    AS ii
 
    Short aliases improve query readability.
 
+
    ON Clause
    ----------------------------------------------------------------
    Defines matching condition:
 
- ------------------------------------------------
+   ------------------------------------------------
    i.empid = ii.empidd
    ------------------------------------------------
 
@@ -140,7 +189,8 @@ Table Aliases
    - employee IDs from INFO
    - employee IDs from INFO2
 
-Column Label
+
+   Column Label
    ----------------------------------------------------------------
    empid "Employee ID"
 
@@ -151,6 +201,7 @@ Column Label
    ----------------------------------------------------------------
    Ensures Employee ID is displayed
    as a 6-character string.
+
 
    CREATE TABLE LIKE
    ----------------------------------------------------------------
@@ -166,7 +217,8 @@ Column Label
    Does NOT copy:
    - observations/data
 
-Example Output
+
+   Example Output
    ----------------------------------------------------------------
 
    final
@@ -178,7 +230,8 @@ Example Output
    000125        Lisa       190       180
    000126        Joseph     187       160
 
-Common Use Cases
+
+   Common Use Cases
    ----------------------------------------------------------------
    - Employee management systems
    - HR databases
@@ -188,7 +241,8 @@ Common Use Cases
    - ETL processes
    - Data warehouse preparation
 
-Why Use PROC SQL?
+
+   Why Use PROC SQL?
    ----------------------------------------------------------------
    PROC SQL provides:
    - relational database operations
@@ -197,8 +251,8 @@ Why Use PROC SQL?
    - filtering
    - table creation
 
- Advantages:
+   Advantages:
    - concise syntax
    - powerful merging capabilities
    - database-like querying
-/*
+*/
