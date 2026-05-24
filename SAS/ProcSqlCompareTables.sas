@@ -41,6 +41,18 @@ DATALINES;
 ;
 RUN;
 
+/*============================================================================*/
+/* STEP 3: Compare datasets using EXCEPT                                      */
+/*============================================================================*/
+
+/*
+   PROC SQL EXCEPT identifies rows that exist in:
+   - STAFF2
+
+   but do NOT exist in:
+   - STAFF1
+*/
+
 PROC SQL;
 SELECT * FROM staff2
 EXCEPT
