@@ -71,4 +71,14 @@ QUIT;
    - identify new observations
    - detect differences between tables
 
+   DATA Step
+   ----------------------------------------------------------------
+   Creates SAS datasets using inline data.
+
+   Variables:
+   ------------------------------------------------
+   empid   -> Employee ID
+   fname   -> Employee First Name
+   salary  -> Employee Salary
+
 */
