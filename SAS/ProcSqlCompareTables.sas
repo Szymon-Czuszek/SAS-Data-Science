@@ -81,4 +81,30 @@ QUIT;
    fname   -> Employee First Name
    salary  -> Employee Salary
 
+   EXCEPT Operator
+   ----------------------------------------------------------------
+   The SQL EXCEPT operator returns rows from:
+   ------------------------------------------------
+   first query
+
+   that do NOT appear in:
+   ------------------------------------------------
+   second query
+
+
+   Logic of This Example
+   ----------------------------------------------------------------
+
+   STAFF1 contains:
+   ------------------------------------------------
+   4 employees
+
+   STAFF2 contains:
+   ------------------------------------------------
+   6 employees
+
+   Therefore:
+   ------------------------------------------------
+   EXCEPT identifies employees present only in STAFF2.
+
 */
