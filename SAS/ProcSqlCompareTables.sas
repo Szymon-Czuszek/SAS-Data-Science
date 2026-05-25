@@ -62,3 +62,13 @@ QUIT;
 /*============================================================================*/
 /* Commentary                                                                 */
 /*============================================================================*/
+
+/*
+   Purpose of the Program
+   ----------------------------------------------------------------
+   This example demonstrates how to:
+   - compare datasets
+   - identify new observations
+   - detect differences between tables
+
+*/
