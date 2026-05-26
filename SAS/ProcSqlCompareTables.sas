@@ -115,4 +115,11 @@ QUIT;
    000127   Glenn       32000
    000128   Jessica     43000
 
+   Important Note
+   ----------------------------------------------------------------
+   EXCEPT compares entire rows.
+
+   Two observations are considered identical only if:
+   - all column values match.
+
 */
