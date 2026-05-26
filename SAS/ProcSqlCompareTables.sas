@@ -107,4 +107,12 @@ QUIT;
    ------------------------------------------------
    EXCEPT identifies employees present only in STAFF2.
 
+   Expected Output
+   ----------------------------------------------------------------
+
+   empid    fname      salary
+   --------------------------------
+   000127   Glenn       32000
+   000128   Jessica     43000
+
 */
