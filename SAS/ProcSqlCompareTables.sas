@@ -132,4 +132,14 @@ QUIT;
    - Comparing snapshots of datasets
    - Identifying missing records
 
+   EXCEPT vs JOIN
+   ----------------------------------------------------------------
+   EXCEPT:
+   - compares complete rows
+   - simpler for difference detection
+
+   JOIN:
+   - combines related tables
+   - more flexible for detailed analysis
+
 */
