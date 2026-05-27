@@ -142,4 +142,15 @@ QUIT;
    - combines related tables
    - more flexible for detailed analysis
 
+   Why PROC SQL?
+   ----------------------------------------------------------------
+   PROC SQL allows:
+   - relational operations
+   - dataset comparison
+   - filtering
+   - aggregation
+   - complex joins
+
+   It provides database-like querying directly in SAS.
+
 */
