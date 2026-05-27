@@ -26,6 +26,17 @@ DATALINES;
 ;
 RUN;
 
+/*============================================================================*/
+/* STEP 2: Identify duplicate rows                                            */
+/*============================================================================*/
+
+/*
+   Detect duplicate observations using:
+   - GROUP BY
+   - COUNT(*)
+   - HAVING clause
+*/
+
 PROC SQL;
 TITLE "Duplicate Rows";
 SELECT *, COUNT(*) AS COUNT
