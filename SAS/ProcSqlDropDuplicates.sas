@@ -1,3 +1,17 @@
+/*============================================================================*/
+/* STEP 1: Create employee dataset                                            */
+/*============================================================================*/
+
+/*
+   Dataset EMPLOYEEDATA contains:
+   - employee IDs
+   - employee names
+   - salaries
+
+   The dataset intentionally includes duplicate rows
+   to demonstrate duplicate detection and removal.
+*/
+
 DATA employeedata;
 INPUT empid$ fname$ salary;
 DATALINES;
