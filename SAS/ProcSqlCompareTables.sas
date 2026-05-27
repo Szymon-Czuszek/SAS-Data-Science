@@ -10,14 +10,22 @@
 */
 
 DATA staff1;
-INPUT empid$ fname$ salary;
-DATALINES;
+
+    /* Define input variables */
+    INPUT
+        empid $
+        fname $
+        salary;
+
+    /* Inline data values */
+    DATALINES;
 000123 John 50000
 000124 Mary 65000
 000125 Lisa 95000
 000126 Joseph 43000
 ;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 2: Create second employee dataset                                     */
@@ -30,8 +38,15 @@ RUN;
 */
 
 DATA staff2;
-INPUT empid$ fname$ salary;
-DATALINES;
+
+    /* Define input variables */
+    INPUT
+        empid $
+        fname $
+        salary;
+
+    /* Inline data values */
+    DATALINES;
 000123 John 50000
 000124 Mary 65000
 000125 Lisa 95000
@@ -40,6 +55,7 @@ DATALINES;
 000128 Jessica 43000
 ;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 3: Compare datasets using EXCEPT                                      */
@@ -54,10 +70,17 @@ RUN;
 */
 
 PROC SQL;
-SELECT * FROM staff2
-EXCEPT
-SELECT * FROM staff1;
+
+    SELECT *
+    FROM staff2
+
+    EXCEPT
+
+    SELECT *
+    FROM staff1;
+
 QUIT;
+
 
 /*============================================================================*/
 /* Commentary                                                                 */
@@ -71,6 +94,7 @@ QUIT;
    - identify new observations
    - detect differences between tables
 
+
    DATA Step
    ----------------------------------------------------------------
    Creates SAS datasets using inline data.
@@ -80,6 +104,7 @@ QUIT;
    empid   -> Employee ID
    fname   -> Employee First Name
    salary  -> Employee Salary
+
 
    EXCEPT Operator
    ----------------------------------------------------------------
@@ -107,6 +132,7 @@ QUIT;
    ------------------------------------------------
    EXCEPT identifies employees present only in STAFF2.
 
+
    Expected Output
    ----------------------------------------------------------------
 
@@ -115,12 +141,14 @@ QUIT;
    000127   Glenn       32000
    000128   Jessica     43000
 
+
    Important Note
    ----------------------------------------------------------------
    EXCEPT compares entire rows.
 
    Two observations are considered identical only if:
    - all column values match.
+
 
    Practical Use Cases
    ----------------------------------------------------------------
@@ -132,6 +160,7 @@ QUIT;
    - Comparing snapshots of datasets
    - Identifying missing records
 
+
    EXCEPT vs JOIN
    ----------------------------------------------------------------
    EXCEPT:
@@ -141,6 +170,7 @@ QUIT;
    JOIN:
    - combines related tables
    - more flexible for detailed analysis
+
 
    Why PROC SQL?
    ----------------------------------------------------------------
@@ -152,5 +182,4 @@ QUIT;
    - complex joins
 
    It provides database-like querying directly in SAS.
-
 */
