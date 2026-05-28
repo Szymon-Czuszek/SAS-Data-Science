@@ -45,6 +45,15 @@ GROUP BY empid, fname, salary
 HAVING COUNT(*) > 1;
 QUIT;
 
+/*============================================================================*/
+/* STEP 3: Remove duplicate rows                                              */
+/*============================================================================*/
+
+/*
+   DISTINCT removes duplicate observations
+   from the result set.
+*/
+
 Proc SQL;
 TITLE "No Duplicate Rows";
 SELECT DISTINCT *
