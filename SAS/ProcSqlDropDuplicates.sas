@@ -64,3 +64,12 @@ QUIT;
 /* Commentary                                                                 */
 /*============================================================================*/
 
+/*
+   Purpose of This Program
+   ----------------------------------------------------------------
+   This example demonstrates how to:
+   - identify duplicate records
+   - count duplicate occurrences
+   - remove duplicate rows
+
+*/
