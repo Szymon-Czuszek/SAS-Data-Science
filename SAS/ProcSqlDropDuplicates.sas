@@ -72,4 +72,17 @@ QUIT;
    - count duplicate occurrences
    - remove duplicate rows
 
+   Duplicate Records
+   ----------------------------------------------------------------
+   A duplicate row occurs when:
+   - all column values are identical
+
+   In this dataset:
+   ------------------------------------------------
+   empid    fname    salary
+   --------------------------------
+   000129   Mary     65000
+
+   appears twice.
+
 */
