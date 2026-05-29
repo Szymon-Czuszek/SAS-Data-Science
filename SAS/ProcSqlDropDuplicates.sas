@@ -96,4 +96,14 @@ QUIT;
    - fname
    - salary
 
+   COUNT(*)
+   ----------------------------------------------------------------
+   Counts the number of rows
+   within each group.
+
+   Example:
+   ------------------------------------------------
+   duplicate rows return:
+   COUNT = 2
+
 */
