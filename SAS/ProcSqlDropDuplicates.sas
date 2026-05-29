@@ -85,4 +85,15 @@ QUIT;
 
    appears twice.
 
+   GROUP BY
+   ----------------------------------------------------------------
+   GROUP BY combines rows with identical values.
+
+   In this example:
+   ------------------------------------------------
+   rows are grouped by:
+   - empid
+   - fname
+   - salary
+
 */
