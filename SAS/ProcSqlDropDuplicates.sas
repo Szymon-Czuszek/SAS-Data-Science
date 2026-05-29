@@ -106,4 +106,12 @@ QUIT;
    duplicate rows return:
    COUNT = 2
 
+   HAVING Clause
+   ----------------------------------------------------------------
+   HAVING filters grouped results.
+
+   Unlike WHERE:
+   ------------------------------------------------
+   HAVING works AFTER aggregation.
+
 */
