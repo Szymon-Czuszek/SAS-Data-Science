@@ -114,4 +114,12 @@ QUIT;
    ------------------------------------------------
    HAVING works AFTER aggregation.
 
+   Logic Used
+   ----------------------------------------------------------------
+   HAVING COUNT(*) > 1
+
+   Meaning:
+   ------------------------------------------------
+   show only groups that appear more than once.
+
 */
