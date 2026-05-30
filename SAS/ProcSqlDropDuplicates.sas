@@ -122,4 +122,13 @@ QUIT;
    ------------------------------------------------
    show only groups that appear more than once.
 
+   DISTINCT Keyword
+   ----------------------------------------------------------------
+   DISTINCT removes duplicate observations
+   from query results.
+
+   Result:
+   ------------------------------------------------
+   only unique rows are displayed.
+
 */
