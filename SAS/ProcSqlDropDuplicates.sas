@@ -138,4 +138,14 @@ QUIT;
    --------------------------------------
    000129   Mary      65000      2
 
+   Practical Applications
+   ----------------------------------------------------------------
+   - Data cleansing
+   - ETL validation
+   - Detecting duplicate customers
+   - Employee record audits
+   - Database quality control
+   - Data warehouse preprocessing
+   - Transaction verification
+
 */
