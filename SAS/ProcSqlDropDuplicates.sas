@@ -148,4 +148,13 @@ QUIT;
    - Data warehouse preprocessing
    - Transaction verification
 
+   Difference Between GROUP BY and DISTINCT
+   ----------------------------------------------------------------
+
+   GROUP BY:
+   ------------------------------------------------
+   - groups observations
+   - supports aggregation functions
+   - useful for analysis
+
 */
