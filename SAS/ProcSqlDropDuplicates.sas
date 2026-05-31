@@ -162,4 +162,13 @@ QUIT;
    - removes duplicates directly
    - simpler for deduplication
 
+   Why Duplicate Detection Matters
+   ----------------------------------------------------------------
+   Duplicate records can:
+   - distort analytics
+   - inflate totals
+   - bias machine learning models
+   - reduce data quality
+   - create reporting inconsistencies
+
 */
