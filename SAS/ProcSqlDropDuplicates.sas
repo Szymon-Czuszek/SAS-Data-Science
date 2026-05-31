@@ -157,4 +157,9 @@ QUIT;
    - supports aggregation functions
    - useful for analysis
 
+   DISTINCT:
+   ------------------------------------------------
+   - removes duplicates directly
+   - simpler for deduplication
+
 */
