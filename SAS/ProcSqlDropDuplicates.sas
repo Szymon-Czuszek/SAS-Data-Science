@@ -171,4 +171,13 @@ QUIT;
    - reduce data quality
    - create reporting inconsistencies
 
+   PROC SQL Advantages
+   ----------------------------------------------------------------
+   PROC SQL enables:
+   - efficient duplicate detection
+   - aggregation
+   - filtering
+   - relational operations
+   - concise query syntax
+
 */
