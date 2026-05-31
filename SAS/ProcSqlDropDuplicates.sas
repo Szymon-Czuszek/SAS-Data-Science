@@ -13,8 +13,15 @@
 */
 
 DATA employeedata;
-INPUT empid$ fname$ salary;
-DATALINES;
+
+    /* Define input variables */
+    INPUT
+        empid $
+        fname $
+        salary;
+
+    /* Inline data values */
+    DATALINES;
 000123 John 50000
 000124 Mary 65000
 000125 Lisa 95000
@@ -25,6 +32,7 @@ DATALINES;
 000129 Mary 65000
 ;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 2: Identify duplicate rows                                            */
@@ -38,12 +46,31 @@ RUN;
 */
 
 PROC SQL;
-TITLE "Duplicate Rows";
-SELECT *, COUNT(*) AS COUNT
-FROM employeedata
-GROUP BY empid, fname, salary
-HAVING COUNT(*) > 1;
+
+    /* Add title to output */
+    TITLE "Duplicate Rows";
+
+    SELECT
+
+        /* Display all columns */
+        *,
+
+        /* Count occurrences of each duplicate row */
+        COUNT(*) AS COUNT
+
+    FROM employeedata
+
+    /* Group rows by all columns */
+    GROUP BY
+        empid,
+        fname,
+        salary
+
+    /* Return only rows appearing more than once */
+    HAVING COUNT(*) > 1;
+
 QUIT;
+
 
 /*============================================================================*/
 /* STEP 3: Remove duplicate rows                                              */
@@ -54,11 +81,16 @@ QUIT;
    from the result set.
 */
 
-Proc SQL;
-TITLE "No Duplicate Rows";
-SELECT DISTINCT *
-FROM employeedata;
+PROC SQL;
+
+    /* Add title to output */
+    TITLE "No Duplicate Rows";
+
+    SELECT DISTINCT *
+    FROM employeedata;
+
 QUIT;
+
 
 /*============================================================================*/
 /* Commentary                                                                 */
@@ -71,6 +103,7 @@ QUIT;
    - identify duplicate records
    - count duplicate occurrences
    - remove duplicate rows
+
 
    Duplicate Records
    ----------------------------------------------------------------
@@ -85,6 +118,7 @@ QUIT;
 
    appears twice.
 
+
    GROUP BY
    ----------------------------------------------------------------
    GROUP BY combines rows with identical values.
@@ -96,6 +130,7 @@ QUIT;
    - fname
    - salary
 
+
    COUNT(*)
    ----------------------------------------------------------------
    Counts the number of rows
@@ -106,6 +141,7 @@ QUIT;
    duplicate rows return:
    COUNT = 2
 
+
    HAVING Clause
    ----------------------------------------------------------------
    HAVING filters grouped results.
@@ -114,6 +150,7 @@ QUIT;
    ------------------------------------------------
    HAVING works AFTER aggregation.
 
+
    Logic Used
    ----------------------------------------------------------------
    HAVING COUNT(*) > 1
@@ -121,6 +158,7 @@ QUIT;
    Meaning:
    ------------------------------------------------
    show only groups that appear more than once.
+
 
    DISTINCT Keyword
    ----------------------------------------------------------------
@@ -131,12 +169,14 @@ QUIT;
    ------------------------------------------------
    only unique rows are displayed.
 
+
    Expected Duplicate Output
    ----------------------------------------------------------------
 
    empid    fname    salary    COUNT
    --------------------------------------
    000129   Mary      65000      2
+
 
    Practical Applications
    ----------------------------------------------------------------
@@ -147,6 +187,7 @@ QUIT;
    - Database quality control
    - Data warehouse preprocessing
    - Transaction verification
+
 
    Difference Between GROUP BY and DISTINCT
    ----------------------------------------------------------------
@@ -162,6 +203,7 @@ QUIT;
    - removes duplicates directly
    - simpler for deduplication
 
+
    Why Duplicate Detection Matters
    ----------------------------------------------------------------
    Duplicate records can:
@@ -171,6 +213,7 @@ QUIT;
    - reduce data quality
    - create reporting inconsistencies
 
+
    PROC SQL Advantages
    ----------------------------------------------------------------
    PROC SQL enables:
@@ -179,5 +222,4 @@ QUIT;
    - filtering
    - relational operations
    - concise query syntax
-
 */
