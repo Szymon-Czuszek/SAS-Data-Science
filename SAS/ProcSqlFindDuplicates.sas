@@ -26,6 +26,18 @@ DATALINES;
 ;
 RUN;
 
+/*============================================================================*/
+/* STEP 2: Identify duplicate rows                                            */
+/*============================================================================*/
+
+/*
+   Group records by all columns and count
+   how many times each unique combination appears.
+
+   Only groups with more than one occurrence
+   are returned.
+*/
+
 PROC SQL;
 TITLE "Duplicate Rows";
 SELECT *, COUNT(*) AS COUNT
