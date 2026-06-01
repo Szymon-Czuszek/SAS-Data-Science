@@ -1,3 +1,17 @@
+/*============================================================================*/
+/* STEP 1: Create employee dataset                                            */
+/*============================================================================*/
+
+/*
+   Dataset EMPLOYEEDATA contains:
+   - employee IDs
+   - employee names
+   - salaries
+
+   The dataset intentionally includes duplicate records
+   to demonstrate duplicate detection using PROC SQL.
+*/
+
 DATA employeedata;
 INPUT empid$ fname$ salary;
 DATALINES;
