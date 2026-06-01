@@ -45,3 +45,15 @@ FROM employeedata
 GROUP BY empid, fname, salary
 HAVING COUNT(*) > 1;
 QUIT;
+
+/*============================================================================*/
+/* Commentary                                                                 */
+/*============================================================================*/
+
+/*
+   Purpose of the Program
+   ----------------------------------------------------------------
+   This example demonstrates how to detect
+   duplicate observations within a SAS dataset.
+
+*/
