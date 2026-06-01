@@ -55,5 +55,5 @@ QUIT;
    ----------------------------------------------------------------
    This example demonstrates how to detect
    duplicate observations within a SAS dataset.
-
+ 
 */
