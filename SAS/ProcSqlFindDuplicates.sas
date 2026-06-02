@@ -55,5 +55,19 @@ QUIT;
    ----------------------------------------------------------------
    This example demonstrates how to detect
    duplicate observations within a SAS dataset.
+
+
+   Dataset Structure
+   ----------------------------------------------------------------
+   Variables:
+
+   empid
+       Employee identifier
+
+   fname
+       Employee first name
+
+   salary
+       Employee salary
  
 */
