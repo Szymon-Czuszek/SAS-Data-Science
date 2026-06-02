@@ -69,5 +69,10 @@ QUIT;
 
    salary
        Employee salary
+
+   Duplicate Record
+   ----------------------------------------------------------------
+   A duplicate record occurs when all selected
+   column values are identical.
  
 */
