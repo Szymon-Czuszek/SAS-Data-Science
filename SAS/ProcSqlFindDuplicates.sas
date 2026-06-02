@@ -83,5 +83,17 @@ QUIT;
    000129   Mary     65000
 
    appears twice.
+
+   GROUP BY
+   ----------------------------------------------------------------
+   GROUP BY combines observations that share
+   identical values in the specified columns.
+
+   In this example:
+
+   GROUP BY empid, fname, salary
+
+   means records are grouped according to
+   the complete employee information.
  
 */
