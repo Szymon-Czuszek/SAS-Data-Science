@@ -74,5 +74,14 @@ QUIT;
    ----------------------------------------------------------------
    A duplicate record occurs when all selected
    column values are identical.
+
+   In this dataset:
+
+   empid    fname    salary
+   --------------------------------
+   000129   Mary     65000
+   000129   Mary     65000
+
+   appears twice.
  
 */
