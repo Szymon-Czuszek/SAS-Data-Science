@@ -108,5 +108,13 @@ QUIT;
    000123 John 50000             1
    000124 Mary 65000             1
    000129 Mary 65000             2
+
+   HAVING Clause
+   ----------------------------------------------------------------
+   HAVING filters aggregated results.
+
+   Unlike WHERE:
+   - WHERE filters rows before grouping
+   - HAVING filters groups after aggregation
  
 */
