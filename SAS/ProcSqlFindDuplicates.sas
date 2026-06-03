@@ -95,5 +95,18 @@ QUIT;
 
    means records are grouped according to
    the complete employee information.
+
+   COUNT(*)
+   ----------------------------------------------------------------
+   COUNT(*) calculates the number of rows
+   within each group.
+
+   Example:
+
+   Employee Record             Count
+   -----------------------------------
+   000123 John 50000             1
+   000124 Mary 65000             1
+   000129 Mary 65000             2
  
 */
