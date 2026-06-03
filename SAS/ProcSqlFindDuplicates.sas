@@ -116,5 +116,12 @@ QUIT;
    Unlike WHERE:
    - WHERE filters rows before grouping
    - HAVING filters groups after aggregation
+
+   Logic used:
+
+   HAVING COUNT(*) > 1
+
+   Meaning:
+   return only groups that occur more than once.
  
 */
