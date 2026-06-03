@@ -123,5 +123,12 @@ QUIT;
 
    Meaning:
    return only groups that occur more than once.
+
+   Expected Output
+   ----------------------------------------------------------------
+
+   empid    fname    salary    COUNT
+   --------------------------------------
+   000129   Mary      65000      2
  
 */
