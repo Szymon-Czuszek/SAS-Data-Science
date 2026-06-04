@@ -155,5 +155,17 @@ QUIT;
 
    Identifying duplicates is often one of the
    first steps in data preparation and cleansing.
+
+   PROC SQL Benefits
+   ----------------------------------------------------------------
+   PROC SQL provides a simple and efficient way to:
+
+   - Group observations
+   - Count occurrences
+   - Identify duplicates
+   - Summarize data
+   - Perform advanced filtering
+
+   without requiring multiple DATA steps.
  
 */
