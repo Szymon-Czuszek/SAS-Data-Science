@@ -130,5 +130,17 @@ QUIT;
    empid    fname    salary    COUNT
    --------------------------------------
    000129   Mary      65000      2
+
+   Business Applications
+   ----------------------------------------------------------------
+   Duplicate detection is commonly used for:
+
+   - Employee master data validation
+   - Customer database cleansing
+   - Data migration verification
+   - ETL quality checks
+   - Fraud detection
+   - Financial reporting validation
+   - Data warehouse maintenance
  
 */
