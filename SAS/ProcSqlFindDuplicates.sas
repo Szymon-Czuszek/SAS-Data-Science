@@ -13,8 +13,15 @@
 */
 
 DATA employeedata;
-INPUT empid$ fname$ salary;
-DATALINES;
+
+    /* Define input variables */
+    INPUT
+        empid $
+        fname $
+        salary;
+
+    /* Inline data values */
+    DATALINES;
 000123 John 50000
 000124 Mary 65000
 000125 Lisa 95000
@@ -25,6 +32,7 @@ DATALINES;
 000129 Mary 65000
 ;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 2: Identify duplicate rows                                            */
@@ -39,12 +47,31 @@ RUN;
 */
 
 PROC SQL;
-TITLE "Duplicate Rows";
-SELECT *, COUNT(*) AS COUNT
-FROM employeedata
-GROUP BY empid, fname, salary
-HAVING COUNT(*) > 1;
+
+    /* Add title to the output */
+    TITLE "Duplicate Rows";
+
+    SELECT
+
+        /* Display all columns */
+        *,
+
+        /* Count occurrences of each row */
+        COUNT(*) AS COUNT
+
+    FROM employeedata
+
+    /* Group identical records together */
+    GROUP BY
+        empid,
+        fname,
+        salary
+
+    /* Keep only duplicated records */
+    HAVING COUNT(*) > 1;
+
 QUIT;
+
 
 /*============================================================================*/
 /* Commentary                                                                 */
@@ -70,6 +97,7 @@ QUIT;
    salary
        Employee salary
 
+
    Duplicate Record
    ----------------------------------------------------------------
    A duplicate record occurs when all selected
@@ -84,6 +112,7 @@ QUIT;
 
    appears twice.
 
+
    GROUP BY
    ----------------------------------------------------------------
    GROUP BY combines observations that share
@@ -95,6 +124,7 @@ QUIT;
 
    means records are grouped according to
    the complete employee information.
+
 
    COUNT(*)
    ----------------------------------------------------------------
@@ -108,6 +138,7 @@ QUIT;
    000123 John 50000             1
    000124 Mary 65000             1
    000129 Mary 65000             2
+
 
    HAVING Clause
    ----------------------------------------------------------------
@@ -124,12 +155,14 @@ QUIT;
    Meaning:
    return only groups that occur more than once.
 
+
    Expected Output
    ----------------------------------------------------------------
 
    empid    fname    salary    COUNT
    --------------------------------------
    000129   Mary      65000      2
+
 
    Business Applications
    ----------------------------------------------------------------
@@ -142,6 +175,7 @@ QUIT;
    - Fraud detection
    - Financial reporting validation
    - Data warehouse maintenance
+
 
    Why Duplicate Detection Matters
    ----------------------------------------------------------------
@@ -156,6 +190,7 @@ QUIT;
    Identifying duplicates is often one of the
    first steps in data preparation and cleansing.
 
+
    PROC SQL Benefits
    ----------------------------------------------------------------
    PROC SQL provides a simple and efficient way to:
@@ -167,5 +202,4 @@ QUIT;
    - Perform advanced filtering
 
    without requiring multiple DATA steps.
- 
 */
