@@ -142,5 +142,18 @@ QUIT;
    - Fraud detection
    - Financial reporting validation
    - Data warehouse maintenance
+
+   Why Duplicate Detection Matters
+   ----------------------------------------------------------------
+   Duplicate records may lead to:
+
+   - Incorrect reporting
+   - Inflated totals
+   - Biased analytical results
+   - Data quality issues
+   - Duplicate payments or transactions
+
+   Identifying duplicates is often one of the
+   first steps in data preparation and cleansing.
  
 */
