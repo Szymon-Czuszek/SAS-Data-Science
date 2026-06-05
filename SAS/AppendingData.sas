@@ -1,3 +1,7 @@
+/*============================================================================*/
+/* STEP 1: Create first student dataset                                       */
+/*============================================================================*/
+
 DATA student_data_1;
 INPUT student_name $ gender $ student_age student_weight;
 CARDS;
