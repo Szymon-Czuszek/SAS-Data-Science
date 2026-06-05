@@ -30,6 +30,11 @@ RUN;
 /* STEP 2: Create second student dataset                                      */
 /*============================================================================*/
 
+/*
+   Dataset STUDENT_DATA_2 contains additional
+   student records with the same structure
+   as STUDENT_DATA_1.
+*/
 
 DATA student_data_2;
 INPUT student_name $ gender $ student_age student_weight;
