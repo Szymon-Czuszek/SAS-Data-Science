@@ -2,6 +2,20 @@
 /* STEP 1: Create first student dataset                                       */
 /*============================================================================*/
 
+/*
+   Dataset STUDENT_DATA_1 contains information about students,
+   including:
+
+   - student name
+   - gender
+   - age
+   - weight
+
+   Some observations intentionally contain
+   missing values to demonstrate how SAS
+   handles incomplete data.
+*/
+
 DATA student_data_1;
 INPUT student_name $ gender $ student_age student_weight;
 CARDS;
