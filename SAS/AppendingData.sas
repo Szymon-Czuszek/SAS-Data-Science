@@ -65,3 +65,15 @@ RUN;
 /*============================================================================*/
 /* Commentary                                                                 */
 /*============================================================================*/
+
+/*
+   Purpose of the Program
+   ----------------------------------------------------------------
+   This example demonstrates how to:
+
+   - create SAS datasets
+   - enter data manually
+   - work with missing values
+   - combine multiple datasets
+   - append observations using SET
+*/
