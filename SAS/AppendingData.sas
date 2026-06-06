@@ -48,6 +48,15 @@ RUN;
 /* STEP 3: Append datasets                                                    */
 /*============================================================================*/
 
+/*
+   Combine both student datasets into
+   a single dataset using the SET statement.
+
+   Because both datasets share the same
+   structure, SAS appends observations
+   from STUDENT_DATA_2 below those in
+   STUDENT_DATA_1.
+*/
 
 DATA combined_student_data;
 	SET student_data_1 student_data_2;
