@@ -120,4 +120,15 @@ RUN;
    - modify data
    - transform observations
    - merge or append datasets
+
+   CARDS Statement
+   ----------------------------------------------------------------
+   CARDS (or DATALINES) allows data to be
+   entered directly within the SAS program.
+
+   This is useful for:
+
+   - demonstrations
+   - teaching examples
+   - small test datasets
 */
