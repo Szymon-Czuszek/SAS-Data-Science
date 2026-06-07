@@ -111,4 +111,13 @@ RUN;
 
    Emma F . 115.5
        Missing age
+
+   DATA Step
+   ----------------------------------------------------------------
+   DATA steps are used to:
+
+   - create datasets
+   - modify data
+   - transform observations
+   - merge or append datasets
 */
