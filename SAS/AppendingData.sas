@@ -93,4 +93,22 @@ RUN;
 
    student_weight
        Student weight
+
+   Missing Values
+   ----------------------------------------------------------------
+   SAS represents missing values using:
+
+   Numeric variables:
+       .
+
+   Character variables:
+       blank value
+
+   Examples:
+
+   Sophia . 58 158.3
+       Missing gender
+
+   Emma F . 115.5
+       Missing age
 */
