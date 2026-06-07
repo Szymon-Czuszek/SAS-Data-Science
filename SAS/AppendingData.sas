@@ -76,4 +76,21 @@ RUN;
    - work with missing values
    - combine multiple datasets
    - append observations using SET
+
+   Dataset Structure
+   ----------------------------------------------------------------
+
+   Variables:
+
+   student_name
+       Student name
+
+   gender
+       Student gender
+
+   student_age
+       Student age
+
+   student_weight
+       Student weight
 */
