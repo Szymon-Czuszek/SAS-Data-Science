@@ -136,4 +136,13 @@ RUN;
    ----------------------------------------------------------------
    The SET statement reads observations from
    one or more datasets.
+
+   Example:
+
+   SET student_data_1 student_data_2;
+
+   Result:
+   ------------------------------------------------
+   All rows from STUDENT_DATA_1 are read first,
+   followed by all rows from STUDENT_DATA_2.
 */
