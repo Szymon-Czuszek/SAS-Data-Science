@@ -131,4 +131,9 @@ RUN;
    - demonstrations
    - teaching examples
    - small test datasets
+
+   SET Statement
+   ----------------------------------------------------------------
+   The SET statement reads observations from
+   one or more datasets.
 */
