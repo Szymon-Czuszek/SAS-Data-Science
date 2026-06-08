@@ -145,4 +145,18 @@ RUN;
    ------------------------------------------------
    All rows from STUDENT_DATA_1 are read first,
    followed by all rows from STUDENT_DATA_2.
+
+   Combined Dataset
+   ----------------------------------------------------------------
+
+   combined_student_data
+
+   student_name   gender   age   weight
+   --------------------------------------
+   Adam           M        48    128.6
+   Sophia         .        58    158.3
+   Emma           F         .    115.5
+   James          M        28    170.1
+   Michael        M        34    150.2
+   Patricia       F        56    125.0
 */
