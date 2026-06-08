@@ -159,4 +159,16 @@ RUN;
    James          M        28    170.1
    Michael        M        34    150.2
    Patricia       F        56    125.0
+
+
+   Important Requirement
+   ----------------------------------------------------------------
+   When stacking datasets with SET:
+
+   - variable names should match
+   - variable types should match
+   - variable lengths should be compatible
+
+   Otherwise SAS may generate warnings
+   or unexpected results.
 */
