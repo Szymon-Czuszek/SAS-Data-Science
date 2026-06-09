@@ -171,4 +171,16 @@ RUN;
 
    Otherwise SAS may generate warnings
    or unexpected results.
+
+   Common Business Applications
+   ----------------------------------------------------------------
+
+   - Combining monthly reports
+   - Appending survey responses
+   - Merging historical records
+   - Consolidating customer files
+   - Building master datasets
+   - Data warehouse preparation
+   - ETL processing
+
 */
