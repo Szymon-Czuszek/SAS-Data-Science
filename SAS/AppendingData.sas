@@ -199,4 +199,13 @@ RUN;
    In this example we want to add
    additional student records,
    therefore SET is the appropriate choice.
+
+   Expected Number of Observations
+   ----------------------------------------------------------------
+
+   STUDENT_DATA_1 = 4 rows
+
+   STUDENT_DATA_2 = 2 rows
+
+   COMBINED_STUDENT_DATA = 6 rows
 */
