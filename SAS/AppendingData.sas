@@ -183,4 +183,20 @@ RUN;
    - Data warehouse preparation
    - ETL processing
 
+   Why Use SET Instead of MERGE?
+   ----------------------------------------------------------------
+
+   SET
+   ------------------------------------------------
+   Appends observations vertically
+   (adds rows).
+
+   MERGE
+   ------------------------------------------------
+   Combines datasets horizontally
+   (adds columns).
+
+   In this example we want to add
+   additional student records,
+   therefore SET is the appropriate choice.
 */
