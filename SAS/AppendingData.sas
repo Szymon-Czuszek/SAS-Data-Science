@@ -17,14 +17,23 @@
 */
 
 DATA student_data_1;
-INPUT student_name $ gender $ student_age student_weight;
-CARDS;
+
+    /* Define input variables */
+    INPUT
+        student_name $
+        gender $
+        student_age
+        student_weight;
+
+    /* Inline data values */
+    CARDS;
 Adam M 48 128.6
 Sophia . 58 158.3
 Emma F . 115.5
 James M 28 170.1
 ;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 2: Create second student dataset                                      */
@@ -37,12 +46,21 @@ RUN;
 */
 
 DATA student_data_2;
-INPUT student_name $ gender $ student_age student_weight;
-CARDS;
+
+    /* Define input variables */
+    INPUT
+        student_name $
+        gender $
+        student_age
+        student_weight;
+
+    /* Inline data values */
+    CARDS;
 Michael M 34 150.2
 Patricia F 56 125.0
 ;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 3: Append datasets                                                    */
@@ -59,8 +77,13 @@ RUN;
 */
 
 DATA combined_student_data;
-	SET student_data_1 student_data_2;
+
+    SET
+        student_data_1
+        student_data_2;
+
 RUN;
+
 
 /*============================================================================*/
 /* Commentary                                                                 */
@@ -76,6 +99,7 @@ RUN;
    - work with missing values
    - combine multiple datasets
    - append observations using SET
+
 
    Dataset Structure
    ----------------------------------------------------------------
@@ -93,6 +117,7 @@ RUN;
 
    student_weight
        Student weight
+
 
    Missing Values
    ----------------------------------------------------------------
@@ -112,6 +137,7 @@ RUN;
    Emma F . 115.5
        Missing age
 
+
    DATA Step
    ----------------------------------------------------------------
    DATA steps are used to:
@@ -120,6 +146,7 @@ RUN;
    - modify data
    - transform observations
    - merge or append datasets
+
 
    CARDS Statement
    ----------------------------------------------------------------
@@ -131,6 +158,7 @@ RUN;
    - demonstrations
    - teaching examples
    - small test datasets
+
 
    SET Statement
    ----------------------------------------------------------------
@@ -145,6 +173,7 @@ RUN;
    ------------------------------------------------
    All rows from STUDENT_DATA_1 are read first,
    followed by all rows from STUDENT_DATA_2.
+
 
    Combined Dataset
    ----------------------------------------------------------------
@@ -172,6 +201,7 @@ RUN;
    Otherwise SAS may generate warnings
    or unexpected results.
 
+
    Common Business Applications
    ----------------------------------------------------------------
 
@@ -182,6 +212,7 @@ RUN;
    - Building master datasets
    - Data warehouse preparation
    - ETL processing
+
 
    Why Use SET Instead of MERGE?
    ----------------------------------------------------------------
@@ -199,6 +230,7 @@ RUN;
    In this example we want to add
    additional student records,
    therefore SET is the appropriate choice.
+
 
    Expected Number of Observations
    ----------------------------------------------------------------
