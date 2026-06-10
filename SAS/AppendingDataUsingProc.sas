@@ -17,6 +17,10 @@ James M 28 170.1
 ;
 RUN;
 
+/*============================================================================*/
+/* STEP 2: Create second student dataset                                      */
+/*============================================================================*/
+
 DATA student_info_2;
 	INPUT student_name $ gender $ student_age student_weight;
 	CARDS;
