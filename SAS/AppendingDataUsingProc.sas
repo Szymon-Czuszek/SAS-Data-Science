@@ -2,6 +2,11 @@
 /* STEP 1: Create first student dataset                                       */
 /*============================================================================*/
 
+/*
+   Dataset STUDENT_INFO_1 contains student
+   demographic and physical information.
+*/
+
 DATA student_info_1;
 	INPUT student_name $ gender $ student_age student_weight;
 	CARDS;
