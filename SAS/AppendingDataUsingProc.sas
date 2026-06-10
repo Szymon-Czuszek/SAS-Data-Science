@@ -21,6 +21,12 @@ RUN;
 /* STEP 2: Create second student dataset                                      */
 /*============================================================================*/
 
+/*
+   Dataset STUDENT_INFO_2 contains additional
+   student records that will later be appended
+   to a master dataset.
+*/
+
 DATA student_info_2;
 	INPUT student_name $ gender $ student_age student_weight;
 	CARDS;
