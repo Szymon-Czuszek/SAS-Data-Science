@@ -39,6 +39,15 @@ RUN;
 /* STEP 3: Append first dataset to master dataset                             */
 /*============================================================================*/
 
+/*
+   PROC APPEND adds all observations from
+   STUDENT_INFO_1 to COMBINED_STUDENT_INFO.
+
+   If COMBINED_STUDENT_INFO does not exist,
+   SAS creates it automatically using the
+   structure of STUDENT_INFO_1.
+*/
+
 PROC APPEND BASE=combined_student_info DATA=student_info_1;
 RUN;
 
