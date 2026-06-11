@@ -35,6 +35,10 @@ Patricia F 56 125.0
 ;
 RUN;
 
+/*============================================================================*/
+/* STEP 3: Append first dataset to master dataset                             */
+/*============================================================================*/
+
 PROC APPEND BASE=combined_student_info DATA=student_info_1;
 RUN;
 
