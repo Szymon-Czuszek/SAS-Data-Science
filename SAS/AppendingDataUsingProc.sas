@@ -55,6 +55,11 @@ RUN;
 /* STEP 4: Append second dataset to master dataset                            */
 /*============================================================================*/
 
+/*
+   Append observations from STUDENT_INFO_2
+   to the existing COMBINED_STUDENT_INFO dataset.
+*/
+
 PROC APPEND BASE=combined_student_info DATA=student_info_2;
 RUN;
 
