@@ -51,6 +51,10 @@ RUN;
 PROC APPEND BASE=combined_student_info DATA=student_info_1;
 RUN;
 
+/*============================================================================*/
+/* STEP 4: Append second dataset to master dataset                            */
+/*============================================================================*/
+
 PROC APPEND BASE=combined_student_info DATA=student_info_2;
 RUN;
 
