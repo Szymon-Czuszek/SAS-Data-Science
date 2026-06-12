@@ -55,6 +55,10 @@ RUN;
 /* STEP 4: Append second dataset to master dataset                            */
 /*============================================================================*/
 
+/*============================================================================*/
+/* Important Note                                                             */
+/*============================================================================*/
+
 /*
    Append observations from STUDENT_INFO_2
    to the existing COMBINED_STUDENT_INFO dataset.
