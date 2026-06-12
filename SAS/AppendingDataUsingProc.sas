@@ -74,6 +74,15 @@ RUN;
 /*============================================================================*/
 
 /*
+   Purpose of the Program
+   ----------------------------------------------------------------
+   This example demonstrates how to:
+
+   - create multiple SAS datasets
+   - append observations using PROC APPEND
+   - build a cumulative master dataset
+   - understand duplicate risks when appending
+/*
    Append observations from STUDENT_INFO_2
    to the existing COMBINED_STUDENT_INFO dataset.
 */
