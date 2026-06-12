@@ -60,6 +60,16 @@ RUN;
 /*============================================================================*/
 
 /*
+   Running this program multiple times will
+   append the same observations again.
+
+   As a result, duplicate records will be
+   created in COMBINED_STUDENT_INFO unless
+   the target dataset is deleted or recreated
+   before execution.
+*/
+
+/*
    Append observations from STUDENT_INFO_2
    to the existing COMBINED_STUDENT_INFO dataset.
 */
