@@ -69,6 +69,10 @@ RUN;
    before execution.
 */
 
+/*============================================================================*/
+/* Commentary                                                                 */
+/*============================================================================*/
+
 /*
    Append observations from STUDENT_INFO_2
    to the existing COMBINED_STUDENT_INFO dataset.
