@@ -91,3 +91,20 @@ PROC APPEND BASE=combined_student_info DATA=student_info_2;
 RUN;
 
 * Running the code multiple times will result in duplicated appended records.
+
+   Dataset Structure
+   ----------------------------------------------------------------
+
+   Variables:
+
+   student_name
+       Student name
+
+   gender
+       Student gender
+
+   student_age
+       Student age
+
+   student_weight
+       Student weight
