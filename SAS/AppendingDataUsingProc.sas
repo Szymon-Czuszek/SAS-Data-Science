@@ -121,3 +121,13 @@ RUN;
        BASE=target_dataset
        DATA=source_dataset;
    RUN;
+
+      BASE Dataset
+   ----------------------------------------------------------------
+   BASE= specifies the destination dataset.
+
+   In this example:
+
+   BASE=combined_student_info
+
+   receives new observations.
