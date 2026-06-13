@@ -131,3 +131,13 @@ RUN;
    BASE=combined_student_info
 
    receives new observations.
+
+      DATA Dataset
+   ----------------------------------------------------------------
+   DATA= specifies the source dataset whose
+   observations will be appended.
+
+   Examples:
+
+   DATA=student_info_1
+   DATA=student_info_2
