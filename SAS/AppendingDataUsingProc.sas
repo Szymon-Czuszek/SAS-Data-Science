@@ -108,3 +108,16 @@ RUN;
 
    student_weight
        Student weight
+
+   PROC APPEND
+   ----------------------------------------------------------------
+   PROC APPEND adds observations from one
+   dataset to another without reading and
+   rewriting the entire target dataset.
+
+   Syntax:
+
+   PROC APPEND
+       BASE=target_dataset
+       DATA=source_dataset;
+   RUN;
