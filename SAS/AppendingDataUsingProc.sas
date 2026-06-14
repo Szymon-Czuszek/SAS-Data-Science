@@ -175,3 +175,15 @@ RUN;
 
    PROC APPEND vs SET
    ----------------------------------------------------------------
+
+      PROC APPEND
+   ------------------------------------------------
+   - Faster for large datasets
+   - Adds observations directly
+   - Does not rewrite the BASE dataset
+
+   DATA Step with SET
+   ------------------------------------------------
+   - Creates a new dataset
+   - Reads all source observations again
+   - More flexible for transformations
