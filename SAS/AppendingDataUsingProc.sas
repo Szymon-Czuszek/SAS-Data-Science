@@ -141,3 +141,21 @@ RUN;
 
    DATA=student_info_1
    DATA=student_info_2
+   
+   How PROC APPEND Works
+   ----------------------------------------------------------------
+
+   Step 1:
+   ------------------------------------------------
+   student_info_1 is appended to
+   combined_student_info
+
+   Step 2:
+   ------------------------------------------------
+   student_info_2 is appended to
+   combined_student_info
+
+   Result:
+   ------------------------------------------------
+   combined_student_info contains records
+   from both source datasets.
