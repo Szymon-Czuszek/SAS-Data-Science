@@ -187,3 +187,9 @@ RUN;
    - Creates a new dataset
    - Reads all source observations again
    - More flexible for transformations
+
+      Duplicate Record Risk
+   ----------------------------------------------------------------
+
+   PROC APPEND does not automatically check
+   for duplicates.
