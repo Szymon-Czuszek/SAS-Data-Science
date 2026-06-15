@@ -1,0 +1,23 @@
+Jenner 0.1.0 (Unlicensed - limited to 100 observations)
+Get a license at https://jenneranalytics.com/license
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA PATIENT_VITALS
+
+NOTE: Processing inline DATALINES (7 lines)
+
+NOTE: Read 7 rows from DATALINES.
+NOTE: Wrote PATIENT_VITALS (7 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=PATIENT_VITALS
+
+NOTE: Unlicensed mode - input limited to 100 observations.
+NOTE: Read 7 rows from PATIENT_VITALS.
+NOTE: Wrote PATIENT_VITALS (7 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=PATIENT_VITALS
+
+NOTE: Created 4 rows.
+NOTE: Output written to /tmp/work/work/7651aaa5-92c3-4f75-b122-e8cc18bb2d40/t_patient_vitals.avro.
