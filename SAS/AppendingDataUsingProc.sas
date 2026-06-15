@@ -193,3 +193,9 @@ RUN;
 
    PROC APPEND does not automatically check
    for duplicates.
+
+      Example:
+
+   First execution:
+   ------------------------------------------------
+   6 records
