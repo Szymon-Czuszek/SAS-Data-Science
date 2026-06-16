@@ -230,3 +230,6 @@ RUN;
    - Incremental ETL processing
    - Historical record accumulation
    - Log file aggregation
+
+      Why PROC APPEND is Popular
+   ----------------------------------------------------------------
