@@ -209,3 +209,13 @@ RUN;
    18 records
 
    and so on.
+
+   Preventing Duplicate Appends
+   ----------------------------------------------------------------
+
+   Common approaches include:
+
+   - Deleting the target dataset before loading
+   - Using PROC SORT NODUPKEY
+   - Using PROC SQL DISTINCT
+   - Checking record existence before append
