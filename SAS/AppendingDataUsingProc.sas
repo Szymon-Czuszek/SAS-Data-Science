@@ -233,3 +233,12 @@ RUN;
 
       Why PROC APPEND is Popular
    ----------------------------------------------------------------
+
+      Advantages:
+
+   - Efficient for large datasets
+   - Minimal resource usage
+   - Simple syntax
+   - Commonly used in ETL pipelines
+   - Ideal for incremental data loading
+*/
