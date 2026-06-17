@@ -1,4 +1,4 @@
-/*=========*==================================================================*/
+/*============================================================================*/
 /* STEP 1: Create first student dataset                                       */
 /*============================================================================*/
 
@@ -8,14 +8,23 @@
 */
 
 DATA student_info_1;
-	INPUT student_name $ gender $ student_age student_weight;
-	CARDS;
+
+    /* Define input variables */
+    INPUT
+        student_name $
+        gender $
+        student_age
+        student_weight;
+
+    /* Inline data values */
+    CARDS;
 Adam M 48 128.6
 Sophia . 58 158.3
 Emma F . 115.5
 James M 28 170.1
 ;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 2: Create second student dataset                                      */
@@ -28,12 +37,21 @@ RUN;
 */
 
 DATA student_info_2;
-	INPUT student_name $ gender $ student_age student_weight;
-	CARDS;
+
+    /* Define input variables */
+    INPUT
+        student_name $
+        gender $
+        student_age
+        student_weight;
+
+    /* Inline data values */
+    CARDS;
 Michael M 34 150.2
 Patricia F 56 125.0
 ;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 3: Append first dataset to master dataset                             */
@@ -48,12 +66,26 @@ RUN;
    structure of STUDENT_INFO_1.
 */
 
-PROC APPEND BASE=combined_student_info DATA=student_info_1;
+PROC APPEND
+    BASE=combined_student_info
+    DATA=student_info_1;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 4: Append second dataset to master dataset                            */
 /*============================================================================*/
+
+/*
+   Append observations from STUDENT_INFO_2
+   to the existing COMBINED_STUDENT_INFO dataset.
+*/
+
+PROC APPEND
+    BASE=combined_student_info
+    DATA=student_info_2;
+RUN;
+
 
 /*============================================================================*/
 /* Important Note                                                             */
@@ -69,6 +101,7 @@ RUN;
    before execution.
 */
 
+
 /*============================================================================*/
 /* Commentary                                                                 */
 /*============================================================================*/
@@ -82,15 +115,7 @@ RUN;
    - append observations using PROC APPEND
    - build a cumulative master dataset
    - understand duplicate risks when appending
-/*
-   Append observations from STUDENT_INFO_2
-   to the existing COMBINED_STUDENT_INFO dataset.
-*/
 
-PROC APPEND BASE=combined_student_info DATA=student_info_2;
-RUN;
-
-* Running the code multiple times will result in duplicated appended records.
 
    Dataset Structure
    ----------------------------------------------------------------
@@ -109,6 +134,7 @@ RUN;
    student_weight
        Student weight
 
+
    PROC APPEND
    ----------------------------------------------------------------
    PROC APPEND adds observations from one
@@ -122,7 +148,8 @@ RUN;
        DATA=source_dataset;
    RUN;
 
-      BASE Dataset
+
+   BASE Dataset
    ----------------------------------------------------------------
    BASE= specifies the destination dataset.
 
@@ -132,7 +159,8 @@ RUN;
 
    receives new observations.
 
-      DATA Dataset
+
+   DATA Dataset
    ----------------------------------------------------------------
    DATA= specifies the source dataset whose
    observations will be appended.
@@ -141,6 +169,7 @@ RUN;
 
    DATA=student_info_1
    DATA=student_info_2
+
 
    How PROC APPEND Works
    ----------------------------------------------------------------
@@ -160,7 +189,8 @@ RUN;
    combined_student_info contains records
    from both source datasets.
 
-      Expected Output
+
+   Expected Output
    ----------------------------------------------------------------
 
    student_name   gender   age   weight
@@ -176,7 +206,7 @@ RUN;
    PROC APPEND vs SET
    ----------------------------------------------------------------
 
-      PROC APPEND
+   PROC APPEND
    ------------------------------------------------
    - Faster for large datasets
    - Adds observations directly
@@ -188,27 +218,29 @@ RUN;
    - Reads all source observations again
    - More flexible for transformations
 
-      Duplicate Record Risk
+
+   Duplicate Record Risk
    ----------------------------------------------------------------
 
    PROC APPEND does not automatically check
    for duplicates.
 
-      Example:
+   Example:
 
    First execution:
    ------------------------------------------------
    6 records
 
-      Second execution:
+   Second execution:
    ------------------------------------------------
    12 records
 
-      Third execution:
+   Third execution:
    ------------------------------------------------
    18 records
 
    and so on.
+
 
    Preventing Duplicate Appends
    ----------------------------------------------------------------
@@ -220,7 +252,8 @@ RUN;
    - Using PROC SQL DISTINCT
    - Checking record existence before append
 
-      Business Applications
+
+   Business Applications
    ----------------------------------------------------------------
 
    - Monthly report consolidation
@@ -231,10 +264,11 @@ RUN;
    - Historical record accumulation
    - Log file aggregation
 
-      Why PROC APPEND is Popular
+
+   Why PROC APPEND is Popular
    ----------------------------------------------------------------
 
-      Advantages:
+   Advantages:
 
    - Efficient for large datasets
    - Minimal resource usage
