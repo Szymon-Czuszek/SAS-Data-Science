@@ -9,6 +9,9 @@
    used to identify problematic records.
 */
 
+
+    /* Read numeric values from input data */
+    
 DATA test;
 INPUT x y;
 IF _error_ = 1 THEN
