@@ -35,3 +35,14 @@ RUN;
 /*============================================================================*/
 /* Commentary                                                                 */
 /*============================================================================*/
+
+/*
+   Purpose of the Program
+   ----------------------------------------------------------------
+   This example demonstrates:
+
+   - Reading raw data
+   - Detecting invalid input values
+   - Using automatic SAS variables
+   - Logging custom error messages
+   */
