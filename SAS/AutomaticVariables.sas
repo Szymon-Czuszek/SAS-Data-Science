@@ -18,6 +18,8 @@ INPUT x y;
 IF _error_ = 1 THEN
         /* Write a custom message to the SAS log */
 PUT "** Error in row " _n_ " **";
+
+    /* Inline data values */
 DATALINES;
 1 1
 2 3
