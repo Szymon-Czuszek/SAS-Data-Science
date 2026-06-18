@@ -16,6 +16,7 @@ DATA test;
 INPUT x y;
     /* Check whether an input error occurred */
 IF _error_ = 1 THEN
+        /* Write a custom message to the SAS log */
 PUT "** Error in row " _n_ " **";
 DATALINES;
 1 1
