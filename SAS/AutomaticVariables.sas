@@ -11,9 +11,10 @@
 
 
     /* Read numeric values from input data */
-    
+
 DATA test;
 INPUT x y;
+    /* Check whether an input error occurred */
 IF _error_ = 1 THEN
 PUT "** Error in row " _n_ " **";
 DATALINES;
