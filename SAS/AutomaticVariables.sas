@@ -9,21 +9,29 @@
    used to identify problematic records.
 */
 
+DATA test;
 
     /* Read numeric values from input data */
+    INPUT
+        x
+        y;
 
-DATA test;
-INPUT x y;
     /* Check whether an input error occurred */
-IF _error_ = 1 THEN
+    IF _ERROR_ = 1 THEN
+
         /* Write a custom message to the SAS log */
-PUT "** Error in row " _n_ " **";
+        PUT "** Error in row " _N_ " **";
 
     /* Inline data values */
-DATALINES;
+    DATALINES;
 1 1
 2 3
 3 n
 4 4
 ;
 RUN;
+
+
+/*============================================================================*/
+/* Commentary                                                                 */
+/*============================================================================*/
