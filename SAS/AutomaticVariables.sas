@@ -46,3 +46,8 @@ RUN;
    - Using automatic SAS variables
    - Logging custom error messages
    */
+
+      INPUT Statement
+   ----------------------------------------------------------------
+   The INPUT statement reads raw data values
+   into SAS variables.
