@@ -51,3 +51,11 @@ RUN;
    ----------------------------------------------------------------
    The INPUT statement reads raw data values
    into SAS variables.
+
+      Variables:
+
+   x
+       Numeric variable
+
+   y
+       Numeric variable
