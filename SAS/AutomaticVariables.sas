@@ -68,3 +68,11 @@ RUN;
    - is not stored in the dataset
    - indicates whether an error occurred
      during execution
+
+        Values:
+
+   _ERROR_ = 0
+       No error occurred
+
+   _ERROR_ = 1
+       An error occurred
