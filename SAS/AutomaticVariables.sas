@@ -59,3 +59,12 @@ RUN;
 
    y
        Numeric variable
+
+   Automatic Variable: _ERROR_
+   ----------------------------------------------------------------
+   _ERROR_ is an automatic SAS variable that:
+
+   - is created automatically
+   - is not stored in the dataset
+   - indicates whether an error occurred
+     during execution
