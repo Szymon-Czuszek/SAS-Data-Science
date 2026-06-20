@@ -85,3 +85,9 @@ RUN;
 
    - the current iteration number
    - the observation currently being processed
+
+      Example:
+
+   First record  -> _N_ = 1
+   Second record -> _N_ = 2
+   Third record  -> _N_ = 3
