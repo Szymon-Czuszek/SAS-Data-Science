@@ -102,3 +102,15 @@ RUN;
 
    - If SAS encounters an input error,
      write a custom message to the log.
+
+        Problematic Observation
+   ----------------------------------------------------------------
+
+   Input data:
+
+   x   y
+   -------
+   1   1
+   2   3
+   3   n
+   4   4
