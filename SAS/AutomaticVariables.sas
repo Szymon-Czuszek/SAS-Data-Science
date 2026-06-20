@@ -76,3 +76,12 @@ RUN;
 
    _ERROR_ = 1
        An error occurred
+
+   Automatic Variable: _N_
+   ----------------------------------------------------------------
+   _N_ is another automatic SAS variable.
+
+   It represents:
+
+   - the current iteration number
+   - the observation currently being processed
