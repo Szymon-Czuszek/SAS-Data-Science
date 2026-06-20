@@ -91,3 +91,14 @@ RUN;
    First record  -> _N_ = 1
    Second record -> _N_ = 2
    Third record  -> _N_ = 3
+
+      Error Detection Logic
+   ----------------------------------------------------------------
+
+   IF _ERROR_ = 1 THEN
+       PUT "** Error in row " _N_ " **";
+
+   Meaning:
+
+   - If SAS encounters an input error,
+     write a custom message to the log.
