@@ -122,3 +122,12 @@ RUN;
    Since variable Y is numeric,
    SAS cannot convert the character value
    "n" into a numeric value.
+
+      Resulting Error
+   ----------------------------------------------------------------
+
+   During processing of row 3:
+
+   - SAS sets _ERROR_ = 1
+   - SAS writes a standard error message
+   - The custom PUT statement executes
