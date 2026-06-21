@@ -135,3 +135,11 @@ RUN;
       Example log output:
 
    ** Error in row 3 **
+
+      How SAS Stores the Invalid Value
+   ----------------------------------------------------------------
+
+   When SAS cannot convert a value to numeric:
+
+   - The variable receives a missing value (.)
+   - Processing continues unless explicitly stopped
