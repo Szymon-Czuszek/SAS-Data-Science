@@ -131,3 +131,7 @@ RUN;
    - SAS sets _ERROR_ = 1
    - SAS writes a standard error message
    - The custom PUT statement executes
+
+      Example log output:
+
+   ** Error in row 3 **
