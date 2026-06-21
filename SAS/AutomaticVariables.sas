@@ -114,3 +114,11 @@ RUN;
    2   3
    3   n
    4   4
+
+      The third record contains:
+
+   y = n
+
+   Since variable Y is numeric,
+   SAS cannot convert the character value
+   "n" into a numeric value.
