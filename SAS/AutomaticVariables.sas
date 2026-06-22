@@ -159,3 +159,10 @@ RUN;
 
    PUT writes information directly
    to the SAS log.
+
+      Common uses:
+
+   - Debugging
+   - Error tracking
+   - Validation checks
+   - Monitoring ETL processes
