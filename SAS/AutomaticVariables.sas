@@ -153,3 +153,9 @@ RUN;
    2   3
    3   .
    4   4
+
+      PUT Statement
+   ----------------------------------------------------------------
+
+   PUT writes information directly
+   to the SAS log.
