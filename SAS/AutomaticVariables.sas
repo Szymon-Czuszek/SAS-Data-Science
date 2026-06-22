@@ -143,3 +143,13 @@ RUN;
 
    - The variable receives a missing value (.)
    - Processing continues unless explicitly stopped
+
+
+   Resulting dataset:
+
+   x   y
+   -------
+   1   1
+   2   3
+   3   .
+   4   4
