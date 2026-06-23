@@ -182,3 +182,8 @@ RUN;
 
       Benefits of Using _ERROR_
    ----------------------------------------------------------------
+
+      - Early detection of bad data
+   - Easier troubleshooting
+   - Improved data quality control
+   - Better operational monitoring
