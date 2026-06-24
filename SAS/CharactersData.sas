@@ -10,7 +10,10 @@
    - gender
    - height
    - weight
-   
+      
+The data is entered manually using the
+   CARDS statement.
+*/
 data characters;
 input name $ gender $ height weight;
 cards;
