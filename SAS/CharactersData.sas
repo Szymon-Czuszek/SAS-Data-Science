@@ -2,6 +2,15 @@
 /* STEP 1: Create character dataset                                           */
 /*============================================================================*/
 
+/*
+   Dataset CHARACTERS contains information about
+   fictional characters, including:
+
+   - name
+   - gender
+   - height
+   - weight
+   
 data characters;
 input name $ gender $ height weight;
 cards;
