@@ -10,11 +10,14 @@
    - gender
    - height
    - weight
-      
-The data is entered manually using the
+
+   The data is entered manually using the
    CARDS statement.
 */
-data characters;
+
+DATA characters;
+
+    /* Define input variables */
 input name $ gender $ height weight;
 cards;
 Tony M 185 102
