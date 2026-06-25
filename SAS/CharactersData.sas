@@ -47,4 +47,21 @@ RUN;
    - Read data using the INPUT statement
    - Load inline data with CARDS
 
+   Dataset Structure
+   ----------------------------------------------------------------
+
+   Variables:
+
+   name
+       Character name
+
+   gender
+       Character gender
+
+   height
+       Character height
+
+   weight
+       Character weight
+       
    */
