@@ -36,3 +36,15 @@ RUN;
 /*============================================================================*/
 /* Commentary                                                                 */
 /*============================================================================*/
+
+/*
+   Purpose of the Program
+   ----------------------------------------------------------------
+   This example demonstrates how to:
+
+   - Create a SAS dataset
+   - Define character and numeric variables
+   - Read data using the INPUT statement
+   - Load inline data with CARDS
+
+   */
