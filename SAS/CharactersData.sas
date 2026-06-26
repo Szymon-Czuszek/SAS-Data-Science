@@ -63,5 +63,7 @@ RUN;
 
    weight
        Character weight
-       
+
+   Variable Types
+   ----------------------------------------------------------------
    */
