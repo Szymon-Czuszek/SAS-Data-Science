@@ -72,8 +72,12 @@ RUN;
    name
    gender
 
-      Numeric Variables:
+   Numeric Variables:
    ------------------------------------------------
    height
    weight
+
+   The dollar sign ($) tells SAS that the
+   variable should be stored as character data.
+   
    */
