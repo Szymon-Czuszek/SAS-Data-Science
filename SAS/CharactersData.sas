@@ -96,4 +96,7 @@ RUN;
    - Variable types
 
    SAS reads values sequentially from each row.
+
+   CARDS Statement
+   ----------------------------------------------------------------
    */
