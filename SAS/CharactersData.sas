@@ -88,5 +88,10 @@ RUN;
        gender $
        height
        weight;
-       
+
+   This statement defines:
+
+   - Variable names
+   - Variable order
+   - Variable types
    */
