@@ -94,4 +94,6 @@ RUN;
    - Variable names
    - Variable order
    - Variable types
+
+   SAS reads values sequentially from each row.
    */
