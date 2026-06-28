@@ -99,4 +99,7 @@ RUN;
 
    CARDS Statement
    ----------------------------------------------------------------
+
+      CARDS allows data to be entered directly
+   inside the SAS program.
    */
