@@ -102,4 +102,11 @@ RUN;
 
       CARDS allows data to be entered directly
    inside the SAS program.
+
+      This approach is useful for:
+
+   - Training exercises
+   - Small datasets
+   - Testing code
+   - Demonstrations
    */
