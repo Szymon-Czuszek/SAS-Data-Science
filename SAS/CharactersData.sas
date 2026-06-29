@@ -135,5 +135,8 @@ RUN;
    59.4
    170.2
 
-   are all stored as numeric values.   
+   are all stored as numeric values.
+
+      Observations and Variables
+   ----------------------------------------------------------------   
    */
