@@ -127,4 +127,13 @@ RUN;
 
    - Integers
    - Decimal numbers
+
+   Examples:
+
+   185
+   99.8
+   59.4
+   170.2
+
+   are all stored as numeric values.   
    */
