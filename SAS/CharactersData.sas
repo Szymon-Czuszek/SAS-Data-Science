@@ -119,4 +119,12 @@ RUN;
    Steve     M         188.0      99.8
    Natasha   F          59.4     170.2
    Bruce     M          58.0     176.5
+
+      Numeric Values
+   ----------------------------------------------------------------
+
+   SAS automatically recognizes:
+
+   - Integers
+   - Decimal numbers
    */
