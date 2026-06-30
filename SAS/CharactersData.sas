@@ -173,4 +173,19 @@ RUN;
 
    This is one of the most fundamental
    data-loading techniques in SAS.
+
+      Why Use Inline Data?
+   ----------------------------------------------------------------
+
+   Advantages:
+
+   - Quick testing
+   - Easy debugging
+   - Self-contained programs
+   - No external files required
+   - Useful for learning SAS concepts
+
+   For larger datasets, data is usually
+   imported from CSV, Excel, databases,
+   or external systems instead.
    */
