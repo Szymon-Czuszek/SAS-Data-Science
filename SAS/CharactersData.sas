@@ -162,4 +162,15 @@ RUN;
    - Sports statistics
    - Survey data
    - Character or game databases
+
+      DATA Step Workflow
+   ----------------------------------------------------------------
+
+   1. Define dataset name
+   2. Define variables using INPUT
+   3. Provide source data using CARDS
+   4. Execute DATA step with RUN
+
+   This is one of the most fundamental
+   data-loading techniques in SAS.
    */
