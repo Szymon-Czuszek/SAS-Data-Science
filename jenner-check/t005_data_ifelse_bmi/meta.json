@@ -1,0 +1,8 @@
+{
+  "bundle": "t005_data_ifelse_bmi",
+  "source_file": "SAS/IfElseIf.sas",
+  "source_blob_sha": "7d179ca29d25d156d68bc4576343a7891991e3a4",
+  "source_commit": "252f1a993e6c0a2e0a955ef9ab16d3dbd3dc80ef",
+  "tier": "real_data",
+  "notes": "DATA step IF/ELSE IF classifying BMI into status bands over sashelp.class."
+}

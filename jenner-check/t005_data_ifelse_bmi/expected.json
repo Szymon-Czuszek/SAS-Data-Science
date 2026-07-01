@@ -1,0 +1,18 @@
+{
+  "_captured_at": "2026-06-15T16:12:38Z",
+  "_captured_run_id": "r_019ecc0dfc887be0b5f6a907ad5f9ebd",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Option OBS changed to 100.",
+    "NOTE: Wrote student_data (19 rows, 9 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

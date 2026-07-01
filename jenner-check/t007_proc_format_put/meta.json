@@ -1,0 +1,8 @@
+{
+  "bundle": "t007_proc_format_put",
+  "source_file": "SAS/Format.sas",
+  "source_blob_sha": "666d43b5929cee1ed47c941805e0355eac0757fb",
+  "source_commit": "252f1a993e6c0a2e0a955ef9ab16d3dbd3dc80ef",
+  "tier": "real_data",
+  "notes": "PROC FORMAT custom VALUE format applied via FORMAT and the PUT function."
+}

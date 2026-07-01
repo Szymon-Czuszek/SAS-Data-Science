@@ -1,0 +1,8 @@
+{
+  "bundle": "t004_proc_sql_case",
+  "source_file": "SAS/ProcSqlCase.sas",
+  "source_blob_sha": "57118e981c0cf9d66d1b8f1d2ba557e5585567cb",
+  "source_commit": "252f1a993e6c0a2e0a955ef9ab16d3dbd3dc80ef",
+  "tier": "real_data",
+  "notes": "PROC SQL with nested CASE expressions deriving an adjusted pay rate into a new table."
+}
