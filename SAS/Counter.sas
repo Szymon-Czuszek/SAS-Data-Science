@@ -13,8 +13,14 @@
 */
 
 DATA studentscores;
-	INPUT gender score;
-	CARDS;
+
+    /* Define input variables */
+    INPUT
+        gender
+        score;
+
+    /* Inline data values */
+    CARDS;
 1 48
 1 45
 2 50
