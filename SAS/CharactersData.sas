@@ -33,6 +33,7 @@ Bruce M 58 176.5
 ;
 RUN;
 
+
 /*============================================================================*/
 /* Commentary                                                                 */
 /*============================================================================*/
@@ -46,6 +47,7 @@ RUN;
    - Define character and numeric variables
    - Read data using the INPUT statement
    - Load inline data with CARDS
+
 
    Dataset Structure
    ----------------------------------------------------------------
@@ -64,10 +66,11 @@ RUN;
    weight
        Character weight
 
+
    Variable Types
    ----------------------------------------------------------------
 
-      Character Variables:
+   Character Variables:
    ------------------------------------------------
    name
    gender
@@ -80,7 +83,8 @@ RUN;
    The dollar sign ($) tells SAS that the
    variable should be stored as character data.
 
-      INPUT Statement
+
+   INPUT Statement
    ----------------------------------------------------------------
 
    INPUT
@@ -97,30 +101,33 @@ RUN;
 
    SAS reads values sequentially from each row.
 
+
    CARDS Statement
    ----------------------------------------------------------------
 
-      CARDS allows data to be entered directly
+   CARDS allows data to be entered directly
    inside the SAS program.
 
-      This approach is useful for:
+   This approach is useful for:
 
    - Training exercises
    - Small datasets
    - Testing code
    - Demonstrations
 
-      Resulting Dataset
+
+   Resulting Dataset
    ----------------------------------------------------------------
 
-      name      gender    height    weight
+   name      gender    height    weight
    -------------------------------------
    Tony      M         185.0     102.0
    Steve     M         188.0      99.8
    Natasha   F          59.4     170.2
    Bruce     M          58.0     176.5
 
-      Numeric Values
+
+   Numeric Values
    ----------------------------------------------------------------
 
    SAS automatically recognizes:
@@ -137,10 +144,11 @@ RUN;
 
    are all stored as numeric values.
 
-      Observations and Variables
-   ----------------------------------------------------------------   
 
-      Dataset Summary:
+   Observations and Variables
+   ----------------------------------------------------------------
+
+   Dataset Summary:
 
    Observations (Rows):
    ------------------------------------------------
@@ -150,10 +158,11 @@ RUN;
    ------------------------------------------------
    4
 
-      Practical Applications
+
+   Practical Applications
    ----------------------------------------------------------------
 
-      Similar structures are commonly used for:
+   Similar structures are commonly used for:
 
    - Employee records
    - Student information
@@ -163,7 +172,8 @@ RUN;
    - Survey data
    - Character or game databases
 
-      DATA Step Workflow
+
+   DATA Step Workflow
    ----------------------------------------------------------------
 
    1. Define dataset name
@@ -174,7 +184,8 @@ RUN;
    This is one of the most fundamental
    data-loading techniques in SAS.
 
-      Why Use Inline Data?
+
+   Why Use Inline Data?
    ----------------------------------------------------------------
 
    Advantages:
@@ -188,4 +199,4 @@ RUN;
    For larger datasets, data is usually
    imported from CSV, Excel, databases,
    or external systems instead.
-   */
+*/
