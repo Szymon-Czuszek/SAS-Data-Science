@@ -3,6 +3,14 @@
 /*============================================================================*/
 
 /*
+   Dataset STUDENTSCORES contains:
+
+   - gender identifier
+   - student score
+
+   Each observation represents the score
+   obtained by one student.
+*/
 
 DATA studentscores;
 	INPUT gender score;
