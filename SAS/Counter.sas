@@ -56,6 +56,14 @@ RUN;
 /* STEP 3: Assign sequential counter within each gender group                 */
 /*============================================================================*/
 
+/*
+   Create a new dataset with a sequential
+   counter for each gender group.
+
+   The counter restarts at 1 whenever
+   a new gender group begins.
+*/
+
 DATA studentscores1;
 	SET studentscores;
 	count + 1;
