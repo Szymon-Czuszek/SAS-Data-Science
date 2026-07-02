@@ -51,6 +51,11 @@ PROC SORT DATA=studentscores;
 
 RUN;
 
+
+/*============================================================================*/
+/* STEP 3: Assign sequential counter within each gender group                 */
+/*============================================================================*/
+
 DATA studentscores1;
 	SET studentscores;
 	count + 1;
