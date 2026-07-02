@@ -37,8 +37,18 @@ RUN;
 /* STEP 2: Sort dataset by gender                                             */
 /*============================================================================*/
 
+/*
+   Sort observations by the GENDER variable.
+
+   Sorting is required before using
+   BY-group processing with FIRST. and LAST.
+   automatic variables.
+*/
+
 PROC SORT DATA=studentscores;
-	BY gender;
+
+    BY gender;
+
 RUN;
 
 DATA studentscores1;
