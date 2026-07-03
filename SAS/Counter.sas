@@ -95,4 +95,19 @@ RUN;
    - Use BY-group processing
    - Generate sequential numbering
      within groups
+
+   Dataset Structure
+   ----------------------------------------------------------------
+
+   Variables:
+
+   gender
+       Student gender identifier
+
+   score
+       Student score
+
+   count
+       Sequential observation number
+       within each gender group
 */
