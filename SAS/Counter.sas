@@ -86,3 +86,13 @@ RUN;
 /*============================================================================*/
 
 /*
+   Purpose of the Program
+   ----------------------------------------------------------------
+   This example demonstrates how to:
+
+   - Create a SAS dataset
+   - Sort observations
+   - Use BY-group processing
+   - Generate sequential numbering
+     within groups
+*/
