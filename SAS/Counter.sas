@@ -33,6 +33,7 @@ DATA studentscores;
 ;
 RUN;
 
+
 /*============================================================================*/
 /* STEP 2: Sort dataset by gender                                             */
 /*============================================================================*/
@@ -65,10 +66,17 @@ RUN;
 */
 
 DATA studentscores1;
-	SET studentscores;
-	count + 1;
-	BY gender;
 
-	IF first.gender THEN
-		count=1;
+    SET studentscores;
+
+    /* Running counter */
+    count + 1;
+
+    /* Enable BY-group processing */
+    BY gender;
+
+    /* Reset counter for first observation in each group */
+    IF FIRST.gender THEN
+        count = 1;
+
 RUN;
