@@ -121,4 +121,8 @@ RUN;
    PROC SORT DATA=studentscores;
        BY gender;
    RUN;
+
+   Without sorting, SAS generates an error
+   because FIRST. and LAST. variables depend
+   on ordered observations.
 */
