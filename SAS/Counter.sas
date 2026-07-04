@@ -115,4 +115,10 @@ RUN;
    ----------------------------------------------------------------
    Before using BY-group processing,
    the dataset must first be sorted.
+
+   Example:
+
+   PROC SORT DATA=studentscores;
+       BY gender;
+   RUN;
 */
