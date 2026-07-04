@@ -110,4 +110,9 @@ RUN;
    count
        Sequential observation number
        within each gender group
+
+   PROC SORT
+   ----------------------------------------------------------------
+   Before using BY-group processing,
+   the dataset must first be sorted.
 */
