@@ -125,4 +125,12 @@ RUN;
    Without sorting, SAS generates an error
    because FIRST. and LAST. variables depend
    on ordered observations.
+
+   BY Statement
+   ----------------------------------------------------------------
+
+   BY gender;
+
+   This instructs SAS to process observations
+   separately for each value of GENDER.
 */
