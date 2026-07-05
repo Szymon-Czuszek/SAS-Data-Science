@@ -133,4 +133,10 @@ RUN;
 
    This instructs SAS to process observations
    separately for each value of GENDER.
+
+   Automatic Variables
+   ----------------------------------------------------------------
+
+   When using BY processing, SAS automatically
+   creates two temporary variables:
 */
