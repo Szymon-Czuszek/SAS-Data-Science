@@ -139,11 +139,19 @@ RUN;
 
    When using BY processing, SAS automatically
    creates two temporary variables:
-   
+
    FIRST.gender
 
    LAST.gender
 
    These variables are not stored
    in the output dataset.
+
+   FIRST.gender
+   ----------------------------------------------------------------
+
+   FIRST.gender = 1
+
+   indicates the first observation
+   of a gender group.
 */
