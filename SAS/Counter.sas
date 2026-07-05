@@ -154,4 +154,15 @@ RUN;
 
    indicates the first observation
    of a gender group.
+
+   Example:
+
+   Gender
+   -------
+   1
+   1
+   1
+   2   ← FIRST.gender = 1
+   2
+   2
 */
