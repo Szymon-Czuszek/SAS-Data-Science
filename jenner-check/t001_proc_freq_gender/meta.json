@@ -1,0 +1,8 @@
+{
+  "bundle": "t001_proc_freq_gender",
+  "source_file": "SAS/UsingProcFreq.sas",
+  "source_blob_sha": "f7fb82b2e5128ce16dc7882b689de11598c32535",
+  "source_commit": "252f1a993e6c0a2e0a955ef9ab16d3dbd3dc80ef",
+  "tier": "real_data",
+  "notes": "PROC FREQ one-way frequency tables on an inline DATALINES CLASS dataset; ODS graphics disabled in autoexec for a text-only run."
+}

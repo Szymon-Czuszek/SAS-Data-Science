@@ -1,0 +1,16 @@
+                                                   The FREQ Procedure
+
+                                    Cumulative    Cumulative
+GENDER    Frequency    Percent     Frequency      Percent
+---------------------------------------------------------------
+F                 3     37.50            3        37.50
+M                 5     62.50            8       100.00
+                                                   The FREQ Procedure
+
+                                      Cumulative    Cumulative
+COURSENO    Frequency    Percent     Frequency      Percent
+-----------------------------------------------------------------
+101                 3     37.50            3        37.50
+201                 2     25.00            5        62.50
+202                 1     12.50            6        75.00
+301                 2     25.00            8       100.00

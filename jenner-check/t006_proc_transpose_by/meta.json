@@ -1,0 +1,8 @@
+{
+  "bundle": "t006_proc_transpose_by",
+  "source_file": "SAS/ProcTransoposeBy.sas",
+  "source_blob_sha": "fced6844cd9a2905d8f3144eb011fd9b7c7b1239",
+  "source_commit": "252f1a993e6c0a2e0a955ef9ab16d3dbd3dc80ef",
+  "tier": "real_data",
+  "notes": "PROC TRANSPOSE with BY and ID reshaping long patient-vitals data to wide."
+}
