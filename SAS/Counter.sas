@@ -172,4 +172,14 @@ RUN;
    count + 1;
 
    This is a SUM statement.
+
+   Unlike:
+
+   count = count + 1;
+
+   it automatically:
+
+   - retains the variable
+   - initializes it to zero
+   - ignores missing values
 */
