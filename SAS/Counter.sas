@@ -191,4 +191,19 @@ RUN;
 
    Whenever a new gender begins,
    numbering restarts from 1.
+
+   Example Output
+   ----------------------------------------------------------------
+
+   gender   score   count
+   -----------------------
+   1        48        1
+   1        45        2
+   1        41        3
+   1        52        4
+   1        43        5
+   2        50        1
+   2        42        2
+   2        51        3
+   2        52        4
 */
