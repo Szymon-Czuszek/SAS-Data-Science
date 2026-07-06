@@ -165,4 +165,11 @@ RUN;
    2   ← FIRST.gender = 1
    2
    2
+
+   Running Counter
+   ----------------------------------------------------------------
+
+   count + 1;
+
+   This is a SUM statement.
 */
