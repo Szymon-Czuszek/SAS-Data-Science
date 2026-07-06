@@ -182,4 +182,13 @@ RUN;
    - retains the variable
    - initializes it to zero
    - ignores missing values
+
+   Resetting the Counter
+   ----------------------------------------------------------------
+
+   IF FIRST.gender THEN
+       count = 1;
+
+   Whenever a new gender begins,
+   numbering restarts from 1.
 */
