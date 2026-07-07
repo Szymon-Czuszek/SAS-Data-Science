@@ -214,4 +214,7 @@ RUN;
    belonging to the same group are consecutive.
 
    PROC SORT guarantees this ordering.
+
+   Practical Applications
+   ----------------------------------------------------------------
 */
