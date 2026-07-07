@@ -212,4 +212,6 @@ RUN;
 
    BY-group processing assumes all observations
    belonging to the same group are consecutive.
+
+   PROC SORT guarantees this ordering.
 */
