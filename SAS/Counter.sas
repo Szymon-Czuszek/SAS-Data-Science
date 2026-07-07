@@ -217,4 +217,15 @@ RUN;
 
    Practical Applications
    ----------------------------------------------------------------
+
+   Sequential numbering within groups is useful for:
+
+   - Student rankings
+   - Customer transactions
+   - Employee records
+   - Sales reports
+   - Financial statements
+   - Survey responses
+   - Time series grouped by category
+   - ETL processing
 */
