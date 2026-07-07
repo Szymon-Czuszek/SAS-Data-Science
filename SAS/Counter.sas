@@ -206,4 +206,10 @@ RUN;
    2        42        2
    2        51        3
    2        52        4
+
+   Why Sort First?
+   ----------------------------------------------------------------
+
+   BY-group processing assumes all observations
+   belonging to the same group are consecutive.
 */
