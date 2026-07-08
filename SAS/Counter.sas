@@ -241,4 +241,7 @@ RUN;
    - assign sequence numbers
    - compute cumulative totals
    - process grouped observations
+
+   It is one of the most commonly used
+   techniques in SAS data processing.
 */
