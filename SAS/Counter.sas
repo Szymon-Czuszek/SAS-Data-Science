@@ -231,4 +231,14 @@ RUN;
 
    Advantages of BY-Group Processing
    ----------------------------------------------------------------
+
+   SAS BY-group processing provides an efficient
+   way to:
+
+   - detect group boundaries
+   - calculate group statistics
+   - generate rankings
+   - assign sequence numbers
+   - compute cumulative totals
+   - process grouped observations
 */
