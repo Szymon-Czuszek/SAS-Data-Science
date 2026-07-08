@@ -81,6 +81,7 @@ DATA studentscores1;
 
 RUN;
 
+
 /*============================================================================*/
 /* Commentary                                                                 */
 /*============================================================================*/
@@ -95,6 +96,7 @@ RUN;
    - Use BY-group processing
    - Generate sequential numbering
      within groups
+
 
    Dataset Structure
    ----------------------------------------------------------------
@@ -111,6 +113,7 @@ RUN;
        Sequential observation number
        within each gender group
 
+
    PROC SORT
    ----------------------------------------------------------------
    Before using BY-group processing,
@@ -126,6 +129,7 @@ RUN;
    because FIRST. and LAST. variables depend
    on ordered observations.
 
+
    BY Statement
    ----------------------------------------------------------------
 
@@ -133,6 +137,7 @@ RUN;
 
    This instructs SAS to process observations
    separately for each value of GENDER.
+
 
    Automatic Variables
    ----------------------------------------------------------------
@@ -146,6 +151,7 @@ RUN;
 
    These variables are not stored
    in the output dataset.
+
 
    FIRST.gender
    ----------------------------------------------------------------
@@ -166,6 +172,7 @@ RUN;
    2
    2
 
+
    Running Counter
    ----------------------------------------------------------------
 
@@ -183,6 +190,7 @@ RUN;
    - initializes it to zero
    - ignores missing values
 
+
    Resetting the Counter
    ----------------------------------------------------------------
 
@@ -191,6 +199,7 @@ RUN;
 
    Whenever a new gender begins,
    numbering restarts from 1.
+
 
    Example Output
    ----------------------------------------------------------------
@@ -207,6 +216,7 @@ RUN;
    2        51        3
    2        52        4
 
+
    Why Sort First?
    ----------------------------------------------------------------
 
@@ -214,6 +224,7 @@ RUN;
    belonging to the same group are consecutive.
 
    PROC SORT guarantees this ordering.
+
 
    Practical Applications
    ----------------------------------------------------------------
@@ -228,6 +239,7 @@ RUN;
    - Survey responses
    - Time series grouped by category
    - ETL processing
+
 
    Advantages of BY-Group Processing
    ----------------------------------------------------------------
