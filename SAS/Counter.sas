@@ -228,4 +228,7 @@ RUN;
    - Survey responses
    - Time series grouped by category
    - ETL processing
+
+   Advantages of BY-Group Processing
+   ----------------------------------------------------------------
 */
