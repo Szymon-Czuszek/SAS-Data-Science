@@ -11,7 +11,13 @@
 */
 
 DATA sales;
-	INPUT Name$ Sales_1-Sales_4;
+
+    /* Read employee name and quarterly sales values */
+    INPUT
+        Name $
+        Sales_1-Sales_4;
+
+    /* Calculate total sales across all quarters */
 	total=SUM(Sales_1, Sales_2, Sales_3, Sales_4);
 	CARDS;
 Greg 10 2 40 0
