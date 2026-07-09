@@ -3,6 +3,12 @@
 /*============================================================================*/
 
 /*
+   Dataset SALES contains quarterly sales
+   values for each employee.
+
+   The program also calculates the total
+   sales across all four periods.
+*/
 
 DATA sales;
 	INPUT Name$ Sales_1-Sales_4;
