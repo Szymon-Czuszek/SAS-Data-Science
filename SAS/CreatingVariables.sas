@@ -18,8 +18,15 @@ DATA sales;
         Sales_1-Sales_4;
 
     /* Calculate total sales across all quarters */
-	total=SUM(Sales_1, Sales_2, Sales_3, Sales_4);
-	CARDS;
+    total = SUM(
+        Sales_1,
+        Sales_2,
+        Sales_3,
+        Sales_4
+    );
+
+    /* Inline data values */
+    CARDS;
 Greg 10 2 40 0
 John 15 5 10 100
 Lisa 50 10 15 50
