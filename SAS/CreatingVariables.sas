@@ -39,3 +39,11 @@ RUN;
 /*============================================================================*/
 
 /*
+   Purpose of the Program
+   ----------------------------------------------------------------
+   This example demonstrates how to:
+
+   - Create a SAS dataset
+   - Read multiple variables using a variable list
+   - Calculate a row-level total
+   - Use the SUM function
