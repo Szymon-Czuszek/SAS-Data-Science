@@ -47,3 +47,7 @@ RUN;
    - Read multiple variables using a variable list
    - Calculate a row-level total
    - Use the SUM function
+
+
+   Dataset Structure
+   ----------------------------------------------------------------
