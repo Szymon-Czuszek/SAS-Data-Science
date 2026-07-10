@@ -48,6 +48,25 @@ RUN;
    - Calculate a row-level total
    - Use the SUM function
 
-
    Dataset Structure
    ----------------------------------------------------------------
+
+   Variables:
+
+   Name
+       Employee name
+
+   Sales_1
+       Sales for period 1
+
+   Sales_2
+       Sales for period 2
+
+   Sales_3
+       Sales for period 3
+
+   Sales_4
+       Sales for period 4
+
+   total
+       Total sales across all periods
