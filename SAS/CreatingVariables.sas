@@ -70,3 +70,10 @@ RUN;
 
    total
        Total sales across all periods
+	
+   Variable List
+   ----------------------------------------------------------------
+
+   INPUT
+       Name $
+       Sales_1-Sales_4;
