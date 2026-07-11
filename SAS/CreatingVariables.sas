@@ -81,3 +81,7 @@ RUN;
    Instead of listing every variable individually,
    SAS allows consecutive variables to be referenced
    using a variable range.
+
+   The following statements are equivalent:
+
+   Sales_1-Sales_4
