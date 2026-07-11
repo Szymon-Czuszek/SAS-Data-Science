@@ -85,3 +85,7 @@ RUN;
    The following statements are equivalent:
 
    Sales_1-Sales_4
+
+   and
+
+   Sales_1 Sales_2 Sales_3 Sales_4
