@@ -108,3 +108,14 @@ RUN;
    Example:
 
    SUM(10, ., 20)
+      returns
+
+   30
+
+   whereas
+
+   10 + . + 20
+
+   returns
+
+   .
