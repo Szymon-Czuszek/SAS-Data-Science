@@ -99,3 +99,12 @@ RUN;
        Sales_3,
        Sales_4
    );
+
+      The SUM function adds all supplied values.
+
+   Unlike the + operator, SUM ignores
+   missing numeric values.
+
+   Example:
+
+   SUM(10, ., 20)
