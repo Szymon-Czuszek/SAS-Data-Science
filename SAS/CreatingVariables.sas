@@ -186,3 +186,6 @@ RUN;
 
    Each observation is processed independently,
    making this a row-by-row calculation.
+
+   Key SAS Concepts Demonstrated
+   ----------------------------------------------------------------
