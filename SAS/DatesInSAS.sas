@@ -3,6 +3,13 @@
 /*============================================================================*/
 
 /*
+   This example demonstrates how SAS stores
+   and performs calculations using date values.
+
+   SAS dates are stored internally as the number
+   of days since 01JAN1960, which is the SAS
+   reference (epoch) date.
+*/
 
 DATA test;
 	a = "1Jan1960"d;
