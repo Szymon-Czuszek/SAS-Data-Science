@@ -26,6 +26,7 @@ DATA sales;
     );
 
     /* Inline data values */
+    CARDS;
 Greg 10 2 40 0
 John 15 5 10 100
 Lisa 50 10 15 50
@@ -47,6 +48,7 @@ RUN;
    - Read multiple variables using a variable list
    - Calculate a row-level total
    - Use the SUM function
+
 
    Dataset Structure
    ----------------------------------------------------------------
@@ -70,7 +72,8 @@ RUN;
 
    total
        Total sales across all periods
-	
+
+
    Variable List
    ----------------------------------------------------------------
 
@@ -90,7 +93,8 @@ RUN;
 
    Sales_1 Sales_2 Sales_3 Sales_4
 
-  SUM Function
+
+   SUM Function
    ----------------------------------------------------------------
 
    total = SUM(
@@ -100,7 +104,7 @@ RUN;
        Sales_4
    );
 
-      The SUM function adds all supplied values.
+   The SUM function adds all supplied values.
 
    Unlike the + operator, SUM ignores
    missing numeric values.
@@ -108,7 +112,8 @@ RUN;
    Example:
 
    SUM(10, ., 20)
-      returns
+
+   returns
 
    30
 
@@ -120,10 +125,11 @@ RUN;
 
    .
 
-      Example Calculations
+
+   Example Calculations
    ----------------------------------------------------------------
 
-      Greg
+   Greg
 
    10 + 2 + 40 + 0 = 52
 
@@ -139,15 +145,17 @@ RUN;
 
    20 + 0 + 5 + 20 = 45
 
+
    Expected Output
    ----------------------------------------------------------------
 
-      Name    Sales_1  Sales_2  Sales_3  Sales_4  total
+   Name    Sales_1  Sales_2  Sales_3  Sales_4  total
    --------------------------------------------------
    Greg       10        2        40        0      52
    John       15        5        10      100     130
    Lisa       50       10        15       50     125
    Mark       20        0         5       20      45
+
 
    Why Use SUM Instead of "+"
    ----------------------------------------------------------------
@@ -159,6 +167,7 @@ RUN;
    - Produces cleaner calculations
    - Reduces the need for additional
      missing value checks
+
 
    Practical Applications
    ----------------------------------------------------------------
@@ -174,6 +183,7 @@ RUN;
    - Performance metrics
    - KPI aggregation
 
+
    DATA Step Workflow
    ----------------------------------------------------------------
 
@@ -187,12 +197,14 @@ RUN;
    Each observation is processed independently,
    making this a row-by-row calculation.
 
+
    Key SAS Concepts Demonstrated
    ----------------------------------------------------------------
 
-      - DATA step
+   - DATA step
    - INPUT statement
    - Variable ranges (Sales_1-Sales_4)
    - SUM function
    - Inline data using CARDS
    - Row-level calculations
+*/
