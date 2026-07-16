@@ -12,9 +12,14 @@
 */
 
 DATA test;
-	a = "1Jan1960"d;
-	b = "31Dec1960"d;
-	c = "29Dec2018"d;
-	d = "10Apr2018"d;
-	diff = c - d;
+
+    /* Assign SAS date literals */
+    a = "1Jan1960"d;
+    b = "31Dec1960"d;
+    c = "29Dec2018"d;
+    d = "10Apr2018"d;
+
+    /* Calculate the number of days between two dates */
+    diff = c - d;
+
 RUN;
