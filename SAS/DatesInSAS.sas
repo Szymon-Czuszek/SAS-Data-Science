@@ -31,3 +31,10 @@ RUN;
 /*
    Purpose of the Program
    ----------------------------------------------------------------
+
+   This example demonstrates how to:
+
+   - Create SAS date variables
+   - Use date literals
+   - Perform date arithmetic
+   - Calculate the difference between dates
