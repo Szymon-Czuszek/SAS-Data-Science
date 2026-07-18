@@ -54,3 +54,17 @@ RUN;
 
    Every other date is stored as the number
    of days relative to this reference date.
+
+   Examples
+   ----------------------------------------------------------------
+
+   Date                SAS Value
+   --------------------------------
+   01JAN1960              0
+
+   02JAN1960              1
+
+   31DEC1959             -1
+
+   31DEC1960            365
+   
