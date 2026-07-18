@@ -24,6 +24,7 @@ DATA test;
 
 RUN;
 
+
 /*============================================================================*/
 /* Commentary                                                                 */
 /*============================================================================*/
@@ -31,7 +32,6 @@ RUN;
 /*
    Purpose of the Program
    ----------------------------------------------------------------
-
    This example demonstrates how to:
 
    - Create SAS date variables
@@ -39,10 +39,11 @@ RUN;
    - Perform date arithmetic
    - Calculate the difference between dates
 
+
    SAS Date Values
    ----------------------------------------------------------------
 
-      SAS stores dates as numeric values.
+   SAS stores dates as numeric values.
 
    The reference date is:
 
@@ -54,6 +55,7 @@ RUN;
 
    Every other date is stored as the number
    of days relative to this reference date.
+
 
    Examples
    ----------------------------------------------------------------
@@ -83,3 +85,6 @@ RUN;
        "31Dec1960"d
 
        "29Dec2018"d
+
+   The trailing "d" tells SAS that the
+   quoted value represents a date.
