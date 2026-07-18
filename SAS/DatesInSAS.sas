@@ -41,3 +41,16 @@ RUN;
 
    SAS Date Values
    ----------------------------------------------------------------
+
+      SAS stores dates as numeric values.
+
+   The reference date is:
+
+       01JAN1960
+
+   which has the numeric value:
+
+       0
+
+   Every other date is stored as the number
+   of days relative to this reference date.
