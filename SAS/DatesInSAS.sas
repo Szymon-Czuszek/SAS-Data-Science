@@ -67,4 +67,19 @@ RUN;
    31DEC1959             -1
 
    31DEC1960            365
-   
+
+
+   Date Literals
+   ----------------------------------------------------------------
+
+   SAS date literals use the syntax:
+
+       "DDMMMYYYY"d
+
+   Examples:
+
+       "1Jan1960"d
+
+       "31Dec1960"d
+
+       "29Dec2018"d
