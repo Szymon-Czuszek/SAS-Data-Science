@@ -119,3 +119,18 @@ RUN;
 
    The result represents the number of
    days between the two dates.
+
+   Example Calculation
+   ----------------------------------------------------------------
+
+   c = 29DEC2018
+
+   d = 10APR2018
+
+   diff = c - d
+
+        = 263 days
+
+   Therefore:
+
+       diff = 263
