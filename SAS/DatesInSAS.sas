@@ -134,3 +134,20 @@ RUN;
    Therefore:
 
        diff = 263
+
+   Why Date Arithmetic Works
+   ----------------------------------------------------------------
+
+   Because SAS stores dates as integers,
+   mathematical operations are straightforward.
+
+   Common operations include:
+
+   date1 - date2
+       Number of days between dates
+
+   date + 30
+       Date 30 days later
+
+   date - 7
+       Date one week earlier
