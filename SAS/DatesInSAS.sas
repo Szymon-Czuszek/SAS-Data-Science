@@ -88,3 +88,22 @@ RUN;
 
    The trailing "d" tells SAS that the
    quoted value represents a date.
+
+   Variables in the Dataset
+   ----------------------------------------------------------------
+
+   a
+       01JAN1960
+
+   b
+       31DEC1960
+
+   c
+       29DEC2018
+
+   d
+       10APR2018
+
+   diff
+       Number of days between
+       dates c and d
