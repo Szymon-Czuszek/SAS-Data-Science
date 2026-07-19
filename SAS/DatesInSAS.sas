@@ -107,3 +107,15 @@ RUN;
    diff
        Number of days between
        dates c and d
+
+   Date Arithmetic
+   ----------------------------------------------------------------
+
+   diff = c - d;
+
+   Since SAS dates are stored as integers,
+   subtracting two dates simply subtracts
+   their numeric values.
+
+   The result represents the number of
+   days between the two dates.
