@@ -155,3 +155,9 @@ RUN;
 
    Displaying Dates
    ----------------------------------------------------------------
+
+   Although SAS stores dates as numbers,
+   they are usually displayed using a
+   date format such as:
+
+       DATE9.
