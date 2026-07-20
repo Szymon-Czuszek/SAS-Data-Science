@@ -161,3 +161,7 @@ RUN;
    date format such as:
 
        DATE9.
+
+   Example:
+
+       FORMAT a b c d DATE9.;
