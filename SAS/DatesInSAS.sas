@@ -165,3 +165,10 @@ RUN;
    Example:
 
        FORMAT a b c d DATE9.;
+
+   Output:
+
+       01JAN1960
+       31DEC1960
+       29DEC2018
+       10APR2018
