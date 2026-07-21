@@ -172,3 +172,8 @@ RUN;
        31DEC1960
        29DEC2018
        10APR2018
+
+   The SUM function adds all supplied values.
+
+   Unlike the + operator, SUM ignores
+   missing numeric values.
