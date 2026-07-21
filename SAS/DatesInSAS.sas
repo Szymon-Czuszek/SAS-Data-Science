@@ -177,3 +177,19 @@ RUN;
 
    Unlike the + operator, SUM ignores
    missing numeric values.
+
+   Example:
+
+   SUM(10, ., 20)
+
+   returns
+
+   30
+
+   whereas
+
+   10 + . + 20
+
+   returns
+
+   .
