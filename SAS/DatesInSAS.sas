@@ -225,3 +225,11 @@ RUN;
 
    Why Use SUM Instead of "+"
    ----------------------------------------------------------------
+
+   Advantages:
+
+   - Ignores missing values
+   - More reliable for real-world data
+   - Produces cleaner calculations
+   - Reduces the need for additional
+     missing value checks
