@@ -233,3 +233,6 @@ RUN;
    - Produces cleaner calculations
    - Reduces the need for additional
      missing value checks
+
+   Practical Applications
+   ----------------------------------------------------------------
