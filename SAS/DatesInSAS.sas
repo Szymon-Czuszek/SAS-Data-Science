@@ -89,6 +89,7 @@ RUN;
    The trailing "d" tells SAS that the
    quoted value represents a date.
 
+
    Variables in the Dataset
    ----------------------------------------------------------------
 
@@ -108,6 +109,7 @@ RUN;
        Number of days between
        dates c and d
 
+
    Date Arithmetic
    ----------------------------------------------------------------
 
@@ -119,6 +121,7 @@ RUN;
 
    The result represents the number of
    days between the two dates.
+
 
    Example Calculation
    ----------------------------------------------------------------
@@ -134,6 +137,7 @@ RUN;
    Therefore:
 
        diff = 263
+
 
    Why Date Arithmetic Works
    ----------------------------------------------------------------
@@ -173,100 +177,45 @@ RUN;
        29DEC2018
        10APR2018
 
-   The SUM function adds all supplied values.
-
-   Unlike the + operator, SUM ignores
-   missing numeric values.
-
-   Example:
-
-   SUM(10, ., 20)
-
-   returns
-
-   30
-
-   whereas
-
-   10 + . + 20
-
-   returns
-
-   .
-
-   Example Calculations
-   ----------------------------------------------------------------
-
-   Greg
-
-   10 + 2 + 40 + 0 = 52
-
-   John
-
-   15 + 5 + 10 + 100 = 130
-
-   Lisa
-
-   50 + 10 + 15 + 50 = 125
-
-   Mark
-
-   20 + 0 + 5 + 20 = 45
-
-   Expected Output
-   ----------------------------------------------------------------
-
-   Name    Sales_1  Sales_2  Sales_3  Sales_4  total
-   --------------------------------------------------
-   Greg       10        2        40        0      52
-   John       15        5        10      100     130
-   Lisa       50       10        15       50     125
-   Mark       20        0         5       20      45
-
-   Why Use SUM Instead of "+"
-   ----------------------------------------------------------------
-
-   Advantages:
-
-   - Ignores missing values
-   - More reliable for real-world data
-   - Produces cleaner calculations
-   - Reduces the need for additional
-     missing value checks
 
    Practical Applications
    ----------------------------------------------------------------
 
-   Similar calculations are commonly used for:
+   Date calculations are widely used for:
 
-   - Quarterly sales totals
-   - Annual revenue
-   - Student exam scores
+   - Employee tenure
+   - Customer activity analysis
+   - Loan durations
+   - Project scheduling
    - Financial reporting
-   - Budget calculations
-   - Inventory quantities
-   - Performance metrics
-   - KPI aggregation
+   - Delivery tracking
+   - Subscription management
+   - Clinical trial analysis
 
-   DATA Step Workflow
-   ----------------------------------------------------------------
-
-   The program performs the following steps:
-
-   1. Create the SALES dataset.
-   2. Read employee names and quarterly sales.
-   3. Calculate the total sales for each employee.
-   4. Store the completed observations.
-
-   Each observation is processed independently,
-   making this a row-by-row calculation.
 
    Key SAS Concepts Demonstrated
    ----------------------------------------------------------------
 
    - DATA step
-   - INPUT statement
-   - Variable ranges (Sales_1-Sales_4)
-   - SUM function
-   - Inline data using CARDS
-   - Row-level calculations
+   - Date literals
+   - SAS internal date representation
+   - Date arithmetic
+   - Numeric storage of dates
+   - Calculating elapsed time
+
+
+   Expected Dataset
+   ----------------------------------------------------------------
+
+   Variable   Description
+   ----------------------------------------
+   a          01JAN1960
+
+   b          31DEC1960
+
+   c          29DEC2018
+
+   d          10APR2018
+
+   diff       263
+*/
