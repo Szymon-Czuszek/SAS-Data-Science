@@ -236,3 +236,14 @@ RUN;
 
    Practical Applications
    ----------------------------------------------------------------
+
+   Similar calculations are commonly used for:
+
+   - Quarterly sales totals
+   - Annual revenue
+   - Student exam scores
+   - Financial reporting
+   - Budget calculations
+   - Inventory quantities
+   - Performance metrics
+   - KPI aggregation
