@@ -247,3 +247,16 @@ RUN;
    - Inventory quantities
    - Performance metrics
    - KPI aggregation
+
+   DATA Step Workflow
+   ----------------------------------------------------------------
+
+   The program performs the following steps:
+
+   1. Create the SALES dataset.
+   2. Read employee names and quarterly sales.
+   3. Calculate the total sales for each employee.
+   4. Store the completed observations.
+
+   Each observation is processed independently,
+   making this a row-by-row calculation.
