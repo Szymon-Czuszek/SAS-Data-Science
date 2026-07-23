@@ -260,3 +260,13 @@ RUN;
 
    Each observation is processed independently,
    making this a row-by-row calculation.
+
+   Key SAS Concepts Demonstrated
+   ----------------------------------------------------------------
+
+   - DATA step
+   - INPUT statement
+   - Variable ranges (Sales_1-Sales_4)
+   - SUM function
+   - Inline data using CARDS
+   - Row-level calculations
