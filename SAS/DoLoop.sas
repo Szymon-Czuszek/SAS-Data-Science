@@ -42,4 +42,6 @@ RUN;
    ----------------------------------------------------------------
    This example demonstrates how to:
 
-      - Generate observations with a DO loop
+    - Generate observations with a DO loop
+    - Specify custom increment values
+    
