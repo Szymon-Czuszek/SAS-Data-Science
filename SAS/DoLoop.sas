@@ -44,4 +44,4 @@ RUN;
 
     - Generate observations with a DO loop
     - Specify custom increment values
-    
+    - Use a WHILE condition
