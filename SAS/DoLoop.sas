@@ -33,20 +33,17 @@ OUTPUT;
 END;
 RUN;
 
-/*============================================================================*/
-/* Commentary                                                                 */
-/*============================================================================*/
-
 /*
    Purpose of the Program
    ----------------------------------------------------------------
    This example demonstrates how to:
 
-    - Generate observations with a DO loop
-    - Specify custom increment values
-    - Use a WHILE condition
+   - Generate observations with a DO loop
+   - Specify custom increment values
+   - Use a WHILE condition
    - Create observations dynamically
-      - Control loop execution
+   - Control loop execution
+
 
    DO Loop Syntax
    ----------------------------------------------------------------
