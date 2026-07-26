@@ -47,3 +47,6 @@ RUN;
     - Use a WHILE condition
    - Create observations dynamically
       - Control loop execution
+
+   DO Loop Syntax
+   ----------------------------------------------------------------
