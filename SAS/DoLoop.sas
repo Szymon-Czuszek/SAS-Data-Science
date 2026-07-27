@@ -57,3 +57,15 @@ RUN;
    END;
 
    Components:
+
+   start
+       Initial value
+
+   end
+       Maximum value
+
+   BY
+       Increment after each iteration
+
+   WHILE
+       Condition that must remain true
