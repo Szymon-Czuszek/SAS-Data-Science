@@ -49,3 +49,7 @@ RUN;
    ----------------------------------------------------------------
 
    General form:
+
+   DO variable = start TO end BY increment WHILE(condition);
+
+       statements;
