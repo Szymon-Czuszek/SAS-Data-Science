@@ -95,3 +95,5 @@ RUN;
 
    until the loop terminates.
 
+   WHILE Condition
+   ----------------------------------------------------------------
