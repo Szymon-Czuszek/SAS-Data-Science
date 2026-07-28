@@ -80,3 +80,7 @@ RUN;
    Ending value:
 
        i = 15
+
+   Increment:
+
+       0.5
