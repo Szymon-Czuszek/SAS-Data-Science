@@ -1,0 +1,19 @@
+
+  Obs  DIAGCODE
+-----  --------
+    1  001
+    2  290
+    3  800
+
+  Obs  DIAGCODE
+-----  --------
+    1  1
+    2  290
+    3  800
+
+  Obs  DIAGCODE                 DIAGDESC
+-----  --------  -----------------------
+    1  001       Malaria
+    2  290       Social Anxiety Disorder
+    3  800       Leg Injury
+
