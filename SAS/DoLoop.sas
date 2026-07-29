@@ -99,3 +99,6 @@ RUN;
    ----------------------------------------------------------------
 
    WHILE (y < 15);
+
+   The condition is evaluated before each
+   iteration begins.
