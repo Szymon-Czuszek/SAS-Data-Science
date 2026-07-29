@@ -102,3 +102,6 @@ RUN;
 
    The condition is evaluated before each
    iteration begins.
+
+      As long as y remains less than 15,
+   the loop continues.
