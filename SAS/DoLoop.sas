@@ -108,3 +108,6 @@ RUN;
 
    Once y becomes 15 or greater,
    processing stops.
+
+   Variable Calculation
+   ----------------------------------------------------------------
