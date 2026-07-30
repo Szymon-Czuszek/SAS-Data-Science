@@ -117,3 +117,6 @@ RUN;
    During each iteration,
    y is calculated from the
    current value of i.
+
+   OUTPUT Statement
+   ----------------------------------------------------------------
