@@ -113,3 +113,7 @@ RUN;
    ----------------------------------------------------------------
 
    y = i * 2;
+
+   During each iteration,
+   y is calculated from the
+   current value of i.
