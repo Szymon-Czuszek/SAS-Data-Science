@@ -125,3 +125,6 @@ RUN;
 
    Writes the current values of i and y
    as one observation in dataset A.
+
+   Without OUTPUT, only the final values
+   would be written at the end of the DATA step.
