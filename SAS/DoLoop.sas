@@ -120,3 +120,8 @@ RUN;
 
    OUTPUT Statement
    ----------------------------------------------------------------
+
+      OUTPUT;
+
+   Writes the current values of i and y
+   as one observation in dataset A.
