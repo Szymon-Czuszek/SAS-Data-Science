@@ -158,3 +158,5 @@ RUN;
           The WHILE condition:
 
        y < 15
+
+       is no longer true, so the loop ends.
