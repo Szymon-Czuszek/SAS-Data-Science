@@ -154,3 +154,7 @@ RUN;
        At this point:
 
        y = 15
+
+          The WHILE condition:
+
+       y < 15
