@@ -183,3 +183,7 @@ RUN;
 
    Important Note
    ----------------------------------------------------------------
+
+   The WHILE condition references Y before
+   Y has been assigned a value during the
+   first iteration.
