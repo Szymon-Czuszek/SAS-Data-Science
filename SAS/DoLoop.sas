@@ -197,3 +197,14 @@ RUN;
 
    Practical Applications
    ----------------------------------------------------------------
+
+   DO loops are commonly used for:
+
+   - Simulation
+   - Generating test data
+   - Time-series creation
+   - Iterative calculations
+   - Monte Carlo methods
+   - Financial modeling
+   - Data transformation
+   - Engineering calculations
