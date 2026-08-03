@@ -208,3 +208,6 @@ RUN;
    - Financial modeling
    - Data transformation
    - Engineering calculations
+
+   Key SAS Concepts Demonstrated
+   ----------------------------------------------------------------
