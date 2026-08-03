@@ -194,3 +194,6 @@ RUN;
    as smaller than any numeric value, so the
    condition (y < 15) evaluates as true for
    the first iteration.
+
+   Practical Applications
+   ----------------------------------------------------------------
