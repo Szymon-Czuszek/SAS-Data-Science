@@ -187,3 +187,5 @@ RUN;
    The WHILE condition references Y before
    Y has been assigned a value during the
    first iteration.
+
+   Initially, Y is missing.
