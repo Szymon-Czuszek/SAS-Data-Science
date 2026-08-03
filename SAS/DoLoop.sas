@@ -189,3 +189,8 @@ RUN;
    first iteration.
 
    Initially, Y is missing.
+
+   In SAS, a missing numeric value is treated
+   as smaller than any numeric value, so the
+   condition (y < 15) evaluates as true for
+   the first iteration.
