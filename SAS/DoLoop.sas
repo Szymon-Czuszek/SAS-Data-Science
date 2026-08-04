@@ -214,3 +214,4 @@ RUN;
 
    - DATA step
    - DO loop
+   - BY increment
