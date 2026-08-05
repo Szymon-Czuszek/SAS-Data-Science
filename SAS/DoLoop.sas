@@ -216,3 +216,4 @@ RUN;
    - DO loop
    - BY increment
    - WHILE condition
+   - OUTPUT statement
