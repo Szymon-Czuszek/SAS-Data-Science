@@ -26,12 +26,10 @@ DATA A;
 
 RUN;
 
-DATA A;
-DO i = 1 TO 15 BY 0.5 WHILE (y < 15);
-y = i*2;
-OUTPUT;
-END;
-RUN;
+
+/*============================================================================*/
+/* Commentary                                                                 */
+/*============================================================================*/
 
 /*
    Purpose of the Program
@@ -70,6 +68,7 @@ RUN;
    WHILE
        Condition that must remain true
 
+
    Loop Parameters
    ----------------------------------------------------------------
 
@@ -95,6 +94,7 @@ RUN;
 
    until the loop terminates.
 
+
    WHILE Condition
    ----------------------------------------------------------------
 
@@ -109,6 +109,7 @@ RUN;
    Once y becomes 15 or greater,
    processing stops.
 
+
    Variable Calculation
    ----------------------------------------------------------------
 
@@ -118,10 +119,11 @@ RUN;
    y is calculated from the
    current value of i.
 
+
    OUTPUT Statement
    ----------------------------------------------------------------
 
-      OUTPUT;
+   OUTPUT;
 
    Writes the current values of i and y
    as one observation in dataset A.
@@ -129,10 +131,9 @@ RUN;
    Without OUTPUT, only the final values
    would be written at the end of the DATA step.
 
+
    Loop Execution
    ----------------------------------------------------------------
-
-
 
    Iteration    i      y
    ------------------------
@@ -151,20 +152,21 @@ RUN;
      13        7.0   14.0
      14        7.5   15.0
 
-       At this point:
+   At this point:
 
        y = 15
 
-          The WHILE condition:
+   The WHILE condition:
 
        y < 15
 
-       is no longer true, so the loop ends.
+   is no longer true, so the loop ends.
+
 
    Resulting Dataset
    ----------------------------------------------------------------
 
-      i      y
+   i      y
    -------------
    1.0    2.0
    1.5    3.0
@@ -181,6 +183,7 @@ RUN;
    7.0   14.0
    7.5   15.0
 
+
    Important Note
    ----------------------------------------------------------------
 
@@ -194,6 +197,7 @@ RUN;
    as smaller than any numeric value, so the
    condition (y < 15) evaluates as true for
    the first iteration.
+
 
    Practical Applications
    ----------------------------------------------------------------
@@ -209,6 +213,7 @@ RUN;
    - Data transformation
    - Engineering calculations
 
+
    Key SAS Concepts Demonstrated
    ----------------------------------------------------------------
 
@@ -219,4 +224,4 @@ RUN;
    - OUTPUT statement
    - Automatic observation generation
    - Conditional loop termination
-   */
+*/
