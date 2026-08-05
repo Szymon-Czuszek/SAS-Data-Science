@@ -218,3 +218,4 @@ RUN;
    - WHILE condition
    - OUTPUT statement
    - Automatic observation generation
+   - Conditional loop termination
