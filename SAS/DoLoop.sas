@@ -217,3 +217,4 @@ RUN;
    - BY increment
    - WHILE condition
    - OUTPUT statement
+   - Automatic observation generation
