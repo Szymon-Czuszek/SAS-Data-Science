@@ -2,6 +2,10 @@
 /* STEP 1: Create the source dataset                                          */
 /*============================================================================*/
 
+/*
+   Dataset A contains the number of years for
+   each observation.
+
 DATA A;
 	INPUT years;
 	DATALINES;
