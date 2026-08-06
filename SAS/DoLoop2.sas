@@ -6,6 +6,10 @@
    Dataset A contains the number of years for
    each observation.
 
+   The values will be used to demonstrate
+   conditional processing with IF-THEN-ELSE.
+*/
+
 DATA A;
 	INPUT years;
 	DATALINES;
