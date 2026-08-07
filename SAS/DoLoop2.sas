@@ -29,6 +29,9 @@ RUN;
 /* STEP 2: Apply conditional logic                                             */
 /*============================================================================*/
 
+/*
+   Create dataset B from dataset A.
+
 DATA B;
 	SET A;
 
