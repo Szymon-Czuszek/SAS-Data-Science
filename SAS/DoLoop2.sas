@@ -11,8 +11,12 @@
 */
 
 DATA A;
-	INPUT years;
-	DATALINES;
+
+    /* Read the number of years */
+    INPUT years;
+
+    /* Inline data values */
+    DATALINES;
 4
 3
 6
