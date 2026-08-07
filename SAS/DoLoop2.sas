@@ -32,6 +32,10 @@ RUN;
 /*
    Create dataset B from dataset A.
 
+      If YEARS is greater than 5:
+       - Calculate the equivalent number of months.
+       - Write the values to the SAS log.
+
 DATA B;
 	SET A;
 
