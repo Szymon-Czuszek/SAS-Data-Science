@@ -42,7 +42,9 @@ RUN;
 */
 
 DATA B;
-	SET A;
+
+    /* Read observations from dataset A */
+    SET A;
 
 	IF years > 5 THEN
 		DO;
