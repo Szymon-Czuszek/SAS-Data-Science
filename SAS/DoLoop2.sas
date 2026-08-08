@@ -49,9 +49,11 @@ DATA B;
     /* Check whether the number of years exceeds 5 */
     IF years > 5 THEN
         DO;
-			months=years * 12;
-			PUT years=months=;
-		END;
-	ELSE
-		yrsleft=5-years;
-RUN;
+
+            /* Convert years into months */
+            months = years * 12;
+
+            /* Display YEARS and MONTHS in the SAS log */
+            PUT years= months=;
+
+        END;
