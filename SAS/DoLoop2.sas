@@ -46,8 +46,9 @@ DATA B;
     /* Read observations from dataset A */
     SET A;
 
-	IF years > 5 THEN
-		DO;
+    /* Check whether the number of years exceeds 5 */
+    IF years > 5 THEN
+        DO;
 			months=years * 12;
 			PUT years=months=;
 		END;
