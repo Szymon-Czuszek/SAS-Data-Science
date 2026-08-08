@@ -36,6 +36,11 @@ RUN;
        - Calculate the equivalent number of months.
        - Write the values to the SAS log.
 
+   Otherwise:
+       - Calculate how many years remain
+         until reaching 5 years.
+*/
+
 DATA B;
 	SET A;
 
