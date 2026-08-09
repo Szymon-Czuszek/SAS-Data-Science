@@ -59,3 +59,4 @@ DATA B;
         END;
 
     /* If YEARS is 5 or less, calculate years remaining */
+    ELSE
