@@ -57,3 +57,5 @@ DATA B;
             PUT years= months=;
 
         END;
+
+    /* If YEARS is 5 or less, calculate years remaining */
