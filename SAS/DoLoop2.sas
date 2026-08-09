@@ -60,3 +60,4 @@ DATA B;
 
     /* If YEARS is 5 or less, calculate years remaining */
     ELSE
+        yrsleft = 5 - years;
