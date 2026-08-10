@@ -1,0 +1,8 @@
+{
+  "bundle": "t003_data_retain_first",
+  "source_file": "SAS/Retain.sas",
+  "source_blob_sha": "4c4217552fcfe8673fc809199a59245b3e25d007",
+  "source_commit": "252f1a993e6c0a2e0a955ef9ab16d3dbd3dc80ef",
+  "tier": "real_data",
+  "notes": "DATA step RETAIN + BY-group FIRST. running total over a sorted EMPLOYEE_SALARY dataset."
+}
