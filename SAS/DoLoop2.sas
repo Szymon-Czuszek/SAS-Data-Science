@@ -72,5 +72,6 @@ DATA B;
    Purpose of the Program
    ----------------------------------------------------------------
    This example demonstrates how to:
-      - Create a dataset using INPUT and DATALINES
+	- Create a dataset using INPUT and DATALINES
+	- Read an existing dataset using SET
 */
