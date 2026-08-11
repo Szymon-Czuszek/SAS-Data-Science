@@ -71,4 +71,5 @@ DATA B;
 /*
    Purpose of the Program
    ----------------------------------------------------------------
+   This example demonstrates how to:
 */
