@@ -75,4 +75,5 @@ DATA B;
 	- Create a dataset using INPUT and DATALINES
 	- Read an existing dataset using SET
 	- Use IF-THEN-ELSE conditional logic
+	- Group multiple statements using DO/END
 */
