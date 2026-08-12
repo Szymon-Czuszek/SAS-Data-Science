@@ -74,4 +74,5 @@ DATA B;
    This example demonstrates how to:
 	- Create a dataset using INPUT and DATALINES
 	- Read an existing dataset using SET
+	- Use IF-THEN-ELSE conditional logic
 */
