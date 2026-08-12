@@ -76,4 +76,5 @@ DATA B;
 	- Read an existing dataset using SET
 	- Use IF-THEN-ELSE conditional logic
 	- Group multiple statements using DO/END
+	- Perform calculations
 */
