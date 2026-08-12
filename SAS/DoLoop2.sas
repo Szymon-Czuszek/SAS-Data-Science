@@ -77,4 +77,5 @@ DATA B;
 	- Use IF-THEN-ELSE conditional logic
 	- Group multiple statements using DO/END
 	- Perform calculations
+	- Write values to the SAS log using PUT
 */
