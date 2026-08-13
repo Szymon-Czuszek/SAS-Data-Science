@@ -129,4 +129,9 @@ DATA B;
    months = 6 * 12
 
           = 72
+
+   Therefore the log contains something
+   similar to:
+
+       years=6 months=72
 */
