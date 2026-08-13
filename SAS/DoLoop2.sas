@@ -107,4 +107,18 @@ DATA B;
 
    When YEARS > 5
    ----------------------------------------------------------------
+
+   SAS performs two operations:
+
+       months = years * 12;
+
+   and:
+
+       PUT years= months=;
+
+   The first statement converts years
+   into months.
+
+   The second statement writes the values
+   to the SAS log.
 */
