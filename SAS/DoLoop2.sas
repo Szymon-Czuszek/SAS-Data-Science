@@ -94,4 +94,14 @@ DATA B;
 
    IF-THEN-ELSE Logic
    ----------------------------------------------------------------
+
+      The main condition is:
+
+       IF years > 5 THEN
+
+   If the condition is TRUE, SAS executes
+   everything inside the DO/END block.
+
+   If the condition is FALSE, SAS executes
+   the ELSE statement.
 */
