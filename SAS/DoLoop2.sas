@@ -104,4 +104,7 @@ DATA B;
 
    If the condition is FALSE, SAS executes
    the ELSE statement.
+
+   When YEARS > 5
+   ----------------------------------------------------------------
 */
