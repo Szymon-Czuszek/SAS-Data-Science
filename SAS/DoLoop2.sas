@@ -121,4 +121,12 @@ DATA B;
 
    The second statement writes the values
    to the SAS log.
+
+   Example:
+
+   years = 6
+
+   months = 6 * 12
+
+          = 72
 */
