@@ -134,4 +134,6 @@ DATA B;
    similar to:
 
        years=6 months=72
+
+	   When YEARS <= 5
 */
