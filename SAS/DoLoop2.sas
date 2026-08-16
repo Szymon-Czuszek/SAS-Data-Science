@@ -142,4 +142,9 @@ DATA B;
       SAS calculates:
 
        yrsleft = 5 - years;
+
+   Examples:
+
+       years = 4
+       yrsleft = 1
 */
