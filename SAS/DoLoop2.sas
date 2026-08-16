@@ -147,4 +147,7 @@ DATA B;
 
        years = 4
        yrsleft = 1
+
+       years = 3
+       yrsleft = 2
 */
