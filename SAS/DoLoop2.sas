@@ -162,4 +162,7 @@ DATA B;
      3         .         2
      9       108         .
 
+   Missing values are represented by
+   a period (.) for numeric variables.
+
 */
