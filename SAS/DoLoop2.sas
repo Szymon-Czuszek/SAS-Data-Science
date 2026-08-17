@@ -168,4 +168,5 @@ DATA B;
    For example, MONTHS is missing for
    observations where YEARS is 5 or less.
 
+   DO /
 */
