@@ -165,4 +165,7 @@ DATA B;
    Missing values are represented by
    a period (.) for numeric variables.
 
+   For example, MONTHS is missing for
+   observations where YEARS is 5 or less.
+
 */
