@@ -172,4 +172,5 @@ DATA B;
    ----------------------------------------------------------------
 
    DO and END allow multiple statements
+   to be executed as part of a single
 */
