@@ -170,4 +170,6 @@ DATA B;
 
    DO / END Block
    ----------------------------------------------------------------
+
+   DO and END allow multiple statements
 */
