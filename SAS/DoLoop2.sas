@@ -175,4 +175,6 @@ DATA B;
    to be executed as part of a single
 
       IF condition.
+
+	   Without DO/END, only the first statement
 */
