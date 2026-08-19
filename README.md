@@ -436,7 +436,7 @@ The SET statement reads data from the "employee_compensation" dataset.
    - The PROC PRINT procedure prints the dataset "cars_asia", showing only records where MSRP is greater than $150,000.
 
 ### 🔍 Explanation
-This SAS script demonstrates the process of importing, formatting, and analyzing car data from different regions, providing insights into high-value cars in both European and Asian markets.
+- This SAS script demonstrates the process of importing, formatting, and analyzing car data from different regions, providing insights into high-value cars in both European and Asian markets.
 
 ## 📌 SAS Data Import Example: Student Data
 
