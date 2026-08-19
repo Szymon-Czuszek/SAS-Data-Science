@@ -179,4 +179,6 @@ DATA B;
 	   Without DO/END, only the first statement
 	   following THEN would be conditionally
 	   executed.
+
+	Example:
 */
