@@ -194,4 +194,23 @@ DATA B;
                months = years * 12;
                PUT years= months=;
            END;
+
+   both statements belong to the IF condition.
+
+
+   PUT Statement
+   ----------------------------------------------------------------
+
+   PUT writes information to the SAS log.
+
+   This syntax:
+
+       PUT years= months=;
+
+   displays both the variable names
+   and their values.
+
+   Example:
+
+       years=9 months=108
 */
