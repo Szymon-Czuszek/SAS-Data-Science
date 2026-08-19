@@ -186,4 +186,12 @@ DATA B;
 	
 	would conditionally execute only the
 	MONTHS calculation.
+
+	   With DO/END:
+
+       IF years > 5 THEN
+           DO;
+               months = years * 12;
+               PUT years= months=;
+           END;
 */
