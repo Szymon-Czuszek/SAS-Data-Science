@@ -181,4 +181,6 @@ DATA B;
 	   executed.
 
 	Example:
+	       IF years > 5 THEN
+           months = years * 12;
 */
