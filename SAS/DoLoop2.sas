@@ -25,6 +25,7 @@ DATA A;
 ;
 RUN;
 
+
 /*============================================================================*/
 /* STEP 2: Apply conditional logic                                             */
 /*============================================================================*/
@@ -32,7 +33,7 @@ RUN;
 /*
    Create dataset B from dataset A.
 
-      If YEARS is greater than 5:
+   If YEARS is greater than 5:
        - Calculate the equivalent number of months.
        - Write the values to the SAS log.
 
@@ -62,7 +63,8 @@ DATA B;
     ELSE
         yrsleft = 5 - years;
 
-	RUN;
+RUN;
+
 
 /*============================================================================*/
 /* Commentary                                                                 */
@@ -72,12 +74,14 @@ DATA B;
    Purpose of the Program
    ----------------------------------------------------------------
    This example demonstrates how to:
-	- Create a dataset using INPUT and DATALINES
-	- Read an existing dataset using SET
-	- Use IF-THEN-ELSE conditional logic
-	- Group multiple statements using DO/END
-	- Perform calculations
-	- Write values to the SAS log using PUT
+
+   - Create a dataset using INPUT and DATALINES
+   - Read an existing dataset using SET
+   - Use IF-THEN-ELSE conditional logic
+   - Group multiple statements using DO/END
+   - Perform calculations
+   - Write values to the SAS log using PUT
+
 
    Source Dataset
    ----------------------------------------------------------------
@@ -92,10 +96,11 @@ DATA B;
    3
    9
 
+
    IF-THEN-ELSE Logic
    ----------------------------------------------------------------
 
-      The main condition is:
+   The main condition is:
 
        IF years > 5 THEN
 
@@ -104,6 +109,7 @@ DATA B;
 
    If the condition is FALSE, SAS executes
    the ELSE statement.
+
 
    When YEARS > 5
    ----------------------------------------------------------------
@@ -122,6 +128,7 @@ DATA B;
    The second statement writes the values
    to the SAS log.
 
+
    Example:
 
    years = 6
@@ -130,16 +137,17 @@ DATA B;
 
           = 72
 
+
    Therefore the log contains something
    similar to:
 
        years=6 months=72
 
-	   When YEARS <= 5
 
+   When YEARS <= 5
    ----------------------------------------------------------------
 
-      SAS calculates:
+   SAS calculates:
 
        yrsleft = 5 - years;
 
@@ -151,10 +159,11 @@ DATA B;
        years = 3
        yrsleft = 2
 
+
    Expected Output Dataset
    ----------------------------------------------------------------
 
-      years    months    yrsleft
+   years    months    yrsleft
    --------------------------
      4         .         1
      3         .         2
@@ -168,26 +177,27 @@ DATA B;
    For example, MONTHS is missing for
    observations where YEARS is 5 or less.
 
+
    DO / END Block
    ----------------------------------------------------------------
 
    DO and END allow multiple statements
    to be executed as part of a single
+   IF condition.
 
-      IF condition.
+   Without DO/END, only the first statement
+   following THEN would be conditionally
+   executed.
 
-	   Without DO/END, only the first statement
-	   following THEN would be conditionally
-	   executed.
+   Example:
 
-	Example:
-	       IF years > 5 THEN
+       IF years > 5 THEN
            months = years * 12;
-	
-	would conditionally execute only the
-	MONTHS calculation.
 
-	   With DO/END:
+   would conditionally execute only the
+   MONTHS calculation.
+
+   With DO/END:
 
        IF years > 5 THEN
            DO;
@@ -213,4 +223,48 @@ DATA B;
    Example:
 
        years=9 months=108
+
+
+   SET Statement
+   ----------------------------------------------------------------
+
+   SET A;
+
+   reads observations from dataset A
+   and makes its variables available
+   for processing in the DATA step.
+
+   Dataset B is therefore based on
+   the observations contained in A.
+
+
+   Practical Applications
+   ----------------------------------------------------------------
+
+   Conditional processing like this is
+   commonly used for:
+
+   - Employee tenure calculations
+   - Customer segmentation
+   - Financial thresholds
+   - Risk classification
+   - Data validation
+   - Eligibility rules
+   - Business logic
+   - ETL transformations
+
+
+   Key SAS Concepts Demonstrated
+   ----------------------------------------------------------------
+
+   - DATA step
+   - INPUT statement
+   - DATALINES
+   - SET statement
+   - IF-THEN-ELSE
+   - DO/END block
+   - Numeric calculations
+   - PUT statement
+   - SAS log output
+   - Missing numeric values
 */
