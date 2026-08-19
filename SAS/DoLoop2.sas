@@ -183,4 +183,7 @@ DATA B;
 	Example:
 	       IF years > 5 THEN
            months = years * 12;
+	
+	would conditionally execute only the
+	MONTHS calculation.
 */
