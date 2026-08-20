@@ -33,3 +33,10 @@ DATA class;
 RUN;
 
 * Note how we renamed the variable Sex, but still had to reference it by its original name.
+
+/*============================================================================*/
+/* Commentary                                                                 */
+/*============================================================================*/
+
+/*
+   Key SAS Concept: RENAME Statement
