@@ -1,4 +1,5 @@
 /*============================================================================*/
+/* Create a new dataset based on SASHELP.CLASS                                */
 
 DATA class;
 	SET sashelp.class;
