@@ -32,7 +32,6 @@ DATA class;
 
 RUN;
 
-* Note how we renamed the variable Sex, but still had to reference it by its original name.
 
 /*============================================================================*/
 /* Commentary                                                                 */
@@ -40,3 +39,23 @@ RUN;
 
 /*
    Key SAS Concept: RENAME Statement
+   ----------------------------------------------------------------
+   The RENAME statement changes the variable name in the
+   resulting output dataset.
+
+   RENAME Sex = Gender;
+
+   However, within the DATA step, SEX is still referenced
+   by its original name.
+
+   Therefore:
+
+       KEEP Name Sex Age BMI WeightKg HeightM;
+
+   is correct.
+
+   After the DATA step finishes, the variable will appear
+   in the CLASS dataset as:
+
+       Gender
+*/
