@@ -58,4 +58,18 @@ RUN;
    in the CLASS dataset as:
 
        Gender
+
+   Calculated Variables
+   ----------------------------------------------------------------
+
+   WeightKg:
+       Converts weight from pounds to kilograms.
+
+   HeightM:
+       Converts height from inches to meters.
+
+   BMI:
+       Calculates Body Mass Index using:
+
+       weight in kilograms / height in meters squared
 */
