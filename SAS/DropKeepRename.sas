@@ -72,4 +72,18 @@ RUN;
        Calculates Body Mass Index using:
 
        weight in kilograms / height in meters squared
+
+   DROP and KEEP
+   ----------------------------------------------------------------
+
+   DROP Weight;
+
+   removes the original WEIGHT variable.
+
+   KEEP specifies the variables that should be included
+   in the output dataset.
+
+   Since KEEP is already explicitly selecting the output
+   variables, DROP Weight is redundant in this example,
+   but it demonstrates the use of the DROP statement.
 */
