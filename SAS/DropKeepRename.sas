@@ -86,4 +86,7 @@ RUN;
    Since KEEP is already explicitly selecting the output
    variables, DROP Weight is redundant in this example,
    but it demonstrates the use of the DROP statement.
+
+   Final Variables
+   ----------------------------------------------------------------
 */
