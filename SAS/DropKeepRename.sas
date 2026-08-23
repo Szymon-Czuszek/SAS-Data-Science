@@ -59,6 +59,7 @@ RUN;
 
        Gender
 
+
    Calculated Variables
    ----------------------------------------------------------------
 
@@ -72,6 +73,7 @@ RUN;
        Calculates Body Mass Index using:
 
        weight in kilograms / height in meters squared
+
 
    DROP and KEEP
    ----------------------------------------------------------------
@@ -87,13 +89,14 @@ RUN;
    variables, DROP Weight is redundant in this example,
    but it demonstrates the use of the DROP statement.
 
+
    Final Variables
    ----------------------------------------------------------------
 
-	Name
-	Gender
-	Age
-	BMI
-	WeightKg
-	HeightM
+   Name
+   Gender
+   Age
+   BMI
+   WeightKg
+   HeightM
 */
