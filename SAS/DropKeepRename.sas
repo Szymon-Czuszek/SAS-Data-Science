@@ -94,4 +94,5 @@ RUN;
 	Gender
 	Age
 	BMI
+	WeightKg
 */
