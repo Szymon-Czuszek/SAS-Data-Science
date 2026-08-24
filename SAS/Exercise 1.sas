@@ -1,5 +1,8 @@
 /*============================================================================*/
 /* STEP 1: Define a macro for importing Excel worksheets                     */
+/*============================================================================*/
+
+/*
 
 %macro import_excel(sheet_number=);
 	PROC IMPORT OUT=Bank&sheet_number
