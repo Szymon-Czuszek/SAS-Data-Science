@@ -3,6 +3,11 @@
 /*============================================================================*/
 
 /*
+   The IMPORT_EXCEL macro imports a selected worksheet from
+   Balance_Bank.xlsx into a SAS dataset.
+
+   The worksheet number is passed as a macro parameter.
+*/
 
 %macro import_excel(sheet_number=);
 	PROC IMPORT OUT=Bank&sheet_number
