@@ -9,17 +9,22 @@
    The worksheet number is passed as a macro parameter.
 */
 
-%macro import_excel(sheet_number=);
-	PROC IMPORT OUT=Bank&sheet_number
-        datafile="/home/u63805106/datasetslearnsas/Balance_Bank.xlsx" 
-			dbms=xlsx REPLACE;
-		SHEET="Sheet&sheet_number";
-		GETNAMES=YES;
-	RUN;
+%MACRO import_excel(sheet_number=);
 
-	PROC SORT DATA=Bank&sheet_number;
-		BY Acc_number Date;
-	RUN;
+    /* Import the selected Excel worksheet */
+    PROC IMPORT
+        OUT=Bank&sheet_number
+        DATAFILE="/home/u63805106/datasetslearnsas/Balance_Bank.xlsx"
+        DBMS=XLSX
+        REPLACE;
+
+        /* Dynamically select the worksheet */
+        SHEET="Sheet&sheet_number";
+
+        /* Use the first row as variable names */
+        GETNAMES=YES;
+
+    RUN;
 
 %mend import_excel;
 
