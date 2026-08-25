@@ -53,8 +53,15 @@
 %import_excel(sheet_number=1);
 %import_excel(sheet_number=2);
 
-/* What is the balance for Acc_number 12346 for 03/01/2018? The answer is: -15 */
-DATA BankMerged;
+/*============================================================================*/
+/* STEP 3: Merge the bank transaction datasets                                */
+/*============================================================================*/
+
+/*
+   Combine BANK1 and BANK2 and calculate the running account balance.
+
+   The balance is calculated separately for each account.
+*/
 	MERGE Bank1 Bank2;
 	BY Acc_number;
 	RETAIN Balance;
