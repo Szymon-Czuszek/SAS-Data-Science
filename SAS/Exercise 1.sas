@@ -26,6 +26,15 @@
 
     RUN;
 
+    /* Sort the imported data for subsequent BY-group processing */
+    PROC SORT DATA=Bank&sheet_number;
+
+        BY Acc_number Date;
+
+    RUN;
+
+%MEND import_excel;
+
 %mend import_excel;
 
 %import_excel(sheet_number=1);
