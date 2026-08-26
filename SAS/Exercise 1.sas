@@ -26,6 +26,7 @@
 
     RUN;
 
+
     /* Sort the imported data for subsequent BY-group processing */
     PROC SORT DATA=Bank&sheet_number;
 
@@ -35,7 +36,6 @@
 
 %MEND import_excel;
 
-%mend import_excel;
 
 /*============================================================================*/
 /* STEP 2: Import both worksheets                                             */
@@ -53,6 +53,7 @@
 %import_excel(sheet_number=1);
 %import_excel(sheet_number=2);
 
+
 /*============================================================================*/
 /* STEP 3: Merge the bank transaction datasets                                */
 /*============================================================================*/
@@ -62,12 +63,29 @@
 
    The balance is calculated separately for each account.
 */
-	MERGE Bank1 Bank2;
-	BY Acc_number;
-	RETAIN Balance;
 
-	IF first.Acc_number THEN
-		Balance=Credit - Debit;
-	ELSE
-		Balance=Balance + Credit - Debit;
+DATA BankMerged;
+
+    /* Merge both datasets using account number */
+    MERGE Bank1 Bank2;
+
+    /* Group observations by account number */
+    BY Acc_number;
+
+    /*
+       RETAIN keeps the value of BALANCE from one observation
+       to the next instead of resetting it to missing at the
+       beginning of each DATA step iteration.
+    */
+    RETAIN Balance;
+
+
+    /* Initialize the balance for the first transaction */
+    IF FIRST.Acc_number THEN
+        Balance = Credit - Debit;
+
+    /* Update the balance for subsequent transactions */
+    ELSE
+        Balance = Balance + Credit - Debit;
+
 RUN;
