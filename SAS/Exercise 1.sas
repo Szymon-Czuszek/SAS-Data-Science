@@ -124,4 +124,23 @@ RUN;
 
        OUT=Bank1
        SHEET="Sheet1"
+
+   While:
+
+       %import_excel(sheet_number=2);
+
+   creates:
+
+       OUT=Bank2
+       SHEET="Sheet2"
+
+   DBMS=XLSX
+
+   tells SAS that the source file is an Excel
+   XLSX workbook.
+
+   GETNAMES=YES
+
+   tells SAS to use the first row of the worksheet
+   as variable names.
 */
