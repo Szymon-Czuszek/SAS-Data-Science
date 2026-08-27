@@ -97,7 +97,14 @@ RUN;
 /*
    Purpose of the Program
    ----------------------------------------------------------------
-      This program demonstrates:
+   This program demonstrates:
 
    - Creating and using a SAS macro
    - Importing multiple Excel worksheets
+   - Dynamically generating dataset names
+   - Sorting data before BY-group processing
+   - Merging datasets
+   - Using FIRST. variables
+   - Using RETAIN to create a running balance
+
+*/
