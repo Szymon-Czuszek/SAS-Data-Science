@@ -100,3 +100,4 @@ RUN;
       This program demonstrates:
 
    - Creating and using a SAS macro
+   - Importing multiple Excel worksheets
