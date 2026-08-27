@@ -90,6 +90,7 @@ DATA BankMerged;
 
 RUN;
 
+
 /*============================================================================*/
 /* Commentary                                                                 */
 /*============================================================================*/
@@ -106,6 +107,7 @@ RUN;
    - Merging datasets
    - Using FIRST. variables
    - Using RETAIN to create a running balance
+
 
    IMPORT_EXCEL Macro
    ----------------------------------------------------------------
@@ -125,6 +127,7 @@ RUN;
        OUT=Bank1
        SHEET="Sheet1"
 
+
    While:
 
        %import_excel(sheet_number=2);
@@ -133,6 +136,13 @@ RUN;
 
        OUT=Bank2
        SHEET="Sheet2"
+
+
+   PROC IMPORT
+   ----------------------------------------------------------------
+
+   PROC IMPORT reads the Excel workbook and converts
+   the selected worksheet into a SAS dataset.
 
    DBMS=XLSX
 
@@ -143,4 +153,17 @@ RUN;
 
    tells SAS to use the first row of the worksheet
    as variable names.
-*/
+
+
+   PROC SORT
+   ----------------------------------------------------------------
+
+   The imported datasets are sorted by:
+
+       Acc_number Date
+
+   Sorting is important because the subsequent DATA
+   step uses BY-group processing.
+
+   It also ensures that transactions within each
+   account are processed chronologically.
