@@ -124,4 +124,10 @@ RUN;
 
        OUT=Bank1
        SHEET="Sheet1"
+
+   PROC IMPORT
+   ----------------------------------------------------------------
+
+   PROC IMPORT reads the Excel workbook and converts
+   the selected worksheet into a SAS dataset.
 */
