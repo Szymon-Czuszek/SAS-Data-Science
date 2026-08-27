@@ -97,3 +97,6 @@ RUN;
 /*
    Purpose of the Program
    ----------------------------------------------------------------
+      This program demonstrates:
+
+   - Creating and using a SAS macro
