@@ -177,3 +177,12 @@ RUN;
 
    tells SAS to combine observations according
    to their account number.
+
+   FIRST.Acc_number
+   ----------------------------------------------------------------
+
+   FIRST.Acc_number is an automatic BY-group variable.
+
+   It equals 1 for the first observation of each
+   account and allows the program to identify when
+   a new account begins.
