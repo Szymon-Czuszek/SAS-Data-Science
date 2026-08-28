@@ -186,3 +186,13 @@ RUN;
    It equals 1 for the first observation of each
    account and allows the program to identify when
    a new account begins.
+
+      Example:
+
+       Acc_number
+       ----------
+       12346   <- FIRST.Acc_number = 1
+       12346
+       12346
+       12347   <- FIRST.Acc_number = 1
+       12347
