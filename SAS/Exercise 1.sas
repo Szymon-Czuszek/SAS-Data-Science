@@ -235,3 +235,24 @@ RUN;
 
        Balance = 0 - 15
                = -15
+
+                  Therefore, for the specified transaction
+   on 03/01/2018, the balance is:
+
+       -15
+
+
+   Key SAS Concepts Demonstrated
+   ----------------------------------------------------------------
+
+   - %MACRO / %MEND
+   - Macro parameters
+   - PROC IMPORT
+   - PROC SORT
+   - MERGE
+   - BY-group processing
+   - FIRST.Acc_number
+   - RETAIN
+   - Running totals
+   - Dynamic dataset names
+   - Excel-to-SAS data import
