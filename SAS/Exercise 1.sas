@@ -221,3 +221,17 @@ RUN;
 
 
    This creates a running account balance.
+
+   Example
+   ----------------------------------------------------------------
+
+   Suppose account 12346 has transactions
+   resulting in:
+
+       Credit = 0
+       Debit  = 15
+
+   The initial balance becomes:
+
+       Balance = 0 - 15
+               = -15
