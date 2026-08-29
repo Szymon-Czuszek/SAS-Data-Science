@@ -207,3 +207,10 @@ RUN;
 
    This allows BALANCE to carry its value from
    one transaction to the next.
+
+      Balance Calculation
+   ----------------------------------------------------------------
+
+   For the first transaction of an account:
+
+       Balance = Credit - Debit;
