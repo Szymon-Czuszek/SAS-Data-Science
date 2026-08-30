@@ -36,3 +36,18 @@
 
 %MEND import_excel;
 
+/*============================================================================*/
+/* STEP 2: Import both worksheets                                             */
+/*============================================================================*/
+
+/*
+   Call the macro twice to import Sheet1 and Sheet2.
+
+   The resulting datasets are:
+
+       BANK1
+       BANK2
+*/
+
+%import_excel(sheet_number=1);
+%import_excel(sheet_number=2);
