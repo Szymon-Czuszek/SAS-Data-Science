@@ -104,3 +104,31 @@ RUN;
    - Merging datasets
    - Using FIRST. variables
    - Using RETAIN to create a running balance
+
+   IMPORT_EXCEL Macro
+   ----------------------------------------------------------------
+
+   The macro parameter:
+
+       sheet_number=
+
+   determines which Excel worksheet is imported.
+
+   For example:
+
+       %import_excel(sheet_number=1);
+
+   becomes approximately:
+
+       OUT=Bank1
+       SHEET="Sheet1"
+
+
+   While:
+
+       %import_excel(sheet_number=2);
+
+   creates:
+
+       OUT=Bank2
+       SHEET="Sheet2"
