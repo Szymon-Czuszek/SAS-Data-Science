@@ -1,151 +1,38 @@
 /*============================================================================*/
-/* Calculate the average age of employees by job title                        */
+/* STEP 1: Define a macro for importing Excel worksheets                     */
 /*============================================================================*/
 
 /*
-   This query calculates the average age of employees
-   for each job title in the NORTHWIND.EMPLOYEES table.
+   The IMPORT_EXCEL macro imports a selected worksheet from
+   Balance_Bank.xlsx into a SAS dataset.
 
-   The employee's age is calculated from their BIRTHDATE
-   using the current system date.
+   The worksheet number is passed as a macro parameter.
 */
 
-SELECT
-    TITLE,
+%MACRO import_excel(sheet_number=);
 
-    /*
-       Calculate employee age in completed years:
+    /* Import the selected Excel worksheet */
+    PROC IMPORT
+        OUT=Bank&sheet_number
+        DATAFILE="/home/u63805106/datasetslearnsas/Balance_Bank.xlsx"
+        DBMS=XLSX
+        REPLACE;
 
-       1. MONTHS_BETWEEN calculates the number of months
-          between the current date and the employee's birthdate.
+        /* Dynamically select the worksheet */
+        SHEET="Sheet&sheet_number";
 
-       2. Divide by 12 to convert months into years.
+        /* Use the first row as variable names */
+        GETNAMES=YES;
 
-       3. TRUNC removes the fractional part to obtain
-          the completed number of years.
-
-       4. AVG calculates the average age within each
-          job title.
-
-       5. ROUND rounds the final average to two decimal places.
-    */
-    ROUND(
-        AVG(
-            TRUNC(
-                MONTHS_BETWEEN(SYSDATE, BIRTHDATE) / 12
-            )
-        ),
-        2
-    ) AS AVG_AGE
-
-FROM
-    NORTHWIND.EMPLOYEES
-
-/* Group employees according to their job title */
-GROUP BY
-    TITLE;
+    RUN;
 
 
-/*============================================================================*/
-/* Commentary                                                                 */
-/*============================================================================*/
+    /* Sort the imported data for subsequent BY-group processing */
+    PROC SORT DATA=Bank&sheet_number;
 
-/*
-   Purpose
-   ----------------------------------------------------------------
-   The query determines the average age of employees for
-   each distinct job title.
+        BY Acc_number Date;
 
-   For example, if three employees with the same TITLE are
-   30, 35, and 40 years old, their average age is:
+    RUN;
 
-       (30 + 35 + 40) / 3 = 35
+%MEND import_excel;
 
-
-   MONTHS_BETWEEN
-   ----------------------------------------------------------------
-
-   MONTHS_BETWEEN(SYSDATE, BIRTHDATE)
-
-   calculates the number of months between:
-
-       SYSDATE
-           Current database system date
-
-   and:
-
-       BIRTHDATE
-           Employee's date of birth
-
-
-   Converting Months to Years
-   ----------------------------------------------------------------
-
-   Dividing by 12 converts the calculated number
-   of months into years.
-
-       MONTHS_BETWEEN(SYSDATE, BIRTHDATE) / 12
-
-
-   TRUNC
-   ----------------------------------------------------------------
-
-   TRUNC removes the decimal portion of the calculated age.
-
-   For example:
-
-       35.8 → 35
-
-   This means the calculation uses the employee's
-   completed age rather than their fractional age.
-
-
-   AVG
-   ----------------------------------------------------------------
-
-   AVG calculates the arithmetic mean of employee ages.
-
-   Because the query uses GROUP BY TITLE, AVG is calculated
-   separately for each job title.
-
-
-   ROUND
-   ----------------------------------------------------------------
-
-   ROUND(..., 2)
-
-   rounds the resulting average to two decimal places.
-
-   Example:
-
-       35.6667 → 35.67
-
-
-   GROUP BY
-   ----------------------------------------------------------------
-
-   GROUP BY TITLE
-
-   creates one result group for every distinct job title.
-
-   The final result therefore contains:
-
-       TITLE | AVG_AGE
-
-   with one row per job title.
-
-
-   Key SQL Concepts Demonstrated
-   ----------------------------------------------------------------
-
-   - SELECT
-   - Aggregate functions
-   - AVG()
-   - ROUND()
-   - TRUNC()
-   - Date calculations
-   - MONTHS_BETWEEN()
-   - SYSDATE
-   - GROUP BY
-   - Column aliases
-*/
