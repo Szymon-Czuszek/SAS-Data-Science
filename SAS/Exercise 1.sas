@@ -51,3 +51,39 @@
 
 %import_excel(sheet_number=1);
 %import_excel(sheet_number=2);
+
+/*============================================================================*/
+/* STEP 3: Merge the bank transaction datasets                                */
+/*============================================================================*/
+
+/*
+   Combine BANK1 and BANK2 and calculate the running account balance.
+
+   The balance is calculated separately for each account.
+*/
+
+DATA BankMerged;
+
+    /* Merge both datasets using account number */
+    MERGE Bank1 Bank2;
+
+    /* Group observations by account number */
+    BY Acc_number;
+
+    /*
+       RETAIN keeps the value of BALANCE from one observation
+       to the next instead of resetting it to missing at the
+       beginning of each DATA step iteration.
+    */
+    RETAIN Balance;
+
+
+    /* Initialize the balance for the first transaction */
+    IF FIRST.Acc_number THEN
+        Balance = Credit - Debit;
+
+    /* Update the balance for subsequent transactions */
+    ELSE
+        Balance = Balance + Credit - Debit;
+
+RUN;
