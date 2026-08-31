@@ -148,3 +148,16 @@ RUN;
 
    tells SAS to use the first row of the worksheet
    as variable names.
+
+   PROC SORT
+   ----------------------------------------------------------------
+
+   The imported datasets are sorted by:
+
+       Acc_number Date
+
+   Sorting is important because the subsequent DATA
+   step uses BY-group processing.
+
+   It also ensures that transactions within each
+   account are processed chronologically.
