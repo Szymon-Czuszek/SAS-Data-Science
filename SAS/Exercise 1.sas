@@ -138,3 +138,13 @@ RUN;
 
    PROC IMPORT reads the Excel workbook and converts
    the selected worksheet into a SAS dataset.
+
+   DBMS=XLSX
+
+   tells SAS that the source file is an Excel
+   XLSX workbook.
+
+   GETNAMES=YES
+
+   tells SAS to use the first row of the worksheet
+   as variable names.
