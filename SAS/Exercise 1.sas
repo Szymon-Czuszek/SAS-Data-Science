@@ -171,3 +171,6 @@ RUN;
 
    tells SAS to combine observations according
    to their account number.
+
+    FIRST.Acc_number
+   ----------------------------------------------------------------  
