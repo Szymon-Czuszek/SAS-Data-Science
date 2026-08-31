@@ -176,3 +176,7 @@ RUN;
    ----------------------------------------------------------------  
 
       FIRST.Acc_number is an automatic BY-group variable.
+
+       It equals 1 for the first observation of each
+   account and allows the program to identify when
+   a new account begins.
