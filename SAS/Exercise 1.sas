@@ -161,3 +161,13 @@ RUN;
 
    It also ensures that transactions within each
    account are processed chronologically.
+
+   MERGE Statement
+   ----------------------------------------------------------------
+
+   The MERGE statement combines BANK1 and BANK2.
+
+   BY Acc_number;
+
+   tells SAS to combine observations according
+   to their account number.
