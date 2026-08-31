@@ -174,3 +174,5 @@ RUN;
 
     FIRST.Acc_number
    ----------------------------------------------------------------  
+
+      FIRST.Acc_number is an automatic BY-group variable.
