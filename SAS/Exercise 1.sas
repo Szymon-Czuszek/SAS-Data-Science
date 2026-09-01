@@ -196,4 +196,4 @@ RUN;
 
    prevents BALANCE from being reset to missing at the beginning of every DATA step iteration.
    
-   This allows BALANCE to carry its value from
+   This allows BALANCE to carry its value from one transaction to the next.
