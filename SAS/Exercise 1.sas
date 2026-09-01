@@ -191,3 +191,7 @@ RUN;
 
    RETAIN Statement
    ----------------------------------------------------------------
+
+   RETAIN Balance;
+
+   prevents BALANCE from being reset to missing at the beginning of every DATA step iteration.
