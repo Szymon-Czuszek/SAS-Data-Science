@@ -204,3 +204,7 @@ RUN;
    For the first transaction of an account:
 
        Balance = Credit - Debit;
+
+   For every subsequent transaction:
+
+       Balance = Balance + Credit - Debit;
