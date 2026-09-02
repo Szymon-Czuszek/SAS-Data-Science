@@ -200,3 +200,7 @@ RUN;
 
    Balance Calculation
    ----------------------------------------------------------------
+
+   For the first transaction of an account:
+
+       Balance = Credit - Debit;
