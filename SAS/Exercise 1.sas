@@ -208,3 +208,5 @@ RUN;
    For every subsequent transaction:
 
        Balance = Balance + Credit - Debit;
+
+   This creates a running account balance.
