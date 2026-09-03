@@ -232,3 +232,4 @@ RUN;
    - Macro parameters
    - PROC IMPORT
    - PROC SORT
+   - MERGE
