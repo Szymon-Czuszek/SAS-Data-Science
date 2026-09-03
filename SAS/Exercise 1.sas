@@ -235,3 +235,4 @@ RUN;
    - MERGE
    - BY-group processing
    - FIRST.Acc_number
+   - RETAIN
