@@ -234,3 +234,4 @@ RUN;
    - PROC SORT
    - MERGE
    - BY-group processing
+   - FIRST.Acc_number
