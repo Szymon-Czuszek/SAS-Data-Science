@@ -236,3 +236,4 @@ RUN;
    - BY-group processing
    - FIRST.Acc_number
    - RETAIN
+   - Running totals
