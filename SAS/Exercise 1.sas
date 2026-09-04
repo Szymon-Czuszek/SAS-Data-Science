@@ -36,6 +36,7 @@
 
 %MEND import_excel;
 
+
 /*============================================================================*/
 /* STEP 2: Import both worksheets                                             */
 /*============================================================================*/
@@ -51,6 +52,7 @@
 
 %import_excel(sheet_number=1);
 %import_excel(sheet_number=2);
+
 
 /*============================================================================*/
 /* STEP 3: Merge the bank transaction datasets                                */
@@ -88,6 +90,7 @@ DATA BankMerged;
 
 RUN;
 
+
 /*============================================================================*/
 /* Commentary                                                                 */
 /*============================================================================*/
@@ -104,6 +107,7 @@ RUN;
    - Merging datasets
    - Using FIRST. variables
    - Using RETAIN to create a running balance
+
 
    IMPORT_EXCEL Macro
    ----------------------------------------------------------------
@@ -133,6 +137,7 @@ RUN;
        OUT=Bank2
        SHEET="Sheet2"
 
+
    PROC IMPORT
    ----------------------------------------------------------------
 
@@ -149,6 +154,7 @@ RUN;
    tells SAS to use the first row of the worksheet
    as variable names.
 
+
    PROC SORT
    ----------------------------------------------------------------
 
@@ -162,6 +168,7 @@ RUN;
    It also ensures that transactions within each
    account are processed chronologically.
 
+
    MERGE Statement
    ----------------------------------------------------------------
 
@@ -172,12 +179,15 @@ RUN;
    tells SAS to combine observations according
    to their account number.
 
-    FIRST.Acc_number
-   ----------------------------------------------------------------  
 
-      FIRST.Acc_number is an automatic BY-group variable.
+   FIRST.Acc_number
+   ----------------------------------------------------------------
 
-       It equals 1 for the first observation of each account and allows the program to identify when a new account begins.
+   FIRST.Acc_number is an automatic BY-group variable.
+
+   It equals 1 for the first observation of each
+   account and allows the program to identify when
+   a new account begins.
 
    Example:
 
@@ -189,14 +199,18 @@ RUN;
        12347   <- FIRST.Acc_number = 1
        12347
 
+
    RETAIN Statement
    ----------------------------------------------------------------
 
    RETAIN Balance;
 
-   prevents BALANCE from being reset to missing at the beginning of every DATA step iteration.
-   
-   This allows BALANCE to carry its value from one transaction to the next.
+   prevents BALANCE from being reset to missing
+   at the beginning of every DATA step iteration.
+
+   This allows BALANCE to carry its value from
+   one transaction to the next.
+
 
    Balance Calculation
    ----------------------------------------------------------------
@@ -205,11 +219,14 @@ RUN;
 
        Balance = Credit - Debit;
 
+
    For every subsequent transaction:
 
        Balance = Balance + Credit - Debit;
 
+
    This creates a running account balance.
+
 
    Example
    ----------------------------------------------------------------
@@ -225,6 +242,13 @@ RUN;
        Balance = 0 - 15
                = -15
 
+
+   Therefore, for the specified transaction
+   on 03/01/2018, the balance is:
+
+       -15
+
+
    Key SAS Concepts Demonstrated
    ----------------------------------------------------------------
 
@@ -239,3 +263,4 @@ RUN;
    - Running totals
    - Dynamic dataset names
    - Excel-to-SAS data import
+*/
