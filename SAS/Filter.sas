@@ -9,3 +9,8 @@ DATA houseprice;
 
     /* Read the variables from each row of the input file */
     INPUT type$ price tax;
+
+    /* Calculate profit as price multiplied by tax, rounded to an integer */
+    profit = ROUND(price * tax);
+
+RUN;
