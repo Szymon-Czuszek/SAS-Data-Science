@@ -18,3 +18,13 @@ RUN;
 /*============================================================================*/
 /* Filter houses based on their price                                         */
 /*============================================================================*/
+
+DATA filter;
+
+    /* Create the FILTER dataset from HOUSEPRICE */
+    SET houseprice;
+
+    /* Keep only houses with a price below 200,000 */
+    IF price < 200000;
+
+RUN;
