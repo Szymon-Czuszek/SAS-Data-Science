@@ -41,8 +41,11 @@ RUN;
 
    INFILE specifies the location of the source file, while
    DLM=" " tells SAS that values are separated by spaces.
-   
+
    The INPUT statement reads three variables:
 
        TYPE
            House type, stored as a character variable.
+
+       PRICE
+           House price.
