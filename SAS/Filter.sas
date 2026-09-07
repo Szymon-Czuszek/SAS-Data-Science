@@ -38,3 +38,6 @@ RUN;
    ----------------------------------------------------------------
    The first DATA step imports house price information from an
    external text file.
+
+   INFILE specifies the location of the source file, while
+   DLM=" " tells SAS that values are separated by spaces.
