@@ -49,3 +49,6 @@ RUN;
 
        PRICE
            House price.
+
+       TAX
+           Tax value/rate used in the profit calculation.
