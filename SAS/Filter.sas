@@ -57,3 +57,6 @@ RUN;
    ----------------------------------------------------------------
 
        profit = ROUND(price * tax);
+
+   The PRICE and TAX values are multiplied together and
+   ROUND() removes any decimal portion from the result.
