@@ -52,3 +52,6 @@ RUN;
 
        TAX
            Tax value/rate used in the profit calculation.
+
+   PROFIT CALCULATION
+   ----------------------------------------------------------------
