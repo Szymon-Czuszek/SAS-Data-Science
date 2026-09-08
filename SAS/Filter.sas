@@ -55,3 +55,5 @@ RUN;
 
    PROFIT CALCULATION
    ----------------------------------------------------------------
+
+       profit = ROUND(price * tax);
