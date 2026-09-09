@@ -67,3 +67,7 @@ RUN;
    ----------------------------------------------------------------
 
    The second DATA step creates a new dataset called FILTER.
+
+       SET houseprice;
+
+   reads observations from the HOUSEPRICE dataset.
