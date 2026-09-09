@@ -60,3 +60,5 @@ RUN;
 
    The PRICE and TAX values are multiplied together and
    ROUND() removes any decimal portion from the result.
+
+   The resulting PROFIT variable is added to the dataset.
