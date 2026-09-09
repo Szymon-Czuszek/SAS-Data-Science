@@ -62,3 +62,6 @@ RUN;
    ROUND() removes any decimal portion from the result.
 
    The resulting PROFIT variable is added to the dataset.
+
+   DATA FILTER
+   ----------------------------------------------------------------
