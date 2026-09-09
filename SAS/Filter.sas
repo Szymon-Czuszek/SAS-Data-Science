@@ -65,3 +65,5 @@ RUN;
 
    DATA FILTER
    ----------------------------------------------------------------
+
+   The second DATA step creates a new dataset called FILTER.
