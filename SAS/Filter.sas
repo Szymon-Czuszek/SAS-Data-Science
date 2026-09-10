@@ -76,3 +76,6 @@ RUN;
 
    is a subsetting IF statement. Only observations satisfying
    the condition are written to the FILTER dataset.
+
+   Therefore, FILTER contains only houses with a price
+   below 200,000.
