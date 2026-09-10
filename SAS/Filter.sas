@@ -73,3 +73,6 @@ RUN;
    reads observations from the HOUSEPRICE dataset.
 
        IF price < 200000;
+
+   is a subsetting IF statement. Only observations satisfying
+   the condition are written to the FILTER dataset.
