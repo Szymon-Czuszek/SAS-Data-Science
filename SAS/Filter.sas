@@ -71,3 +71,5 @@ RUN;
        SET houseprice;
 
    reads observations from the HOUSEPRICE dataset.
+
+       IF price < 200000;
