@@ -85,3 +85,4 @@ RUN;
 
    - Reading external text files with INFILE
       - Using DLM to define a delimiter
+   - Reading character and numeric variables with INPUT
