@@ -82,3 +82,5 @@ RUN;
 
    Key SAS Concepts Demonstrated
    ----------------------------------------------------------------
+
+   - Reading external text files with INFILE
