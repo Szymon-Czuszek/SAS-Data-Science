@@ -15,6 +15,7 @@ DATA houseprice;
 
 RUN;
 
+
 /*============================================================================*/
 /* Filter houses based on their price                                         */
 /*============================================================================*/
@@ -28,6 +29,7 @@ DATA filter;
     IF price < 200000;
 
 RUN;
+
 
 /*============================================================================*/
 /* Commentary                                                                 */
@@ -53,6 +55,7 @@ RUN;
        TAX
            Tax value/rate used in the profit calculation.
 
+
    PROFIT CALCULATION
    ----------------------------------------------------------------
 
@@ -62,6 +65,7 @@ RUN;
    ROUND() removes any decimal portion from the result.
 
    The resulting PROFIT variable is added to the dataset.
+
 
    DATA FILTER
    ----------------------------------------------------------------
@@ -80,13 +84,15 @@ RUN;
    Therefore, FILTER contains only houses with a price
    below 200,000.
 
+
    Key SAS Concepts Demonstrated
    ----------------------------------------------------------------
 
    - Reading external text files with INFILE
-      - Using DLM to define a delimiter
+   - Using DLM to define a delimiter
    - Reading character and numeric variables with INPUT
-      - Creating calculated variables
+   - Creating calculated variables
    - Using ROUND()
    - Creating a new dataset with SET
    - Filtering observations with a subsetting IF
+*/
