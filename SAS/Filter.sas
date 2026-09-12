@@ -89,3 +89,4 @@ RUN;
       - Creating calculated variables
    - Using ROUND()
    - Creating a new dataset with SET
+   - Filtering observations with a subsetting IF
