@@ -88,3 +88,4 @@ RUN;
    - Reading character and numeric variables with INPUT
       - Creating calculated variables
    - Using ROUND()
+   - Creating a new dataset with SET
