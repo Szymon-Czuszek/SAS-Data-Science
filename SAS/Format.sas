@@ -26,3 +26,13 @@ RUN;
 /*============================================================================*/
 /* STEP 3: Create a user-defined character format                            */
 /*============================================================================*/
+
+PROC FORMAT;
+
+    /*
+        VALUE $codetwo defines a user-created character format.
+
+        The '$' indicates that the format is intended for character values.
+
+        Each diagnosis code is mapped to a descriptive disease/injury name.
+    */
