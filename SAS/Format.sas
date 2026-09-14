@@ -36,3 +36,10 @@ PROC FORMAT;
 
         Each diagnosis code is mapped to a descriptive disease/injury name.
     */
+    VALUE $codetwo
+        '001' = "Malaria"
+        '290' = "Social Anxiety Disorder"
+        '800' = "Leg Injury"
+    ;
+
+RUN;
