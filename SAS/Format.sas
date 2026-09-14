@@ -49,3 +49,17 @@ RUN;
 /*============================================================================*/
 
 PROC PRINT DATA=disease;
+
+    /*
+        Apply the $codetwo format to DIAGCODE for this procedure only.
+
+        The underlying values of DIAGCODE remain:
+            001
+            290
+            800
+
+        PROC PRINT simply displays their formatted descriptions instead.
+    */
+    FORMAT diagcode $codetwo.;
+
+RUN;
