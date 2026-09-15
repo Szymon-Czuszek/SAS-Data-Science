@@ -69,3 +69,6 @@ RUN;
 /*============================================================================*/
 
 DATA diseasereal;
+
+    /* Copy all observations and variables from the DISEASE dataset */
+    SET disease;
