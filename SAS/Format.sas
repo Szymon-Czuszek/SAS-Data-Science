@@ -72,3 +72,7 @@ DATA diseasereal;
 
     /* Copy all observations and variables from the DISEASE dataset */
     SET disease;
+
+    /*
+        PUT() converts the character diagnosis code using the
+        user-defined $codetwo format.
