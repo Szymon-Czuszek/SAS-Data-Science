@@ -63,3 +63,7 @@ PROC PRINT DATA=disease;
     FORMAT diagcode $codetwo.;
 
 RUN;
+
+/*============================================================================*/
+/* STEP 5: Create a new variable containing the formatted description        */
+/*============================================================================*/
