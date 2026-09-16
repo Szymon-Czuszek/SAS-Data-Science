@@ -87,3 +87,5 @@ DATA diseasereal;
 
     */
     diagdesc = PUT(diagcode, $codetwo.);
+
+RUN;
