@@ -79,3 +79,8 @@ DATA diseasereal;
 
         Unlike the FORMAT statement above, PUT() creates a new
         character variable containing the formatted text.
+
+        Example:
+            diagcode = '001'  ->  diagdesc = 'Malaria'
+            diagcode = '290'  ->  diagdesc = 'Social Anxiety Disorder'
+            diagcode = '800'  ->  diagdesc = 'Leg Injury'
