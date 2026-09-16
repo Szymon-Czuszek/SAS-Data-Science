@@ -76,3 +76,6 @@ DATA diseasereal;
     /*
         PUT() converts the character diagnosis code using the
         user-defined $codetwo format.
+
+        Unlike the FORMAT statement above, PUT() creates a new
+        character variable containing the formatted text.
