@@ -16,12 +16,14 @@ DATA disease;
 
 RUN;
 
+
 /*============================================================================*/
 /* STEP 2: Display the original dataset                                      */
 /*============================================================================*/
 
 PROC PRINT DATA=disease;
 RUN;
+
 
 /*============================================================================*/
 /* STEP 3: Create a user-defined character format                            */
@@ -44,6 +46,7 @@ PROC FORMAT;
 
 RUN;
 
+
 /*============================================================================*/
 /* STEP 4: Apply the format when displaying the dataset                      */
 /*============================================================================*/
@@ -63,6 +66,7 @@ PROC PRINT DATA=disease;
     FORMAT diagcode $codetwo.;
 
 RUN;
+
 
 /*============================================================================*/
 /* STEP 5: Create a new variable containing the formatted description        */
@@ -84,16 +88,15 @@ DATA diseasereal;
             diagcode = '001'  ->  diagdesc = 'Malaria'
             diagcode = '290'  ->  diagdesc = 'Social Anxiety Disorder'
             diagcode = '800'  ->  diagdesc = 'Leg Injury'
-
     */
     diagdesc = PUT(diagcode, $codetwo.);
 
 RUN;
+
 
 /*============================================================================*/
 /* STEP 6: Display the final dataset                                         */
 /*============================================================================*/
 
 PROC PRINT DATA=diseasereal;
-
 RUN;
