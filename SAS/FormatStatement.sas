@@ -35,3 +35,8 @@ DATA EMPLOYEE_SALARY;
 
             Example:
                 145233421 -> 145-23-3421
+
+            IMPORTANT:
+            FORMAT changes how the values are DISPLAYED.
+            It does not change the underlying numeric values.
+    */
