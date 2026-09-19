@@ -28,3 +28,7 @@ DATA EMPLOYEE_SALARY;
 
             Example:
                 62000 -> $62,000.00
+
+            WORKER_ID:
+            SSN11. displays the numeric ID in the standard
+            Social Security Number format.
