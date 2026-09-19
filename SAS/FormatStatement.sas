@@ -18,3 +18,13 @@ DATA EMPLOYEE_SALARY;
             Numeric variable containing the employee's ID number.
     */
     INPUT WORKER $ PAY WORKER_ID;
+
+        /*
+        Apply display formats to the numeric variables.
+
+        PAY:
+            DOLLAR10.2 displays the salary using a dollar sign,
+            commas where appropriate, and 2 decimal places.
+
+            Example:
+                62000 -> $62,000.00
