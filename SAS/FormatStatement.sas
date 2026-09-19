@@ -32,3 +32,6 @@ DATA EMPLOYEE_SALARY;
             WORKER_ID:
             SSN11. displays the numeric ID in the standard
             Social Security Number format.
+
+            Example:
+                145233421 -> 145-23-3421
