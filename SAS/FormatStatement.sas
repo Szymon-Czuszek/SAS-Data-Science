@@ -48,3 +48,7 @@ DATA EMPLOYEE_SALARY;
     /*
         CARDS (also known as DATALINES) provides the raw data
         directly inside the SAS program.
+
+        The values are read according to the INPUT statement above.
+    */
+    CARDS;
