@@ -44,3 +44,7 @@ DATA EMPLOYEE_SALARY;
         FORMAT
         PAY       DOLLAR10.2
         WORKER_ID SSN11.;
+
+    /*
+        CARDS (also known as DATALINES) provides the raw data
+        directly inside the SAS program.
