@@ -40,3 +40,7 @@ DATA EMPLOYEE_SALARY;
             FORMAT changes how the values are DISPLAYED.
             It does not change the underlying numeric values.
     */
+
+        FORMAT
+        PAY       DOLLAR10.2
+        WORKER_ID SSN11.;
