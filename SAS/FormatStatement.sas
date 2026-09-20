@@ -52,3 +52,10 @@ DATA EMPLOYEE_SALARY;
         The values are read according to the INPUT statement above.
     */
     CARDS;
+    Alice 62000 145233421
+Bob 75000 432459291
+Eva 59000 912342392
+Dan 44000 170343929
+;
+
+RUN;
