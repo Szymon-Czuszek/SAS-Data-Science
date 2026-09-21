@@ -69,3 +69,6 @@ DATA SALARY_DETAILS;
     /*
         Copy all observations and variables from EMPLOYEE_SALARY
         into the new SALARY_DETAILS dataset.
+
+    */
+    SET EMPLOYEE_SALARY;
