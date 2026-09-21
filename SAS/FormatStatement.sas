@@ -63,3 +63,9 @@ RUN;
 /*============================================================================*/
 /* STEP 2: Create a dataset containing formatted text values                 */
 /*============================================================================*/
+
+DATA SALARY_DETAILS;
+
+    /*
+        Copy all observations and variables from EMPLOYEE_SALARY
+        into the new SALARY_DETAILS dataset.
