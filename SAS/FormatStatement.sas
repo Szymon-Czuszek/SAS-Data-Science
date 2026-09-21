@@ -72,3 +72,7 @@ DATA SALARY_DETAILS;
 
     */
     SET EMPLOYEE_SALARY;
+
+    /*
+        Convert the numeric PAY value into a character value
+        using the DOLLAR10.2 format.
