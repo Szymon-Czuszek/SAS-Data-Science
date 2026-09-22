@@ -99,3 +99,5 @@ DATA SALARY_DETAILS;
 
         ID_TXT is therefore a character variable, while
         WORKER_ID remains numeric.
+
+    */
