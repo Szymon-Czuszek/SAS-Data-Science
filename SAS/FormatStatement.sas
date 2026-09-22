@@ -89,3 +89,6 @@ DATA SALARY_DETAILS;
 
 
     /*
+
+            Convert the numeric WORKER_ID value into a character value
+        using the SSN11. format.
