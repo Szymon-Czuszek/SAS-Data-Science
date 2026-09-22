@@ -101,3 +101,4 @@ DATA SALARY_DETAILS;
         WORKER_ID remains numeric.
 
     */
+        ID_TXT = PUT(WORKER_ID, SSN11.);
