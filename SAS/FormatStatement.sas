@@ -19,7 +19,8 @@ DATA EMPLOYEE_SALARY;
     */
     INPUT WORKER $ PAY WORKER_ID;
 
-        /*
+
+    /*
         Apply display formats to the numeric variables.
 
         PAY:
@@ -29,21 +30,21 @@ DATA EMPLOYEE_SALARY;
             Example:
                 62000 -> $62,000.00
 
-            WORKER_ID:
+        WORKER_ID:
             SSN11. displays the numeric ID in the standard
             Social Security Number format.
 
             Example:
                 145233421 -> 145-23-3421
 
-            IMPORTANT:
+        IMPORTANT:
             FORMAT changes how the values are DISPLAYED.
             It does not change the underlying numeric values.
     */
-
-        FORMAT
+    FORMAT
         PAY       DOLLAR10.2
         WORKER_ID SSN11.;
+
 
     /*
         CARDS (also known as DATALINES) provides the raw data
@@ -52,13 +53,14 @@ DATA EMPLOYEE_SALARY;
         The values are read according to the INPUT statement above.
     */
     CARDS;
-    Alice 62000 145233421
+Alice 62000 145233421
 Bob 75000 432459291
 Eva 59000 912342392
 Dan 44000 170343929
 ;
 
 RUN;
+
 
 /*============================================================================*/
 /* STEP 2: Create a dataset containing formatted text values                 */
@@ -69,9 +71,9 @@ DATA SALARY_DETAILS;
     /*
         Copy all observations and variables from EMPLOYEE_SALARY
         into the new SALARY_DETAILS dataset.
-
     */
     SET EMPLOYEE_SALARY;
+
 
     /*
         Convert the numeric PAY value into a character value
@@ -84,13 +86,11 @@ DATA SALARY_DETAILS;
             PAY = 62000
             PAYMENT_TXT = "$62,000.00"
     */
-
     PAYMENT_TXT = PUT(PAY, DOLLAR10.2);
 
 
     /*
-
-            Convert the numeric WORKER_ID value into a character value
+        Convert the numeric WORKER_ID value into a character value
         using the SSN11. format.
 
         Example:
@@ -99,8 +99,7 @@ DATA SALARY_DETAILS;
 
         ID_TXT is therefore a character variable, while
         WORKER_ID remains numeric.
-
     */
-        ID_TXT = PUT(WORKER_ID, SSN11.);
+    ID_TXT = PUT(WORKER_ID, SSN11.);
 
-    RUN;
+RUN;
