@@ -96,3 +96,6 @@ DATA SALARY_DETAILS;
         Example:
             WORKER_ID = 145233421
             ID_TXT = "145-23-3421"
+
+        ID_TXT is therefore a character variable, while
+        WORKER_ID remains numeric.
