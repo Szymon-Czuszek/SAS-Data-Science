@@ -84,3 +84,8 @@ DATA SALARY_DETAILS;
             PAY = 62000
             PAYMENT_TXT = "$62,000.00"
     */
+
+    PAYMENT_TXT = PUT(PAY, DOLLAR10.2);
+
+
+    /*
