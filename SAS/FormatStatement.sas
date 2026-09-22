@@ -92,3 +92,7 @@ DATA SALARY_DETAILS;
 
             Convert the numeric WORKER_ID value into a character value
         using the SSN11. format.
+
+        Example:
+            WORKER_ID = 145233421
+            ID_TXT = "145-23-3421"
