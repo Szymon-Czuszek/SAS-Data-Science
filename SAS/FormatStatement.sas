@@ -76,3 +76,6 @@ DATA SALARY_DETAILS;
     /*
         Convert the numeric PAY value into a character value
         using the DOLLAR10.2 format.
+
+        Unlike the FORMAT statement, PUT() actually creates
+        a character representation of the value.
