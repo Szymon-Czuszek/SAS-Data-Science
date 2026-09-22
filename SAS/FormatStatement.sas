@@ -102,3 +102,5 @@ DATA SALARY_DETAILS;
 
     */
         ID_TXT = PUT(WORKER_ID, SSN11.);
+
+    RUN;
