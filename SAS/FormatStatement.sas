@@ -79,3 +79,8 @@ DATA SALARY_DETAILS;
 
         Unlike the FORMAT statement, PUT() actually creates
         a character representation of the value.
+
+        Example:
+            PAY = 62000
+            PAYMENT_TXT = "$62,000.00"
+    */
