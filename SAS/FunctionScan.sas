@@ -14,3 +14,4 @@ DATA country_data;
 
 
     /*
+        SCAN() extracts a specific word (token) from a character string.
