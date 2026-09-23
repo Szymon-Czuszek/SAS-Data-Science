@@ -19,4 +19,6 @@ DATA country_data;
         Syntax:
             SCAN(character_string, word_number)
 
-
+        Here:
+            a     = the source character string
+            4     = extract the 4th word
