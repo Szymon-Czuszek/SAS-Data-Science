@@ -22,3 +22,6 @@ DATA country_data;
         Here:
             a     = the source character string
             4     = extract the 4th word
+
+        SCAN() treats one or more consecutive spaces as delimiters
+        by default.
