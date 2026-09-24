@@ -25,3 +25,7 @@ DATA country_data;
 
         SCAN() treats one or more consecutive spaces as delimiters
         by default.
+
+        The words are therefore interpreted as:
+
+            1 -> United
