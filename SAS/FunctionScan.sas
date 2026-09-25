@@ -33,3 +33,6 @@ DATA country_data;
 			3 -> of
 			4 -> Great
 			5 -> Britain
+
+        Therefore:
+            country = "Great"
