@@ -29,14 +29,13 @@ DATA country_data;
         The words are therefore interpreted as:
 
             1 -> United
-			2 -> Kingdom
-			3 -> of
-			4 -> Great
-			5 -> Britain
+            2 -> Kingdom
+            3 -> of
+            4 -> Great
+            5 -> Britain
 
         Therefore:
             country = "Great"
-
     */
     country = SCAN(a, 4);
 
