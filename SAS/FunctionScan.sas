@@ -36,3 +36,6 @@ DATA country_data;
 
         Therefore:
             country = "Great"
+
+    */
+    country = SCAN(a, 4);
