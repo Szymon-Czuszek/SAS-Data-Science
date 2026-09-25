@@ -39,3 +39,5 @@ DATA country_data;
 
     */
     country = SCAN(a, 4);
+
+RUN;
