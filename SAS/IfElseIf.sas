@@ -3,7 +3,18 @@
 /*============================================================================*/
 
 DATA student_data;
-	SET sashelp.class;
+
+    /*
+        Read all observations and variables from SASHELP.CLASS.
+
+        SASHELP.CLASS contains information about students, including:
+            - Name
+            - Sex
+            - Age
+            - Height (in inches)
+            - Weight (in pounds)
+    */
+    SET sashelp.class;
 	
 	WeightKg = Weight * 0.454;
 	
