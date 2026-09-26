@@ -16,7 +16,19 @@ DATA student_data;
     */
     SET sashelp.class;
 	
-	WeightKg = Weight * 0.454;
+    /*------------------------------------------------------------------------*/
+    /* STEP 2: Convert weight from pounds to kilograms                       */
+    /*------------------------------------------------------------------------*/
+
+    /*
+        Weight in SASHELP.CLASS is stored in pounds.
+
+        Conversion:
+            1 pound ≈ 0.454 kilograms
+
+        A new variable, WeightKg, is therefore created.
+    */
+    WeightKg = Weight * 0.454;
 	
 	HeightM = Height * 2.54/100;
 
