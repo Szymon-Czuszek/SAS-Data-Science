@@ -30,7 +30,21 @@ DATA student_data;
     */
     WeightKg = Weight * 0.454;
 	
-	HeightM = Height * 2.54/100;
+    /*------------------------------------------------------------------------*/
+    /* STEP 3: Convert height from inches to metres                           */
+    /*------------------------------------------------------------------------*/
+
+    /*
+        Height in SASHELP.CLASS is stored in inches.
+
+        Conversion:
+            1 inch = 2.54 cm
+            100 cm = 1 metre
+
+        Therefore:
+            HeightM = Height * 2.54 / 100
+    */
+    HeightM = Height * 2.54 / 100;
 
 	BMI = (WeightKg/(HeightM)**2);
 	
