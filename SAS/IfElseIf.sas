@@ -65,3 +65,10 @@ RUN;
 
         Formula:
             BMI = WeightKg / HeightM²
+
+        The ** operator is used for exponentiation.
+        Therefore:
+            HeightM ** 2
+        means HeightM squared.
+    */
+    BMI = WeightKg / (HeightM)**2;
