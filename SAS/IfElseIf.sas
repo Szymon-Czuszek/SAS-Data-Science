@@ -58,3 +58,7 @@ RUN;
     /*------------------------------------------------------------------------*/
     /* STEP 4: Calculate Body Mass Index (BMI)                                */
     /*------------------------------------------------------------------------*/
+
+    /*
+        BMI is calculated using weight in kilograms and
+        height in metres.
