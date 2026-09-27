@@ -62,3 +62,6 @@ RUN;
     /*
         BMI is calculated using weight in kilograms and
         height in metres.
+
+        Formula:
+            BMI = WeightKg / HeightM²
