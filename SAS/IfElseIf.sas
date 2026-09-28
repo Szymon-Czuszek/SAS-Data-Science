@@ -88,3 +88,6 @@ RUN;
         The condition below is written exactly as in the original code.
         However, chained comparisons do NOT work as mathematical interval
         comparisons in SAS.
+
+        For example:
+            18.5 < BMI <= 24.9
