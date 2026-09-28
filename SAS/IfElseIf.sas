@@ -76,3 +76,9 @@ RUN;
     /*------------------------------------------------------------------------*/
     /* STEP 5: Classify students according to BMI                            */
     /*------------------------------------------------------------------------*/
+
+    /*
+        If BMI is 18.5 or lower, classify the student as Underweight.
+    */
+    IF BMI <= 18.5 THEN
+        Status = "Underweight";
