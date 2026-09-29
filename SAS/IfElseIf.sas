@@ -99,3 +99,9 @@ RUN;
     */
     	ELSE IF 18.5 < BMI <= 24.9 THEN
         Status = "Healthy Weight";
+
+    /*
+        The same chained-comparison issue applies here.
+    */
+    ELSE IF 24.9 < BMI <= 29.9 THEN
+        Status = "Overweight";
