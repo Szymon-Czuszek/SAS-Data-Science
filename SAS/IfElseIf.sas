@@ -91,3 +91,6 @@ RUN;
 
         For example:
             18.5 < BMI <= 24.9
+
+        is NOT interpreted as:
+            BMI > 18.5 AND BMI <= 24.9
