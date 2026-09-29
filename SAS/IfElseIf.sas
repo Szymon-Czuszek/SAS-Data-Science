@@ -97,5 +97,5 @@ RUN;
 
         See the commentary below for the correct SAS approach.
     */
-    ELSE IF 18.5 < BMI <= 24.9 THEN
+    	ELSE IF 18.5 < BMI <= 24.9 THEN
         Status = "Healthy Weight";
