@@ -94,3 +94,8 @@ RUN;
 
         is NOT interpreted as:
             BMI > 18.5 AND BMI <= 24.9
+
+        See the commentary below for the correct SAS approach.
+    */
+    	ELSE IF 18.5 < BMI <= 24.9 THEN
+        Status = "Healthy Weight";
