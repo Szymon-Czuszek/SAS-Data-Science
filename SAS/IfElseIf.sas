@@ -15,7 +15,8 @@ DATA student_data;
             - Weight (in pounds)
     */
     SET sashelp.class;
-	
+
+
     /*------------------------------------------------------------------------*/
     /* STEP 2: Convert weight from pounds to kilograms                       */
     /*------------------------------------------------------------------------*/
@@ -29,7 +30,8 @@ DATA student_data;
         A new variable, WeightKg, is therefore created.
     */
     WeightKg = Weight * 0.454;
-	
+
+
     /*------------------------------------------------------------------------*/
     /* STEP 3: Convert height from inches to metres                           */
     /*------------------------------------------------------------------------*/
@@ -46,14 +48,6 @@ DATA student_data;
     */
     HeightM = Height * 2.54 / 100;
 
-	BMI = (WeightKg/(HeightM)**2);
-	
-	IF BMI <= 18.5 THEN Status = "Underweight";
-	ELSE IF 18.5 < BMI <= 24.9 THEN Status = "Healthy Weight";
-	ELSE IF 24.9 < BMI <= 29.9 THEN Status = "Overweight";
-	ELSE IF 29.9 < BMI THEN Status = "Obese";
-	
-RUN;
 
     /*------------------------------------------------------------------------*/
     /* STEP 4: Calculate Body Mass Index (BMI)                                */
@@ -72,6 +66,7 @@ RUN;
         means HeightM squared.
     */
     BMI = WeightKg / (HeightM)**2;
+
 
     /*------------------------------------------------------------------------*/
     /* STEP 5: Classify students according to BMI                            */
@@ -97,7 +92,7 @@ RUN;
 
         See the commentary below for the correct SAS approach.
     */
-    	ELSE IF 18.5 < BMI <= 24.9 THEN
+    ELSE IF 18.5 < BMI <= 24.9 THEN
         Status = "Healthy Weight";
 
     /*
@@ -105,3 +100,11 @@ RUN;
     */
     ELSE IF 24.9 < BMI <= 29.9 THEN
         Status = "Overweight";
+
+    /*
+        BMI values above 29.9 are classified as Obese.
+    */
+    ELSE IF 29.9 < BMI THEN
+        Status = "Obese";
+
+RUN;
