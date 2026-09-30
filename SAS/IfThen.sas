@@ -3,6 +3,9 @@
 /*============================================================================*/
 
 DATA sales;
+
+    /*
+        Read the employee name and four sales values.
 	INPUT Name$ Sales_1-Sales_4;
 	total=SUM(Sales_1, Sales_2, Sales_3, Sales_4);
 	fired = "";
