@@ -1,0 +1,8 @@
+{
+  "bundle": "t002_proc_means_age",
+  "source_file": "SAS/UsingProcMeans.sas",
+  "source_blob_sha": "14cc8e2e428fc8b60a67a73ec579005237c88d48",
+  "source_commit": "252f1a993e6c0a2e0a955ef9ab16d3dbd3dc80ef",
+  "tier": "real_data",
+  "notes": "PROC MEANS descriptive statistics for AGE on an inline DATALINES CLASS dataset."
+}
