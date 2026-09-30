@@ -9,6 +9,9 @@ DATA sales;
 
 		        NAME:
             Character variable containing the employee's name.
+
+			        SALES_1-SALES_4:
+            Four numeric variables containing sales values.
 	INPUT Name$ Sales_1-Sales_4;
 	total=SUM(Sales_1, Sales_2, Sales_3, Sales_4);
 	fired = "";
