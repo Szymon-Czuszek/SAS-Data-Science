@@ -7,12 +7,20 @@ DATA sales;
     /*
         Read the employee name and four sales values.
 
-		        NAME:
+        NAME:
             Character variable containing the employee's name.
 
-			        SALES_1-SALES_4:
+        SALES_1-SALES_4:
             Four numeric variables containing sales values.
-	INPUT Name$ Sales_1-Sales_4;
+
+        The hyphen notation tells SAS to read the consecutive variables:
+            SALES_1
+            SALES_2
+            SALES_3
+            SALES_4
+    */
+    INPUT Name$ Sales_1-Sales_4;
+	
 	total=SUM(Sales_1, Sales_2, Sales_3, Sales_4);
 	fired = "";
 	IF name = "Greg" AND total => 52 THEN fired = "N";
