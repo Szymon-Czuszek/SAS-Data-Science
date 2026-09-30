@@ -1,4 +1,4 @@
-/*===
+/*====
 
 DATA sales;
 	INPUT Name$ Sales_1-Sales_4;
