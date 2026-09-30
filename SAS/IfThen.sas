@@ -25,7 +25,18 @@ DATA sales;
 /* STEP 2: Calculate total sales                                          */
 /*------------------------------------------------------------------------*/
 
-	total=SUM(Sales_1, Sales_2, Sales_3, Sales_4);
+    /*
+        SUM() calculates the total of the four sales variables.
+
+        SUM() is preferable to using the + operator when working
+        with multiple variables because SUM() can handle missing
+        numeric values without automatically making the entire
+        result missing.
+
+        Example:
+            Greg = 10 + 2 + 40 + 0 = 52
+    */
+    total = SUM(Sales_1, Sales_2, Sales_3, Sales_4);
 	fired = "";
 	IF name = "Greg" AND total => 52 THEN fired = "N";
 	CARDS;
