@@ -21,6 +21,10 @@ DATA sales;
     */
     INPUT Name$ Sales_1-Sales_4;
 	
+/*------------------------------------------------------------------------*/
+/* STEP 2: Calculate total sales                                          */
+/*------------------------------------------------------------------------*/
+
 	total=SUM(Sales_1, Sales_2, Sales_3, Sales_4);
 	fired = "";
 	IF name = "Greg" AND total => 52 THEN fired = "N";
