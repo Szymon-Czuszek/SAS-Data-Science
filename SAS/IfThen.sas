@@ -60,6 +60,11 @@ DATA sales;
             1. NAME must be "Greg"
             2. TOTAL must be greater than or equal to 52
 
+        Both conditions must be TRUE because AND is used.
+
+        If both conditions are satisfied:
+            FIRED = "N"
+
 	IF name = "Greg" AND total => 52 THEN fired = "N";
 	CARDS;
 Greg 10 2 40 0
