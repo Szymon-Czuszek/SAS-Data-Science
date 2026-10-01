@@ -49,6 +49,9 @@ DATA sales;
         variable that will initially contain a blank value.
     */
     fired = "";
+
+        /* STEP 4: Determine whether Greg should be marked as fired               */
+    /*------------------------------------------------------------------------*/
     
 	IF name = "Greg" AND total => 52 THEN fired = "N";
 	CARDS;
