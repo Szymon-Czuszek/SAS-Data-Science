@@ -50,9 +50,16 @@ DATA sales;
     */
     fired = "";
 
-        /* STEP 4: Determine whether Greg should be marked as fired               */
     /*------------------------------------------------------------------------*/
-    
+    /* STEP 4: Determine whether Greg should be marked as fired               */
+    /*------------------------------------------------------------------------*/
+
+    /*
+        Check two conditions:
+
+            1. NAME must be "Greg"
+            2. TOTAL must be greater than or equal to 52
+
 	IF name = "Greg" AND total => 52 THEN fired = "N";
 	CARDS;
 Greg 10 2 40 0
