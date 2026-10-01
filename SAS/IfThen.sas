@@ -37,7 +37,19 @@ DATA sales;
             Greg = 10 + 2 + 40 + 0 = 52
     */
     total = SUM(Sales_1, Sales_2, Sales_3, Sales_4);
-	fired = "";
+
+    /*------------------------------------------------------------------------*/
+    /* STEP 3: Create the FIRED variable                                      */
+    /*------------------------------------------------------------------------*/
+
+    /*
+        Initialize FIRED as a character variable.
+
+        Assigning an empty character string creates a character
+        variable that will initially contain a blank value.
+    */
+    fired = "";
+    
 	IF name = "Greg" AND total => 52 THEN fired = "N";
 	CARDS;
 Greg 10 2 40 0
