@@ -65,6 +65,10 @@ DATA sales;
         If both conditions are satisfied:
             FIRED = "N"
 
+        NOTE:
+            SAS uses >= for "greater than or equal to".
+            The original code used =>, which should be corrected.
+
 	IF name = "Greg" AND total => 52 THEN fired = "N";
 	CARDS;
 Greg 10 2 40 0
