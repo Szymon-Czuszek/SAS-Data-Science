@@ -73,6 +73,10 @@ DATA sales;
     IF name = "Greg" AND total >= 52 THEN
         fired = "N";
 
+    /*------------------------------------------------------------------------*/
+    /* STEP 5: Provide the input data                                         */
+    /*------------------------------------------------------------------------*/
+
 	IF name = "Greg" AND total => 52 THEN fired = "N";
 	CARDS;
 Greg 10 2 40 0
