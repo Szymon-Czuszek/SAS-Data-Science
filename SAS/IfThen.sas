@@ -76,9 +76,10 @@ DATA sales;
     /*------------------------------------------------------------------------*/
     /* STEP 5: Provide the input data                                         */
     /*------------------------------------------------------------------------*/
-
-	IF name = "Greg" AND total => 52 THEN fired = "N";
-	CARDS;
+    /*
+        CARDS (also called DATALINES) supplies the observations
+        directly within the SAS program.
+    */
 Greg 10 2 40 0
 John 15 5 10 100
 Lisa 50 10 15 50
