@@ -1,4 +1,5 @@
 /*============================================================================*/
+/* STEP 1: Create the SALES dataset                                          */
 
 DATA sales;
 	INPUT Name$ Sales_1-Sales_4;
