@@ -20,10 +20,11 @@ DATA sales;
             SALES_4
     */
     INPUT Name$ Sales_1-Sales_4;
-	
-/*------------------------------------------------------------------------*/
-/* STEP 2: Calculate total sales                                          */
-/*------------------------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------*/
+    /* STEP 2: Calculate total sales                                          */
+    /*------------------------------------------------------------------------*/
 
     /*
         SUM() calculates the total of the four sales variables.
@@ -38,6 +39,7 @@ DATA sales;
     */
     total = SUM(Sales_1, Sales_2, Sales_3, Sales_4);
 
+
     /*------------------------------------------------------------------------*/
     /* STEP 3: Create the FIRED variable                                      */
     /*------------------------------------------------------------------------*/
@@ -49,6 +51,7 @@ DATA sales;
         variable that will initially contain a blank value.
     */
     fired = "";
+
 
     /*------------------------------------------------------------------------*/
     /* STEP 4: Determine whether Greg should be marked as fired               */
@@ -68,21 +71,24 @@ DATA sales;
         NOTE:
             SAS uses >= for "greater than or equal to".
             The original code used =>, which should be corrected.
-
     */
     IF name = "Greg" AND total >= 52 THEN
         fired = "N";
 
+
     /*------------------------------------------------------------------------*/
     /* STEP 5: Provide the input data                                         */
     /*------------------------------------------------------------------------*/
+
     /*
         CARDS (also called DATALINES) supplies the observations
         directly within the SAS program.
     */
+    CARDS;
 Greg 10 2 40 0
 John 15 5 10 100
 Lisa 50 10 15 50
 Mark 20 0 5 20
 ;
+
 RUN;
