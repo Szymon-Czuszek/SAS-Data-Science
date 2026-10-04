@@ -15,7 +15,12 @@ DATA sales;
             sales values.
     */
     INPUT Name$ Sales_1-Sales_4;
-	total=SUM(Sales_1, Sales_2, Sales_3, Sales_4);
+    /*
+        Calculate the total sales for each employee.
+
+        SUM() adds the four sales variables together.
+    */
+    total = SUM(Sales_1, Sales_2, Sales_3, Sales_4);
 	CARDS;
 Greg 10 2 40 0
 John 15 5 10 100
