@@ -60,6 +60,12 @@ QUIT;
 /*============================================================================*/
 
 PROC PRINT DATA=sales(WHERE=(total > 50));
+    /*
+        The WHERE= dataset option filters the observations
+        before PROC PRINT processes the dataset.
+
+        Only observations where TOTAL > 50 are passed to PROC PRINT.
+    */
 RUN;
 
 PROC PRINT DATA=sales;
