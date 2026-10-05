@@ -55,7 +55,11 @@ PROC SQL;
 
 QUIT;
 
-PROC PRINT DATA=sales(where=(total >50));
+/*============================================================================*/
+/* STEP 3: Filter observations using a DATASET WHERE= option                 */
+/*============================================================================*/
+
+PROC PRINT DATA=sales(WHERE=(total > 50));
 RUN;
 
 PROC PRINT DATA=sales;
