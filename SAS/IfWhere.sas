@@ -49,7 +49,11 @@ PROC SQL;
             130
             125
     */
-	SELECT total FROM sales WHERE total > 50;
+    SELECT total
+    FROM sales
+    WHERE total > 50;
+
+QUIT;
 
 PROC PRINT DATA=sales(where=(total >50));
 RUN;
