@@ -38,6 +38,17 @@ RUN;
 /*============================================================================*/
 
 PROC SQL;
+
+    /*
+        Select only the TOTAL variable from SALES.
+
+        The WHERE clause restricts the result to observations
+        where TOTAL is greater than 50.
+
+        Expected values:
+            130
+            125
+    */
 	SELECT total FROM sales WHERE total > 50;
 
 PROC PRINT DATA=sales(where=(total >50));
