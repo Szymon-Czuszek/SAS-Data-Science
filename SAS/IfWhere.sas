@@ -15,12 +15,16 @@ DATA sales;
             sales values.
     */
     INPUT Name$ Sales_1-Sales_4;
+
+
     /*
         Calculate the total sales for each employee.
 
         SUM() adds the four sales variables together.
     */
     total = SUM(Sales_1, Sales_2, Sales_3, Sales_4);
+
+
     /*
         Provide the input data directly in the program.
     */
@@ -32,6 +36,7 @@ Mark 20 0 5 20
 ;
 
 RUN;
+
 
 /*============================================================================*/
 /* STEP 2: Filter observations using PROC SQL                                */
@@ -55,11 +60,13 @@ PROC SQL;
 
 QUIT;
 
+
 /*============================================================================*/
 /* STEP 3: Filter observations using a DATASET WHERE= option                 */
 /*============================================================================*/
 
 PROC PRINT DATA=sales(WHERE=(total > 50));
+
     /*
         The WHERE= dataset option filters the observations
         before PROC PRINT processes the dataset.
@@ -67,6 +74,7 @@ PROC PRINT DATA=sales(WHERE=(total > 50));
         Only observations where TOTAL > 50 are passed to PROC PRINT.
     */
 RUN;
+
 
 /*============================================================================*/
 /* STEP 4: Filter observations using a WHERE statement                      */
@@ -79,5 +87,5 @@ PROC PRINT DATA=sales;
         observations where TOTAL is greater than 50.
     */
     WHERE total > 50;
-	
+
 RUN;
