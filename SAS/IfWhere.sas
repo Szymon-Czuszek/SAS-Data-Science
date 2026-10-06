@@ -68,6 +68,10 @@ PROC PRINT DATA=sales(WHERE=(total > 50));
     */
 RUN;
 
+/*============================================================================*/
+/* STEP 4: Filter observations using a WHERE statement                      */
+/*============================================================================*/
+
 PROC PRINT DATA=sales;
 	WHERE total > 50;
 RUN;
