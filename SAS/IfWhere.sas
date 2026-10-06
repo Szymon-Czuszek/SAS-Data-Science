@@ -73,5 +73,10 @@ RUN;
 /*============================================================================*/
 
 PROC PRINT DATA=sales;
-	WHERE total > 50;
+
+    /*
+        The WHERE statement tells PROC PRINT to display only
+        observations where TOTAL is greater than 50.
+    */
+    WHERE total > 50;
 RUN;
