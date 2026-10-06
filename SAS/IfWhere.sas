@@ -79,4 +79,5 @@ PROC PRINT DATA=sales;
         observations where TOTAL is greater than 50.
     */
     WHERE total > 50;
+	
 RUN;
