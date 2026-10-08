@@ -28,6 +28,16 @@ DATA weightgain;
             The empty value between two commas is treated as missing.
         */
         DSD
+        /*
+            MISSOVER prevents SAS from moving to the next input line
+            when the current line does not contain enough values
+            for all variables defined in the INPUT statement.
+
+            Missing values at the end of a record are therefore
+            assigned as missing instead of causing SAS to read
+            additional data from the next line.
+        */
+        MISSOVER
 		FIRSTOBS=2;
 	INPUT id source$ type$ weightg;
 RUN;
