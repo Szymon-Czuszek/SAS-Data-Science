@@ -38,6 +38,20 @@ DATA weightgain;
             additional data from the next line.
         */
         MISSOVER
+		        /*
+            FIRSTOBS=2 tells SAS to start reading from the second
+            line of the file.
+
+            This is useful when the first line contains column names
+            (a header), for example:
+
+                id,source,type,weightg
+                1,feed,A,25
+                2,feed,B,30
+
+            The header is skipped and the actual data starts
+            from line 2.
+        */
 		FIRSTOBS=2;
 	INPUT id source$ type$ weightg;
 RUN;
