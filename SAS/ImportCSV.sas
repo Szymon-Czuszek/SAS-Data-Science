@@ -60,5 +60,9 @@ DATA weightgain;
     /*------------------------------------------------------------------------*/
 
     /*
+        INPUT reads the values from each line of the CSV file.
+
+        ID:
+            Numeric identifier.
 	INPUT id source$ type$ weightg;
 RUN;
