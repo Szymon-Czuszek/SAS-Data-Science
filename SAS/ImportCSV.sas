@@ -25,9 +25,11 @@ DATA weightgain;
             Example:
                 1,source,type,25
                 2,source,,30
+
             The empty value between two commas is treated as missing.
         */
         DSD
+
         /*
             MISSOVER prevents SAS from moving to the next input line
             when the current line does not contain enough values
@@ -38,7 +40,8 @@ DATA weightgain;
             additional data from the next line.
         */
         MISSOVER
-		        /*
+
+        /*
             FIRSTOBS=2 tells SAS to start reading from the second
             line of the file.
 
@@ -64,5 +67,16 @@ DATA weightgain;
 
         ID:
             Numeric identifier.
-	INPUT id source$ type$ weightg;
+
+        SOURCE:
+            Character variable. The '$' indicates character data.
+
+        TYPE:
+            Character variable.
+
+        WEIGHTG:
+            Numeric variable containing the weight gain.
+    */
+    INPUT id source$ type$ weightg;
+
 RUN;
