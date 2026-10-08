@@ -52,6 +52,13 @@ DATA weightgain;
             The header is skipped and the actual data starts
             from line 2.
         */
-		FIRSTOBS=2;
+        FIRSTOBS=2;
+
+
+    /*------------------------------------------------------------------------*/
+    /* STEP 2: Define the variables to be read                               */
+    /*------------------------------------------------------------------------*/
+
+    /*
 	INPUT id source$ type$ weightg;
 RUN;
