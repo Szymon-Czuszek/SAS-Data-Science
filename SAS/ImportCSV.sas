@@ -25,6 +25,9 @@ DATA weightgain;
             Example:
                 1,source,type,25
                 2,source,,30
+            The empty value between two commas is treated as missing.
+        */
+        DSD
 		FIRSTOBS=2;
 	INPUT id source$ type$ weightg;
 RUN;
