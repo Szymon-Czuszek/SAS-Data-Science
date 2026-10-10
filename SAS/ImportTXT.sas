@@ -14,5 +14,18 @@ DATA salary;
 /*------------------------------------------------------------------------*/
 /* STEP 2: Define the input variables                                     */
 /*------------------------------------------------------------------------*/
+    /*
+        INPUT reads the values from each line of the text file.
+
+        YEAR:
+            Numeric variable representing the year.
+
+        SALARY:
+            Numeric variable representing the salary.
+
+        Since neither variable has a '$' suffix, SAS treats
+        both variables as numeric by default.
+    */
+    
 INPUT year salary;
 RUN;
