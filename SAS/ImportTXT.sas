@@ -12,5 +12,6 @@ DATA salary;
     */
     INFILE '/home/u63805106/datasetslearnsas/salary (2).txt';
 /*------------------------------------------------------------------------*/
+/* STEP 2: Define the input variables                                     */
 INPUT year salary;
 RUN;
