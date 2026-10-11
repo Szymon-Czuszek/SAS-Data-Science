@@ -1,3 +1,5 @@
+/*============================================================================*/
+
 DATA salaryemp(KEEP = salary RENAME = salary = salaryemp);
 INFILE '/home/u63805106/datasetslearnsas/salary (2).txt' DLM = " ";
 INPUT year salary;
