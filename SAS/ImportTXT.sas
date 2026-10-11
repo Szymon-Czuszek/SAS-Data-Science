@@ -11,9 +11,12 @@ DATA salary;
         SAS reads the observations directly from this file.
     */
     INFILE '/home/u63805106/datasetslearnsas/salary (2).txt';
-/*------------------------------------------------------------------------*/
-/* STEP 2: Define the input variables                                     */
-/*------------------------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------*/
+    /* STEP 2: Define the input variables                                     */
+    /*------------------------------------------------------------------------*/
+
     /*
         INPUT reads the values from each line of the text file.
 
@@ -26,6 +29,6 @@ DATA salary;
         Since neither variable has a '$' suffix, SAS treats
         both variables as numeric by default.
     */
-    
-INPUT year salary;
+    INPUT year salary;
+
 RUN;
