@@ -16,7 +16,17 @@ DATA salaryemp(
 
 
     /*
-INPUT year salary;
+    /*
+        Read two numeric variables from each line of the file.
+
+        YEAR:
+            Represents the year.
+
+        SALARY:
+            Represents the salary.
+    */
+    INPUT year salary;
+
 RUN;
 
 PROC PRINT DATA = salaryemp(FIRSTOBS = 3 OBS =4);
