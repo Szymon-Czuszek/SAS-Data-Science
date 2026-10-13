@@ -32,5 +32,8 @@ RUN;
 /*============================================================================*/
 /* STEP 2: Print a selected range of observations                             */
 /*============================================================================*/
-PROC PRINT DATA = salaryemp(FIRSTOBS = 3 OBS =4);
+PROC PRINT DATA = salaryemp(
+    FIRSTOBS = 3
+    OBS = 4
+);
 RUN;
