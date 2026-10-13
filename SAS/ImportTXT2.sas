@@ -29,5 +29,6 @@ DATA salaryemp(
 
 RUN;
 
+/*============================================================================*/
 PROC PRINT DATA = salaryemp(FIRSTOBS = 3 OBS =4);
 RUN;
