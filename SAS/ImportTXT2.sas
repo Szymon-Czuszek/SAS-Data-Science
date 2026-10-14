@@ -1,10 +1,12 @@
 /*============================================================================*/
 /* STEP 1: Import salary data and modify the output dataset                   */
 /*============================================================================*/
+
 DATA salaryemp(
     KEEP = salary
     RENAME = (salary = salaryemp)
 );
+
     /*
         INFILE specifies the location of the external text file.
 
@@ -15,7 +17,6 @@ DATA salaryemp(
         DLM = " ";
 
 
-    /*
     /*
         Read two numeric variables from each line of the file.
 
@@ -29,18 +30,24 @@ DATA salaryemp(
 
 RUN;
 
+
 /*============================================================================*/
 /* STEP 2: Print a selected range of observations                             */
 /*============================================================================*/
+
 PROC PRINT DATA = salaryemp(
     FIRSTOBS = 3
     OBS = 4
 );
+
     /*
         FIRSTOBS=3 specifies that reading should begin with
         the third observation.
-                OBS=4 specifies that reading should stop at the fourth
+
+        OBS=4 specifies that reading should stop at the fourth
         observation.
-            Together, these options select observations 3 and 4
+
+        Together, these options select observations 3 and 4
         from the SALARYEMP dataset.
+    */
 RUN;
