@@ -41,4 +41,6 @@ PROC PRINT DATA = salaryemp(
         the third observation.
                 OBS=4 specifies that reading should stop at the fourth
         observation.
+            Together, these options select observations 3 and 4
+        from the SALARYEMP dataset.
 RUN;
