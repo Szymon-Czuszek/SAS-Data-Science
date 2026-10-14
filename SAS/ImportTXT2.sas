@@ -36,4 +36,7 @@ PROC PRINT DATA = salaryemp(
     FIRSTOBS = 3
     OBS = 4
 );
+    /*
+        FIRSTOBS=3 specifies that reading should begin with
+        the third observation.
 RUN;
