@@ -1,5 +1,6 @@
 /*============================================================================*/
 /* STEP 1: Import house price data and calculate profit                      */
+/*============================================================================*/
 DATA houseprice;
 INFILE '/home/u63805106/datasetslearnsas/houseprice (2).txt' DLM = " ";
 INPUT type$ price tax;
