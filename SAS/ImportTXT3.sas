@@ -2,7 +2,15 @@
 /* STEP 1: Import house price data and calculate profit                      */
 /*============================================================================*/
 DATA houseprice;
-INFILE '/home/u63805106/datasetslearnsas/houseprice (2).txt' DLM = " ";
+
+    /*
+        INFILE specifies the location of the external text file.
+
+        DLM=" " specifies a space as the delimiter separating
+        values in the input file.
+    */
+    INFILE '/home/u63805106/datasetslearnsas/houseprice (2).txt'
+        DLM = " ";
 INPUT type$ price tax;
 profit = ROUND(price * tax);
 RUN;
