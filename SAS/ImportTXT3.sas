@@ -1,3 +1,4 @@
+/*============================================================================*/
 DATA houseprice;
 INFILE '/home/u63805106/datasetslearnsas/houseprice (2).txt' DLM = " ";
 INPUT type$ price tax;
