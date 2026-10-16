@@ -13,6 +13,7 @@ DATA houseprice;
         DLM = " ";
     /*------------------------------------------------------------------------*/
         /* STEP 2: Read the input variables                                       */
+            /*------------------------------------------------------------------------*/
 INPUT type$ price tax;
 profit = ROUND(price * tax);
 RUN;
