@@ -14,6 +14,9 @@ DATA houseprice;
 /*------------------------------------------------------------------------*/
 /* STEP 2: Read the input variables                                       */
 /*------------------------------------------------------------------------*/
+    /*
+        Read three variables from each line of the input file.
+        
 INPUT type$ price tax;
 profit = ROUND(price * tax);
 RUN;
