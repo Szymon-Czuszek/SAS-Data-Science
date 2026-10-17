@@ -16,7 +16,9 @@ DATA houseprice;
 /*------------------------------------------------------------------------*/
     /*
         Read three variables from each line of the input file.
-        
+        TYPE:
+            Character variable describing the type of house.
+            The '$' indicates that TYPE contains character data.
 INPUT type$ price tax;
 profit = ROUND(price * tax);
 RUN;
