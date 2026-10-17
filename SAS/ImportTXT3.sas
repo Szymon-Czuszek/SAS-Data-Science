@@ -19,6 +19,8 @@ DATA houseprice;
         TYPE:
             Character variable describing the type of house.
             The '$' indicates that TYPE contains character data.
+        PRICE:
+            Numeric variable representing the house price.
 INPUT type$ price tax;
 profit = ROUND(price * tax);
 RUN;
