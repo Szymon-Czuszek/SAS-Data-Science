@@ -25,6 +25,7 @@ DATA houseprice;
             Numeric variable representing the tax value or rate.
    */
     INPUT type$ price tax;
+    /*------------------------------------------------------------------------*/
 INPUT type$ price tax;
 profit = ROUND(price * tax);
 RUN;
