@@ -28,6 +28,8 @@ DATA houseprice;
     /*------------------------------------------------------------------------*/
     /* STEP 3: Calculate profit                                               */
 /*------------------------------------------------------------------------*/
+    /*
+        Multiply PRICE by TAX and round the result to the nearest integer.
 INPUT type$ price tax;
 profit = ROUND(price * tax);
 RUN;
