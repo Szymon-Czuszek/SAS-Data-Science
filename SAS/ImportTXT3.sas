@@ -30,6 +30,9 @@ DATA houseprice;
 /*------------------------------------------------------------------------*/
     /*
         Multiply PRICE by TAX and round the result to the nearest integer.
+
+        ROUND() rounds a numeric value to the nearest multiple
+        of the specified rounding unit.
 INPUT type$ price tax;
 profit = ROUND(price * tax);
 RUN;
