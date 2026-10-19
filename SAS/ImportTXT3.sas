@@ -33,6 +33,8 @@ DATA houseprice;
 
         ROUND() rounds a numeric value to the nearest multiple
         of the specified rounding unit.
+        Since no second argument is provided, SAS uses a default
+        rounding unit of 1.
 INPUT type$ price tax;
 profit = ROUND(price * tax);
 RUN;
