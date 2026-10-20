@@ -47,5 +47,7 @@ DATA houseprice;
 
 RUN;
 
+/*============================================================================*/
+
 PROC PRINT DATA = houseprice(FIRSTOBS = 3 OBS =4);
 RUN;
