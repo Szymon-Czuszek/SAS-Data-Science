@@ -48,6 +48,7 @@ DATA houseprice;
 RUN;
 
 /*============================================================================*/
+/* STEP 4: Print a selected range of observations                             */
 
 PROC PRINT DATA = houseprice(FIRSTOBS = 3 OBS =4);
 RUN;
