@@ -56,3 +56,6 @@ PROC PRINT DATA = houseprice(
     OBS = 4
 );
 RUN;
+
+    /*
+        FIRSTOBS=3 starts processing from the third observation.
