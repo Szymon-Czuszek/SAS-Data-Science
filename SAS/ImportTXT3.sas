@@ -60,3 +60,4 @@ RUN;
     /*
         FIRSTOBS=3 starts processing from the third observation.
     OBS=4 limits processing to the fourth observation.
+            Together, these options select observations 3 and 4
