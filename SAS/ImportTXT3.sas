@@ -1,6 +1,7 @@
 /*============================================================================*/
 /* STEP 1: Import house price data and calculate profit                      */
 /*============================================================================*/
+
 DATA houseprice;
 
     /*
@@ -11,23 +12,32 @@ DATA houseprice;
     */
     INFILE '/home/u63805106/datasetslearnsas/houseprice (2).txt'
         DLM = " ";
-/*------------------------------------------------------------------------*/
-/* STEP 2: Read the input variables                                       */
-/*------------------------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------*/
+    /* STEP 2: Read the input variables                                       */
+    /*------------------------------------------------------------------------*/
+
     /*
         Read three variables from each line of the input file.
+
         TYPE:
             Character variable describing the type of house.
             The '$' indicates that TYPE contains character data.
+
         PRICE:
             Numeric variable representing the house price.
+
         TAX:
             Numeric variable representing the tax value or rate.
-   */
+    */
     INPUT type$ price tax;
+
+
     /*------------------------------------------------------------------------*/
     /* STEP 3: Calculate profit                                               */
-/*------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------*/
+
     /*
         Multiply PRICE by TAX and round the result to the nearest integer.
 
@@ -47,6 +57,7 @@ DATA houseprice;
 
 RUN;
 
+
 /*============================================================================*/
 /* STEP 4: Print a selected range of observations                             */
 /*============================================================================*/
@@ -55,11 +66,13 @@ PROC PRINT DATA = houseprice(
     FIRSTOBS = 3
     OBS = 4
 );
-RUN;
 
     /*
         FIRSTOBS=3 starts processing from the third observation.
-    OBS=4 limits processing to the fourth observation.
-            Together, these options select observations 3 and 4
-                    from the HOUSEPRICE dataset.
+
+        OBS=4 limits processing to the fourth observation.
+
+        Together, these options select observations 3 and 4
+        from the HOUSEPRICE dataset.
     */
+RUN;
