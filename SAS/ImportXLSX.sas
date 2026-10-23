@@ -13,5 +13,11 @@ PROC IMPORT
         Here, SAS imports data from the worksheet named Sheet1.
     */
     SHEET = "Sheet1";
-	GETNAMES=NO;
+        GETNAMES=NO tells SAS that the first row contains data
+        rather than variable names.
+
+        SAS therefore generates default variable names, such as
+        VAR1, VAR2, VAR3, and so on.
+    */
+    GETNAMES = NO;
 RUN;
