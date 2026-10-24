@@ -3,7 +3,9 @@
 /*============================================================================*/
 
 DATA LARGEDATA;
-	Y=1;
+
+    /* Initialize Y before entering the loop */
+    Y = 1;
 
 	DO I=1 TO 800000;
 		X=I+1;
