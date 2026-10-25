@@ -35,6 +35,7 @@ DATA LARGEDATA;
 			TXT='P';
 		OUTPUT;
         /*--------------------------------------------------------------------*/
+        /* STEP 1A: Assign a repeating character value to TXT                 */
 	END;
 RUN;
 
