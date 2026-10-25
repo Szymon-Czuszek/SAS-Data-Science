@@ -6,13 +6,13 @@ DATA LARGEDATA;
 
     /* Initialize Y before entering the loop */
     Y = 1;
+
     /*
         Generate 800,000 observations.
 
         I ranges from 1 to 800,000, increasing by 1 each iteration.
     */
-	
-	DO I=1 TO 800000;
+    DO I = 1 TO 800000;
 		X=I+1;
 		Y=Y+X;
 		Z=Y+4;
