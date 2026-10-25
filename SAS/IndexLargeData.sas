@@ -13,9 +13,14 @@ DATA LARGEDATA;
         I ranges from 1 to 800,000, increasing by 1 each iteration.
     */
     DO I = 1 TO 800000;
-		X=I+1;
-		Y=Y+X;
-		Z=Y+4;
+        /* Calculate X using the current iteration number */
+        X = I + 1;
+
+        /* Update the cumulative value of Y */
+        Y = Y + X;
+
+        /* Calculate Z using the updated value of Y */
+        Z = Y + 4;
 
 		IF MOD(I, 4)=1 THEN
 			TXT='M';
