@@ -34,8 +34,11 @@ DATA LARGEDATA;
 		IF MOD(I, 4)=0 THEN
 			TXT='P';
 		OUTPUT;
-        /*--------------------------------------------------------------------*/
-        /* STEP 1A: Assign a repeating character value to TXT                 */
+		
+/*--------------------------------------------------------------------*/
+/* STEP 1A: Assign a repeating character value to TXT                 */
+/*--------------------------------------------------------------------*/
+
 	END;
 RUN;
 
