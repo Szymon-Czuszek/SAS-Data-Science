@@ -44,6 +44,7 @@ DATA LARGEDATA;
             Remainder 1 -> M
             Remainder 2 -> N
             Remainder 3 -> O
+            Remainder 0 -> P
 	END;
 RUN;
 
