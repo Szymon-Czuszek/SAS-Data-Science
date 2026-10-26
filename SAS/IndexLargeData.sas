@@ -41,6 +41,7 @@ DATA LARGEDATA;
 
         /*
             MOD(I, 4) returns the remainder after dividing I by 4.
+            Remainder 1 -> M
 	END;
 RUN;
 
