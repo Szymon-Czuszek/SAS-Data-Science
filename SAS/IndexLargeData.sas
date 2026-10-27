@@ -49,6 +49,9 @@ DATA LARGEDATA;
 
             This creates the repeating sequence M, N, O, P.
         */
+
+        IF MOD(I, 4) = 1 THEN
+            TXT = 'M';
 	END;
 RUN;
 
