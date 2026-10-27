@@ -52,6 +52,8 @@ DATA LARGEDATA;
 
         IF MOD(I, 4) = 1 THEN
             TXT = 'M';
+        IF MOD(I, 4) = 2 THEN
+            TXT = 'N';
 	END;
 RUN;
 
