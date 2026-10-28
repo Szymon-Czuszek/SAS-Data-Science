@@ -58,8 +58,18 @@ DATA LARGEDATA;
             TXT = 'O';
         IF MOD(I, 4) = 0 THEN
             TXT = 'P';
-	END;
+        /*
+            Write the current observation to LARGEDATA.
+
+            OUTPUT is inside the loop, so one observation is written
+            during each iteration.
+        */
+        OUTPUT;
+
+    END;
+
 RUN;
+
 
 PROC SQL;
 	CREATE TABLE NOINDEX AS SELECT * FROM LARGEDATA WHERE X IN (792286, 486273, 
