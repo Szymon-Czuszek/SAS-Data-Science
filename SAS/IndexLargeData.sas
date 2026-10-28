@@ -71,6 +71,7 @@ DATA LARGEDATA;
 RUN;
 
 /*============================================================================*/
+/* STEP 2: Query the dataset before creating an index                        */
 
 PROC SQL;
 	CREATE TABLE NOINDEX AS SELECT * FROM LARGEDATA WHERE X IN (792286, 486273, 
