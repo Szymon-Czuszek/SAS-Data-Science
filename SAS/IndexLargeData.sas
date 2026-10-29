@@ -79,9 +79,15 @@ PROC SQL;
     /*
         Select all variables from LARGEDATA for observations
         where X matches one of the three specified values.
+
         The result is saved in a separate dataset named NOINDEX.
     */
     CREATE TABLE NOINDEX AS
+        SELECT *
+        FROM LARGEDATA
+        WHERE X IN (792286, 486273, 237838);
+
+QUIT;
 	CREATE TABLE NOINDEX AS SELECT * FROM LARGEDATA WHERE X IN (792286, 486273, 
 		237838);
 quit;
