@@ -96,8 +96,22 @@ QUIT;
 quit;
 
 PROC DATASETS LIBRARY=WORK;
-	MODIFY LARGEDATA;
-	INDEX CREATE X;
+
+    /*
+        Modify the existing LARGEDATA dataset in the WORK library.
+    */
+    MODIFY LARGEDATA;
+
+    /*
+        Create an index named X on the variable X.
+
+        The index can help SAS locate observations matching
+        conditions on X without scanning every observation.
+
+        Index creation takes additional time and storage.
+    */
+    INDEX CREATE X;
+
 QUIT;
 
 PROC SQL;
