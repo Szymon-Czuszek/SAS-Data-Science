@@ -86,7 +86,7 @@ PROC SQL;
         SELECT *
         FROM LARGEDATA
         WHERE X IN (792286, 486273, 237838);
-
+/*============================================================================*/
 QUIT;
 	CREATE TABLE NOINDEX AS SELECT * FROM LARGEDATA WHERE X IN (792286, 486273, 
 		237838);
