@@ -119,6 +119,18 @@ QUIT;
 /*============================================================================*/
 
 PROC SQL;
-	CREATE TABLE INDEX AS SELECT * FROM LARGEDATA WHERE X IN (792286, 486273, 
-		237838);
+
+    /*
+        Run the same query as in STEP 2.
+
+        SAS can consider using the index on X to locate matching
+        observations more efficiently.
+
+        The output is saved in a dataset named INDEX.
+    */
+    CREATE TABLE INDEX AS
+        SELECT *
+        FROM LARGEDATA
+        WHERE X IN (792286, 486273, 237838);
+
 QUIT;
