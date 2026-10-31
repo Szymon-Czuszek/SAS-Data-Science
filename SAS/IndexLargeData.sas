@@ -114,6 +114,8 @@ PROC DATASETS LIBRARY=WORK;
 
 QUIT;
 
+/*============================================================================*/
+
 PROC SQL;
 	CREATE TABLE INDEX AS SELECT * FROM LARGEDATA WHERE X IN (792286, 486273, 
 		237838);
