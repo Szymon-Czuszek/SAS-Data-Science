@@ -116,6 +116,7 @@ QUIT;
 
 /*============================================================================*/
 /* STEP 4: Repeat the query after creating the index                         */
+/*============================================================================*/
 
 PROC SQL;
 	CREATE TABLE INDEX AS SELECT * FROM LARGEDATA WHERE X IN (792286, 486273, 
