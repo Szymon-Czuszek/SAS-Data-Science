@@ -13,6 +13,7 @@ DATA LARGEDATA;
         I ranges from 1 to 800,000, increasing by 1 each iteration.
     */
     DO I = 1 TO 800000;
+
         /* Calculate X using the current iteration number */
         X = I + 1;
 
@@ -22,22 +23,10 @@ DATA LARGEDATA;
         /* Calculate Z using the updated value of Y */
         Z = Y + 4;
 
-		IF MOD(I, 4)=1 THEN
-			TXT='M';
 
-		IF MOD(I, 4)=2 THEN
-			TXT='N';
-
-		IF MOD(I, 4)=3 THEN
-			TXT='O';
-
-		IF MOD(I, 4)=0 THEN
-			TXT='P';
-		OUTPUT;
-
-/*--------------------------------------------------------------------*/
-/* STEP 1A: Assign a repeating character value to TXT                 */
-/*--------------------------------------------------------------------*/
+        /*--------------------------------------------------------------------*/
+        /* STEP 1A: Assign a repeating character value to TXT                 */
+        /*--------------------------------------------------------------------*/
 
         /*
             MOD(I, 4) returns the remainder after dividing I by 4.
@@ -49,15 +38,19 @@ DATA LARGEDATA;
 
             This creates the repeating sequence M, N, O, P.
         */
-
         IF MOD(I, 4) = 1 THEN
             TXT = 'M';
+
         IF MOD(I, 4) = 2 THEN
             TXT = 'N';
+
         IF MOD(I, 4) = 3 THEN
             TXT = 'O';
+
         IF MOD(I, 4) = 0 THEN
             TXT = 'P';
+
+
         /*
             Write the current observation to LARGEDATA.
 
@@ -69,6 +62,7 @@ DATA LARGEDATA;
     END;
 
 RUN;
+
 
 /*============================================================================*/
 /* STEP 2: Query the dataset before creating an index                        */
@@ -86,14 +80,13 @@ PROC SQL;
         SELECT *
         FROM LARGEDATA
         WHERE X IN (792286, 486273, 237838);
+
+QUIT;
+
+
 /*============================================================================*/
 /* STEP 3: Create an index on the variable X                                 */
 /*============================================================================*/
-
-QUIT;
-	CREATE TABLE NOINDEX AS SELECT * FROM LARGEDATA WHERE X IN (792286, 486273, 
-		237838);
-quit;
 
 PROC DATASETS LIBRARY=WORK;
 
@@ -113,6 +106,7 @@ PROC DATASETS LIBRARY=WORK;
     INDEX CREATE X;
 
 QUIT;
+
 
 /*============================================================================*/
 /* STEP 4: Repeat the query after creating the index                         */
