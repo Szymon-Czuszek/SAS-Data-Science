@@ -1,4 +1,5 @@
 /*============================================================================*/
+/* STEP 1: Define a permanent SAS library                                    */
 
 
 LIBNAME sa '/home/u63805106/datasetslearnsas/';
