@@ -11,6 +11,7 @@
 LIBNAME sa '/home/u63805106/datasetslearnsas/';
 
 /*============================================================================*/
+/* STEP 2: Import the sales data from a CSV file                             */
 
 DATA sa.sal;
 INFILE "/home/u63805106/datasetslearnsas/sales.csv" DSD MISSOVER FIRSTOBS=2 ;
