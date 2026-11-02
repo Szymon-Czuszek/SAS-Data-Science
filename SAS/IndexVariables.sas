@@ -2,6 +2,11 @@
 /* STEP 1: Define a permanent SAS library                                    */
 /*============================================================================*/
 
+    Create a library reference named SA.
+
+    Datasets saved in this library are stored permanently in the specified
+    directory instead of being deleted when the SAS session ends.
+*/
 
 LIBNAME sa '/home/u63805106/datasetslearnsas/';
 
