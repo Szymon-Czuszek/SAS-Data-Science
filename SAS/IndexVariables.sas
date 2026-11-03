@@ -18,6 +18,8 @@ DATA sa.sal;
 
     /*
         Read data from the sales.csv file.
+        DSD      - Handles comma-separated values and consecutive delimiters.
+        
 INFILE "/home/u63805106/datasetslearnsas/sales.csv" DSD MISSOVER FIRSTOBS=2 ;
 INPUT x1-x5 Status$ x6-x8 ProductLine$ MSRP ProductCode$ CustomerName$;
 RUN;
