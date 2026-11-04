@@ -44,4 +44,6 @@ DATA sa.sal;
         CustomerName $;
 
 RUN;
+/*============================================================================*/
+
 PROC FREQ DATA=sa.sal(KEEP=CustomerName);
