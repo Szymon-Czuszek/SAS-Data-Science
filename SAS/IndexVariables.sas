@@ -29,6 +29,11 @@ DATA sa.sal;
         FIRSTOBS=2;
 
     /*
+        Read the variables from the CSV file.
+
+        X1-X5 and X6-X8 represent groups of numeric variables.
+        Variables followed by $ are read as character variables.
+    */
 INPUT x1-x5 Status$ x6-x8 ProductLine$ MSRP ProductCode$ CustomerName$;
 RUN;
 PROC FREQ DATA=sa.sal(KEEP=CustomerName);
