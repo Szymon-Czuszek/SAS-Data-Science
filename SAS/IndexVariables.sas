@@ -49,3 +49,6 @@ RUN;
 /*============================================================================*/
 
 PROC FREQ DATA=sa.sal(KEEP=CustomerName);
+
+    /*
+        Display the frequency distribution of the CustomerName variable.
