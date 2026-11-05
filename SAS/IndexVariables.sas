@@ -45,5 +45,6 @@ DATA sa.sal;
 
 RUN;
 /*============================================================================*/
+/* STEP 3: Generate a frequency analysis of customer names                  */
 
 PROC FREQ DATA=sa.sal(KEEP=CustomerName);
