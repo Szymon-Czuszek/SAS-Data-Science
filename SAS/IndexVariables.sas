@@ -52,3 +52,10 @@ PROC FREQ DATA=sa.sal(KEEP=CustomerName);
 
     /*
         Display the frequency distribution of the CustomerName variable.
+
+        The KEEP= dataset option limits the input to the CustomerName
+        variable only.
+    */
+    TABLES CustomerName;
+
+RUN;
