@@ -2,12 +2,12 @@
 /* STEP 1: Define a permanent SAS library                                    */
 /*============================================================================*/
 
+/*
     Create a library reference named SA.
 
     Datasets saved in this library are stored permanently in the specified
     directory instead of being deleted when the SAS session ends.
 */
-
 LIBNAME sa '/home/u63805106/datasetslearnsas/';
 
 /*============================================================================*/
@@ -18,11 +18,12 @@ DATA sa.sal;
 
     /*
         Read data from the sales.csv file.
+
         DSD      - Handles comma-separated values and consecutive delimiters.
-        MISSOVER - Prevents SAS from reading the next line when values are missing at the end of a record.
+        MISSOVER - Prevents SAS from reading the next line when values
+                   are missing at the end of a record.
         FIRSTOBS - Starts reading from the second row, skipping the header.
     */
-        
     INFILE "/home/u63805106/datasetslearnsas/sales.csv"
         DSD
         MISSOVER
@@ -44,6 +45,7 @@ DATA sa.sal;
         CustomerName $;
 
 RUN;
+
 /*============================================================================*/
 /* STEP 3: Generate a frequency analysis of customer names                  */
 /*============================================================================*/
