@@ -1,6 +1,6 @@
 /*============================================================================*/
 /* STEP 1: Create a fileref for the external data file                       */
-
+/*============================================================================*/
 
 FILENAME my_data '/home/u62422869/The Simplest Guide to SAS/my_data_file.dat';
 DATA student_data;
