@@ -11,6 +11,7 @@
 FILENAME my_data
     '/home/u62422869/The Simplest Guide to SAS/my_data_file.dat';
 
+/*============================================================================*/
 
 DATA student_data;
 INFILE my_data;
