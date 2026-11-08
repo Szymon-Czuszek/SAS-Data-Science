@@ -12,6 +12,7 @@ FILENAME my_data
     '/home/u62422869/The Simplest Guide to SAS/my_data_file.dat';
 
 /*============================================================================*/
+/* STEP 2: Read the fixed-width data into a SAS dataset                      */
 
 DATA student_data;
 INFILE my_data;
