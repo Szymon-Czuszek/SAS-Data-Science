@@ -13,6 +13,7 @@ FILENAME my_data
 
 /*============================================================================*/
 /* STEP 2: Read the fixed-width data into a SAS dataset                      */
+/*============================================================================*/
 
 DATA student_data;
 INFILE my_data;
