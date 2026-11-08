@@ -16,6 +16,10 @@ FILENAME my_data
 /*============================================================================*/
 
 DATA student_data;
+
+    /*
+        Read observations from the external file referenced by MY_DATA.
+    */
 INFILE my_data;
 INPUT Name $1-5 Age 6-7 Gender $ @18 Weight;
 RUN;
