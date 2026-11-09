@@ -22,7 +22,7 @@ DATA student_data;
         Name   - Character variable stored in columns 1–5
         Age    - Numeric variable stored in columns 6–7
         Gender - Character variable read starting at column 18
-         Weight - Numeric variable read immediately after Gender
+        Weight - Numeric variable read immediately after Gender
     */
     INFILE my_data;
 
