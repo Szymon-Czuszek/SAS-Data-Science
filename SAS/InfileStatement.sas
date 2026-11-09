@@ -19,6 +19,8 @@ DATA student_data;
 
     /*
         Read observations from the external file referenced by MY_DATA.
+        Name   - Character variable stored in columns 1–5
+
     */
     INFILE my_data;
 
