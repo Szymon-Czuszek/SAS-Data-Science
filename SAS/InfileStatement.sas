@@ -20,6 +20,7 @@ DATA student_data;
     /*
         Read observations from the external file referenced by MY_DATA.
         Name   - Character variable stored in columns 1–5
+        Age    - Numeric variable stored in columns 6–7
 
     */
     INFILE my_data;
