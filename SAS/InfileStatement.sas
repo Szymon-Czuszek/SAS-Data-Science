@@ -31,6 +31,7 @@ DATA student_data;
     */
     INPUT
     Name $1-5
+    Age 6-7
 
 ;
 RUN;
