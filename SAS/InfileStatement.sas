@@ -30,4 +30,7 @@ DATA student_data;
         Read variables using fixed column positions */
     */
     INPUT
+    Name $1-5
+
+;
 RUN;
