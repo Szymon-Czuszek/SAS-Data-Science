@@ -28,5 +28,6 @@ DATA student_data;
 
     /*
         Read variables using fixed column positions */
-INPUT Name $1-5 Age 6-7 Gender $ @18 Weight;
+    */
+    INPUT
 RUN;
