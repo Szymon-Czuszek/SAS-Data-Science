@@ -19,20 +19,20 @@ DATA student_data;
 
     /*
         Read observations from the external file referenced by MY_DATA.
+    */
+    INFILE my_data;
+
+    /*
+        Read variables using fixed column positions:
+
         Name   - Character variable stored in columns 1–5
         Age    - Numeric variable stored in columns 6–7
         Gender - Character variable read starting at column 18
         Weight - Numeric variable read immediately after Gender
     */
-    INFILE my_data;
-
-    /*
-        Read variables using fixed column positions */
-    */
     INPUT
-    Name $1-5
-    Age 6-7
-    Gender $ @18 Weight;
+        Name $1-5
+        Age 6-7
+        Gender $ @18 Weight;
 
-;
 RUN;
