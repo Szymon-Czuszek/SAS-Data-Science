@@ -7,6 +7,8 @@ DATA policel;
     /*
         Read data from the CSV file.
                 DSD      - Handles comma-separated values and consecutive delimiters.
+                MISSOVER - Prevents SAS from reading values from the next line when data is missing at the end of the current record.
+        
         
     */
 INFILE "/home/u63805106/datasetslearnsas/londonoutcomes.csv" DSD MISSOVER FIRSTOBS = 2;
