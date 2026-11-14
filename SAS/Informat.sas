@@ -34,5 +34,8 @@ Longitude and Latitude are defined as numeric variables with a length of 4 bytes
         LSOAC      $25
         LSOAN      $25
         OutcomeT   $25;
+
+/*-----------------------------------------------------------------------*/
+
 INPUT  CrimeID$ ReportedF$ FallsW$ Longitude Latitude Location$ LSOAC$ LSOAN$ OutcomeT$;
 RUN;
