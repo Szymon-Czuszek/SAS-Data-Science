@@ -36,6 +36,7 @@ Longitude and Latitude are defined as numeric variables with a length of 4 bytes
         OutcomeT   $25;
 
 /*-----------------------------------------------------------------------*/
+/* STEP 3: Read the variables from each row of the CSV file             */
 
 INPUT  CrimeID$ ReportedF$ FallsW$ Longitude Latitude Location$ LSOAC$ LSOAN$ OutcomeT$;
 RUN;
