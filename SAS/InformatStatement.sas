@@ -6,6 +6,8 @@
     Define a new dataset named EMPLOYEE_BONUS.
     The dataset will contain:
         - EMPLOYEE_NAME  : Employee's name (character)
+        - BONUS_AMOUNT  : Employee's bonus (numeric)
+        
 */
 /* This SAS snippet creates a dataset named EMPLOYEE_BONUS using the DATA statement.
 It defines variables: EMPLOYEE_NAME, BONUS_AMOUNT, and DATE_OF_BIRTH.
