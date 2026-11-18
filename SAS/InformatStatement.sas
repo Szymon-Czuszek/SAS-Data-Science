@@ -10,6 +10,8 @@
         - DATE_OF_BIRTH : Employee's date of birth (numeric SAS date)
 */
 DATA EMPLOYEE_BONUS;
+    /* Specify the variables to be read from the input data */
+    INPUT EMPLOYEE_NAME $ BONUS_AMOUNT DATE_OF_BIRTH;
 */
 /* This SAS snippet creates a dataset named EMPLOYEE_BONUS using the DATA statement.
 It defines variables: EMPLOYEE_NAME, BONUS_AMOUNT, and DATE_OF_BIRTH.
