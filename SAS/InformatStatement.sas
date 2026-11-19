@@ -15,6 +15,9 @@ DATA EMPLOYEE_BONUS;
         DOLLAR5. - Reads monetary values containing a dollar sign.
         DATE7.   - Reads dates in the DDMMMYY format, e.g. 20APR80.
 */
+    */
+    INFORMAT BONUS_AMOUNT DOLLAR5.
+            DATE_OF_BIRTH DATE7.;
 /* This SAS snippet creates a dataset named EMPLOYEE_BONUS using the DATA statement.
 It defines variables: EMPLOYEE_NAME, BONUS_AMOUNT, and DATE_OF_BIRTH.
 The INPUT statement specifies the format of the data to be read.
