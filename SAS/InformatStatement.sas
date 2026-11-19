@@ -28,10 +28,10 @@ INPUT EMPLOYEE_NAME $ BONUS_AMOUNT DATE_OF_BIRTH ;
 INFORMAT BONUS_AMOUNT dollar5. DATE_OF_BIRTH date7.;
     /* Provide the raw data directly within the SAS program */
     CARDS;
-Alice $5500 20Apr80 
-Bob $1200 01Mar92
-Eva $6750 24Oct76
-Dan $4560 17Dec87
+Alice $5500 20Apr80
+Bob   $1200 01Mar92
+Eva   $6750 24Oct76
+Dan   $4560 17Dec87
 ;
 RUN;
 
