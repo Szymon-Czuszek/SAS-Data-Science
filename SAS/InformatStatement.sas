@@ -35,6 +35,7 @@ Dan   $4560 17Dec87
 RUN;
 
 /*============================================================================*/
+/* STEP 2: Create a duplicate of EMPLOYEE_BONUS                              */
 
 
 /* This SAS snippet creates a duplicate dataset named EMPLOYEE_BONUS1 using the DATA statement.
