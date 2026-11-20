@@ -34,6 +34,8 @@ Dan   $4560 17Dec87
 
 RUN;
 
+/*============================================================================*/
+
 
 /* This SAS snippet creates a duplicate dataset named EMPLOYEE_BONUS1 using the DATA statement.
 It sets the dataset to read from the existing EMPLOYEE_BONUS dataset.
