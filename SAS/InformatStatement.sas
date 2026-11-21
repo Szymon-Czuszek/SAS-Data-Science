@@ -40,39 +40,14 @@ RUN;
 
 /*
     Create a new dataset named EMPLOYEE_BONUS1.
-        SET reads all observations and variables from the existing
+
+    SET reads all observations and variables from the existing
     EMPLOYEE_BONUS dataset.
 
     This copies the data without having to enter it again.
 */
-/* This SAS snippet creates a duplicate dataset named EMPLOYEE_BONUS1 using the DATA statement.
-It sets the dataset to read from the existing EMPLOYEE_BONUS dataset.
-The INPUT statement specifies the format of the data to be read.
-The CARDS statement provides the data values. */
 DATA EMPLOYEE_BONUS1;
+
     SET EMPLOYEE_BONUS;
 
-    /* Specify the variables to be read from the input data */
-    INPUT EMPLOYEE_NAME $ BONUS_AMOUNT DATE_OF_BIRTH;
-
-    /*
-        Define how SAS should interpret the raw input values.
-
-        DOLLAR5. - Reads monetary values containing a dollar sign.
-        DATE7.   - Reads dates in the DDMMMYY format, e.g. 20APR80.
-    */
-    INFORMAT BONUS_AMOUNT DOLLAR5.
-            DATE_OF_BIRTH DATE7.;
-
-    /* Provide the raw data directly within the SAS program */
-    CARDS;
-DATA EMPLOYEE_BONUS1;
-INPUT EMPLOYEE_NAME $ BONUS_AMOUNT DATE_OF_BIRTH ;
-INFORMAT BONUS_AMOUNT dollar5. DATE_OF_BIRTH date7.;
-CARDS;
-Alice $5500 20Apr80 
-Bob $1200 01Mar92
-Eva $6750 24Oct76
-Dan $4560 17Dec87
-;
 RUN;
