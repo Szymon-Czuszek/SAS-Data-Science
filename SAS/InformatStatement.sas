@@ -42,6 +42,9 @@ RUN;
     Create a new dataset named EMPLOYEE_BONUS1.
         SET reads all observations and variables from the existing
     EMPLOYEE_BONUS dataset.
+
+    This copies the data without having to enter it again.
+*/
 /* This SAS snippet creates a duplicate dataset named EMPLOYEE_BONUS1 using the DATA statement.
 It sets the dataset to read from the existing EMPLOYEE_BONUS dataset.
 The INPUT statement specifies the format of the data to be read.
