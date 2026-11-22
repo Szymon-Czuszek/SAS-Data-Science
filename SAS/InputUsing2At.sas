@@ -2,6 +2,17 @@
 /* STEP 1: Create the INDIVIDUALS dataset                                    */
 /*============================================================================*/
 
+/*
+    Create a dataset named INDIVIDUALS containing personal information.
+
+    Variables:
+    FIRST - First name
+    LAST  - Last name
+    SEX   - Gender
+    AGE   - Age in years
+    MASS  - Body mass
+*/
+
 data individuals;
 input first :$10. last :$13. sex $ age mass @@;
 cards;
