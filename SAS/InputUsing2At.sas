@@ -1,4 +1,5 @@
 /*============================================================================*/
+/* STEP 1: Create the INDIVIDUALS dataset                                    */
 
 data individuals;
 input first :$10. last :$13. sex $ age mass @@;
