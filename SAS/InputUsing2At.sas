@@ -16,6 +16,7 @@
 DATA individuals;
 
     /*-----------------------------------------------------------------------*/
+    /* STEP 2: Define the input structure */
     
 input first :$10. last :$13. sex $ age mass @@;
 cards;
