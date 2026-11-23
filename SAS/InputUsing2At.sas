@@ -17,7 +17,8 @@ DATA individuals;
 
     /*-----------------------------------------------------------------------*/
     /* STEP 2: Define the input structure */
-    
+    /*-----------------------------------------------------------------------*/
+
 input first :$10. last :$13. sex $ age mass @@;
 cards;
 Alice White F 35 110.2 Michael Brown M 42 155.8
