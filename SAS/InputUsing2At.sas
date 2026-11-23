@@ -13,7 +13,10 @@
     MASS  - Body mass
 */
 
-data individuals;
+DATA individuals;
+
+    /*-----------------------------------------------------------------------*/
+    
 input first :$10. last :$13. sex $ age mass @@;
 cards;
 Alice White F 35 110.2 Michael Brown M 42 155.8
