@@ -1,4 +1,5 @@
 /*============================================================================*/
+/* STEP 1: Create the CUSTOM_DATASET dataset                                 */
 
 data custom_dataset;
 input region $ @;
