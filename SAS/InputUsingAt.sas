@@ -2,6 +2,11 @@
 /* STEP 1: Create the CUSTOM_DATASET dataset                                 */
 /*============================================================================*/
 
+/*
+    Create a dataset named CUSTOM_DATASET.
+
+*/
+
 data custom_dataset;
 input region $ @;
 input first :$10. last :$13. sex $ years mass;
