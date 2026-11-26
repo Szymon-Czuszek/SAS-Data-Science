@@ -6,6 +6,9 @@
     Create a dataset named CUSTOM_DATASET.
     The dataset contains regional information and individual records.
 
+    Each region is followed by information about the individuals belonging
+    to that region.
+
 */
 
 data custom_dataset;
