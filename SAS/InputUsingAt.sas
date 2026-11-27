@@ -8,7 +8,8 @@
 
     Each region is followed by information about the individuals belonging
     to that region.
-
+*/
+DATA custom_dataset;
 */
 
 data custom_dataset;
