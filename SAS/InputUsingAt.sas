@@ -13,6 +13,7 @@ DATA custom_dataset;
 */
 
 /*-----------------------------------------------------------------------*/
+/* STEP 2: Read the region name                                          */
    
 data custom_dataset;
 input region $ @;
