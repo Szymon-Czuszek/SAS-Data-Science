@@ -12,6 +12,8 @@
 DATA custom_dataset;
 */
 
+/*-----------------------------------------------------------------------*/
+   
 data custom_dataset;
 input region $ @;
 input first :$10. last :$13. sex $ years mass;
