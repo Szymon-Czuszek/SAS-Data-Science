@@ -18,6 +18,8 @@ DATA custom_dataset;
 
     /*
         Read REGION as a character variable.
+The trailing @ holds the current input line so that the next INPUT
+        statement can continue reading from the same line if necessary.
 data custom_dataset;
 input region $ @;
 input first :$10. last :$13. sex $ years mass;
