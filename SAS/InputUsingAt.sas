@@ -23,6 +23,9 @@ The trailing @ holds the current input line so that the next INPUT
 
     */
     INPUT region $ @;
+
+/*-----------------------------------------------------------------------*/
+  
 data custom_dataset;
 input region $ @;
 input first :$10. last :$13. sex $ years mass;
