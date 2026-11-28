@@ -16,6 +16,8 @@ DATA custom_dataset;
 /* STEP 2: Read the region name                                          */
 /*-----------------------------------------------------------------------*/
 
+    /*
+        Read REGION as a character variable.
 data custom_dataset;
 input region $ @;
 input first :$10. last :$13. sex $ years mass;
